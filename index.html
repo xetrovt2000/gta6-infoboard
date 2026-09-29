@@ -32,16 +32,28 @@
   --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --sky-top: #b9a3e3; --sky-mid: #ff9fbf; --sky-low: #ffd2a8;
+  --sun-a: #ffe08a; --sun-b: #ff6f91;
+  --sil: #3a1d47; --sil-2: #5b2d63; --pattern: #3a1d47;
+  --panel: rgb(251 247 244 / 0.9);
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #16121a; --surface: #1f1a24; --fg: #f2ecef; --muted: #a89da6; --line: #332b38;
   --accent: #ff5c93; --accent-2: #3cc4c6;
   --ok: #7fd49a; --ok-bg: #1d3325; --warn: #f0b95c; --warn-bg: #3a2c14; --bad: #ff8a80; --bad-bg: #3d1f1d;
+  --sky-top: #120a22; --sky-mid: #4a1850; --sky-low: #b8325f;
+  --sun-a: #ffc15e; --sun-b: #ff3d7f;
+  --sil: #07040b; --sil-2: #1c0f24; --pattern: #ff5c93;
+  --panel: rgb(22 18 26 / 0.86);
   color-scheme: dark; } }
 :root[data-theme="dark"] {
   --bg: #16121a; --surface: #1f1a24; --fg: #f2ecef; --muted: #a89da6; --line: #332b38;
   --accent: #ff5c93; --accent-2: #3cc4c6;
   --ok: #7fd49a; --ok-bg: #1d3325; --warn: #f0b95c; --warn-bg: #3a2c14; --bad: #ff8a80; --bad-bg: #3d1f1d;
+  --sky-top: #120a22; --sky-mid: #4a1850; --sky-low: #b8325f;
+  --sun-a: #ffc15e; --sun-b: #ff3d7f;
+  --sil: #07040b; --sil-2: #1c0f24; --pattern: #ff5c93;
+  --panel: rgb(22 18 26 / 0.86);
   color-scheme: dark; }
 
 body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
@@ -49,6 +61,14 @@ body { background: var(--bg); color: var(--fg); font: 17px/1.6 var(--body); }
 h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.1; margin: 0; }
 h1 { font-size: clamp(2.2rem, 7vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; }
 h1 span { color: var(--accent); }
+/* Kulisse: Sonnenuntergang über Vice City, fest hinter dem Inhalt */
+.scene { position: fixed; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(to bottom, var(--sky-top) 0%, var(--sky-mid) 48%, var(--sky-low) 78%); }
+.scene svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.scene .pattern { position: absolute; inset: 0; opacity: 0.07; }
+.wrap { position: relative; background: var(--panel); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-inline: 1px solid var(--line); box-shadow: 0 0 60px rgb(0 0 0 / 0.18); min-height: 100vh; }
+@media (min-width: 900px) { .wrap { margin-block: 40px; border: 1px solid var(--line); border-radius: 18px; min-height: 0; } }
+h1 span { background: linear-gradient(90deg, var(--accent), #ff9a3c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
 h2 { font-size: 1.55rem; font-weight: 800; }
 h3 { font-size: 1.1rem; font-weight: 500; }
 p { margin: 0; max-width: 65ch; }
@@ -133,6 +153,55 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
 </style>
 </head>
 <body>
+<div class="scene" aria-hidden="true">
+  <svg class="pattern" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="motif" width="220" height="220" patternUnits="userSpaceOnUse" patternTransform="rotate(-12)">
+        <g style="fill:var(--pattern)">
+          <path d="M10 38H96V54H92L100 84H84L76 54H64Q62 66 53 66Q47 66 48 60L50 54H10Z M18 34h8v4h-8z"/>
+          <path d="M150 30q30-26 56 4q-28-14-56 2z M150 30q24 6 34 40q-16-26-34-36z M150 30q-30-20-54 0q26-10 54 4z"/>
+          <text x="40" y="170" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="44">$</text>
+          <path d="M170 150l6 14 15 1-12 9 4 15-13-8-13 8 4-15-12-9 15-1z"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#motif)"/>
+  </svg>
+  <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--sun-a)"/><stop offset="1" style="stop-color:var(--sun-b)"/></linearGradient>
+      <mask id="stripes">
+        <rect width="1440" height="900" fill="#fff"/>
+        <g fill="#000"><rect y="612" width="1440" height="6"/><rect y="636" width="1440" height="9"/><rect y="662" width="1440" height="12"/><rect y="690" width="1440" height="15"/><rect y="720" width="1440" height="18"/></g>
+      </mask>
+      <g id="palm">
+        <path d="M-90 340C-80 220-50 100-4 0L6 4C-38 104-66 222-70 340Z"/>
+        <path d="M0 0Q90-60 190 10Q100-30 0 8Z"/><path d="M0 0Q70-10 140 90Q60 20 0 8Z"/>
+        <path d="M0 0Q-90-60-190 10Q-100-30 0 8Z"/><path d="M0 0Q-70-10-140 90Q-60 20 0 8Z"/>
+        <path d="M0 0Q40-90 120-110Q50-70 0 6Z"/><path d="M0 0Q-40-90-120-110Q-50-70 0 6Z"/>
+        <circle cx="-6" cy="10" r="7"/><circle cx="8" cy="12" r="7"/>
+      </g>
+    </defs>
+    <circle cx="720" cy="600" r="230" fill="url(#sun)" mask="url(#stripes)"/>
+    <g style="fill:var(--sil-2)">
+      <rect x="300" y="700" width="46" height="200"/><rect x="352" y="640" width="38" height="260"/><rect x="396" y="690" width="60" height="210"/>
+      <rect x="462" y="600" width="34" height="300"/><rect x="470" y="560" width="4" height="40"/><rect x="502" y="660" width="52" height="240"/>
+      <rect x="560" y="620" width="40" height="280"/><rect x="606" y="700" width="70" height="200"/><rect x="682" y="580" width="44" height="320"/>
+      <rect x="700" y="540" width="6" height="40"/><rect x="732" y="650" width="56" height="250"/><rect x="794" y="610" width="36" height="290"/>
+      <rect x="836" y="690" width="64" height="210"/><rect x="906" y="630" width="42" height="270"/><rect x="954" y="700" width="50" height="200"/>
+      <rect x="1010" y="660" width="38" height="240"/><rect x="1054" y="720" width="70" height="180"/>
+    </g>
+    <rect y="820" width="1440" height="80" style="fill:var(--sil)"/>
+    <g style="fill:var(--sil)">
+      <use href="#palm" transform="translate(170 560)"/>
+      <use href="#palm" transform="translate(300 620) scale(0.8)"/>
+      <use href="#palm" transform="translate(90 690) scale(0.6)"/>
+      <use href="#palm" transform="translate(1290 560) scale(-1 1)"/>
+      <use href="#palm" transform="translate(1160 630) scale(-0.78 0.78)"/>
+      <use href="#palm" transform="translate(1370 700) scale(-0.55 0.55)"/>
+    </g>
+  </svg>
+</div>
 
 
 <div class="wrap">
