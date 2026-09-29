@@ -106,6 +106,20 @@ th { font: 500 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0
 .log { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; font-size: 0.95rem; }
 .log li { display: grid; grid-template-columns: 5.5rem 1fr; gap: 12px; }
 .log time { font: 500 0.8rem var(--mono); color: var(--accent-2); padding-top: 3px; }
+.ticker { border: 2px solid var(--accent); border-radius: 12px; background: var(--surface); padding: 14px 16px 6px; display: grid; gap: 8px; }
+.ticker-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.ticker-head h2 { font-size: 1.25rem; }
+.ticker-note { margin-left: auto; font: 500 0.72rem var(--mono); color: var(--muted); }
+.live { display: inline-flex; align-items: center; gap: 6px; font: 500 0.7rem/1 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: var(--accent); padding: 5px 8px; border-radius: 4px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: #fff; animation: pulse 1.6s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+.ticker-list { list-style: none; margin: 0; padding: 0; max-height: 19rem; overflow-y: auto; }
+.ticker-list li { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 0.97rem; line-height: 1.5; }
+.ticker-list li:first-child { border-top: 0; }
+.ticker-list li > div { min-width: 0; }
+.ticker-list time { font: 500 0.85rem var(--mono); color: var(--accent); padding-top: 2px; font-variant-numeric: tabular-nums; }
+.ticker-list li.new time::after { content: "neu"; display: block; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); }
+@media (prefers-reduced-motion: reduce) { .dot { animation: none; } }
 .about { display: grid; gap: 10px; }
 .about h3 { margin-top: 8px; }
 .src { font-size: 0.9rem; color: var(--muted); display: grid; gap: 6px; }
@@ -126,11 +140,30 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <div class="kicker">Game Informer #382 · Titelgeschichte</div>
     <h1>Willkommen in <span>Leonida</span></h1>
     <p class="lead">Alles, was aus der 14-seitigen GTA-6-Titelgeschichte von Game Informer bekannt ist, mit allen 12 neuen Screenshots. Jede Aussage ist markiert: offiziell, nur berichtet oder unbelegt.</p>
+
+    <aside class="ticker" id="ticker" aria-labelledby="ticker-h">
+      <div class="ticker-head">
+        <span class="live"><span class="dot" aria-hidden="true"></span>Live</span>
+        <h2 id="ticker-h">Liveticker</h2>
+        <span class="ticker-note">Neueste zuerst · Uhrzeiten MESZ</span>
+      </div>
+      <ol class="ticker-list">
+        <li class="new"><time>19:45</time><div><span class="tag t-warn">Berichtet</span> <b>Mehr Tiere bestätigt:</b> Haie, Wale, Rochen, Schildkröten, Quallen, Leguane und Makaken. Manche Tiere lassen sich aufspüren, mit den Stufen <b>Selten, Entdeckbar und Legendär</b>. Fell reagiert auf Wasser und Dreck, manches Meerestier leuchtet im Dunkeln. <a href="#tiere">Mehr</a></div></li>
+        <li class="new"><time>19:45</time><div><span class="tag t-warn">Berichtet</span> <b>Handy-App „WAiNK":</b> zeigt bei Autos die Sicherung, den Verkaufswert und die Zulassungskosten. Jason und Lucia können Social Media lesen, aber nichts posten, weil sie auf der Flucht sind. <a href="#gameplay">Mehr</a></div></li>
+        <li class="new"><time>19:45</time><div><span class="tag t-warn">Berichtet</span> <b>Wetter:</b> Pfützen bleiben nach dem Regen liegen, danach sieht man Regenbögen. Man kann in der Sonne stehen, während nebenan ein Sturm tobt. <a href="#wetter">Mehr</a></div></li>
+        <li><time>19:45</time><div><span class="tag t-warn">Berichtet</span> Rockstar hat ein eigenes Team nur für zufällige Gespräche der Passanten.</div></li>
+        <li><time>19:27</time><div><span class="tag t-bad">Widersprüchlich</span> Der Artikel ist in der Game-Informer-App <b>weiterhin kostenpflichtig</b>, obwohl er als gratis angekündigt war.</div></li>
+        <li><time>19:17</time><div><span class="tag t-warn">Berichtet</span> Auch HYPEX meldet: Leonida ist die größte Karte von Rockstar, etwa doppelt so groß wie in GTA V. Damit berichten es jetzt zwei große Quellen.</div></li>
+        <li><time>18:32</time><div><span class="tag t-ok">Offiziell</span> Alle 12 Screenshots in 1920×1080 sind da. <a href="#screenshots">Ansehen</a></div></li>
+        <li><time>15:50</time><div>Nach Kritik aus der Community greift Rockstar ein, Game Informer kündigt den Artikel als gratis an.</div></li>
+      </ol>
+    </aside>
+
     <div class="status" aria-label="Stand">
       <div><small>Release</small><b>19.11.2026</b></div>
       <div><small>Plattformen</small><b>PS5 · Xbox Series X|S</b></div>
       <div><small>Heft erschienen</small><b>29.09.2026</b></div>
-      <div><small>Zuletzt aktualisiert</small><b id="updated">29.09.2026, 19:30</b></div>
+      <div><small>Zuletzt aktualisiert</small><b id="updated">29.09.2026, 19:50</b></div>
       <div><small>Über die Seite</small><b><a href="#ueber">Wie wir prüfen</a> · <a href="#protokoll">Änderungen</a></b></div>
     </div>
     <div class="legend">
@@ -157,6 +190,8 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
       <li><span class="tag t-warn">Berichtet</span><div><b>Tropenstürme und Hurrikane</b> mit schweren Wolken, starkem Wind, Starkregen, Donner und Blitz. Wie oft sie kommen und ob sie Missionen beeinflussen, ist offen.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Wolken ziehen frei über die Karte, von klarem Himmel bis zu riesigen Gewitterwolken.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Bei Unwetter strömt Wasser von Dächern und Laternen, danach ist alles sichtbar nass.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Regen fällt örtlich: „Man kann in einer herrlich sonnigen Zone stehen und zusehen, wie ein Sturm ein Gebiet in der Nähe trifft" (übersetztes Zitat aus dem Heft, über @TexFunz2).</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div><b>Pfützen bleiben</b> nach dem Regen liegen, danach kann man <b>Regenbögen</b> sehen.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Der Wind wird simuliert: abends vom Meer her, als Aufwind bei Hitze, und er wird von Gebäuden abgebremst. Man sieht ihn an Haaren und Müll auf Dächern, an Wellen und am Sumpfgras.</div></li>
     </ul>
   </section>
@@ -166,7 +201,9 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Sehr viele Tiere, heimische und eingeschleppte, an Land, in der Luft und im Wasser.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Über 170 Arten, darunter mehr als 60 Vogelarten und über 30 Landsäugetiere, dazu Fische und Reptilien. Manche gab es noch in keinem Rockstar-Spiel.</div></li>
-      <li><span class="tag t-warn">Berichtet</span><div>Bestätigt: <b>Seekühe, Flamingos, Pelikane, Alligatoren</b>.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Bestätigt: <b>Seekühe, Flamingos, Pelikane, Alligatoren</b>. Laut HYPEX außerdem Haie, Wale, Rochen, Schildkröten, Quallen, Leguane und Makaken.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Bestimmte Tiere lassen sich <b>aufspüren</b>, eingeteilt in die Stufen Selten, Entdeckbar und Legendär.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Fell reagiert auf Wasser und Dreck, manche Meerestiere leuchten im Dunkeln.</div></li>
     </ul>
   </section>
 
@@ -177,7 +214,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Rockstar hat Miami und Florida gründlich recherchiert, um die kulturell und optisch genaueste Welt bisher zu bauen.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div><b>Sehr viele begehbare Innenräume</b>, siehe Zitat oben.</div></li>
-      <li><span class="tag t-warn">Berichtet</span><div>Leonida soll <b>etwa doppelt so groß wie die Karte von GTA V</b> sein, dazu dichter und detaillierter. Das melden Vice und ein Fan-Konto, bei den großen Konten findet es sich nicht.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Leonida soll <b>etwa doppelt so groß wie die Karte von GTA V</b> sein, dazu dichter und detaillierter. Das melden Vice und HYPEX übereinstimmend.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Vice City: Strände, Art déco, Kreuzfahrthafen. Staus können Verfolgungsjagden erschweren. Grassrivers ist das Gegenstück zu den Everglades, voller gefährlicher Tiere.</div></li>
     </ul>
     <ul class="regions" aria-label="Regionen laut Vice">
@@ -191,6 +228,15 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
       <li><span class="tag t-warn">Berichtet</span><div>Unterschiedliche Körpergrößen und deutlich vielfältigere Körperformen, zum Beispiel bei Muskeln und Fettverteilung.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Hauttypen mit Sommersprossen, Muttermalen und Sonnenbräune. Tattoo-Stile passen zu Region und Kultur.</div></li>
       <li><span class="tag t-warn">Berichtet</span><div>Mehr Vielfalt bei Frisuren und Körperbehaarung.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Rockstar hat ein eigenes Team nur für zufällige Gespräche der Passanten.</div></li>
+    </ul>
+  </section>
+
+  <section id="gameplay">
+    <div class="sec-head"><h2>Gameplay</h2><span class="kicker">Handy &amp; Autos</span></div>
+    <ul class="facts">
+      <li><span class="tag t-warn">Berichtet</span><div>Die Handy-App <b>„WAiNK"</b> zeigt bei einem Auto, wie gut es gesichert ist, was es beim Verkauf bringt und was die Zulassung kostet.</div></li>
+      <li><span class="tag t-warn">Berichtet</span><div>Jason und Lucia können Social Media durchscrollen, posten aber selbst nichts, weil sie auf der Flucht sind.</div></li>
     </ul>
   </section>
 
@@ -215,7 +261,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
       <tr><td>„80 Stunden Hauptstory"</td><td><span class="tag t-bad">Unbelegt</span> Steht auf einigen Newsseiten, aber nirgends mit Quelle.</td></tr>
       <tr><td>Das Cover-Auto ist ein 1967er Vapid Dominator</td><td><span class="tag t-bad">Unbelegt</span> Von Fans erkannt.</td></tr>
       <tr><td>Die ganze Karte wurde enthüllt</td><td><span class="tag t-bad">Unbelegt</span> Vorab angekündigt, nicht eingetreten.</td></tr>
-      <tr><td>Der Artikel ist gratis in der App</td><td><span class="tag t-bad">Widersprüchlich</span> Game Informer hat es angekündigt, gegen 19 Uhr war er laut @SynthPotato aber wieder gesperrt.</td></tr>
+      <tr><td>Der Artikel ist gratis in der App</td><td><span class="tag t-bad">Widersprüchlich</span> Game Informer hat es angekündigt, um 19:27 war er laut @SynthPotato und @videotech aber weiterhin kostenpflichtig.</td></tr>
     </table></div>
   </section>
 
@@ -247,6 +293,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
   <section id="protokoll">
     <div class="sec-head"><h2>Änderungsprotokoll</h2></div>
     <ul class="log">
+      <li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li>
       <li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li>
     </ul>
   </section>
@@ -256,7 +303,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <div class="src">
       <div>Game Informer: <a href="https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi">Cover Reveal</a> · <a href="https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live">Digital-Ausgabe</a> · <a href="https://x.com/gameinformer/status/2104964448662278501">Gratis-Ankündigung auf X</a></div>
       <div>Berichte: <a href="https://www.vice.com/en/article/all-gta-6-features-game-informer/">Vice</a> · <a href="https://rockstarintel.com/12-new-gta-6-screenshots-released/">RockstarINTEL (Screenshots)</a> · <a href="https://www.pcquest.com/gaming/gta-6-cover-story-sparks-debate-as-game-informer-restricts-screenshots-sharing-12590815">PCQuest</a></div>
-      <div>X: <a href="https://x.com/gtasix_/status/2104974980471484564">@gtasix_</a> · <a href="https://x.com/SynthPotato/status/2104975709521220050">@SynthPotato</a> · <a href="https://x.com/NikTek/status/2104980584602694008">@NikTek</a> · <a href="https://x.com/GTAVI_Countdown/status/2104931885726191714">@GTAVI_Countdown</a></div>
+      <div>X: <a href="https://x.com/gtasix_/status/2104974980471484564">@gtasix_</a> · <a href="https://x.com/SynthPotato/status/2104975709521220050">@SynthPotato</a> · <a href="https://x.com/NikTek/status/2104980584602694008">@NikTek</a> · <a href="https://x.com/GTAVI_Countdown/status/2104931885726191714">@GTAVI_Countdown</a> · <a href="https://x.com/HYPEX/status/2104983936581640688">@HYPEX</a> · <a href="https://x.com/TexFunz2/status/2104983576236392714">@TexFunz2</a> · <a href="https://x.com/videotech/status/2104986481370808537">@videotech</a></div>
     </div>
   </section>
 
