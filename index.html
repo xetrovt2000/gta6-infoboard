@@ -145,10 +145,16 @@ blockquote cite{display:block;margin-top:6px;font:500 13px var(--mono);color:var
 .vtxt{font-size:15px;color:#d8d4e4;max-width:52ch}
 /* Figuren */
 .cast{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.who{background:var(--panel);border-radius:8px;padding:16px;border-top:4px solid var(--gold);min-width:0}
+.who{background:var(--panel);border-radius:8px;overflow:hidden;border-top:4px solid var(--gold);min-width:0;display:flex;flex-direction:column}
 .who.main{border-top-color:var(--red)}
-.who h4{font:400 24px/1.05 var(--display);text-transform:uppercase;margin-bottom:6px}
+.who .pic{aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.who .pic img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.who:hover .pic img{transform:scale(1.05)}
+.wbody{padding:14px 16px 16px;display:grid;gap:6px}
+.who h4{font:400 24px/1.05 var(--display);text-transform:uppercase}
 .who p{margin:0;font-size:15px;color:#d8d4e4}
+.who .voice{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:8px;margin-top:2px}
+.who .voice .tag{margin-right:6px}
 
 /* Faktencheck als Akte */
 .dossier{background:var(--paper);color:var(--ink);border-radius:4px;padding:28px 30px;position:relative;box-shadow:0 20px 40px -20px #000}
@@ -202,7 +208,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 <header class="tv" id="top">
   <img src="shots/gta6-gi-05.webp" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
-  <nav class="nav" aria-label="Rubriken"><a href="#live">Live</a><a href="#trailer">Trailer</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#figuren">Figuren</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a></nav>
+  <nav class="nav" aria-label="Rubriken"><a href="#live">Live</a><a href="#trailer">Trailer</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#charaktere">Charaktere</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a></nav>
   <div class="lower">
     <span class="flag">Sondersendung</span>
     <h1 class="headline">Leonida doppelt so groß wie GTA&nbsp;V</h1>
@@ -251,7 +257,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <aside class="side">
     <div class="box count"><h3>Countdown</h3><b id="days">–</b><span>Tage bis 19. November 2026</span></div>
     <div class="box"><h3>Stand</h3><ul class="facts-mini">
-      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 10:27</b></li>
+      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 10:39</b></li>
       <li><span>Plattformen</span><b>PS5 · Xbox Series X|S</b></li>
       <li><span>Karte</span><b>2× GTA V</b></li>
       <li><span>Tierarten</span><b>170+</b></li>
@@ -355,19 +361,29 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <p class="src">Bilder: Rockstar Games via Game Informer #382, mit Wasserzeichen. Beste öffentlich verfügbare Fassung.</p>
 </div></section>
 
-<section class="band" id="figuren"><div class="wrap">
-  <div class="sec-head"><h2>Figuren</h2><span class="kicker">bekannte Besetzung laut Game Informer</span></div>
+<section class="band" id="charaktere"><div class="wrap">
+  <div class="sec-head"><h2>Charaktere</h2><span class="kicker">bekannte Besetzung · Bilder: offizielle Screenshots von Rockstar</span></div>
   <div class="cast">
-    <div class="who main"><h4>Jason Duval</h4><p>Armeeveteran, der sein Leben lang von Kriminellen umgeben war. Arbeitet zu Beginn für Drogenschmuggler in den Leonida Keys.</p></div>
-    <div class="who main"><h4>Lucia Caminos</h4><p>Aus Liberty City, vom Vater im Kampfsport trainiert. Saß im Leonida Penitentiary und will nach der Entlassung das gute Leben.</p></div>
-    <div class="who"><h4>Cal Hampton</h4><p>Jasons verpeilter, etwas paranoider Kumpel mit Hang zu Verschwörungstheorien. Sorgt für die Lacher.</p></div>
-    <div class="who"><h4>Brian Heder</h4><p>Alter Drogenschmuggler und einer der wichtigsten Auftraggeber. Jason wohnt mietfrei in einem seiner Häuser. Gesprochen von Stephen Root.</p></div>
-    <div class="who"><h4>Raul Bautista</h4><p>Charmanter Bankräuber, der Jason und Lucia als Fluchtfahrer anheuert.</p></div>
-    <div class="who"><h4>Boobie Ike</h4><p>Unternehmer aus Vice City mit Immobilien, Musik und krummen Geschäften.</p></div>
-    <div class="who"><h4>Dre'Quan Priest</h4><p>Ehrgeiziger Macher beim Musiklabel Only Raw Records.</p></div>
-    <div class="who"><h4>Real Dimez</h4><p>Bae-Luxe und Roxy, ein Rap-Duo mit einem einzigen Hit, das seinen Ruhm zurückwill. Unter Vertrag bei Only Raw Records.</p></div>
+    <article class="who main"><div class="pic"><img src="cast/jason.webp" alt="Jason Duval, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:70% 30%"></div>
+      <div class="wbody"><h4>Jason Duval</h4><p>Armeeveteran, der sein Leben lang von Kriminellen umgeben war. Arbeitet zu Beginn für Drogenschmuggler in den Leonida Keys.</p></div></article>
+    <article class="who main"><div class="pic"><img src="cast/lucia.webp" alt="Lucia Caminos, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:60% 35%"></div>
+      <div class="wbody"><h4>Lucia Caminos</h4><p>Aus Liberty City, vom Vater im Kampfsport trainiert. Saß im Leonida Penitentiary und will nach der Entlassung das gute Leben.</p></div></article>
+    <article class="who"><div class="pic"><img src="cast/cal.webp" alt="Cal Hampton, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:80% 30%"></div>
+      <div class="wbody"><h4>Cal Hampton</h4><p>Jasons verpeilter, etwas paranoider Kumpel mit Hang zu Verschwörungstheorien. Sorgt für die Lacher.</p></div></article>
+    <article class="who"><div class="pic"><img src="cast/brian.webp" alt="Brian Heder, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:48% 35%"></div>
+      <div class="wbody"><h4>Brian Heder</h4><p>Alter Drogenschmuggler und einer der wichtigsten Auftraggeber. Jason wohnt mietfrei in einem seiner Häuser.</p><p class="voice"><span class="tag t-warn">Berichtet</span> Gesprochen von <b>Stephen Root</b>. Das hat er laut Game Informer selbst gesagt, Rockstar bestätigt die Besetzung nicht. <a href="https://www.imdb.com/find/?q=Stephen%20Root" target="_blank" rel="noopener">IMDb</a></p></div></article>
+    <article class="who"><div class="pic"><img src="cast/raul.webp" alt="Raul Bautista, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:55% 30%"></div>
+      <div class="wbody"><h4>Raul Bautista</h4><p>Charmanter, erfahrener Bankräuber, der Jason und Lucia als Fluchtfahrer anheuert.</p></div></article>
+    <article class="who"><div class="pic"><img src="cast/boobie.webp" alt="Boobie Ike, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:45% 30%"></div>
+      <div class="wbody"><h4>Boobie Ike</h4><p>Unternehmer aus Vice City mit Immobilien, Musik und krummen Geschäften.</p></div></article>
+    <article class="who"><div class="pic"><img src="cast/drequan.webp" alt="Dre'Quan Priest, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:52% 25%"></div>
+      <div class="wbody"><h4>Dre'Quan Priest</h4><p>Ehrgeiziger Macher beim Musiklabel Only Raw Records.</p></div></article>
+    <article class="who"><div class="pic"><img src="cast/dimez.webp" alt="Real Dimez, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:62% 25%"></div>
+      <div class="wbody"><h4>Real Dimez</h4><p>Bae-Luxe und Roxy, ein Rap-Duo mit einem einzigen Hit, das seinen Ruhm zurückwill. Unter Vertrag bei Only Raw Records.</p></div></article>
   </div>
 </div></section>
+
+<p class="wrap src" style="margin-top:-4px">Die Charakterbilder stammen von Rockstars offizieller Medienseite <a href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">rockstargames.com/VI/media</a>, die sie ausdrücklich zum Teilen bereitstellt. Sprecher nennen wir nur mit Beleg. Rockstar hat die Besetzung offiziell noch nicht veröffentlicht.</p>
 
 <section class="band" id="faktencheck"><div class="wrap">
   <div class="dossier"><div class="big-stamp">Geprüft</div>
@@ -379,6 +395,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
       <tr><td>Das Cover-Auto ist ein 1967er Vapid Dominator</td><td><span class="tag t-bad">Unbelegt</span> Von Fans erkannt, im Artikel steht es nicht.</td></tr>
       <tr><td>Die ganze Karte wurde enthüllt</td><td><span class="tag t-bad">Falsch</span> Der Artikel zeigt keine Karte.</td></tr>
       <tr><td>Der Artikel ist gratis in der App</td><td><span class="tag t-ok">Stimmt</span> Die Titelgeschichte ist als eigener Artikel frei lesbar, das Heft ist ab Seite 9 gesperrt. Auf gameinformer.com ist der Artikel kostenpflichtig.</td></tr>
+    <tr><td>Namen der Schauspieler von Jason und Lucia</td><td><span class="tag t-bad">Gerücht</span> Kursieren in Fan-Kreisen, zum Beispiel aus Lebensläufen und Instagram. Rockstar hat keine Besetzung bestätigt, deshalb nennen wir keine Namen.</td></tr>
     </table></div>
   </div>
 </div></section>
@@ -420,7 +437,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 </div></section>
 
 <section class="band" id="rund"><div class="wrap cols">
-  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>30.09. 10:27</time><div>Besucherzähler GoatCounter eingebaut, ohne Cookies und ohne persönliche Daten. Erklärung unter „Über diese Seite".</div></li><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
+  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>30.09. 10:39</time><div>Rubrik „Figuren“ heißt jetzt <b>Charaktere</b> und zeigt zu jedem Charakter ein offizielles Bild von Rockstars Medienseite. Neu ist die Sprecher-Angabe mit Beleg (bisher nur Stephen Root als Brian Heder). Fotos von Schauspielern zeigen wir nicht. Im Faktencheck steht ein neuer Eintrag zu den Gerüchten um die Sprecher von Jason und Lucia.</div></li><li><time>30.09. 10:27</time><div>Besucherzähler GoatCounter eingebaut, ohne Cookies und ohne persönliche Daten. Erklärung unter „Über diese Seite".</div></li><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
   <div id="ueber"><div class="sec-head"><h2>Über diese Seite</h2></div><div class="about">
       <p>Hier sammeln wir alles, was aktuell über GTA 6 bekannt wird, an einem Ort und ohne Clickbait. Den Anfang macht die Titelgeschichte von Game Informer #382. Weitere Enthüllungen bis zum Release am 19. November kommen dazu, sobald sie erscheinen.</p>
       <h3>Wie aktuell ist das?</h3>
