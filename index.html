@@ -251,7 +251,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <aside class="side">
     <div class="box count"><h3>Countdown</h3><b id="days">–</b><span>Tage bis 19. November 2026</span></div>
     <div class="box"><h3>Stand</h3><ul class="facts-mini">
-      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 10:20</b></li>
+      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 10:27</b></li>
       <li><span>Plattformen</span><b>PS5 · Xbox Series X|S</b></li>
       <li><span>Karte</span><b>2× GTA V</b></li>
       <li><span>Tierarten</span><b>170+</b></li>
@@ -420,7 +420,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 </div></section>
 
 <section class="band" id="rund"><div class="wrap cols">
-  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
+  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>30.09. 10:27</time><div>Besucherzähler GoatCounter eingebaut, ohne Cookies und ohne persönliche Daten. Erklärung unter „Über diese Seite".</div></li><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
   <div id="ueber"><div class="sec-head"><h2>Über diese Seite</h2></div><div class="about">
       <p>Hier sammeln wir alles, was aktuell über GTA 6 bekannt wird, an einem Ort und ohne Clickbait. Den Anfang macht die Titelgeschichte von Game Informer #382. Weitere Enthüllungen bis zum Release am 19. November kommen dazu, sobald sie erscheinen.</p>
       <h3>Wie aktuell ist das?</h3>
@@ -429,6 +429,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
       <p>Jede Aussage bekommt eine Markierung, woher sie stammt. <span class="tag t-ok">Offiziell</span> heißt, Rockstar oder Game Informer haben es selbst gesagt. <span class="tag t-warn">Berichtet</span> heißt, bekannte News-Seiten oder Konten melden es mit Verweis auf eine offizielle Quelle, wir konnten das Original aber nicht selbst lesen. <span class="tag t-bad">Unbelegt</span> heißt, es kursiert, aber niemand nennt eine nachvollziehbare Quelle. Gerüchte landen nie in den Fakten, sondern nur im Faktencheck. Stellt sich etwas als falsch heraus, streichen wir es und vermerken das im Protokoll.</p>
       <h3>Die Bilder</h3>
       <p>Alle Screenshots sind offizielles Material von Rockstar Games. Wir zeigen sie in der besten öffentlich verfügbaren Auflösung und nennen die Quelle. Das Wasserzeichen bleibt drauf.</p>
+      <h3>Besucherzahlen</h3>
+      <p>Wir zählen Aufrufe mit GoatCounter. Dabei werden keine Cookies gesetzt und keine persönlichen Daten gespeichert, nur die aufgerufene Seite, woher du kommst (zum Beispiel Discord oder X), Browser, Bildschirmgröße und Land. Einzelne Besucher lassen sich damit nicht wiedererkennen.</p>
       <h3>Was fehlt oder falsch ist</h3>
       <p>Wenn dir etwas fehlt oder du einen Fehler findest, schreib es mit Quelle in den Discord, in dem du den Link gefunden hast.</p>
     </div></div>
@@ -482,5 +484,6 @@ const clock=document.getElementById('clock');const fmt=new Intl.DateTimeFormat('
 const tick=()=>{clock.textContent=fmt.format(new Date())+' · VICE CITY'};tick();setInterval(tick,15000);
 const d=Math.ceil((Date.parse('2026-11-19T00:00:00+01:00')-Date.now())/864e5);document.getElementById('days').textContent=Math.max(0,d);
 </script>
+<script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
