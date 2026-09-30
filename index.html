@@ -125,6 +125,21 @@ blockquote cite{display:block;margin-top:6px;font:500 13px var(--mono);color:var
 .shot figcaption{position:absolute;left:8px;top:6px;font:700 13px var(--cond);letter-spacing:.1em;background:rgba(7,7,12,.8);padding:2px 6px;border-radius:2px;pointer-events:none}
 .src{font-size:14px;color:var(--muted)}
 
+.vids{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-auto-rows:minmax(150px,auto);gap:14px}
+.vid{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;min-height:190px;padding:88px 18px 18px;border-radius:8px;overflow:hidden;color:var(--fg);text-decoration:none;
+  background:radial-gradient(120% 90% at 100% 0%,rgba(225,29,72,.35),transparent 60%),linear-gradient(160deg,#1b1b2c,#0d0d16);border:1px solid var(--line);transition:transform .2s,border-color .2s}
+.vid:hover,.vid:focus-visible{transform:translateY(-3px);border-color:var(--red)}
+.vid.feat{grid-row:span 2;min-height:320px;padding-top:112px;background:radial-gradient(120% 90% at 100% 0%,rgba(251,191,36,.28),transparent 55%),linear-gradient(160deg,#241a2e,#0d0d16)}
+.vid.small{grid-column:span 2;min-height:0}
+.vnum{position:absolute;right:14px;top:6px;font:400 88px/1 var(--display);color:rgba(255,255,255,.07);letter-spacing:-.02em}
+.vid.feat .vnum{font-size:180px}
+.play{position:absolute;left:18px;top:18px;width:54px;height:54px;border-radius:50%;background:var(--red);box-shadow:0 8px 24px -6px rgba(225,29,72,.7)}
+.play::after{content:"";position:absolute;left:21px;top:16px;border-left:17px solid #fff;border-top:11px solid transparent;border-bottom:11px solid transparent}
+.vid.feat .play{width:76px;height:76px}.vid.feat .play::after{left:30px;top:22px;border-left-width:24px;border-top-width:16px;border-bottom-width:16px}
+.vmeta{font:700 14px var(--cond);letter-spacing:.08em;color:var(--muted);font-variant-numeric:tabular-nums}
+.vmeta .tag{margin-right:8px}
+.vid strong{font:400 30px/1 var(--display);text-transform:uppercase}.vid.feat strong{font-size:clamp(34px,4vw,52px)}
+.vtxt{font-size:15px;color:#d8d4e4;max-width:52ch}
 /* Figuren */
 .cast{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .who{background:var(--panel);border-radius:8px;padding:16px;border-top:4px solid var(--gold);min-width:0}
@@ -168,8 +183,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 #lb p{text-align:center;margin:10px auto 0;max-width:70ch;font-size:15px}
 #lb button{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px;background:var(--fg);color:var(--bg);border:0;border-radius:3px;padding:8px 12px;font:700 15px var(--cond);letter-spacing:.1em;cursor:pointer}
 
-@media (max-width:980px){.split{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.cast{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:720px){.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:980px){.vids{grid-template-columns:1fr 1fr}.vid.feat{grid-column:span 2;grid-row:auto;min-height:0}.split{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.cast{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:720px){.vids{grid-template-columns:1fr}.vid.feat{grid-row:auto;grid-column:auto;min-height:0}.vid.small{grid-column:auto}.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts li{grid-template-columns:1fr;gap:4px}.ticker-list li{grid-template-columns:58px minmax(0,1fr);padding:12px}.ticker-list time{font-size:20px}
   .lower{bottom:72px}.clock{font-size:16px}.dossier{padding:22px 16px}.dossier .big-stamp{display:none}.log li{grid-template-columns:1fr;gap:2px}}
 @media (max-width:420px){.cast{grid-template-columns:1fr}}
@@ -180,7 +195,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 <header class="tv" id="top">
   <img src="shots/gta6-gi-05.webp" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
-  <nav class="nav" aria-label="Rubriken"><a href="#live">Live</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#figuren">Figuren</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a></nav>
+  <nav class="nav" aria-label="Rubriken"><a href="#live">Live</a><a href="#trailer">Trailer</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#figuren">Figuren</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a></nav>
   <div class="lower">
     <span class="flag">Sondersendung</span>
     <h1 class="headline">Leonida doppelt so groß wie GTA&nbsp;V</h1>
@@ -227,7 +242,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <aside class="side">
     <div class="box count"><h3>Countdown</h3><b id="days">–</b><span>Tage bis 19. November 2026</span></div>
     <div class="box"><h3>Stand</h3><ul class="facts-mini">
-      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 10:30</b></li>
+      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 11:00</b></li>
       <li><span>Plattformen</span><b>PS5 · Xbox Series X|S</b></li>
       <li><span>Karte</span><b>2× GTA V</b></li>
       <li><span>Tierarten</span><b>170+</b></li>
@@ -244,6 +259,37 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
       <g font-family="Barlow Condensed, sans-serif" font-weight="700" font-size="15" fill="#fff"><text x="176" y="60">MT. KALAGA</text><text x="158" y="128">AMBROSIA</text><text x="150" y="232">GRASSRIVERS</text><text x="296" y="268">VICE CITY</text></g></svg>
     </div><p class="src" style="margin:10px 0 0">Tropenstürme und Hurrikane sind bestätigt. Wie oft sie kommen, verrät Rockstar nicht.</p></div>
   </aside>
+</div></section>
+
+<section class="band" id="trailer"><div class="wrap">
+  <div class="sec-head"><h2>Trailer</h2><span class="kicker">offizielle Videos von Rockstar · Links zu YouTube</span></div>
+  <div class="vids">
+    <a class="vid feat" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener">
+      <span class="vnum">EL</span><span class="play" aria-hidden="true"></span>
+      <span class="vmeta"><span class="tag t-ok">Offiziell</span> 28.08.2026 · 26:49</span>
+      <strong>An Extended Look</strong>
+      <span class="vtxt">Fast 27 Minuten, laut Rockstar komplett aus Spielszenen auf der PS5 aufgenommen. Der bisher längste Blick ins Spiel.</span>
+    </a>
+    <a class="vid" href="https://www.youtube.com/watch?v=VQRLujxTm3c" target="_blank" rel="noopener">
+      <span class="vnum">02</span><span class="play" aria-hidden="true"></span>
+      <span class="vmeta"><span class="tag t-ok">Offiziell</span> 06.05.2025 · 2:47</span>
+      <strong>Trailer 2</strong>
+      <span class="vtxt">Stellt Jason und Lucia ausführlicher vor.</span>
+    </a>
+    <a class="vid" href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" rel="noopener">
+      <span class="vnum">01</span><span class="play" aria-hidden="true"></span>
+      <span class="vmeta"><span class="tag t-ok">Offiziell</span> 05.12.2023 · 1:31</span>
+      <strong>Trailer 1</strong>
+      <span class="vtxt">Der erste Blick auf Vice City und Lucia.</span>
+    </a>
+    <a class="vid small" href="https://www.youtube.com/watch?v=qq76pQsI1iw" target="_blank" rel="noopener">
+      <span class="vnum">T</span><span class="play" aria-hidden="true"></span>
+      <span class="vmeta"><span class="tag t-ok">Offiziell</span> 06.08.2026 · 0:25</span>
+      <strong>Teaser zum Extended Look</strong>
+      <span class="vtxt">Die Ankündigung für den 27. August.</span>
+    </a>
+  </div>
+  <p class="src">Die Videos öffnen sich auf YouTube in einem neuen Tab. Wir betten sie nicht ein, damit YouTube beim Besuch dieser Seite keine Daten sammelt. Daten in deutscher Zeit, Aufrufzahlen stehen bei YouTube.</p>
 </div></section>
 
 <section class="band" id="magazin"><div class="wrap">
@@ -357,7 +403,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 </div></section>
 
 <section class="band" id="protokoll"><div class="wrap cols">
-  <div><div class="sec-head"><h2>Änderungsprotokoll</h2></div><ul class="log"><li><time>30.09. 10:30</time><div><b>Neues Design:</b> Die Seite ist jetzt das „Leonida News Network" mit Laufband, Countdown, Figuren, Faktencheck als Akte und einer eigenen Leak-Rubrik. Die Prüf-Markierungen sind jetzt Stempel. Änderungsprotokoll und „Rund ums Heft" sind wieder sauber getrennt.</div></li><li><time>30.09. 09:30</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li><li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li><li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li><li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li><li><time>29.09. 20:30</time><div>Ticker: Der Artikel ist jetzt gratis in der App. Sonst gibt es keine neuen Details, nur Wiederholungen.</div></li><li><time>29.09. 20:05</time><div>Ticker aktualisiert. Neu: was es auf der Karte gibt, Aussagen von Michael Kane zu den Tieren, Wetter als Weiterentwicklung aus RDR2, Größe der Karte jetzt von drei Quellen. Keine weiteren Screenshots.</div></li><li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li><li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li></ul></div>
+  <div><div class="sec-head"><h2>Änderungsprotokoll</h2></div><ul class="log"><li><time>30.09. 11:00</time><div>Neue Rubrik <b>Trailer</b>: Trailer 1, Trailer 2, das Extended Look und der Teaser, mit Datum, Länge und Link zu Rockstars YouTube-Kanal.</div></li><li><time>30.09. 10:30</time><div><b>Neues Design:</b> Die Seite ist jetzt das „Leonida News Network" mit Laufband, Countdown, Figuren, Faktencheck als Akte und einer eigenen Leak-Rubrik. Die Prüf-Markierungen sind jetzt Stempel. Änderungsprotokoll und „Rund ums Heft" sind wieder sauber getrennt.</div></li><li><time>30.09. 09:30</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li><li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li><li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li><li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li><li><time>29.09. 20:30</time><div>Ticker: Der Artikel ist jetzt gratis in der App. Sonst gibt es keine neuen Details, nur Wiederholungen.</div></li><li><time>29.09. 20:05</time><div>Ticker aktualisiert. Neu: was es auf der Karte gibt, Aussagen von Michael Kane zu den Tieren, Wetter als Weiterentwicklung aus RDR2, Größe der Karte jetzt von drei Quellen. Keine weiteren Screenshots.</div></li><li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li><li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li></ul></div>
   <div id="quellen"><div class="sec-head"><h2>Quellen</h2></div><div class="src">
       <div>Game Informer: <a href="https://gameinformer.com/feature/2026/09/29/grand-theft-auto-vi-welcome-to-leonida">Titelgeschichte „Welcome to Leonida" von Marcus Stewart</a> (frei in der App, im Web kostenpflichtig) · <a href="https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi">Cover Reveal</a> · <a href="https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live">Digital-Ausgabe</a> · <a href="https://x.com/gameinformer/status/2104964448662278501">Gratis-Ankündigung auf X</a></div>
       <div>Berichte: <a href="https://www.vice.com/en/article/all-gta-6-features-game-informer/">Vice</a> · <a href="https://rockstarintel.com/12-new-gta-6-screenshots-released/">RockstarINTEL (Screenshots)</a> · <a href="https://rockstarintel.com/gta-6-has-hurricanes-170-animals-fun-activities-weather-system-detailed/">RockstarINTEL (Zusammenfassung)</a> · <a href="https://www.pcquest.com/gaming/gta-6-cover-story-sparks-debate-as-game-informer-restricts-screenshots-sharing-12590815">PCQuest</a></div>
