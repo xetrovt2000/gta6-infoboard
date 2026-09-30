@@ -161,7 +161,11 @@ blockquote cite{display:block;margin-top:6px;font:500 13px var(--mono);color:var
 .tbl{overflow-x:auto}
 
 /* Leaks */
-.leaks{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px}
+.leaks{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:22px;align-items:start}
+.rule{position:sticky;top:16px}
+.lk-h{font:400 26px var(--display);text-transform:uppercase;margin:0 0 12px}
+.leakfeed{display:grid;gap:14px}.leakfeed .facts{background:var(--panel);border-radius:6px;padding:16px}
+.lk li{border-left-color:#4c3a7a}.lk time{font-size:18px;color:var(--leak)}
 .rule{background:var(--panel);border-radius:8px;padding:20px;border:1px dashed #4c3a7a}
 .rule h3{font:400 24px var(--display);text-transform:uppercase;margin-bottom:10px;color:var(--leak)}
 .rule ul{margin:0;padding-left:20px;display:grid;gap:6px}
@@ -184,7 +188,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 #lb button{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px;background:var(--fg);color:var(--bg);border:0;border-radius:3px;padding:8px 12px;font:700 15px var(--cond);letter-spacing:.1em;cursor:pointer}
 
 @media (max-width:980px){.vids{grid-template-columns:1fr 1fr}.vid.feat{grid-column:span 2;grid-row:auto;min-height:0}.split{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.cast{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (max-width:720px){.vids{grid-template-columns:1fr}.vid.feat{grid-row:auto;grid-column:auto;min-height:0}.vid.small{grid-column:auto}.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:720px){.rule{position:static}.vids{grid-template-columns:1fr}.vid.feat{grid-row:auto;grid-column:auto;min-height:0}.vid.small{grid-column:auto}.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts li{grid-template-columns:1fr;gap:4px}.ticker-list li{grid-template-columns:58px minmax(0,1fr);padding:12px}.ticker-list time{font-size:20px}
   .lower{bottom:72px}.clock{font-size:16px}.dossier{padding:22px 16px}.dossier .big-stamp{display:none}.log li{grid-template-columns:1fr;gap:2px}}
 @media (max-width:420px){.cast{grid-template-columns:1fr}}
@@ -210,17 +214,19 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
     <div class="sec-head"><h2>Sendeplan</h2><span class="kicker">Liveticker · neueste zuerst · MESZ</span></div>
     <ol class="ticker-list">
 <li class="day"><span>Mittwoch, 30. September</span></li>
-<li class="new"><time>07:00</time><div><b>Noch 50 Tage</b> bis zum Release am 19. November.</div></li>
-<li class="new"><time>02:23</time><div><span class="tag t-warn">Berichtet</span> Rockstar verschickt Pakete an Creator: Cap, Shirt, Zippo-Feuerzeug, Sticker und Tasche im GTA-6-Design (via TmarTn). Ob am Donnerstag neues Merch erscheint, ist nur eine Vermutung.</div></li>
-<li class="new"><time>00:37</time><div><span class="tag t-warn">Berichtet</span> Die niederländische Polizei hat einen 24-Jährigen aus Amsterdam festgenommen, der mit dem Hack bei Rockstar Anfang des Jahres in Verbindung stehen soll. Ihm wird zusätzlich vorgeworfen, zwei Morde in Auftrag gegeben zu haben. Auf das Spiel hat das keinen Einfluss.</div></li>
+<li class="new"><time>11:30</time><div><b>Neue Rubrik Leaks:</b> der große Leak von 2022 mit allem, was heute davon bestätigt ist, dazu die späteren Leaks bis August 2026. Nur als Text, ohne geleaktes Material. <a href="#leaks">Ansehen</a></div></li>
+<li class="new"><time>11:00</time><div><b>Neue Rubrik Trailer:</b> Trailer 1, Trailer 2, das Extended Look und der Teaser, mit Links zu YouTube. <a href="#trailer">Ansehen</a></div></li>
+<li><time>07:00</time><div><b>Noch 50 Tage</b> bis zum Release am 19. November.</div></li>
+<li><time>02:23</time><div><span class="tag t-warn">Berichtet</span> Rockstar verschickt Pakete an Creator: Cap, Shirt, Zippo-Feuerzeug, Sticker und Tasche im GTA-6-Design (via TmarTn). Ob am Donnerstag neues Merch erscheint, ist nur eine Vermutung.</div></li>
+<li><time>00:37</time><div><span class="tag t-warn">Berichtet</span> Die niederländische Polizei hat einen 24-Jährigen aus Amsterdam festgenommen, der mit dem Hack bei Rockstar Anfang des Jahres in Verbindung stehen soll. Ihm wird zusätzlich vorgeworfen, zwei Morde in Auftrag gegeben zu haben. Auf das Spiel hat das keinen Einfluss.</div></li>
 <li class="day"><span>Dienstag, 29. September</span></li>
 <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Wir haben den ganzen Artikel gelesen.</b> Die Titelgeschichte ist in der App als eigener Artikel frei lesbar, nur das Heft ist ab Seite 9 gesperrt. Fast alle Punkte auf dieser Seite sind jetzt offiziell bestätigt.</div></li>
 <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Heat-System und sechs Fahndungssterne:</b> Die Polizei sammelt Infos über dein Aussehen. Frisur und Kleidung wechseln und das Fluchtauto loswerden hilft. <a href="#ueberfaelle">Mehr</a></div></li>
 <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Jason und Lucia als Paar oder als Freunde:</b> Das entscheidest du, kleine Gesten stärken die Bindung, und Teile der Story hängen davon ab. <a href="#story">Mehr</a></div></li>
+</ol>
+<details class="older"><summary>Ältere Meldungen anzeigen (18)</summary><ol class="ticker-list">
 <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Karte doppelt so groß wie GTA V</b>, jetzt direkt von Aaron Garbut bestätigt. Dazu Details zu allen sechs Regionen. <a href="#welt">Mehr</a></div></li>
 <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Neue Apps:</b> RydeMe als Schnellreise per Mitfahrdienst, Snapmatic ist zurück. Manche Missionen gibt es erst ab einem bestimmten Einkommen. <a href="#gameplay">Mehr</a></div></li>
-</ol>
-<details class="older"><summary>Ältere Meldungen anzeigen (16)</summary><ol class="ticker-list">
 <li><time>20:50</time><div><span class="tag t-bad">Korrektur</span> Der Bezug zu Red Dead Redemption steht im Artikel bei den <b>Tieren</b> (Aufspüren, Fell), nicht beim Wetter. Michael Kane ist VP Dynamic Art, nicht Animationschef. Von „80 Stunden Story" steht nichts im Artikel.</div></li>
 <li><time>20:36</time><div><span class="tag t-warn">Überholt</span> <b>Gratis oder nicht?</b> In unserem eigenen Test endet das <b>Heft</b> in der App nach Seite 8 von 108, danach wird ein Abo verlangt. Ob die Titelgeschichte zusätzlich als eigener Gratis-Artikel in der App steht, prüfen wir noch.</div></li>
 <li><time>20:05</time><div><span class="tag t-warn">Berichtet</span> <b>Was es auf der Karte gibt:</b> Quad-Strecken, Schlammparks, Demolition Derbys, Mountainbike, Motocross, Farmen und Ranches, Golf, Barschangeln, verlassene Touristenattraktionen, Industriegebiete und ländlicher Norden. <a href="#welt">Mehr</a></div></li>
@@ -242,7 +248,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <aside class="side">
     <div class="box count"><h3>Countdown</h3><b id="days">–</b><span>Tage bis 19. November 2026</span></div>
     <div class="box"><h3>Stand</h3><ul class="facts-mini">
-      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 11:00</b></li>
+      <li><span>Zuletzt aktualisiert</span><b id="updated">30.09.2026, 11:30</b></li>
       <li><span>Plattformen</span><b>PS5 · Xbox Series X|S</b></li>
       <li><span>Karte</span><b>2× GTA V</b></li>
       <li><span>Tierarten</span><b>170+</b></li>
@@ -383,7 +389,30 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
       <li>Was Rockstar später bestätigt, bekommt den Stempel <span class="tag t-ok">Offiziell</span> und wandert in die normalen Rubriken.</li>
       <li>Wir trennen alte Leaks (2022) von neuen, unbestätigten Meldungen.</li>
     </ul></div>
-    <div class="empty"><div><b>Noch keine Einträge</b>Diese Rubrik wird gerade aufgebaut.</div></div>
+    <div class="leakfeed">
+      <h3 class="lk-h">Der große Leak von 2022</h3>
+      <ul class="ticker-list lk">
+        <li><time>18.09.22</time><div><span class="tag t-leak">Leak</span> Ein Nutzer namens „teapotuberhacker“ veröffentlicht im Forum GTAForums <b>90 Videos</b> mit rund <b>50 Minuten</b> Spielmaterial aus einer frühen Entwicklungsphase. Die Dateien stammen aus internen Slack-Kanälen von Rockstar. Er droht außerdem, Quellcode von GTA V und VI zu veröffentlichen.</div></li>
+        <li><time>18.09.22</time><div><span class="tag t-leak">Leak</span> Zu sehen ist ein unfertiger Stand mit Platzhalter-Grafik und Debug-Einblendungen, dazu Vice City und zwei Hauptfiguren, eine Frau und ein Mann, unter anderem bei einem Überfall auf ein Diner.</div></li>
+        <li><time>19.09.22</time><div><span class="tag t-ok">Offiziell</span> Rockstar bestätigt den Einbruch in sein Netzwerk und die Echtheit des Materials. Die Entwicklung läuft weiter, das Spiel werde man zeigen, wenn es so weit ist. Take-Two lässt Videos und Forenbeiträge entfernen.</div></li>
+        <li><time>22.09.22</time><div><span class="tag t-warn">Berichtet</span> Die City of London Police nimmt in Oxfordshire einen 17-Jährigen fest, Mitglied der Hackergruppe Lapsus$. Er hatte den Hack auf Kaution aus einem Hotelzimmer begangen, mit Handy, Fernseher und Fire-TV-Stick.</div></li>
+        <li><time>Dez. 2023</time><div><span class="tag t-warn">Berichtet</span> Ein Londoner Gericht stellt fest, dass <b>Arion Kurtaj</b> die Taten begangen hat. Er gilt als nicht verhandlungsfähig und wird unbefristet in eine gesicherte Klinik eingewiesen. Rockstar beziffert den Schaden auf 5 Mio. $ und Tausende Arbeitsstunden.</div></li>
+        <li><time>Juli 2026</time><div><span class="tag t-warn">Berichtet</span> Kurtaj wird aus der Klinik in ein Gefängnis verlegt. Ein neuer Prozess ist für November 2026 angesetzt, also im Release-Monat.</div></li>
+      </ul>
+      <h3 class="lk-h">Was davon heute bestätigt ist</h3>
+      <ul class="facts">
+        <li><span class="tag t-ok">Offiziell</span><div><b>Vice City</b> als Schauplatz, seit Trailer 1.</div></li>
+        <li><span class="tag t-ok">Offiziell</span><div><b>Zwei Hauptfiguren</b>, heute bekannt als Lucia Caminos und Jason Duval.</div></li>
+        <li><span class="tag t-warn">Berichtet</span><div>Der <b>Diner-Überfall</b> taucht laut GamesRadar in fertiger Form im Extended Look vom August 2026 auf.</div></li>
+      </ul>
+      <h3 class="lk-h">Weitere Leaks</h3>
+      <ul class="ticker-list lk">
+        <li><time>04.12.23</time><div><span class="tag t-leak">Leak</span> Trailer 1 taucht einen Tag vor der Premiere in schlechter Qualität auf. <span class="tag t-ok">Offiziell</span> Rockstar veröffentlicht ihn daraufhin sofort.</div></li>
+        <li><time>Jan. 2025</time><div><span class="tag t-leak">Leak</span> Fotos und Videos eines PS5-Entwicklerkits von Rockstar San Diego. Neue Infos zum Spiel enthielten sie nicht.</div></li>
+        <li><time>Aug. 2026</time><div><span class="tag t-leak">Leak</span> Ein Konto namens „CyberLeek“ veröffentlicht über neun Tage mindestens 16 Videos und die Karte und stellt Forderungen zu Sondereditionen und Disc-Versionen. Take-Two verlangt per Gericht von Discord, Microsoft und X die Herausgabe seiner Identität. <span class="tag t-ok">Offiziell</span> Rockstar nennt die Leaks am 26.08. „herzzerreißend“ für das Team.</div></li>
+      </ul>
+      <p class="src">Inhalte der Leaks von 2026 geben wir bewusst nicht wieder. Quellen: <a href="https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI" target="_blank" rel="noopener">Wikipedia: Grand Theft Auto VI</a> (mit Gerichtsberichten) · <a href="https://www.cbsnews.com/news/grand-theft-auto-leak-teen-hacker-hospitalized/" target="_blank" rel="noopener">CBS News</a> · GamesRadar (nicht verlinkt, weil der Artikel geleaktes Material zeigt).</p>
+    </div>
   </div>
 </div></section>
 
@@ -403,7 +432,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 </div></section>
 
 <section class="band" id="protokoll"><div class="wrap cols">
-  <div><div class="sec-head"><h2>Änderungsprotokoll</h2></div><ul class="log"><li><time>30.09. 11:00</time><div>Neue Rubrik <b>Trailer</b>: Trailer 1, Trailer 2, das Extended Look und der Teaser, mit Datum, Länge und Link zu Rockstars YouTube-Kanal.</div></li><li><time>30.09. 10:30</time><div><b>Neues Design:</b> Die Seite ist jetzt das „Leonida News Network" mit Laufband, Countdown, Figuren, Faktencheck als Akte und einer eigenen Leak-Rubrik. Die Prüf-Markierungen sind jetzt Stempel. Änderungsprotokoll und „Rund ums Heft" sind wieder sauber getrennt.</div></li><li><time>30.09. 09:30</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li><li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li><li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li><li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li><li><time>29.09. 20:30</time><div>Ticker: Der Artikel ist jetzt gratis in der App. Sonst gibt es keine neuen Details, nur Wiederholungen.</div></li><li><time>29.09. 20:05</time><div>Ticker aktualisiert. Neu: was es auf der Karte gibt, Aussagen von Michael Kane zu den Tieren, Wetter als Weiterentwicklung aus RDR2, Größe der Karte jetzt von drei Quellen. Keine weiteren Screenshots.</div></li><li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li><li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li></ul></div>
+  <div><div class="sec-head"><h2>Änderungsprotokoll</h2></div><ul class="log"><li><time>30.09. 11:30</time><div>Rubrik <b>Leaks</b> gefüllt: der Leak von 2022 (Ablauf, Täter, Gerichtsverfahren, was heute bestätigt ist) und weitere Leaks von 2023, 2025 und 2026, nur als Text. Quellen: Wikipedia, CBS News, GamesRadar.</div></li><li><time>30.09. 11:00</time><div>Neue Rubrik <b>Trailer</b>: Trailer 1, Trailer 2, das Extended Look und der Teaser, mit Datum, Länge und Link zu Rockstars YouTube-Kanal.</div></li><li><time>30.09. 10:30</time><div><b>Neues Design:</b> Die Seite ist jetzt das „Leonida News Network" mit Laufband, Countdown, Figuren, Faktencheck als Akte und einer eigenen Leak-Rubrik. Die Prüf-Markierungen sind jetzt Stempel. Änderungsprotokoll und „Rund ums Heft" sind wieder sauber getrennt.</div></li><li><time>30.09. 09:30</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li><li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li><li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li><li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li><li><time>29.09. 20:30</time><div>Ticker: Der Artikel ist jetzt gratis in der App. Sonst gibt es keine neuen Details, nur Wiederholungen.</div></li><li><time>29.09. 20:05</time><div>Ticker aktualisiert. Neu: was es auf der Karte gibt, Aussagen von Michael Kane zu den Tieren, Wetter als Weiterentwicklung aus RDR2, Größe der Karte jetzt von drei Quellen. Keine weiteren Screenshots.</div></li><li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li><li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li></ul></div>
   <div id="quellen"><div class="sec-head"><h2>Quellen</h2></div><div class="src">
       <div>Game Informer: <a href="https://gameinformer.com/feature/2026/09/29/grand-theft-auto-vi-welcome-to-leonida">Titelgeschichte „Welcome to Leonida" von Marcus Stewart</a> (frei in der App, im Web kostenpflichtig) · <a href="https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi">Cover Reveal</a> · <a href="https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live">Digital-Ausgabe</a> · <a href="https://x.com/gameinformer/status/2104964448662278501">Gratis-Ankündigung auf X</a></div>
       <div>Berichte: <a href="https://www.vice.com/en/article/all-gta-6-features-game-informer/">Vice</a> · <a href="https://rockstarintel.com/12-new-gta-6-screenshots-released/">RockstarINTEL (Screenshots)</a> · <a href="https://rockstarintel.com/gta-6-has-hurricanes-170-animals-fun-activities-weather-system-detailed/">RockstarINTEL (Zusammenfassung)</a> · <a href="https://www.pcquest.com/gaming/gta-6-cover-story-sparks-debate-as-game-informer-restricts-screenshots-sharing-12590815">PCQuest</a></div>
