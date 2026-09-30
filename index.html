@@ -150,6 +150,7 @@ th { font: 500 0.72rem var(--mono); text-transform: uppercase; letter-spacing: 0
 .ticker-list { list-style: none; margin: 0; padding: 0; max-height: 19rem; overflow-y: auto; }
 .ticker-list li { display: grid; grid-template-columns: 3.4rem 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 0.97rem; line-height: 1.5; }
 .ticker-list li:first-child { border-top: 0; }
+.ticker-list li.day { display: block; padding: 8px 0 4px; border-top: 0; font: 500 0.72rem var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
 .ticker-list li > div { min-width: 0; }
 .ticker-list time { font: 500 0.85rem var(--mono); color: var(--accent); padding-top: 2px; font-variant-numeric: tabular-nums; }
 .ticker-list li.new time::after { content: "neu"; display: block; font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); }
@@ -189,12 +190,17 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
         <span class="ticker-note">Neueste zuerst · Uhrzeiten MESZ</span>
       </div>
       <ol class="ticker-list">
-        <li class="new"><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Wir haben den ganzen Artikel gelesen.</b> Die Titelgeschichte ist in der App als eigener Artikel frei lesbar, nur das Heft ist ab Seite 9 gesperrt. Fast alle Punkte auf dieser Seite sind jetzt offiziell bestätigt.</div></li>
-        <li class="new"><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Heat-System und sechs Fahndungssterne:</b> Die Polizei sammelt Infos über dein Aussehen. Frisur und Kleidung wechseln und das Fluchtauto loswerden hilft. <a href="#ueberfaelle">Mehr</a></div></li>
-        <li class="new"><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Jason und Lucia als Paar oder als Freunde:</b> Das entscheidest du, kleine Gesten stärken die Bindung, und Teile der Story hängen davon ab. <a href="#story">Mehr</a></div></li>
-        <li class="new"><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Karte doppelt so groß wie GTA V</b>, jetzt direkt von Aaron Garbut bestätigt. Dazu Details zu allen sechs Regionen. <a href="#welt">Mehr</a></div></li>
-        <li class="new"><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Neue Apps:</b> RydeMe als Schnellreise per Mitfahrdienst, Snapmatic ist zurück. Manche Missionen gibt es erst ab einem bestimmten Einkommen. <a href="#gameplay">Mehr</a></div></li>
-        <li class="new"><time>20:50</time><div><span class="tag t-bad">Korrektur</span> Der Bezug zu Red Dead Redemption steht im Artikel bei den <b>Tieren</b> (Aufspüren, Fell), nicht beim Wetter. Michael Kane ist VP Dynamic Art, nicht Animationschef. Von „80 Stunden Story" steht nichts im Artikel.</div></li>
+        <li class="new"><time>07:00</time><div><b>Noch 50 Tage</b> bis zum Release am 19. November.</div></li>
+        <li class="new"><time>02:23</time><div><span class="tag t-warn">Berichtet</span> Rockstar verschickt Pakete an Creator: Cap, Shirt, Zippo-Feuerzeug, Sticker und Tasche im GTA-6-Design (via TmarTn). Ob am Donnerstag neues Merch erscheint, ist nur eine Vermutung.</div></li>
+        <li class="new"><time>00:37</time><div><span class="tag t-warn">Berichtet</span> Die niederländische Polizei hat einen 24-Jährigen aus Amsterdam festgenommen, der mit dem Hack bei Rockstar Anfang des Jahres in Verbindung stehen soll. Ihm wird zusätzlich vorgeworfen, zwei Morde in Auftrag gegeben zu haben. Auf das Spiel hat das keinen Einfluss.</div></li>
+        <li class="day"><span>Mittwoch, 30. September</span></li>
+        <li class="day"><span>Dienstag, 29. September</span></li>
+        <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Wir haben den ganzen Artikel gelesen.</b> Die Titelgeschichte ist in der App als eigener Artikel frei lesbar, nur das Heft ist ab Seite 9 gesperrt. Fast alle Punkte auf dieser Seite sind jetzt offiziell bestätigt.</div></li>
+        <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Heat-System und sechs Fahndungssterne:</b> Die Polizei sammelt Infos über dein Aussehen. Frisur und Kleidung wechseln und das Fluchtauto loswerden hilft. <a href="#ueberfaelle">Mehr</a></div></li>
+        <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Jason und Lucia als Paar oder als Freunde:</b> Das entscheidest du, kleine Gesten stärken die Bindung, und Teile der Story hängen davon ab. <a href="#story">Mehr</a></div></li>
+        <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Karte doppelt so groß wie GTA V</b>, jetzt direkt von Aaron Garbut bestätigt. Dazu Details zu allen sechs Regionen. <a href="#welt">Mehr</a></div></li>
+        <li><time>20:50</time><div><span class="tag t-ok">Offiziell</span> <b>Neue Apps:</b> RydeMe als Schnellreise per Mitfahrdienst, Snapmatic ist zurück. Manche Missionen gibt es erst ab einem bestimmten Einkommen. <a href="#gameplay">Mehr</a></div></li>
+        <li><time>20:50</time><div><span class="tag t-bad">Korrektur</span> Der Bezug zu Red Dead Redemption steht im Artikel bei den <b>Tieren</b> (Aufspüren, Fell), nicht beim Wetter. Michael Kane ist VP Dynamic Art, nicht Animationschef. Von „80 Stunden Story" steht nichts im Artikel.</div></li>
         <li><time>20:36</time><div><span class="tag t-warn">Überholt</span> <b>Gratis oder nicht?</b> In unserem eigenen Test endet das <b>Heft</b> in der App nach Seite 8 von 108, danach wird ein Abo verlangt. Ob die Titelgeschichte zusätzlich als eigener Gratis-Artikel in der App steht, prüfen wir noch.</div></li>
         <li><time>20:01</time><div><span class="tag t-warn">Berichtet</span> Der Artikel sei jetzt gratis in der App. Nicht bestätigt, siehe 20:36.</div></li>
         <li><time>20:05</time><div><span class="tag t-warn">Berichtet</span> <b>Was es auf der Karte gibt:</b> Quad-Strecken, Schlammparks, Demolition Derbys, Mountainbike, Motocross, Farmen und Ranches, Golf, Barschangeln, verlassene Touristenattraktionen, Industriegebiete und ländlicher Norden. <a href="#welt">Mehr</a></div></li>
@@ -217,7 +223,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
       <div><small>Release</small><b>19.11.2026</b></div>
       <div><small>Plattformen</small><b>PS5 · Xbox Series X|S</b></div>
       <div><small>Heft erschienen</small><b>29.09.2026</b></div>
-      <div><small>Zuletzt aktualisiert</small><b id="updated">29.09.2026, 20:55</b></div>
+      <div><small>Zuletzt aktualisiert</small><b id="updated">30.09.2026, 09:30</b></div>
       <div><small>Über die Seite</small><b><a href="#ueber">Wie wir prüfen</a> · <a href="#protokoll">Änderungen</a></b></div>
     </div>
     <div class="legend">
@@ -340,6 +346,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
   <section id="news">
     <div class="sec-head"><h2>Rund ums Heft</h2></div>
     <ul class="log">
+      <li><time>30.09. 09:30</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li>
       <li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li>
       <li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li>
       <li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li>
@@ -380,7 +387,7 @@ footer { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--li
     <div class="src">
       <div>Game Informer: <a href="https://gameinformer.com/feature/2026/09/29/grand-theft-auto-vi-welcome-to-leonida">Titelgeschichte „Welcome to Leonida" von Marcus Stewart</a> (frei in der App, im Web kostenpflichtig) · <a href="https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi">Cover Reveal</a> · <a href="https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live">Digital-Ausgabe</a> · <a href="https://x.com/gameinformer/status/2104964448662278501">Gratis-Ankündigung auf X</a></div>
       <div>Berichte: <a href="https://www.vice.com/en/article/all-gta-6-features-game-informer/">Vice</a> · <a href="https://rockstarintel.com/12-new-gta-6-screenshots-released/">RockstarINTEL (Screenshots)</a> · <a href="https://rockstarintel.com/gta-6-has-hurricanes-170-animals-fun-activities-weather-system-detailed/">RockstarINTEL (Zusammenfassung)</a> · <a href="https://www.pcquest.com/gaming/gta-6-cover-story-sparks-debate-as-game-informer-restricts-screenshots-sharing-12590815">PCQuest</a></div>
-      <div>X: <a href="https://x.com/gtasix_/status/2104974980471484564">@gtasix_</a> · <a href="https://x.com/SynthPotato/status/2104975709521220050">@SynthPotato</a> · <a href="https://x.com/NikTek/status/2104980584602694008">@NikTek</a> · <a href="https://x.com/GTAVI_Countdown/status/2104931885726191714">@GTAVI_Countdown</a> · <a href="https://x.com/HYPEX/status/2104983936581640688">@HYPEX</a> · <a href="https://x.com/TexFunz2/status/2104983576236392714">@TexFunz2</a> · <a href="https://x.com/videotech/status/2104986481370808537">@videotech</a> · <a href="https://x.com/SucumbaGames/status/2104992459872747527">@SucumbaGames</a> · <a href="https://x.com/mnm345x/status/2104995097314205977">@mnm345x</a> · <a href="https://x.com/DrawnOutYT/status/2104998298830745686">@DrawnOutYT</a></div>
+      <div>X: <a href="https://x.com/gtasix_/status/2104974980471484564">@gtasix_</a> · <a href="https://x.com/SynthPotato/status/2104975709521220050">@SynthPotato</a> · <a href="https://x.com/NikTek/status/2104980584602694008">@NikTek</a> · <a href="https://x.com/GTAVI_Countdown/status/2104931885726191714">@GTAVI_Countdown</a> · <a href="https://x.com/HYPEX/status/2104983936581640688">@HYPEX</a> · <a href="https://x.com/TexFunz2/status/2104983576236392714">@TexFunz2</a> · <a href="https://x.com/videotech/status/2104986481370808537">@videotech</a> · <a href="https://x.com/SucumbaGames/status/2104992459872747527">@SucumbaGames</a> · <a href="https://x.com/mnm345x/status/2104995097314205977">@mnm345x</a> · <a href="https://x.com/DrawnOutYT/status/2104998298830745686">@DrawnOutYT</a> · <a href="https://x.com/GTAVI_Countdown/status/2105091202718867594">@GTAVI_Countdown (Pakete)</a> · <a href="https://rockstarintel.com/alleged-rockstar-games-hacker-arrested-ordered-multiple-murders/">RockstarINTEL (Festnahme)</a></div>
     </div>
   </section>
 
