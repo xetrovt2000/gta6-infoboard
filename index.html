@@ -50,11 +50,14 @@ h1,h2,h3,h4{margin:0;text-wrap:balance}
 .sub{display:inline-block;margin-top:12px;background:var(--fg);color:var(--bg);font:600 clamp(15px,1.6vw,19px)/1.35 var(--body);padding:8px 14px}
 .crawl{position:absolute;left:0;right:0;bottom:0;height:52px;display:flex;background:var(--red-2);overflow:hidden;font:700 19px var(--cond);letter-spacing:.03em}
 .crawl .lab{flex:none;z-index:1;background:var(--gold);color:#111;display:grid;place-items:center;padding:0 16px;font:400 20px var(--display);letter-spacing:.06em;text-decoration:none}
-.track{display:flex;gap:56px;align-items:center;white-space:nowrap;padding-left:32px;animation:crawl 70s linear infinite;will-change:transform}
+.track{display:flex;gap:56px;align-items:center;white-space:nowrap;padding-left:32px;animation:crawl var(--dur,120s) linear infinite;will-change:transform}
+.crawl.paused .track{animation-play-state:paused}
+.cbtn{flex:none;z-index:1;margin-left:auto;width:52px;border:0;background:var(--red);color:#fff;font:700 18px var(--cond);cursor:pointer;display:grid;place-items:center;box-shadow:-12px 0 16px var(--red-2)}
+.cbtn:hover{background:#be123c}
 .crawl:hover .track{animation-play-state:paused}
 .track span b{color:var(--gold);margin-right:10px;font-variant-numeric:tabular-nums}
 @keyframes crawl{to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion:reduce){.track{animation:none}.live i,.rec{animation:none}}
+@media (prefers-reduced-motion:reduce){.live i,.rec,.hurr{animation:none}}
 
 /* ---------- Stempel (aus der Akte) ---------- */
 .tag{display:inline-block;font:700 12px/1 var(--cond);letter-spacing:.14em;text-transform:uppercase;padding:4px 7px 3px;border:2px solid currentColor;border-radius:3px;rotate:-3deg;white-space:nowrap;vertical-align:2px;
@@ -205,7 +208,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
     <h1 class="headline">Leonida doppelt so groß wie GTA&nbsp;V</h1>
     <span class="sub">Game Informer #382 komplett gelesen: Hurrikane, Heat-System, Beziehungen, alle 12 Screenshots</span>
   </div>
-  <div class="crawl" aria-hidden="true"><a class="lab" href="#live" tabindex="-1">TICKER</a><div class="track" id="track"></div></div>
+  <div class="crawl" id="crawl"><a class="lab" href="#live" tabindex="-1" aria-hidden="true">TICKER</a><div class="track" id="track" aria-hidden="true"></div><button type="button" class="cbtn" id="cbtn" aria-label="Laufband anhalten" title="Laufband anhalten">❚❚</button></div>
 </header>
 
 <main>
@@ -468,7 +471,12 @@ shots.forEach(([cap],i)=>{const n=String(i+1).padStart(2,'0');const f=document.c
 const close=()=>{lb.hidden=true};document.getElementById('lb-close').addEventListener('click',close);lb.addEventListener('click',e=>{if(e.target===lb)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
 // Laufband aus dem Sendeplan
 const items=[...document.querySelectorAll('#live .ticker-list li:not(.day)')].slice(0,8).map(li=>{const t=li.querySelector('time')?.textContent||'';const c=li.cloneNode(true);c.querySelectorAll('time,.tag,a,s').forEach(x=>x.remove());return `<span><b>${t}</b>${c.textContent.replace(/\s+/g,' ').trim()}</span>`}).join('');
-document.getElementById('track').innerHTML=items+items;
+const track=document.getElementById('track');track.innerHTML=items+items;
+// gleichmäßiges Tempo unabhängig von der Textlänge; bei "weniger Bewegung" langsamer statt aus
+const slow=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const setDur=()=>track.style.setProperty('--dur',Math.round(track.scrollWidth/2/(slow?45:90))+'s');setDur();addEventListener('resize',setDur);
+const crawl=document.getElementById('crawl'),cb=document.getElementById('cbtn');
+cb.addEventListener('click',()=>{const p=crawl.classList.toggle('paused');cb.textContent=p?'▶':'❚❚';cb.setAttribute('aria-label',p?'Laufband starten':'Laufband anhalten');cb.title=cb.getAttribute('aria-label');});
 // Uhr und Countdown (Zeitzone Berlin)
 const clock=document.getElementById('clock');const fmt=new Intl.DateTimeFormat('de-DE',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Berlin'});
 const tick=()=>{clock.textContent=fmt.format(new Date())+' · VICE CITY'};tick();setInterval(tick,15000);
