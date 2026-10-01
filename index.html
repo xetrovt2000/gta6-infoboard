@@ -220,6 +220,35 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 #lb .nx{position:absolute;top:50%;margin-top:-26px;width:52px;height:52px;border-radius:50%;background:rgba(244,242,247,.14);color:#fff;border:0;font:700 26px var(--cond);cursor:pointer}#lb .nx:hover{background:var(--red)}#lb .prev{left:12px}#lb .next{right:12px}
 #lb #lb-close{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px;background:var(--fg);color:var(--bg);border:0;border-radius:3px;padding:8px 12px;font:700 15px var(--cond);letter-spacing:.1em;cursor:pointer}
 
+/* Kanalwechsel: nur der aktive Kanal ist sichtbar; außerhalb von Live schmaler Kopf mit Laufband */
+html.ch [data-ch]:not(.on){display:none}
+html.ch body:not(.ch-live) .tv{height:auto;min-height:0}
+html.ch body:not(.ch-live) .tv > img,html.ch body:not(.ch-live) .lower{display:none}
+html.ch body:not(.ch-live) .bar{position:relative;padding-bottom:14px}
+html.ch body:not(.ch-live) .crawl{position:relative}
+html.ch body:not(.ch-live) .tv::after{background:linear-gradient(180deg,#151522,var(--bg))}
+.snav-links{position:relative}
+html.ch .snav-links a::after{display:none}
+.snav-links .ind{position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--red);border-radius:2px;box-shadow:0 0 12px rgba(225,29,72,.8);transition:left .55s cubic-bezier(.65,0,.25,1),width .55s cubic-bezier(.65,0,.25,1)}
+html:not(.ch) .snav-links .ind,html:not(.ch) .fxbtn{display:none}
+.fxbtn{flex:none;margin-left:auto;font:700 12px var(--cond);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:5px 10px;cursor:pointer;white-space:nowrap}
+.fxbtn:hover{color:var(--fg)}
+.fxbtn b{color:var(--gold);font-weight:700}
+/* Wischblende */
+.pw{position:fixed;inset:0;z-index:40;pointer-events:none;overflow:hidden;visibility:hidden}
+.pw > i{position:absolute;top:-12%;bottom:-12%;left:0;width:150%;transform:translateX(-120%) skewX(-16deg);will-change:transform}
+.pw .gold{background:linear-gradient(90deg,#b45309,var(--gold) 40%,#fde68a 50%,var(--gold) 60%);width:155%}
+.pw .glass{background:rgba(12,12,22,.82);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);width:152%}
+.pw .red{background:linear-gradient(180deg,#f43f5e,var(--red) 35%,var(--red-2));display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),inset 0 -2px 0 rgba(0,0,0,.25)}
+.pw .red::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px)}
+.pw .card-in{transform:skewX(16deg);display:flex;align-items:center;gap:clamp(12px,2.4vw,26px);position:relative}
+.pw em{font:400 clamp(24px,3.4vw,38px)/1 var(--display);background:var(--fg);color:var(--bg);padding:6px 10px 4px;border-radius:3px;font-style:normal;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.pw .ch{font:700 clamp(15px,1.8vw,20px)/1 var(--cond);letter-spacing:.2em;color:#fde68a;border-left:2px solid rgba(255,255,255,.5);padding-left:clamp(12px,2.4vw,26px);align-self:stretch;display:flex;align-items:center}
+.pw strong{font:400 clamp(40px,9vw,96px)/1 var(--display);text-transform:uppercase;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.35);white-space:nowrap}
+.pw .shine{position:absolute;top:0;bottom:0;left:-30%;width:22%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28) 45%,rgba(255,240,200,.5) 50%,rgba(255,255,255,.28) 55%,transparent);mix-blend-mode:overlay}
+.pw .line{position:absolute;left:0;right:0;top:50%;bottom:auto;width:auto;height:2px;transform:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);opacity:0}
+html.lite .pw .glass,html.lite .pw .shine,html.lite .pw .line,html.lite .pw .red::before{display:none}
+html.lite .pw > i{will-change:auto}
 @media (max-width:980px){.vids{grid-template-columns:1fr 1fr}.vid.feat{grid-column:span 2;grid-row:auto;min-height:0}.split{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.cast{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:720px){.rule{position:static}.vids{grid-template-columns:1fr}.vid.feat{grid-row:auto;grid-column:auto;min-height:0}.vid.small{grid-column:auto}.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts li{grid-template-columns:1fr;gap:4px}.ticker-list li{grid-template-columns:58px minmax(0,1fr);padding:12px}.ticker-list time{font-size:20px}
@@ -241,10 +270,11 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <div class="crawl" id="crawl"><a class="lab" href="#live" tabindex="-1" aria-hidden="true">TICKER</a><div class="track" id="track" aria-hidden="true"></div><button type="button" class="cbtn" id="cbtn" aria-label="Laufband anhalten" title="Laufband anhalten">❚❚</button></div>
 </header>
 
-<nav class="snav" id="snav" aria-label="Rubriken"><div class="snav-in"><a class="snav-logo" href="#top" aria-label="Zum Anfang">LNN</a><div class="snav-links"><a href="#live">Live</a><a href="#trailer">Trailer</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#charaktere">Charaktere</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a></div></div></nav>
+<nav class="snav" id="snav" aria-label="Rubriken"><div class="snav-in"><a class="snav-logo" href="#top" aria-label="Zum Anfang">LNN</a><div class="snav-links"><a href="#live">Live</a><a href="#trailer">Trailer</a><a href="#magazin">Magazin</a><a href="#galerie">Galerie</a><a href="#charaktere">Charaktere</a><a href="#faktencheck">Faktencheck</a><a href="#leaks">Leaks</a><a href="#ueber">Über</a><span class="ind" aria-hidden="true"></span></div><button type="button" class="fxbtn" id="fxbtn" title="Animation beim Rubrikwechsel">FX</button></div></nav>
+<div class="pw" id="pw" aria-hidden="true"><i class="gold"></i><i class="glass"></i><i class="red"><span class="card-in"><em>LNN</em><span class="ch" id="pw-ch"></span><strong id="pw-t"></strong></span><b class="shine"></b></i><i class="line"></i></div>
 
 <main>
-<section class="band" id="live"><div class="wrap split">
+<section class="band" id="live" data-ch="live"><div class="wrap split">
   <div>
     <div class="sec-head"><h2>Sendeplan</h2><span class="kicker">Liveticker · neueste zuerst · MESZ</span></div>
     <ol class="ticker-list">
@@ -310,7 +340,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   </aside>
 </div></section>
 
-<section class="band" id="trailer"><div class="wrap">
+<section class="band" id="trailer" data-ch="trailer"><div class="wrap">
   <div class="sec-head"><h2>Trailer</h2><span class="kicker">offizielle Videos von Rockstar · Links zu YouTube</span></div>
   <div class="vids">
     <a class="vid feat" href="https://www.youtube.com/watch?v=tJbzMqJGH4k" target="_blank" rel="noopener">
@@ -341,7 +371,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   <p class="src">Die Videos öffnen sich auf YouTube in einem neuen Tab. Wir betten sie nicht ein, damit YouTube beim Besuch dieser Seite keine Daten sammelt. Daten in deutscher Zeit, Aufrufzahlen stehen bei YouTube.</p>
 </div></section>
 
-<section class="band" id="magazin"><div class="wrap">
+<section class="band" id="magazin" data-ch="magazin"><div class="wrap">
   <span class="slate">Sondersendung</span>
   <div class="sec-head"><h2>Game Informer #382: Welcome to Leonida</h2><span class="kicker">14 Seiten · von uns komplett gelesen</span></div>
   <div class="topics"><article class="topic" id="story"><div class="thumb"><img src="thumbs/shots/gta6-gi-01.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Story und Beziehung</h3><span class="kicker">Jason &amp; Lucia</span><ul class="facts">
@@ -389,14 +419,14 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
     </ul></div></article></div>
 </div></section>
 
-<section class="band" id="galerie"><div class="wrap">
+<section class="band" id="galerie" data-ch="galerie"><div class="wrap">
   <div class="sec-head"><h2>Galerie</h2><span class="kicker">54 Bilder · antippen zum Vergrößern · Pfeiltasten zum Blättern</span></div>
   <div class="chips" role="group" aria-label="Bilder filtern"><button type="button" class="chip" aria-pressed="true" data-set="gi">Game Informer <span>12</span></button><button type="button" class="chip" aria-pressed="false" data-set="vice_city">Vice City <span>12</span></button><button type="button" class="chip" aria-pressed="false" data-set="leonida_keys">Leonida Keys <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="grassrivers">Grassrivers <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="port_gellhorn">Port Gellhorn <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="ambrosia">Ambrosia <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="mount_kalaga_national_park">Mount Kalaga <span>6</span></button></div>
   <div class="gallery" id="gallery"></div>
   <p class="src" id="gal-src"></p>
 </div></section>
 
-<section class="band" id="charaktere"><div class="wrap">
+<section class="band" id="charaktere" data-ch="charaktere"><div class="wrap">
   <div class="sec-head"><h2>Charaktere</h2><span class="kicker">bekannte Besetzung · Bilder: offizielle Screenshots von Rockstar</span></div>
   <div class="cast">
     <article class="who main"><div class="pic"><img src="cast/jason.webp" alt="Jason Duval, offizieller Screenshot von Rockstar" loading="lazy" width="1200" height="675" style="object-position:70% 30%"></div>
@@ -418,9 +448,9 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   </div>
 </div></section>
 
-<p class="wrap src" style="margin-top:-4px">Die Charakterbilder stammen von Rockstars offizieller Medienseite <a href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">rockstargames.com/VI/media</a>, die sie ausdrücklich zum Teilen bereitstellt. Sprecher nennen wir nur mit Beleg. Rockstar hat die Besetzung offiziell noch nicht veröffentlicht.</p>
+<p class="wrap src" data-ch="charaktere" style="margin-top:-4px">Die Charakterbilder stammen von Rockstars offizieller Medienseite <a href="https://www.rockstargames.com/VI/media" target="_blank" rel="noopener">rockstargames.com/VI/media</a>, die sie ausdrücklich zum Teilen bereitstellt. Sprecher nennen wir nur mit Beleg. Rockstar hat die Besetzung offiziell noch nicht veröffentlicht.</p>
 
-<section class="band" id="faktencheck"><div class="wrap">
+<section class="band" id="faktencheck" data-ch="faktencheck"><div class="wrap">
   <div class="dossier"><div class="big-stamp">Geprüft</div>
     <h2>Faktencheck</h2><div class="ref">Akte 382 · Behauptungen, die im Netz kursieren</div>
     <div class="tbl"><table>
@@ -435,7 +465,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   </div>
 </div></section>
 
-<section class="band" id="leaks"><div class="wrap">
+<section class="band" id="leaks" data-ch="leaks"><div class="wrap">
   <div class="sec-head"><h2>Leaks</h2><span class="kicker">eigene Rubrik, eigene Regeln</span></div>
   <div class="leaks">
     <div class="rule"><h3>So gehen wir mit Leaks um</h3><ul>
@@ -471,8 +501,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
   </div>
 </div></section>
 
-<section class="band" id="rund"><div class="wrap cols">
-  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>30.09. 10:46</time><div>Galerie erweitert: 42 offizielle Screenshots von Rockstar zu allen sechs Regionen, dazu die 12 aus dem Heft, mit Filter nach Region und Blättern im Großbild. Die Rubriken-Leiste bleibt jetzt beim Scrollen oben stehen und markiert, wo man gerade ist.</div></li><li><time>30.09. 10:39</time><div>Rubrik „Figuren“ heißt jetzt <b>Charaktere</b> und zeigt zu jedem Charakter ein offizielles Bild von Rockstars Medienseite. Neu ist die Sprecher-Angabe mit Beleg (bisher nur Stephen Root als Brian Heder). Fotos von Schauspielern zeigen wir nicht. Im Faktencheck steht ein neuer Eintrag zu den Gerüchten um die Sprecher von Jason und Lucia.</div></li><li><time>30.09. 10:27</time><div>Besucherzähler GoatCounter eingebaut, ohne Cookies und ohne persönliche Daten. Erklärung unter „Über diese Seite".</div></li><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
+<section class="band" id="rund" data-ch="ueber"><div class="wrap cols">
+  <div><div class="sec-head"><h2>Rund ums Heft</h2></div><ul class="log"><li><time>01.10. 17:51</time><div><b>Rubriken als Kanäle:</b> Statt einer langen Seite schaltet die Leiste jetzt zwischen acht Kanälen um, mit Wischblende im Senderstil. Jeder Kanal hat eine eigene Adresse zum Teilen, der Zurück-Knopf funktioniert. Wer schwächere Hardware hat, bekommt automatisch eine leichtere Animation. Umschalten über „FX“ rechts in der Leiste.</div></li><li><time>01.10. 17:40</time><div><b>Schneller am Handy:</b> Vorschaubilder in kleiner Auflösung, die Seite lädt beim ersten Aufruf rund 0,2 statt 5,3 MB. Das Titelbild ist am Handy flacher, damit die neuesten Meldungen gleich sichtbar sind.</div></li><li><time>01.10. 10:35</time><div><b>Ticker abonnieren:</b> Alle Meldungen gibt es jetzt als RSS-Feed. Dazu ein eigenes Icon und ein neues Vorschaubild beim Teilen.</div></li><li><time>01.10. 08:30</time><div><b>Neue Adresse:</b> leonida-news.de. Alte Links leiten weiter.</div></li><li><time>30.09. 10:46</time><div>Galerie erweitert: 42 offizielle Screenshots von Rockstar zu allen sechs Regionen, dazu die 12 aus dem Heft, mit Filter nach Region und Blättern im Großbild. Die Rubriken-Leiste bleibt jetzt beim Scrollen oben stehen und markiert, wo man gerade ist.</div></li><li><time>30.09. 10:39</time><div>Rubrik „Figuren“ heißt jetzt <b>Charaktere</b> und zeigt zu jedem Charakter ein offizielles Bild von Rockstars Medienseite. Neu ist die Sprecher-Angabe mit Beleg (bisher nur Stephen Root als Brian Heder). Fotos von Schauspielern zeigen wir nicht. Im Faktencheck steht ein neuer Eintrag zu den Gerüchten um die Sprecher von Jason und Lucia.</div></li><li><time>30.09. 10:27</time><div>Besucherzähler GoatCounter eingebaut, ohne Cookies und ohne persönliche Daten. Erklärung unter „Über diese Seite".</div></li><li><time>29.09.</time><div>Game Informer wollte die Bilder zuerst nur für Abonnenten freigeben. Nach dem Protest der Community griff Rockstar ein, und der Artikel wurde kostenlos angekündigt. Danach brachen App und Website zusammen.</div></li><li><time>25.09.</time><div>Die Xbox-Vorbestellungen brechen Rekorde.</div></li><li><time>24.09.</time><div>Rockstar stellt die Collector's Edition „The Goodtime State" für 400 $ vor. Sie ist in Großbritannien und anderen Regionen schon ausverkauft.</div></li><li><time>23.09.</time><div>Die Werbekampagne in Miami beginnt mit einem Schild für 1 Mio. $ und Plakaten an Gebäuden.</div></li></ul></div>
   <div id="ueber"><div class="sec-head"><h2>Über diese Seite</h2></div><div class="about">
       <p>Hier sammeln wir alles, was aktuell über GTA 6 bekannt wird, an einem Ort und ohne Clickbait. Den Anfang macht die Titelgeschichte von Game Informer #382. Weitere Enthüllungen bis zum Release am 19. November kommen dazu, sobald sie erscheinen.</p>
       <h3>Wie aktuell ist das?</h3>
@@ -490,7 +520,7 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
     </div></div>
 </div></section>
 
-<section class="band" id="protokoll"><div class="wrap cols">
+<section class="band" id="protokoll" data-ch="ueber"><div class="wrap cols">
   <div><div class="sec-head"><h2>Änderungsprotokoll</h2></div><ul class="log"><li><time>30.09. 10:20</time><div><b>Korrektur:</b> Die Uhrzeiten der heutigen Einträge waren geschätzt und lagen teils in der Zukunft (10:30, 11:00, 11:30). Sie sind jetzt auf die tatsächlichen Zeiten gesetzt. Seit 07:00 keine neuen Meldungen.</div></li><li><time>30.09. 10:11</time><div>Rubrik <b>Leaks</b> gefüllt: der Leak von 2022 (Ablauf, Täter, Gerichtsverfahren, was heute bestätigt ist) und weitere Leaks von 2023, 2025 und 2026, nur als Text. Quellen: Wikipedia, CBS News, GamesRadar.</div></li><li><time>30.09. 10:01</time><div>Neue Rubrik <b>Trailer</b>: Trailer 1, Trailer 2, das Extended Look und der Teaser, mit Datum, Länge und Link zu Rockstars YouTube-Kanal.</div></li><li><time>30.09. 09:46</time><div><b>Neues Design:</b> Die Seite ist jetzt das „Leonida News Network" mit Laufband, Countdown, Figuren, Faktencheck als Akte und einer eigenen Leak-Rubrik. Die Prüf-Markierungen sind jetzt Stempel. Änderungsprotokoll und „Rund ums Heft" sind wieder sauber getrennt.</div></li><li><time>30.09. 09:24</time><div>Ticker: Meldungen der Nacht (50 Tage bis Release, Creator-Pakete, Festnahme im Zusammenhang mit dem Rockstar-Hack). Dazu Tagestrenner im Ticker. Keine neuen Spieldetails.</div></li><li><time>29.09. 20:55</time><div>Große Überarbeitung: Wir haben den ganzen Artikel in der App gelesen. Fast alle Punkte sind jetzt offiziell. Neu sind die Abschnitte „Story und Beziehung" und „Überfälle und Polizei", dazu Heat-System, sechs Fahndungssterne, RydeMe, Snapmatic und Details zu allen Regionen. Korrigiert: der Red-Dead-Bezug gehört zu den Tieren, nicht zum Wetter, und Michael Kanes Titel. „80 Stunden" steht nicht im Artikel.</div></li><li><time>29.09. 20:45</time><div>Präzisiert: Gesperrt ist nachweislich das Heft ab Seite 9. Ob die Titelgeschichte separat gratis ist, ist offen. Die Streichung von 20:40 ist deshalb auf „unklar" zurückgenommen.</div></li><li><time>29.09. 20:40</time><div>Korrektur: Die Meldung „Artikel jetzt gratis" von 20:30 wurde gestrichen, weil unser eigener Test in der App nach Seite 8 eine Bezahlschranke zeigt.</div></li><li><time>29.09. 20:30</time><div>Ticker: Der Artikel ist jetzt gratis in der App. Sonst gibt es keine neuen Details, nur Wiederholungen.</div></li><li><time>29.09. 20:05</time><div>Ticker aktualisiert. Neu: was es auf der Karte gibt, Aussagen von Michael Kane zu den Tieren, Wetter als Weiterentwicklung aus RDR2, Größe der Karte jetzt von drei Quellen. Keine weiteren Screenshots.</div></li><li><time>29.09. 19:50</time><div>Liveticker ergänzt. Neu: weitere Tierarten und Tiere zum Aufspüren, die App WAiNK, Social Media, Pfützen und Regenbögen, örtlicher Regen, ein Team für Gespräche der Passanten. Die Größe der Karte wird jetzt von zwei Quellen gemeldet.</div></li><li><time>29.09. 19:30</time><div>Die Seite ist online. Inhalt: die Titelgeschichte von Game Informer #382 und alle 12 Screenshots in 1920×1080.</div></li></ul></div>
   <div id="quellen"><div class="sec-head"><h2>Quellen</h2></div><div class="src">
       <div>Game Informer: <a href="https://gameinformer.com/feature/2026/09/29/grand-theft-auto-vi-welcome-to-leonida">Titelgeschichte „Welcome to Leonida" von Marcus Stewart</a> (frei in der App, im Web kostenpflichtig) · <a href="https://gameinformer.com/cover-reveal/2026/09/25/cover-reveal-grand-theft-auto-vi">Cover Reveal</a> · <a href="https://gameinformer.com/digital-issue/2026/09/29/the-grand-theft-auto-vi-digital-issue-is-now-live">Digital-Ausgabe</a> · <a href="https://x.com/gameinformer/status/2104964448662278501">Gratis-Ankündigung auf X</a></div>
@@ -536,9 +566,71 @@ document.addEventListener('keydown',e=>{if(lb.hidden)return;if(e.key==='Escape')
 let tx=null;lb.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(tx===null)return;const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(idx+(d<0?1:-1));tx=null});
 // Sticky-Navigation: Logo einblenden, sobald angeheftet; aktive Rubrik markieren
 const snav=document.getElementById('snav');new IntersectionObserver(([e])=>snav.classList.toggle('stuck',e.intersectionRatio<1),{threshold:[1],rootMargin:'-1px 0px 0px 0px'}).observe(snav);
-const navLinks=[...snav.querySelectorAll('.snav-links a')];const secs=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
-const mark=()=>{let on=null;secs.forEach(sec=>{if(sec.getBoundingClientRect().top<120)on=sec});navLinks.forEach(a=>{const act=on&&a.getAttribute('href')==='#'+on.id;a.classList.toggle('on',act);if(act&&a.scrollIntoViewIfNeeded)a.scrollIntoViewIfNeeded(false)})};
-addEventListener('scroll',mark,{passive:true});mark();
+// Kanalwechsel: jede Rubrik ist ein Kanal, Wechsel mit Wischblende (voll oder leicht)
+(()=>{
+const root=document.documentElement, pw=document.getElementById('pw'), ind=snav.querySelector('.ind'), fxbtn=document.getElementById('fxbtn');
+const links=[...snav.querySelectorAll('.snav-links a')], chans=links.map(a=>a.hash.slice(1));
+const names=Object.fromEntries(links.map(a=>[a.hash.slice(1),a.textContent]));
+const alias={top:'live',screenshots:'galerie'};
+const parts=ch=>document.querySelectorAll(`[data-ch="${ch}"]`);
+// Ziel einer Adresse: Kanal plus optionale Stelle darin
+const resolve=hash=>{const id=decodeURIComponent((hash||'').slice(1));if(!id)return{ch:'live'};if(alias[id])return{ch:alias[id]};if(chans.includes(id))return{ch:id};
+  const el=document.getElementById(id), box=el&&el.closest('[data-ch]');return box?{ch:box.dataset.ch,el}:null};
+// leichte Version: Wunsch des Besuchers, sonst Automatik (weniger Bewegung, keine Grafikbeschleunigung, gemessenes Ruckeln)
+const store={get:k=>{try{return localStorage.getItem(k)}catch{return null}},set:(k,v)=>{try{localStorage.setItem(k,v)}catch{}}};
+const softwareGL=()=>{try{const gl=document.createElement('canvas').getContext('webgl');if(!gl)return true;const x=gl.getExtension('WEBGL_debug_renderer_info');
+  const r=x?gl.getParameter(x.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER);return /swiftshader|llvmpipe|software|basic render/i.test(r)}catch{return false}};
+const auto=matchMedia('(prefers-reduced-motion: reduce)').matches||store.get('fxAuto')==='lite'||softwareGL();
+let lite=store.get('fx')?store.get('fx')==='lite':auto;
+const setLite=v=>{lite=v;root.classList.toggle('lite',v);fxbtn.innerHTML=`FX <b>${v?'Leicht':'Voll'}</b>`;fxbtn.setAttribute('aria-label',`Animation beim Rubrikwechsel: ${v?'leicht':'voll'}, umschalten`)};
+setLite(lite);
+fxbtn.addEventListener('click',()=>{setLite(!lite);store.set('fx',lite?'lite':'full')});
+let cur=null, busy=false;
+const moveInd=()=>{const a=links.find(l=>l.classList.contains('on'));if(!a)return;ind.style.left=a.offsetLeft+10+'px';ind.style.width=a.offsetWidth-20+'px'};
+const paint=ch=>{document.querySelectorAll('[data-ch].on').forEach(e=>e.classList.remove('on'));parts(ch).forEach(e=>e.classList.add('on'));
+  document.body.className=document.body.className.replace(/\bch-\S+/g,'').trim()+' ch-'+ch;cur=ch;
+  links.forEach(a=>{const on=a.hash==='#'+ch;a.classList.toggle('on',on);on?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current')});
+  moveInd();const a=links.find(l=>l.classList.contains('on'));a&&a.scrollIntoView({block:'nearest',inline:'nearest'})};
+const land=(t)=>{if(t.el){t.el.scrollIntoView({block:'start'})}else scrollTo(0,0)};
+root.classList.add('ch');
+const first=resolve(location.hash)||{ch:'live'};paint(first.ch);if(first.el)requestAnimationFrame(()=>first.el.scrollIntoView({block:'start'}));
+addEventListener('resize',moveInd);document.fonts&&document.fonts.ready.then(moveInd);
+const EASE='cubic-bezier(.77,0,.18,1)', OUT='cubic-bezier(.2,.8,.2,1)', SK='skewX(-16deg)';
+function wipe(t){
+  const D=lite?820:1080, ch=t.ch;
+  document.getElementById('pw-t').textContent=names[ch];document.getElementById('pw-ch').textContent='CH '+String(chans.indexOf(ch)+1).padStart(2,'0');
+  pw.style.visibility='visible';
+  const main=document.querySelector('main');
+  const out=lite?main.animate([{opacity:1},{opacity:.4}],{duration:380,fill:'forwards'})
+               :main.animate([{transform:'none',opacity:1,filter:'blur(0)'},{transform:'scale(.965)',opacity:.35,filter:'blur(3px)'}],{duration:420,easing:'ease-in',fill:'forwards'});
+  const bar=[{transform:`translateX(-120%) ${SK}`,easing:EASE},{transform:`translateX(-16.5%) ${SK}`,offset:.42},{transform:`translateX(-16.5%) ${SK}`,offset:.6,easing:EASE},{transform:`translateX(115%) ${SK}`}];
+  const [gold,glass,red,line]=pw.children, d0=lite?60:90;
+  gold.animate(bar,{duration:D});if(!lite)glass.animate(bar,{duration:D,delay:45});
+  const last=red.animate(bar,{duration:D,delay:d0});
+  const [em,chn,st]=red.querySelector('.card-in').children;
+  [em,chn,st].forEach((el,k)=>el.animate([{transform:'translateY(70%)',opacity:0},{transform:'translateY(70%)',opacity:0,offset:.3,easing:OUT},{transform:'none',opacity:1,offset:.48},{transform:'none',opacity:1,offset:.6,easing:'ease-in'},{transform:'translateY(-40%)',opacity:0,offset:.7},{transform:'translateY(-40%)',opacity:0}],{duration:D,delay:d0+(lite?0:k*40)}));
+  if(!lite){st.animate([{letterSpacing:'.35em'},{letterSpacing:'.35em',offset:.28,easing:OUT},{letterSpacing:'.02em',offset:.55},{letterSpacing:'.02em'}],{duration:D,delay:170});
+    red.querySelector('.shine').animate([{left:'-30%'},{left:'-30%',offset:.4,easing:'ease-in-out'},{left:'110%',offset:.7},{left:'110%'}],{duration:D,delay:d0});
+    line.animate([{opacity:0,transform:'scaleX(0)'},{opacity:0,transform:'scaleX(0)',offset:.4},{opacity:1,transform:'scaleX(1)',offset:.5},{opacity:0,transform:'scaleX(1)',offset:.62},{opacity:0}],{duration:D,delay:d0});}
+  // Ruckeln messen (nur in der vollen Version): unter ~30 Bildern pro Sekunde künftig automatisch leicht
+  let frames=0,t0=performance.now(),run=!lite;(function f(){if(!run)return;frames++;requestAnimationFrame(f)})();
+  setTimeout(()=>{out.cancel();paint(ch);land(t);
+    if(!lite){let k=0;document.querySelectorAll(`[data-ch="${ch}"] .sec-head, [data-ch="${ch}"] .ticker-list > li, [data-ch="${ch}"] .topic, [data-ch="${ch}"] .shot, [data-ch="${ch}"] .who, [data-ch="${ch}"] .vid, [data-ch="${ch}"] .box`).forEach(el=>{
+      const r=el.getBoundingClientRect();if(r.top>innerHeight||k>14)return;el.animate([{transform:'translateY(22px)',opacity:0},{transform:'none',opacity:1}],{duration:560,delay:260+(k++)*55,easing:OUT,fill:'backwards'})})}
+  },d0+D*.5);
+  return last.finished.then(()=>{pw.style.visibility='hidden';
+    if(run){run=false;const fps=frames/((performance.now()-t0)/1000);if(fps<30&&!store.get('fx')){store.set('fxAuto','lite');setLite(true)}}});
+}
+async function go(t,push){
+  if(!t||busy)return;
+  if(t.ch===cur){push&&history.pushState(null,'',t.el?'#'+t.el.id:'#'+t.ch);t.el?t.el.scrollIntoView({behavior:'smooth',block:'start'}):scrollTo({top:0,behavior:'smooth'});return}
+  busy=true;if(push)history.pushState(null,'',t.el?'#'+t.el.id:(t.ch==='live'?location.pathname:'#'+t.ch));
+  try{await wipe(t)}finally{busy=false}
+  const h=document.querySelector(`[data-ch="${t.ch}"] h2`);if(h&&!t.el){h.tabIndex=-1;h.focus({preventScroll:true})}
+}
+document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey)return;const t=resolve(a.hash);if(!t)return;e.preventDefault();go(t,true)});
+addEventListener('popstate',()=>{const t=resolve(location.hash)||{ch:'live'};if(t.ch===cur){t.el?t.el.scrollIntoView({block:'start'}):scrollTo(0,0)}else go(t,false)});
+})();
 // Laufband aus dem Sendeplan
 const items=[...document.querySelectorAll('#live .ticker-list li:not(.day)')].slice(0,8).map(li=>{const t=li.querySelector('time')?.textContent||'';const c=li.cloneNode(true);c.querySelectorAll('time,.tag,a,s').forEach(x=>x.remove());return `<span><b>${t}</b>${c.textContent.replace(/\s+/g,' ').trim()}</span>`}).join('');
 const track=document.getElementById('track');track.innerHTML=items+items;
