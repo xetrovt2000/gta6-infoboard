@@ -123,7 +123,8 @@ h1,h2,h3,h4{margin:0;text-wrap:balance}
 /* Sondersendung: Themenkarten */
 .topics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 .topic{background:var(--panel);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
-.topic .thumb{aspect-ratio:21/8;background-size:cover;background-position:center;position:relative}
+.topic .thumb{aspect-ratio:21/8;position:relative}
+.topic .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .topic .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--panel))}
 .topic .body{padding:4px 20px 20px}
 .topic h3{font:400 28px/1.05 var(--display);text-transform:uppercase;margin:-18px 0 4px;position:relative}
@@ -222,19 +223,20 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 @media (max-width:980px){.vids{grid-template-columns:1fr 1fr}.vid.feat{grid-column:span 2;grid-row:auto;min-height:0}.split{grid-template-columns:1fr}.side{position:static;grid-template-columns:repeat(2,minmax(0,1fr))}.cast{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:720px){.rule{position:static}.vids{grid-template-columns:1fr}.vid.feat{grid-row:auto;grid-column:auto;min-height:0}.vid.small{grid-column:auto}.topics,.cols,.leaks{grid-template-columns:1fr}.side{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
   .facts li{grid-template-columns:1fr;gap:4px}.ticker-list li{grid-template-columns:58px minmax(0,1fr);padding:12px}.ticker-list time{font-size:20px}
-  .lower{bottom:72px}.clock{font-size:16px}.dossier{padding:22px 16px}.dossier .big-stamp{display:none}.log li{grid-template-columns:1fr;gap:2px}}
+  .band{padding-top:36px}#live{padding-top:22px}.tv{height:440px;min-height:0}.headline{font-size:clamp(34px,10.5vw,48px)}.sub{font-size:14px;padding:6px 10px}.flag{font-size:14px;padding:5px 10px}
+  .lower{bottom:66px}.clock{font-size:16px}.dossier{padding:22px 16px}.dossier .big-stamp{display:none}.log li{grid-template-columns:1fr;gap:2px}}
 @media (max-width:420px){.cast{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header class="tv" id="top">
-  <img src="shots/gta6-gi-05.webp" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
+  <img src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
   <div class="lower">
-    <span class="flag">Sondersendung</span>
-    <h1 class="headline">Leonida doppelt so groß wie GTA&nbsp;V</h1>
-    <span class="sub">Game Informer #382 komplett gelesen: Hurrikane, Heat-System, Beziehungen, alle 12 Screenshots</span>
+    <span class="flag">Countdown</span>
+    <h1 class="headline">Noch <span id="hdays">49</span> Tage bis Leonida</h1>
+    <span class="sub">Release am 19. November · Heute kein Merch-Drop · Game Informer #382 komplett ausgewertet</span>
   </div>
   <div class="crawl" id="crawl"><a class="lab" href="#live" tabindex="-1" aria-hidden="true">TICKER</a><div class="track" id="track" aria-hidden="true"></div><button type="button" class="cbtn" id="cbtn" aria-label="Laufband anhalten" title="Laufband anhalten">❚❚</button></div>
 </header>
@@ -342,47 +344,47 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 <section class="band" id="magazin"><div class="wrap">
   <span class="slate">Sondersendung</span>
   <div class="sec-head"><h2>Game Informer #382: Welcome to Leonida</h2><span class="kicker">14 Seiten · von uns komplett gelesen</span></div>
-  <div class="topics"><article class="topic" id="story"><div class="thumb" style="background-image:url(shots/gta6-gi-01.webp)"></div><div class="body"><h3>Story und Beziehung</h3><span class="kicker">Jason &amp; Lucia</span><ul class="facts">
+  <div class="topics"><article class="topic" id="story"><div class="thumb"><img src="thumbs/shots/gta6-gi-01.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Story und Beziehung</h3><span class="kicker">Jason &amp; Lucia</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Jason ist Armeeveteran und arbeitet zu Beginn für Drogenschmuggler in den Leonida Keys. Lucia stammt aus Liberty City, wurde von ihrem Vater im Kampfsport trainiert und ist gerade aus dem Gefängnis entlassen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Wie in GTA V kann man fast jederzeit zwischen den beiden wechseln. Bei Missionen ist der andere meist direkt dabei. Nachdem „ein leichter Coup schiefgeht", müssen sie eine größere Verschwörung in Leonida aufdecken.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div><b>Neu: Die Beziehung lässt sich lenken.</b> Ob die beiden Freunde bleiben oder ein Liebespaar werden, entscheidet man durch Story und optionale Entscheidungen. Die romantische Bindung wächst durch kleine Gesten: Händchen halten, Türen aufhalten, Anrufe und Nachrichten zuverlässig beantworten, gemeinsame Unternehmungen annehmen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Das System ist freiwillig und bringt spielerisch keine Vorteile. Manche Teile der Story hängen aber von der Bindung der beiden ab.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Große und kleine Entscheidungen verändern laut Rockstar die Richtung der Story so stark, dass sich mehrere Durchgänge lohnen.</div></li>
-    </ul></div></article><article class="topic" id="ueberfaelle"><div class="thumb" style="background-image:url(shots/gta6-gi-07.webp)"></div><div class="body"><h3>Überfälle und Polizei</h3><span class="kicker">neu im Artikel</span><ul class="facts">
+    </ul></div></article><article class="topic" id="ueberfaelle"><div class="thumb"><img src="thumbs/shots/gta6-gi-07.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Überfälle und Polizei</h3><span class="kicker">neu im Artikel</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Geld ist wichtiger als je zuvor: <b>Manche Missionen werden erst ab einem bestimmten Einkommen freigeschaltet.</b></div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Überfälle gehen allein oder zu zweit, zu zweit stärkt das die Beziehung. Man kann laut und schnell oder leise und gründlich vorgehen. Wie stark man eskaliert, bestimmt, ob und wie die Polizei reagiert.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div><b>Sechs Fahndungssterne</b> sind zurück. Neu ist ein <b>Heat-System</b>: Die Polizei sammelt aus gemeldeten Vorfällen Infos über Aussehen und Aufenthaltsort.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Wer Frisur und Kleidung wechselt (in Läden und Salons) und das Fluchtauto loswird, entkommt leichter. Trennen sich Jason und Lucia, teilt sich die Polizei auf. Wird einer geschnappt, heißt es „Busted", auch wenn der andere entkommt.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Autodiebstahl ist aufwendiger: Je nach Auto reicht die alte Methode, oder man braucht Spezialwerkzeug. Teure Autos haben Alarmanlagen und sogar Peilsender.</div></li>
-    </ul></div></article><article class="topic" id="welt"><div class="thumb" style="background-image:url(shots/gta6-gi-02.webp)"></div><div class="body"><h3>Welt und Karte</h3><span class="kicker">Vice City &amp; Leonida</span><blockquote>„Wir sind bei der Zahl der Innenräume an eine kritische Masse gekommen."
+    </ul></div></article><article class="topic" id="welt"><div class="thumb"><img src="thumbs/shots/gta6-gi-02.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Welt und Karte</h3><span class="kicker">Vice City &amp; Leonida</span><blockquote>„Wir sind bei der Zahl der Innenräume an eine kritische Masse gekommen."
       <cite>Aaron Garbut, Head of Development / Co-Studio Head · übersetzt</cite></blockquote><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Leonida ist laut Garbut mit Abstand die <b>größte Karte</b>, die Rockstar je gebaut hat: <b>doppelt so groß wie GTA V</b>, dazu dichter, detaillierter und interaktiver, mit sehr vielen Innenräumen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div><b>Die sechs Regionen:</b> <b>Vice City</b> mit Art déco, Staus (die Verfolgungsjagden schwerer machen), Stränden und Kreuzfahrthafen. <b>Grassrivers</b> als Gegenstück zu den Everglades, voller Raubtiere und bewaffneter Einheimischer. <b>Port Gellhorn</b> mit verlassenen Attraktionen, billigen Motels und Einkaufszeilen. <b>Ambrosia</b> als Industrieherz mit Fabriken, Raffinerien und einer Rockergang, die das Sagen hat. <b>Mount Kalaga National Park</b> an der Nordgrenze mit der Kultur der Grenze zu Georgia, im Spiel „Leonida-Gloriana". Dazu die <b>Leonida Keys</b>.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Auf dem Land gibt es Quad-Strecken, Schlammpartys, Demolition Derbys bei Flutlicht, Mountainbike-Trails, Farmen, Ranches, einen Golfplatz, Motocross in Dünen und Barschangeln. Vorbilder waren unter anderem Panama City, Jacksonville und Ocala (Paul MacPherson, Environment Art).</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Orlando mit seinen Freizeitparks und die „Space Coast" gibt es womöglich nicht eins zu eins. Rockstar will aber das „ganze Florida-Erlebnis" abbilden.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Für die Recherche war das Team mehrfach in Miami und Südflorida: mit Ex-Polizisten nachts unterwegs, in Clubs, am Strand, in den Everglades und den Keys (Rupert Humphries, Narrative). Die Autoren haben sich auch lokale Dialekte angeeignet.</div></li>
-    </ul></div></article><article class="topic" id="wetter"><div class="thumb" style="background-image:url(shots/gta6-gi-03.webp)"></div><div class="body"><h3>Wetter</h3><span class="kicker">Hurrikane bestätigt</span><ul class="facts">
+    </ul></div></article><article class="topic" id="wetter"><div class="thumb"><img src="thumbs/shots/gta6-gi-03.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Wetter</h3><span class="kicker">Hurrikane bestätigt</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Das Wettersystem wurde neu entwickelt und ist jetzt <b>örtlich begrenzt und hält länger an</b> (Owen Shepherd, Lighting &amp; Rendering). Man kann in der Sonne stehen, während nebenan ein Schauer niedergeht.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Die Wolken sind voll dynamisch, vom klaren Winterhimmel bis zu riesigen Gewitterwolken mit Blitzen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Bei passendem Licht entstehen <b>Regenbögen</b>. <b>Pfützen</b> bleiben liegen, man sieht also, ob es gerade geregnet hat.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Wind vom Meer nach Sonnenuntergang, Aufwinde, Windschatten hinter Gebäuden. Haare und Müll wirbeln, das Wasser kräuselt sich, das Sumpfgras biegt sich.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div><b>Tropenstürme und Hurrikane</b> mit schweren Wolken, Sturm, Starkregen, Wasser von Dächern und Laternen, Donner und Blitz. Wie oft sie kommen und ob sie Story oder Gameplay beeinflussen, sagt Rockstar nicht.</div></li>
-    </ul></div></article><article class="topic" id="tiere"><div class="thumb" style="background-image:url(shots/gta6-gi-11.webp)"></div><div class="body"><h3>Tierwelt</h3><span class="kicker">Land · Luft · Wasser</span><ul class="facts">
+    </ul></div></article><article class="topic" id="tiere"><div class="thumb"><img src="thumbs/shots/gta6-gi-11.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Tierwelt</h3><span class="kicker">Land · Luft · Wasser</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div><b>Über 170 Arten</b>, darunter mehr als 60 Vogelarten und über 30 Landsäugetiere, dazu Fische und Reptilien. Manche Arten gab es noch in keinem Rockstar-Spiel (Michael Kane, Dynamic Art).</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Bestätigt: Seekühe, Flamingos, Pelikane, Alligatoren, verschiedene Haiarten, Wale, Rochen, Schildkröten und Quallen, jeweils mit eigenen Bewegungen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Auch eingeschleppte Arten wie in Florida: grüne Leguane, verwilderte Katzen, Agakröten, Neunbinden-Gürteltiere und Rhesusaffen.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Wie in Red Dead Redemption kann man Tiere <b>aufspüren</b>, eingeteilt in Selten, Entdeckbar und Legendär. Welche das sind, bleibt geheim.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Aufbauend auf Red Dead gibt es Schillern, Biolumineszenz, Durchscheinen und neue Fell- und Federsysteme. Fell ist voll simuliert: Es wird nass und dreckig, verfilzt und klumpt.</div></li>
-    </ul></div></article><article class="topic" id="npcs"><div class="thumb" style="background-image:url(shots/gta6-gi-09.webp)"></div><div class="body"><h3>Passanten</h3><span class="kicker">NPCs</span><ul class="facts">
+    </ul></div></article><article class="topic" id="npcs"><div class="thumb"><img src="thumbs/shots/gta6-gi-09.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Passanten</h3><span class="kicker">NPCs</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Die vielfältigsten NPCs der Reihe: unterschiedliche Größen und Körperformen, Hauttypen mit Sommersprossen, Muttermalen und Bräune, regional passende Tattoos, mehr Frisuren.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Die Mode unterscheidet sich je nach Gegend, mit der größten Auswahl an Kleidung und Accessoires, die Rockstar je gemacht hat, samt Schmutz und Abnutzung.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Ein eigenes Team in Los Angeles schreibt nur die Gespräche der Passanten.</div></li>
-    </ul></div></article><article class="topic" id="gameplay"><div class="thumb" style="background-image:url(shots/gta6-gi-12.webp)"></div><div class="body"><h3>Handy und unterwegs</h3><span class="kicker">Apps</span><ul class="facts">
+    </ul></div></article><article class="topic" id="gameplay"><div class="thumb"><img src="thumbs/shots/gta6-gi-12.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Handy und unterwegs</h3><span class="kicker">Apps</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div><b>WAiNK</b> scannt Autos und zeigt Sicherung, Zulassungskosten und den Preis beim Hehler.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div><b>RydeMe</b>, eine Mitfahr-App, dient als Schnellreise. Bei geteilten Fahrten kann man sogar mit den anderen Fahrgästen reden.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Die Karte sieht aus wie ein Satellitenbild. Das Radio bringt neue lizenzierte Songs und viel Werbung.</div></li>
       <li><span class="tag t-ok">Offiziell</span><div>Jason und Lucia können auf Social Media scrollen, zum Beispiel im zurückkehrenden Instagram-Klon <b>Snapmatic</b>, aber nichts posten, weil sie gesucht werden.</div></li>
-    </ul></div></article><article class="topic" id="aktivitaeten"><div class="thumb" style="background-image:url(shots/gta6-gi-04.webp)"></div><div class="body"><h3>Aktivitäten</h3><span class="kicker">zum Abschalten oder für die Beziehung</span><ul class="facts">
+    </ul></div></article><article class="topic" id="aktivitaeten"><div class="thumb"><img src="thumbs/shots/gta6-gi-04.webp" alt="" loading="lazy" decoding="async" width="800" height="450"></div><div class="body"><h3>Aktivitäten</h3><span class="kicker">zum Abschalten oder für die Beziehung</span><ul class="facts">
       <li><span class="tag t-ok">Offiziell</span><div>Basejumping, Billard, Fitnessstudio, Kajak, Minigolf, Tauchen, Straßen- und Offroad-Rennen, Zoo, Airboat, Jetski.</div></li>
     </ul></div></article></div>
 </div></section>
@@ -524,7 +526,7 @@ const g=document.getElementById('gallery'), lb=document.getElementById('lb'), lb
 let cur=[], idx=0;
 const show=i=>{idx=(i+cur.length)%cur.length;const it=cur[idx];lbImg.src=it.src;lbImg.alt=it.cap;lbCap.textContent=`${idx+1}/${cur.length} · ${it.cap}`;};
 const render=key=>{cur=sets[key].items;g.innerHTML='';document.getElementById('gal-src').textContent=sets[key].src;
-  cur.forEach((it,i)=>{const f=document.createElement('figure');f.className='shot';f.innerHTML=`<button type="button" aria-label="${it.cap} vergrößern"><img src="${it.src}" alt="${it.cap}" loading="lazy" width="1600" height="900"></button><figcaption>${it.label}</figcaption>`;
+  cur.forEach((it,i)=>{const f=document.createElement('figure');f.className='shot';f.innerHTML=`<button type="button" aria-label="${it.cap} vergrößern"><img src="thumbs/${it.src}" alt="${it.cap}" loading="lazy" decoding="async" width="800" height="450"></button><figcaption>${it.label}</figcaption>`;
     f.querySelector('button').addEventListener('click',()=>{show(i);lb.hidden=false;document.getElementById('lb-close').focus();});g.appendChild(f);});};
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.set);}));
 render('gi');
@@ -548,7 +550,7 @@ cb.addEventListener('click',()=>{const p=crawl.classList.toggle('paused');cb.tex
 // Uhr und Countdown (Zeitzone Berlin)
 const clock=document.getElementById('clock');const fmt=new Intl.DateTimeFormat('de-DE',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Berlin'});
 const tick=()=>{clock.textContent=fmt.format(new Date())+' · VICE CITY'};tick();setInterval(tick,15000);
-const d=Math.ceil((Date.parse('2026-11-19T00:00:00+01:00')-Date.now())/864e5);document.getElementById('days').textContent=Math.max(0,d);
+const d=Math.ceil((Date.parse('2026-11-19T00:00:00+01:00')-Date.now())/864e5);document.getElementById('days').textContent=Math.max(0,d);document.getElementById('hdays').textContent=Math.max(0,d);
 </script>
 <script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
