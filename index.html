@@ -220,13 +220,8 @@ footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(
 #lb .nx{position:absolute;top:50%;margin-top:-26px;width:52px;height:52px;border-radius:50%;background:rgba(244,242,247,.14);color:#fff;border:0;font:700 26px var(--cond);cursor:pointer}#lb .nx:hover{background:var(--red)}#lb .prev{left:12px}#lb .next{right:12px}
 #lb #lb-close{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px;background:var(--fg);color:var(--bg);border:0;border-radius:3px;padding:8px 12px;font:700 15px var(--cond);letter-spacing:.1em;cursor:pointer}
 
-/* Kanalwechsel: nur der aktive Kanal ist sichtbar; außerhalb von Live schmaler Kopf mit Laufband */
+/* Kanalwechsel: nur der aktive Kanal ist sichtbar, jeder Kanal hat seinen eigenen Titelkopf */
 html.ch [data-ch]:not(.on){display:none}
-html.ch body:not(.ch-live) .tv{height:auto;min-height:0}
-html.ch body:not(.ch-live) .tv > img,html.ch body:not(.ch-live) .lower{display:none}
-html.ch body:not(.ch-live) .bar{position:relative;padding-bottom:14px}
-html.ch body:not(.ch-live) .crawl{position:relative}
-html.ch body:not(.ch-live) .tv::after{background:linear-gradient(180deg,#151522,var(--bg))}
 .snav-links{position:relative}
 html.ch .snav-links a::after{display:none}
 .snav-links .ind{position:absolute;bottom:0;left:0;width:0;height:3px;background:var(--red);border-radius:2px;box-shadow:0 0 12px rgba(225,29,72,.8);transition:left .55s cubic-bezier(.65,0,.25,1),width .55s cubic-bezier(.65,0,.25,1)}
@@ -260,12 +255,12 @@ html.lite .pw > i{will-change:auto}
 <body>
 
 <header class="tv" id="top">
-  <img src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
+  <img id="hero-img" src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
   <div class="lower">
-    <span class="flag">Countdown</span>
-    <h1 class="headline">Noch <span id="hdays">49</span> Tage bis Leonida</h1>
-    <span class="sub">Release am 19. November · Heute kein Merch-Drop · Game Informer #382 komplett ausgewertet</span>
+    <span class="flag" id="hero-flag">Countdown</span>
+    <h1 class="headline" id="hero-h">Noch <span id="hdays">49</span> Tage bis Leonida</h1>
+    <span class="sub" id="hero-sub">Release am 19. November · Heute kein Merch-Drop · Game Informer #382 komplett ausgewertet</span>
   </div>
   <div class="crawl" id="crawl"><a class="lab" href="#live" tabindex="-1" aria-hidden="true">TICKER</a><div class="track" id="track" aria-hidden="true"></div><button type="button" class="cbtn" id="cbtn" aria-label="Laufband anhalten" title="Laufband anhalten">❚❚</button></div>
 </header>
@@ -572,6 +567,21 @@ const root=document.documentElement, pw=document.getElementById('pw'), ind=snav.
 const links=[...snav.querySelectorAll('.snav-links a')], chans=links.map(a=>a.hash.slice(1));
 const names=Object.fromEntries(links.map(a=>[a.hash.slice(1),a.textContent]));
 const alias={top:'live',screenshots:'galerie'};
+const heroImg=document.getElementById('hero-img'), heroFlag=document.getElementById('hero-flag'), heroH=document.getElementById('hero-h'), heroSub=document.getElementById('hero-sub');
+const heroes={
+  live:{n:'05',alt:heroImg.alt,flag:heroFlag.textContent,h:heroH.innerHTML,sub:heroSub.textContent},
+  trailer:{n:'02',alt:'Die Skyline von Vice City in der Dämmerung',flag:'Trailer',h:'27 Minuten Leonida',sub:'Das Extended Look, Trailer 1 und 2 und der Teaser · alle offiziell von Rockstar'},
+  magazin:{n:'07',alt:'Lucia mit Tuch vor dem Gesicht und Sturmgewehr in Deckung',flag:'Sondersendung',h:'Leonida doppelt so groß wie GTA&nbsp;V',sub:'Game Informer #382 komplett gelesen: Hurrikane, Heat-System, Beziehungen'},
+  galerie:{n:'11',alt:'Ein Sumpf voller Tiere: Kranich, Hirsch, Rosa Löffler und Vogelschwärme',flag:'Galerie',h:'54 Bilder aus Leonida',sub:'12 aus Game Informer · 42 offizielle Screenshots von Rockstar · sechs Regionen'},
+  charaktere:{n:'01',alt:'Jason und Lucia auf Liegen am Strand von Vice City',flag:'Charaktere',h:'Jason, Lucia und der Rest von Leonida',sub:'Die bekannte Besetzung · Sprecher nennen wir nur mit Beleg'},
+  faktencheck:{n:'08',alt:'Jason mit Baseballschläger in einem Souvenirladen',flag:'Geprüft',h:'Was stimmt, was nicht',sub:'Akte 382 · Behauptungen aus dem Netz gegen die Quellen gehalten'},
+  leaks:{n:'09',alt:'Rocker in einer Neon-Bar am Billardtisch',flag:'Leaks',h:'Was durchgesickert ist',sub:'Der große Leak von 2022 und was davon heute bestätigt ist · nur als Text'},
+  ueber:{n:'04',alt:'Wanderer mit Hund auf einer Holzbrücke am Wasserfall',flag:'Über LNN',h:'Leonida News Network',sub:'Wie wir prüfen, was sich geändert hat, woher die Infos kommen'}};
+const heroSet=n=>({src:`shots/gta6-gi-${n}.webp`,srcset:`mid/shots/gta6-gi-${n}.webp 1280w, shots/gta6-gi-${n}.webp 1920w`});
+const preload=ch=>{const i=new Image();i.sizes='100vw';const h=heroSet(heroes[ch].n);i.srcset=h.srcset;i.src=h.src;return i.decode().catch(()=>{})};
+const setHero=ch=>{const d=heroes[ch],h=heroSet(d.n);if(!heroImg.src.endsWith(h.src)||ch==='live'){heroImg.srcset=h.srcset;heroImg.src=h.src;heroImg.alt=d.alt}
+  heroFlag.textContent=d.flag;heroH.innerHTML=d.h;heroSub.textContent=d.sub;
+  const n=document.getElementById('hdays');if(n)n.textContent=document.getElementById('days').textContent};
 const parts=ch=>document.querySelectorAll(`[data-ch="${ch}"]`);
 // Ziel einer Adresse: Kanal plus optionale Stelle darin
 const resolve=hash=>{const id=decodeURIComponent((hash||'').slice(1));if(!id)return{ch:'live'};if(alias[id])return{ch:alias[id]};if(chans.includes(id))return{ch:id};
@@ -587,17 +597,17 @@ setLite(lite);
 fxbtn.addEventListener('click',()=>{setLite(!lite);store.set('fx',lite?'lite':'full')});
 let cur=null, busy=false;
 const moveInd=()=>{const a=links.find(l=>l.classList.contains('on'));if(!a)return;ind.style.left=a.offsetLeft+10+'px';ind.style.width=a.offsetWidth-20+'px'};
-const paint=ch=>{document.querySelectorAll('[data-ch].on').forEach(e=>e.classList.remove('on'));parts(ch).forEach(e=>e.classList.add('on'));
+const paint=ch=>{setHero(ch);document.querySelectorAll('[data-ch].on').forEach(e=>e.classList.remove('on'));parts(ch).forEach(e=>e.classList.add('on'));
   document.body.className=document.body.className.replace(/\bch-\S+/g,'').trim()+' ch-'+ch;cur=ch;
   links.forEach(a=>{const on=a.hash==='#'+ch;a.classList.toggle('on',on);on?a.setAttribute('aria-current','page'):a.removeAttribute('aria-current')});
   moveInd();const a=links.find(l=>l.classList.contains('on'));a&&a.scrollIntoView({block:'nearest',inline:'nearest'})};
-const land=(t)=>{if(t.el){t.el.scrollIntoView({block:'start'})}else scrollTo(0,0)};
+const land=(t,y)=>{if(t.el){t.el.scrollIntoView({block:'start'})}else scrollTo(0,Math.min(y,document.getElementById('top').offsetHeight))};
 root.classList.add('ch');
 const first=resolve(location.hash)||{ch:'live'};paint(first.ch);if(first.el)requestAnimationFrame(()=>first.el.scrollIntoView({block:'start'}));
 addEventListener('resize',moveInd);document.fonts&&document.fonts.ready.then(moveInd);
 const EASE='cubic-bezier(.77,0,.18,1)', OUT='cubic-bezier(.2,.8,.2,1)', SK='skewX(-16deg)';
 function wipe(t){
-  const D=lite?820:1080, ch=t.ch;
+  const D=lite?820:1080, ch=t.ch, y0=scrollY, ready=preload(ch);
   document.getElementById('pw-t').textContent=names[ch];document.getElementById('pw-ch').textContent='CH '+String(chans.indexOf(ch)+1).padStart(2,'0');
   pw.style.visibility='visible';
   const main=document.querySelector('main');
@@ -614,7 +624,9 @@ function wipe(t){
     line.animate([{opacity:0,transform:'scaleX(0)'},{opacity:0,transform:'scaleX(0)',offset:.4},{opacity:1,transform:'scaleX(1)',offset:.5},{opacity:0,transform:'scaleX(1)',offset:.62},{opacity:0}],{duration:D,delay:d0});}
   // Ruckeln messen (nur in der vollen Version): unter ~30 Bildern pro Sekunde künftig automatisch leicht
   let frames=0,t0=performance.now(),run=!lite;(function f(){if(!run)return;frames++;requestAnimationFrame(f)})();
-  setTimeout(()=>{out.cancel();paint(ch);land(t);
+  setTimeout(async()=>{let late=false;const tm=new Promise(r=>setTimeout(()=>{late=true;r()},60));await Promise.race([ready,tm]);
+    if(late){const an=pw.getAnimations({subtree:true});an.forEach(a=>a.pause());await Promise.race([ready,new Promise(r=>setTimeout(r,1500))]);an.forEach(a=>a.play())}
+    out.cancel();paint(ch);land(t,y0);
     if(!lite){let k=0;document.querySelectorAll(`[data-ch="${ch}"] .sec-head, [data-ch="${ch}"] .ticker-list > li, [data-ch="${ch}"] .topic, [data-ch="${ch}"] .shot, [data-ch="${ch}"] .who, [data-ch="${ch}"] .vid, [data-ch="${ch}"] .box`).forEach(el=>{
       const r=el.getBoundingClientRect();if(r.top>innerHeight||k>14)return;el.animate([{transform:'translateY(22px)',opacity:0},{transform:'none',opacity:1}],{duration:560,delay:260+(k++)*55,easing:OUT,fill:'backwards'})})}
   },d0+D*.5);
@@ -628,6 +640,7 @@ async function go(t,push){
   try{await wipe(t)}finally{busy=false}
   const h=document.querySelector(`[data-ch="${t.ch}"] h2`);if(h&&!t.el){h.tabIndex=-1;h.focus({preventScroll:true})}
 }
+links.forEach(a=>{const f=()=>preload(a.hash.slice(1));a.addEventListener('pointerenter',f,{once:true});a.addEventListener('focus',f,{once:true})});
 document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(!a||e.ctrlKey||e.metaKey||e.shiftKey)return;const t=resolve(a.hash);if(!t)return;e.preventDefault();go(t,true)});
 addEventListener('popstate',()=>{const t=resolve(location.hash)||{ch:'live'};if(t.ch===cur){t.el?t.el.scrollIntoView({block:'start'}):scrollTo(0,0)}else go(t,false)});
 })();
