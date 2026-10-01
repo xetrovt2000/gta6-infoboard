@@ -42,7 +42,7 @@ a{color:var(--gold);text-underline-offset:3px} a:focus-visible,button:focus-visi
 h1,h2,h3,h4{margin:0;text-wrap:balance}
 
 /* ---------- Übertragung ---------- */
-.tv{position:relative;height:min(88vh,800px);min-height:540px;overflow:hidden;isolation:isolate}
+.tv{position:relative;height:clamp(440px,58vh,560px);overflow:hidden;isolation:isolate}
 .tv > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
 .tv::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(0,0,0,.55),transparent 28%,transparent 50%,rgba(7,7,12,.92) 92%),repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px)}
 .bar{position:absolute;inset:0 0 auto;display:flex;align-items:flex-start;gap:12px;padding:calc(18px + env(safe-area-inset-top,0px)) 20px 0;flex-wrap:wrap}
@@ -267,7 +267,7 @@ html.lite .pw > i{will-change:auto}
 <body>
 
 <header class="tv" id="top">
-  <img id="hero-img" src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
+  <img id="hero-img" style="object-position:22% 18%" src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
   <div class="lower">
     <span class="flag" id="hero-flag">Countdown</span>
@@ -673,17 +673,17 @@ const names=Object.fromEntries(links.map(a=>[a.hash.slice(1),a.textContent]));
 const alias={top:'live',screenshots:'galerie'};
 const heroImg=document.getElementById('hero-img'), heroFlag=document.getElementById('hero-flag'), heroH=document.getElementById('hero-h'), heroSub=document.getElementById('hero-sub');
 const heroes={
-  live:{n:'05',alt:heroImg.alt,flag:heroFlag.textContent,h:heroH.innerHTML,sub:heroSub.textContent},
-  trailer:{n:'02',alt:'Die Skyline von Vice City in der Dämmerung',flag:'Trailer',h:'27 Minuten Leonida',sub:'Das Extended Look, Trailer 1 und 2 und der Teaser · alle offiziell von Rockstar'},
-  magazin:{n:'07',alt:'Lucia mit Tuch vor dem Gesicht und Sturmgewehr in Deckung',flag:'Sondersendung',h:'Leonida doppelt so groß wie GTA&nbsp;V',sub:'Game Informer #382 und die Dazed-Titelgeschichte, komplett gelesen'},
-  galerie:{n:'11',alt:'Ein Sumpf voller Tiere: Kranich, Hirsch, Rosa Löffler und Vogelschwärme',flag:'Galerie',h:'111 Bilder aus Leonida',sub:'12 aus Game Informer · 99 offizielle Screenshots von Rockstar · Orte und Figuren'},
-  charaktere:{n:'01',alt:'Jason und Lucia auf Liegen am Strand von Vice City',flag:'Charaktere',h:'Jason, Lucia und der Rest von Leonida',sub:'Die bekannte Besetzung · Sprecher nennen wir nur mit Beleg'},
-  faktencheck:{n:'08',alt:'Jason mit Baseballschläger in einem Souvenirladen',flag:'Geprüft',h:'Was stimmt, was nicht',sub:'Akte 382 · Behauptungen aus dem Netz gegen die Quellen gehalten'},
-  leaks:{n:'09',alt:'Rocker in einer Neon-Bar am Billardtisch',flag:'Leaks',h:'Was durchgesickert ist',sub:'Der große Leak von 2022 und was davon heute bestätigt ist · nur als Text'},
-  ueber:{n:'04',alt:'Wanderer mit Hund auf einer Holzbrücke am Wasserfall',flag:'Über LNN',h:'Leonida News Network',sub:'Wie wir prüfen, was sich geändert hat, woher die Infos kommen'}};
+  live:{n:'05',pos:'22% 18%',alt:heroImg.alt,flag:heroFlag.textContent,h:heroH.innerHTML,sub:heroSub.textContent},
+  trailer:{n:'02',pos:'62% 22%',alt:'Die Skyline von Vice City in der Dämmerung',flag:'Trailer',h:'27 Minuten Leonida',sub:'Das Extended Look, Trailer 1 und 2 und der Teaser · alle offiziell von Rockstar'},
+  magazin:{n:'07',pos:'70% 32%',alt:'Lucia mit Tuch vor dem Gesicht und Sturmgewehr in Deckung',flag:'Sondersendung',h:'Leonida doppelt so groß wie GTA&nbsp;V',sub:'Game Informer #382 und die Dazed-Titelgeschichte, komplett gelesen'},
+  galerie:{n:'11',pos:'76% 72%',alt:'Ein Sumpf voller Tiere: Kranich, Hirsch, Rosa Löffler und Vogelschwärme',flag:'Galerie',h:'111 Bilder aus Leonida',sub:'12 aus Game Informer · 99 offizielle Screenshots von Rockstar · Orte und Figuren'},
+  charaktere:{n:'01',pos:'74% 88%',alt:'Jason und Lucia auf Liegen am Strand von Vice City',flag:'Charaktere',h:'Jason, Lucia und der Rest von Leonida',sub:'Die bekannte Besetzung · Sprecher nennen wir nur mit Beleg'},
+  faktencheck:{n:'08',pos:'62% 35%',alt:'Jason mit Baseballschläger in einem Souvenirladen',flag:'Geprüft',h:'Was stimmt, was nicht',sub:'Akte 382 · Behauptungen aus dem Netz gegen die Quellen gehalten'},
+  leaks:{n:'09',pos:'24% 30%',alt:'Rocker in einer Neon-Bar am Billardtisch',flag:'Leaks',h:'Was durchgesickert ist',sub:'Der große Leak von 2022 und was davon heute bestätigt ist · nur als Text'},
+  ueber:{n:'04',pos:'80% 82%',alt:'Wanderer mit Hund auf einer Holzbrücke am Wasserfall',flag:'Über LNN',h:'Leonida News Network',sub:'Wie wir prüfen, was sich geändert hat, woher die Infos kommen'}};
 const heroSet=n=>({src:`shots/gta6-gi-${n}.webp`,srcset:`mid/shots/gta6-gi-${n}.webp 1280w, shots/gta6-gi-${n}.webp 1920w`});
 const preload=ch=>{const i=new Image();i.sizes='100vw';const h=heroSet(heroes[ch].n);i.srcset=h.srcset;i.src=h.src;return i.decode().catch(()=>{})};
-const setHero=ch=>{const d=heroes[ch],h=heroSet(d.n);if(!heroImg.src.endsWith(h.src)||ch==='live'){heroImg.srcset=h.srcset;heroImg.src=h.src;heroImg.alt=d.alt}
+const setHero=ch=>{const d=heroes[ch],h=heroSet(d.n);heroImg.style.objectPosition=d.pos||'';if(!heroImg.src.endsWith(h.src)||ch==='live'){heroImg.srcset=h.srcset;heroImg.src=h.src;heroImg.alt=d.alt}
   heroFlag.textContent=d.flag;heroH.innerHTML=d.h;heroSub.textContent=d.sub;
   const n=document.getElementById('hdays');if(n)n.textContent=document.getElementById('days').textContent};
 const parts=ch=>document.querySelectorAll(`[data-ch="${ch}"]`);
