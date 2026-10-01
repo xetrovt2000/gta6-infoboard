@@ -475,6 +475,7 @@ html.lite .pw > i{will-change:auto}
   <div class="chips" role="group" aria-label="Bilder filtern"><button type="button" class="chip" aria-pressed="true" data-set="gi">Game Informer <span>12</span></button><button type="button" class="chip" aria-pressed="false" data-set="vice_city">Vice City <span>12</span></button><button type="button" class="chip" aria-pressed="false" data-set="leonida_keys">Leonida Keys <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="grassrivers">Grassrivers <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="port_gellhorn">Port Gellhorn <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="ambrosia">Ambrosia <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="mount_kalaga_national_park">Mount Kalaga <span>6</span></button><button type="button" class="chip" aria-pressed="false" data-set="jason_duval">Jason <span>10</span></button><button type="button" class="chip" aria-pressed="false" data-set="lucia_caminos">Lucia <span>10</span></button><button type="button" class="chip" aria-pressed="false" data-set="jason_and_lucia">Jason &amp; Lucia <span>13</span></button><button type="button" class="chip" aria-pressed="false" data-set="figuren">Nebenfiguren <span>24</span></button></div>
   <div class="gallery" id="gallery"></div>
   <p class="src" id="gal-src"></p>
+  <div id="gal-pad" aria-hidden="true"></div>
 </div></section>
 
 <section class="band" id="charaktere" data-ch="charaktere"><div class="wrap">
@@ -610,13 +611,19 @@ sets.figuren={src:offSrc,items:people.slice(3).flatMap(([k])=>sets[k].items)};
 const g=document.getElementById('gallery'), lb=document.getElementById('lb'), lbImg=document.getElementById('lb-img'), lbCap=document.getElementById('lb-cap');
 let cur=[], idx=0;
 const show=i=>{idx=(i+cur.length)%cur.length;const it=cur[idx];lbImg.src=it.src;lbImg.alt=it.cap;lbCap.textContent=`${idx+1}/${cur.length} · ${it.cap}`;};
-// Region wechseln ohne Springen: Raster wird in einem Schritt ersetzt, die Knöpfe bleiben an ihrer Stelle
-const render=(key,anchor)=>{const y0=anchor?anchor.getBoundingClientRect().top:null;
+// Region wechseln ohne Springen: Raster in einem Schritt ersetzen, Knöpfe bleiben an ihrer Stelle.
+// Wird die Galerie kürzer, hält ein unsichtbarer Puffer unter ihr die Seitenlänge, damit der Browser nicht hochschiebt.
+// Der Puffer schrumpft beim Hochscrollen von selbst und erzeugt nie eine Lücke zwischen den Bildern.
+const gpad=document.getElementById('gal-pad');let padH=0;
+const setPad=h=>{padH=Math.max(0,Math.round(h));gpad.style.height=padH?padH+'px':''};
+addEventListener('scroll',()=>{if(!padH)return;const docH=document.documentElement.scrollHeight;setPad(Math.min(padH,scrollY+innerHeight-(docH-padH)))},{passive:true});
+const render=(key,anchor)=>{const y0=anchor?anchor.getBoundingClientRect().top:null;const h0=g.offsetHeight;setPad(padH+h0);
   cur=sets[key].items;document.getElementById('gal-src').textContent=sets[key].src;const frag=document.createDocumentFragment();
   cur.forEach((it,i)=>{const f=document.createElement('figure');f.className='shot';f.innerHTML=`<button type="button" aria-label="${it.cap} vergrößern"><img src="thumbs/${it.src}" alt="${it.cap}" loading="lazy" decoding="async" width="800" height="450"></button><figcaption>${it.label}</figcaption>`;
     const b=f.querySelector('button'),im=f.querySelector('img'),ok=()=>{im.classList.add('ok');b.classList.add('ok')};im.complete&&im.naturalWidth?ok():im.addEventListener('load',ok,{once:true});
     b.addEventListener('click',()=>{show(i);lb.hidden=false;document.getElementById('lb-close').focus();});frag.appendChild(f);});
-  g.replaceChildren(frag);if(anchor)scrollBy(0,anchor.getBoundingClientRect().top-y0);};
+  g.replaceChildren(frag);setPad(padH-g.offsetHeight);if(anchor)scrollBy(0,anchor.getBoundingClientRect().top-y0);
+  const docH=document.documentElement.scrollHeight;setPad(Math.min(padH,scrollY+innerHeight-(docH-padH)));};
 document.addEventListener('click',e=>{const a=e.target.closest('[data-gal]');if(!a)return;const k=a.dataset.gal;document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x.dataset.set===k));render(k);});
 document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.dataset.set,b);}));
 render('gi');
