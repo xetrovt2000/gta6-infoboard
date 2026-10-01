@@ -38,7 +38,7 @@ for li in re.finditer(r"<li([^>]*)>(.*?)</li>", live, flags=re.S):
     tag = re.search(r'class="tag[^"]*">([^<]+)<', div)
     bold = re.search(r"<b>(.*?)</b>", div, flags=re.S)
     full = text(re.sub(r'<span class="tag[^"]*">[^<]+</span>', "", div))
-    full = re.sub(r"\s+(Mehr|Ansehen)$", "", full)
+    full = re.sub(r"\s+(Mehr|Ansehen|Quelle)$", "", full)
     title = text(bold.group(1)).rstrip(":.") if bold else (full[:90] + ("…" if len(full) > 90 else ""))
     if tag:
         title = f"[{tag.group(1)}] {title}"
