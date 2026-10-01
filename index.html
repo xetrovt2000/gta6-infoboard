@@ -591,10 +591,10 @@ const store={get:k=>{try{return localStorage.getItem(k)}catch{return null}},set:
 const softwareGL=()=>{try{const gl=document.createElement('canvas').getContext('webgl');if(!gl)return true;const x=gl.getExtension('WEBGL_debug_renderer_info');
   const r=x?gl.getParameter(x.UNMASKED_RENDERER_WEBGL):gl.getParameter(gl.RENDERER);return /swiftshader|llvmpipe|software|basic render/i.test(r)}catch{return false}};
 const auto=matchMedia('(prefers-reduced-motion: reduce)').matches||store.get('fxAuto')==='lite'||softwareGL();
-let lite=store.get('fx')?store.get('fx')==='lite':auto;
-const setLite=v=>{lite=v;root.classList.toggle('lite',v);fxbtn.innerHTML=`FX <b>${v?'Leicht':'Voll'}</b>`;fxbtn.setAttribute('aria-label',`Animation beim Rubrikwechsel: ${v?'leicht':'voll'}, umschalten`)};
-setLite(lite);
-fxbtn.addEventListener('click',()=>{setLite(!lite);store.set('fx',lite?'lite':'full')});
+const MODES={full:'Voll',lite:'Leicht',off:'Aus'};let mode=MODES[store.get('fx')]?store.get('fx'):(auto?'lite':'full'), lite=mode==='lite';
+const setMode=m=>{mode=m;lite=m==='lite';root.classList.toggle('lite',lite);fxbtn.innerHTML=`FX <b>${MODES[m]}</b>`;fxbtn.setAttribute('aria-label',`Animation beim Rubrikwechsel: ${MODES[m]}, umschalten`)};
+setMode(mode);
+fxbtn.addEventListener('click',()=>{const n={full:'lite',lite:'off',off:'full'}[mode];setMode(n);store.set('fx',n)});
 let cur=null, busy=false;
 const moveInd=()=>{const a=links.find(l=>l.classList.contains('on'));if(!a)return;ind.style.left=a.offsetLeft+10+'px';ind.style.width=a.offsetWidth-20+'px'};
 const paint=ch=>{setHero(ch);document.querySelectorAll('[data-ch].on').forEach(e=>e.classList.remove('on'));parts(ch).forEach(e=>e.classList.add('on'));
@@ -631,13 +631,13 @@ function wipe(t){
       const r=el.getBoundingClientRect();if(r.top>innerHeight||k>14)return;el.animate([{transform:'translateY(22px)',opacity:0},{transform:'none',opacity:1}],{duration:560,delay:260+(k++)*55,easing:OUT,fill:'backwards'})})}
   },d0+D*.5);
   return last.finished.then(()=>{pw.style.visibility='hidden';
-    if(run){run=false;const fps=frames/((performance.now()-t0)/1000);if(fps<30&&!store.get('fx')){store.set('fxAuto','lite');setLite(true)}}});
+    if(run){run=false;const fps=frames/((performance.now()-t0)/1000);if(fps<30&&!store.get('fx')){store.set('fxAuto','lite');setMode('lite')}}});
 }
 async function go(t,push){
   if(!t||busy)return;
   if(t.ch===cur){push&&history.pushState(null,'',t.el?'#'+t.el.id:'#'+t.ch);t.el?t.el.scrollIntoView({behavior:'smooth',block:'start'}):scrollTo({top:0,behavior:'smooth'});return}
   busy=true;if(push)history.pushState(null,'',t.el?'#'+t.el.id:(t.ch==='live'?location.pathname:'#'+t.ch));
-  try{await wipe(t)}finally{busy=false}
+  try{if(mode==='off'){const y=scrollY;paint(t.ch);land(t,y)}else await wipe(t)}finally{busy=false}
   const h=document.querySelector(`[data-ch="${t.ch}"] h2`);if(h&&!t.el){h.tabIndex=-1;h.focus({preventScroll:true})}
 }
 links.forEach(a=>{const f=()=>preload(a.hash.slice(1));a.addEventListener('pointerenter',f,{once:true});a.addEventListener('focus',f,{once:true})});
