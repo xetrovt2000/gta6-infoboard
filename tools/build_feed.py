@@ -65,6 +65,7 @@ for li in re.finditer(r"<li([^>]*)>(.*?)</li>", live, flags=re.S):
     div = re.search(r"<div>(.*)</div>", body, flags=re.S).group(1)
     tag = re.search(r'class="tag[^"]*">([^<]+)<', div)
     bold = re.search(r"<b>(.*?)</b>", div, flags=re.S)
+    div = re.sub(r'<span class="srcs">.*?</span>|<a class="tpic".*?</a>', "", div, flags=re.S)  # Quellen-Zeile und Bild nicht in den Feed-Text
     full = text(re.sub(r'<span class="tag[^"]*">[^<]+</span>', "", div))
     full = re.sub(r"\s+(Mehr|Ansehen|Quelle)$", "", full)
     title = text(bold.group(1)).rstrip(":.") if bold else (full[:90] + ("…" if len(full) > 90 else ""))
