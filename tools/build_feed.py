@@ -17,7 +17,35 @@ MONTHS = {m: i for i, m in enumerate(
     "Januar Februar März April Mai Juni Juli August September Oktober November Dezember".split(), 1)}
 
 src = (ROOT / "index.html").read_text(encoding="utf-8")
-live = src[src.index('id="live"'):src.index('<aside class="side">')]
+a, b = src.index('id="live"'), src.index('<aside class="side">')
+live = src[a:b]
+
+# Jede Ticker-Meldung bekommt eine feste Adresse (#m-JJMMTT-HHMM, bei gleicher Minute -2, -3 ...).
+# Vorhandene IDs bleiben unverändert, damit geteilte Links gültig bleiben.
+used = set(re.findall(r'<li[^>]*\bid="(m-[^"]+)"', live))
+def add_ids(live):
+    out, pos, day = [], 0, None
+    for m in re.finditer(r"<li([^>]*)>(.*?)</li>", live, flags=re.S):
+        attrs, body = m.groups()
+        if 'class="day"' in attrs:
+            d = re.search(r"(\d{1,2})\.\s*(\w+)", re.sub(r"<[^>]+>", "", body))
+            day = (int(d.group(1)), MONTHS[d.group(2)])
+            continue
+        t = re.search(r"<time>(\d{1,2}):(\d{2})</time>", body)
+        if not t or not day or "id=" in attrs:
+            continue
+        base = f"m-{YEAR % 100:02d}{day[1]:02d}{day[0]:02d}-{int(t.group(1)):02d}{t.group(2)}"
+        nid, k = base, 2
+        while nid in used:
+            nid, k = f"{base}-{k}", k + 1
+        used.add(nid)
+        out += [live[pos:m.start()], f'<li id="{nid}"{attrs}>']
+        pos = m.start() + len(f"<li{attrs}>")
+    return "".join(out) + live[pos:]
+live = add_ids(live)
+if live != src[a:b]:
+    src = src[:a] + live + src[b:]
+    (ROOT / "index.html").write_text(src, encoding="utf-8", newline="")
 
 def text(s):
     s = re.sub(r"<s>.*?</s>", "", s, flags=re.S)  # gestrichene Meldungen nicht in den Feed-Text
@@ -44,7 +72,8 @@ for li in re.finditer(r"<li([^>]*)>(.*?)</li>", live, flags=re.S):
         title = f"[{tag.group(1)}] {title}"
     when = datetime(YEAR, day[1], day[0], int(t.group(1)), int(t.group(2)), tzinfo=TZ)
     guid = hashlib.sha1(f"{when.isoformat()}|{full}".encode()).hexdigest()[:16]
-    items.append((when, title, full, guid))
+    lid = re.search(r'\bid="([^"]+)"', attrs)
+    items.append((when, title, full, guid, lid.group(1) if lid else "live"))
 
 items = items[:MAX_ITEMS]
 esc = lambda s: html.escape(s, quote=False)
@@ -59,11 +88,11 @@ out = [
     "<language>de-de</language>",
     f"<lastBuildDate>{format_datetime(items[0][0])}</lastBuildDate>",
 ]
-for when, title, full, guid in items:
+for when, title, full, guid, lid in items:
     out += [
         "<item>",
         f"<title>{esc(title)}</title>",
-        f"<link>{SITE}#live</link>",
+        f"<link>{SITE}#{lid}</link>",
         f'<guid isPermaLink="false">lnn-{guid}</guid>',
         f"<pubDate>{format_datetime(when)}</pubDate>",
         f"<description>{esc(full)}</description>",
