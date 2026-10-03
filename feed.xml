@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 03 Oct 2026 14:16:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 03 Oct 2026 20:47:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Sam Houser sagt großes Interview ab</title>
+<link>https://leonida-news.de/#m-261003-2047</link>
+<guid isPermaLink="false">lnn-057ec55bbc2b42fa</guid>
+<pubDate>Sat, 03 Oct 2026 20:47:00 +0200</pubDate>
+<description>Sam Houser sagt großes Interview ab. Der Rockstar-Präsident und Mitgründer hat ein exklusives Gespräch zu GTA VI mit dem Magazin GQ aus „persönlichen Gründen“ abgesagt. Das schreibt GQ-Autor Sam White, der nach eigenen Worten vier Jahre lang mit Rockstar darüber verhandelt hatte. Für Rockstar sprechen vor dem Release weiter vor allem Rob Nelson und Aaron Garbut. Rockstar selbst hat sich nicht geäußert.</description>
+</item>
 <item>
 <title>[Berichtet] PEGI verrät Details und zieht sie wieder zurück</title>
 <link>https://leonida-news.de/#m-261003-1416</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-11577ca941f7c181</guid>
 <pubDate>Tue, 29 Sep 2026 19:45:00 +0200</pubDate>
 <description>Rockstar hat ein eigenes Team nur für zufällige Gespräche der Passanten.</description>
-</item>
-<item>
-<title>[Widersprüchlich] weiterhin kostenpflichtig</title>
-<link>https://leonida-news.de/#m-260929-1927</link>
-<guid isPermaLink="false">lnn-26de8a0025af7fa1</guid>
-<pubDate>Tue, 29 Sep 2026 19:27:00 +0200</pubDate>
-<description>Der Artikel ist in der Game-Informer-App weiterhin kostenpflichtig , obwohl er als gratis angekündigt war.</description>
 </item>
 </channel>
 </rss>
