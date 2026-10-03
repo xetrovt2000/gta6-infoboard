@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Fri, 02 Oct 2026 18:20:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 03 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 47 Tage</title>
+<link>https://leonida-news.de/#m-261003-0700</link>
+<guid isPermaLink="false">lnn-787259a6d780ac5d</guid>
+<pubDate>Sat, 03 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 47 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Offiziell] GTA VI auf dem Titel von LOVE</title>
 <link>https://leonida-news.de/#m-261002-1820</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-24b43579b6a86389</guid>
 <pubDate>Tue, 29 Sep 2026 18:32:00 +0200</pubDate>
 <description>Alle 12 Screenshots in 1920×1080 sind da.</description>
-</item>
-<item>
-<title>Nach Kritik aus der Community greift Rockstar ein, Game Informer kündigt den Artikel als g…</title>
-<link>https://leonida-news.de/#m-260929-1550</link>
-<guid isPermaLink="false">lnn-3517ef4d83d17c5f</guid>
-<pubDate>Tue, 29 Sep 2026 15:50:00 +0200</pubDate>
-<description>Nach Kritik aus der Community greift Rockstar ein, Game Informer kündigt den Artikel als gratis an.</description>
 </item>
 </channel>
 </rss>
