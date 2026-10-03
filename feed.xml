@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 03 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 03 Oct 2026 14:16:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] PEGI verrät Details und zieht sie wieder zurück</title>
+<link>https://leonida-news.de/#m-261003-1416</link>
+<guid isPermaLink="false">lnn-0e19d505111df7b1</guid>
+<pubDate>Sat, 03 Oct 2026 14:16:00 +0200</pubDate>
+<description>PEGI verrät Details und zieht sie wieder zurück. Zur Freigabe PEGI 18 stand am Freitag kurz eine ausführliche Begründung auf der PEGI-Seite. Darin: Drogen kommen oft vor, Kokain lässt sich im Inventar tragen und jederzeit direkt aus der Hand schnupfen. Es gibt Sexszenen, und in Clubs kann man Privattänze bezahlen. Manche Waffen trennen Köpfe und Gliedmaßen ab. Die Seite ist inzwischen wieder offline, PEGI und Rockstar haben sich nicht geäußert. Wir haben den Text selbst nicht gesehen.</description>
+</item>
+<item>
+<title>[Berichtet] Dan Houser schaut weg</title>
+<link>https://leonida-news.de/#m-261003-1416-2</link>
+<guid isPermaLink="false">lnn-df0f5869a0219037</guid>
+<pubDate>Sat, 03 Oct 2026 14:16:00 +0200</pubDate>
+<description>Dan Houser schaut weg. Der Rockstar-Mitgründer und frühere GTA-Autor hat das Extended Look bis heute nicht angesehen. Er meide GTA VI bewusst, damit es seine eigenen Spiele bei Absurd Ventures nicht beeinflusst. Houser hat Rockstar 2020 verlassen.</description>
+</item>
 <item>
 <title>Noch 47 Tage</title>
 <link>https://leonida-news.de/#m-261003-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-26de8a0025af7fa1</guid>
 <pubDate>Tue, 29 Sep 2026 19:27:00 +0200</pubDate>
 <description>Der Artikel ist in der Game-Informer-App weiterhin kostenpflichtig , obwohl er als gratis angekündigt war.</description>
-</item>
-<item>
-<title>[Berichtet] Auch HYPEX meldet: Leonida ist die größte Karte von Rockstar, etwa doppelt so groß wie in …</title>
-<link>https://leonida-news.de/#m-260929-1917</link>
-<guid isPermaLink="false">lnn-20e35a616d0eeae2</guid>
-<pubDate>Tue, 29 Sep 2026 19:17:00 +0200</pubDate>
-<description>Auch HYPEX meldet: Leonida ist die größte Karte von Rockstar, etwa doppelt so groß wie in GTA V. Damit berichten es jetzt zwei große Quellen.</description>
-</item>
-<item>
-<title>[Offiziell] Alle 12 Screenshots in 1920×1080 sind da.</title>
-<link>https://leonida-news.de/#m-260929-1832</link>
-<guid isPermaLink="false">lnn-24b43579b6a86389</guid>
-<pubDate>Tue, 29 Sep 2026 18:32:00 +0200</pubDate>
-<description>Alle 12 Screenshots in 1920×1080 sind da.</description>
 </item>
 </channel>
 </rss>
