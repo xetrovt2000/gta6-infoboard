@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 03 Oct 2026 20:47:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 04 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 46 Tage</title>
+<link>https://leonida-news.de/#m-261004-0700</link>
+<guid isPermaLink="false">lnn-d3b53e689e718c54</guid>
+<pubDate>Sun, 04 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 46 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Sam Houser sagt großes Interview ab</title>
 <link>https://leonida-news.de/#m-261003-2047</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-439711a6b4299497</guid>
 <pubDate>Tue, 29 Sep 2026 19:45:00 +0200</pubDate>
 <description>Wetter: Pfützen bleiben nach dem Regen liegen, danach sieht man Regenbögen. Man kann in der Sonne stehen, während nebenan ein Sturm tobt.</description>
-</item>
-<item>
-<title>[Berichtet] Rockstar hat ein eigenes Team nur für zufällige Gespräche der Passanten.</title>
-<link>https://leonida-news.de/#m-260929-1945-4</link>
-<guid isPermaLink="false">lnn-11577ca941f7c181</guid>
-<pubDate>Tue, 29 Sep 2026 19:45:00 +0200</pubDate>
-<description>Rockstar hat ein eigenes Team nur für zufällige Gespräche der Passanten.</description>
 </item>
 </channel>
 </rss>
