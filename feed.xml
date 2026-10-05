@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 04 Oct 2026 21:41:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 05 Oct 2026 08:06:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] LOVE-Heft erscheint heute, ist aber schon weg</title>
+<link>https://leonida-news.de/#m-261005-0806</link>
+<guid isPermaLink="false">lnn-7cc9f9682b07511a</guid>
+<pubDate>Mon, 05 Oct 2026 08:06:00 +0200</pubDate>
+<description>LOVE-Heft erscheint heute, ist aber schon weg. Ausgabe 27 mit GTA VI auf dem Titel kostet 25 Euro. Die Vorbestellungen beim französischen Vertrieb waren nach wenigen Minuten ausverkauft, auch die Bestellungen ins Ausland. Ob es das Heft am Kiosk in Deutschland gibt, ist offen. Die LOVE-Bilder</description>
+</item>
+<item>
+<title>Noch 45 Tage</title>
+<link>https://leonida-news.de/#m-261005-0700</link>
+<guid isPermaLink="false">lnn-a28837df11cb5622</guid>
+<pubDate>Mon, 05 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 45 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Leak] Cardi B und Fuerza Regida auf dem GTA-VI-Album?</title>
 <link>https://leonida-news.de/#m-261004-2141</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-f69e26601e47add6</guid>
 <pubDate>Tue, 29 Sep 2026 20:05:00 +0200</pubDate>
 <description>Es gibt keine weiteren Screenshots , es bleibt bei 12.</description>
-</item>
-<item>
-<title>[Berichtet] Der Artikel sei jetzt gratis in der App. Nicht bestätigt, siehe 20:36.</title>
-<link>https://leonida-news.de/#m-260929-2001</link>
-<guid isPermaLink="false">lnn-484c58de91fa15a5</guid>
-<pubDate>Tue, 29 Sep 2026 20:01:00 +0200</pubDate>
-<description>Der Artikel sei jetzt gratis in der App. Nicht bestätigt, siehe 20:36.</description>
-</item>
-<item>
-<title>[Berichtet] Mehr Tiere bestätigt</title>
-<link>https://leonida-news.de/#m-260929-1945</link>
-<guid isPermaLink="false">lnn-d55711f03890fea7</guid>
-<pubDate>Tue, 29 Sep 2026 19:45:00 +0200</pubDate>
-<description>Mehr Tiere bestätigt: Haie, Wale, Rochen, Schildkröten, Quallen, Leguane und Makaken. Manche Tiere lassen sich aufspüren, mit den Stufen Selten, Entdeckbar und Legendär . Fell reagiert auf Wasser und Dreck, manches Meerestier leuchtet im Dunkeln.</description>
 </item>
 </channel>
 </rss>
