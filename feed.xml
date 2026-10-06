@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 05 Oct 2026 19:32:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 06 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 44 Tage</title>
+<link>https://leonida-news.de/#m-261006-0700</link>
+<guid isPermaLink="false">lnn-f86ddb8ec822c587</guid>
+<pubDate>Tue, 06 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 44 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Offiziell] Das ganze LOVE-Interview: Jason, Lucia und Raul</title>
 <link>https://leonida-news.de/#m-261005-1932</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-c3952b431b92ac1b</guid>
 <pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
 <description>Der Bezug zu Red Dead Redemption steht im Artikel bei den Tieren (Aufspüren, Fell), nicht beim Wetter. Michael Kane ist VP Dynamic Art, nicht Animationschef. Von „80 Stunden Story" steht nichts im Artikel.</description>
-</item>
-<item>
-<title>[Überholt] Gratis oder nicht?</title>
-<link>https://leonida-news.de/#m-260929-2036</link>
-<guid isPermaLink="false">lnn-6813c8f16a26f209</guid>
-<pubDate>Tue, 29 Sep 2026 20:36:00 +0200</pubDate>
-<description>Gratis oder nicht? In unserem eigenen Test endet das Heft in der App nach Seite 8 von 108, danach wird ein Abo verlangt. Ob die Titelgeschichte zusätzlich als eigener Gratis-Artikel in der App steht, prüfen wir noch.</description>
 </item>
 </channel>
 </rss>
