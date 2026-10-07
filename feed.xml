@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Wed, 07 Oct 2026 08:08:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 16:46:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] 35 neue Details aus einem IGN-Interview</title>
+<link>https://leonida-news.de/#m-261007-1646</link>
+<guid isPermaLink="false">lnn-414d47174a1928af</guid>
+<pubDate>Wed, 07 Oct 2026 16:46:00 +0200</pubDate>
+<description>35 neue Details aus einem IGN-Interview. Rockstar hat IGN schon im Juli einiges erzählt, veröffentlicht wurde es jetzt. Eine Auswahl: Lucias Fußfessel spielt in der Story eine wichtige Rolle. Wer die Figur wechselt, erwischt Jason auch mal unter der Dusche. Der Partner kann das Steuer übernehmen, und die beiden schreiben sich Alltagsnachrichten. Im Kofferraum des eigenen Autos lassen sich Kleidung und Waffen lagern. Die Fahndungssterne zeigen, ob die Polizei weiß, wie man aussieht. Wird ein Partner verhaftet, während der andere flieht, ist er festgenommen. Bei Überfällen wartet die Polizei auch mal draußen, Schäden am gestohlenen Auto senken den Preis beim Hehler. Kleine Story-Entscheidungen wirken lange nach, und Missionen lassen verschiedene Wege zu. Dazu skurrile Begegnungen wie ein Anwalt, der in einer Mülltonne wohnt.</description>
+</item>
 <item>
 <title>[Dementiert] Kein GTA VI am PC über Xbox Cloud</title>
 <link>https://leonida-news.de/#m-261007-0808</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-19c16083da4e5444</guid>
 <pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
 <description>Jason und Lucia als Paar oder als Freunde: Das entscheidest du, kleine Gesten stärken die Bindung, und Teile der Story hängen davon ab.</description>
-</item>
-<item>
-<title>[Offiziell] Karte doppelt so groß wie GTA V</title>
-<link>https://leonida-news.de/#m-260929-2050-4</link>
-<guid isPermaLink="false">lnn-fd21266d266307df</guid>
-<pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
-<description>Karte doppelt so groß wie GTA V , jetzt direkt von Aaron Garbut bestätigt. Dazu Details zu allen sechs Regionen.</description>
 </item>
 </channel>
 </rss>
