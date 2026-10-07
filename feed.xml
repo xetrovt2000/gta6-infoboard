@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 06 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 08:08:00 +0200</lastBuildDate>
+<item>
+<title>[Dementiert] Kein GTA VI am PC über Xbox Cloud</title>
+<link>https://leonida-news.de/#m-261007-0808</link>
+<guid isPermaLink="false">lnn-1b60836cc2ea3c27</guid>
+<pubDate>Wed, 07 Oct 2026 08:08:00 +0200</pubDate>
+<description>Kein GTA VI am PC über Xbox Cloud. The Verge hatte gestern Abend berichtet, Xbox habe sich die exklusiven Streaming-Rechte gesichert, damit wäre GTA VI zum Start auch am PC über Xbox Cloud Gaming spielbar gewesen. Anlass war eine interne Rede von Xbox-Chefin Asha Sharma. Xbox-Strategiechef Matthew Ball widersprach heute Nacht auf X: Das Spiel werde „weder exklusiv noch auf den PC gestreamt“, es habe Falschmeldungen gegeben. Eine PC-Version bleibt damit unangekündigt.</description>
+</item>
+<item>
+<title>Noch 43 Tage</title>
+<link>https://leonida-news.de/#m-261007-0700</link>
+<guid isPermaLink="false">lnn-7aa7239184b70057</guid>
+<pubDate>Wed, 07 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 43 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>Noch 44 Tage</title>
 <link>https://leonida-news.de/#m-261006-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-fd21266d266307df</guid>
 <pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
 <description>Karte doppelt so groß wie GTA V , jetzt direkt von Aaron Garbut bestätigt. Dazu Details zu allen sechs Regionen.</description>
-</item>
-<item>
-<title>[Offiziell] Neue Apps</title>
-<link>https://leonida-news.de/#m-260929-2050-5</link>
-<guid isPermaLink="false">lnn-a9a0e88a664941f7</guid>
-<pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
-<description>Neue Apps: RydeMe als Schnellreise per Mitfahrdienst, Snapmatic ist zurück. Manche Missionen gibt es erst ab einem bestimmten Einkommen.</description>
-</item>
-<item>
-<title>[Korrektur] Tieren</title>
-<link>https://leonida-news.de/#m-260929-2050-6</link>
-<guid isPermaLink="false">lnn-c3952b431b92ac1b</guid>
-<pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
-<description>Der Bezug zu Red Dead Redemption steht im Artikel bei den Tieren (Aufspüren, Fell), nicht beim Wetter. Michael Kane ist VP Dynamic Art, nicht Animationschef. Von „80 Stunden Story" steht nichts im Artikel.</description>
 </item>
 </channel>
 </rss>
