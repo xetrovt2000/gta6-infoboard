@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Wed, 07 Oct 2026 16:46:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 22:04:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Mehr aus dem IGN-Interview: Liebe, Geld und eine riesige Welt</title>
+<link>https://leonida-news.de/#m-261007-2204</link>
+<guid isPermaLink="false">lnn-a8af1623e1ea2dad</guid>
+<pubDate>Wed, 07 Oct 2026 22:04:00 +0200</pubDate>
+<description>Mehr aus dem IGN-Interview: Liebe, Geld und eine riesige Welt. Rob Nelson sagt, körperliche Nähe zwischen Jason und Lucia müsse „richtig gemacht“ sein, eine Romanze bringe aber keinen spielerischen Vorteil. Geld spiele in dieser Geschichte eine größere Rolle als je zuvor. Und die Welt sei so groß, dass wohl niemand im Team alles kenne. Alles im Magazin</description>
+</item>
 <item>
 <title>[Offiziell] 35 neue Details aus einem IGN-Interview</title>
 <link>https://leonida-news.de/#m-261007-1646</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-bb439bcc311ac8ee</guid>
 <pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
 <description>Heat-System und sechs Fahndungssterne: Die Polizei sammelt Infos über dein Aussehen. Frisur und Kleidung wechseln und das Fluchtauto loswerden hilft.</description>
-</item>
-<item>
-<title>[Offiziell] Jason und Lucia als Paar oder als Freunde</title>
-<link>https://leonida-news.de/#m-260929-2050-3</link>
-<guid isPermaLink="false">lnn-19c16083da4e5444</guid>
-<pubDate>Tue, 29 Sep 2026 20:50:00 +0200</pubDate>
-<description>Jason und Lucia als Paar oder als Freunde: Das entscheidest du, kleine Gesten stärken die Bindung, und Teile der Story hängen davon ab.</description>
 </item>
 </channel>
 </rss>
