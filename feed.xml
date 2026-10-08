@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Thu, 08 Oct 2026 17:22:00 +0200</lastBuildDate>
+<lastBuildDate>Fri, 09 Oct 2026 00:45:00 +0200</lastBuildDate>
+<item>
+<title>[Korrektur] Doch neues Merch: die GTA-VI-Kollektion ist da</title>
+<link>https://leonida-news.de/#m-261009-0045</link>
+<guid isPermaLink="false">lnn-9db67ba7f173773a</guid>
+<pubDate>Fri, 09 Oct 2026 00:45:00 +0200</pubDate>
+<description>Doch neues Merch: die GTA-VI-Kollektion ist da. Unser Eintrag von 17:22 Uhr stimmte nicht: Rockstar hat am Donnerstagabend eine eigene Kollektion veröffentlicht. Dazu gehören T-Shirts mit VI-Logo, Rockstar-Logo, „Goodtime State“ und Macca the Gator in Schwarz, Blau und Pink (je 29,99 € im deutschen Store), Damen-Shirts, Flexfit-Caps zum Vorbestellen, ein Schlüsselring, eine Vice-City-Geldklammer, ein Zippo-Feuerzeug, Stofftaschen und Sticker. Mehrere Shirts sind bereits ausverkauft, weitere Artikel sollen folgen.</description>
+</item>
+<item>
+<title>Australiens Arbeitsbehörde erklärt Urlaub für GTA VI</title>
+<link>https://leonida-news.de/#m-261009-0045-2</link>
+<guid isPermaLink="false">lnn-8054f539df1dfbd9</guid>
+<pubDate>Fri, 09 Oct 2026 00:45:00 +0200</pubDate>
+<description>Australiens Arbeitsbehörde erklärt Urlaub für GTA VI. Die australische Fair Work Ombudsman nimmt den Release mit Humor: In einem Instagram-Beitrag geht sie durch, ob es für den Launch Sonderurlaub gibt. Ergebnis: nein, am besten früh regulären Urlaub beantragen.</description>
+</item>
 <item>
 <title>[Offiziell] Die ersten sechs Radiosender und erstmals Podcasts</title>
 <link>https://leonida-news.de/#m-261008-1722</link>
@@ -31,9 +45,9 @@
 <item>
 <title>Kein neues Merch</title>
 <link>https://leonida-news.de/#m-261008-1722-4</link>
-<guid isPermaLink="false">lnn-97a497313e4de7cc</guid>
+<guid isPermaLink="false">lnn-7ca5366b59cf5420</guid>
 <pubDate>Thu, 08 Oct 2026 17:22:00 +0200</pubDate>
-<description>Kein neues Merch: Auch an diesem Donnerstag gibt es im Rockstar Store zu GTA VI nur das Spiel und die Sammlerbox.</description>
+<description>Falsch, die Kollektion kam erst am Abend, siehe Korrektur vom 9. Oktober.</description>
 </item>
 <item>
 <title>[Berichtet] YouTube wirbt für GTA VI, kommt Trailer 3?</title>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-8f34a86450cef2bc</guid>
 <pubDate>Thu, 01 Oct 2026 18:40:00 +0200</pubDate>
 <description>Nachgetragen: das GTA-VI-Album. Rockstar hat am 17. September „Grand Theft Auto VI: The Album“ angekündigt: 34 neue Songs, gemacht mit Atlantic Records, erscheint am 19. November zusammen mit dem Spiel. Sechs Singles sind schon draußen, unter anderem von Travis Scott, Morgan Wallen, Rauw Alejandro, Yung Lean und Keith Richards. Vinyl und CD lassen sich vorbestellen. Mehr zur Musik und zum Radio im Spiel soll folgen. Mehr ·</description>
-</item>
-<item>
-<title>Heute kein Merch-Drop</title>
-<link>https://leonida-news.de/#m-261001-1703</link>
-<guid isPermaLink="false">lnn-2701cb270e501f01</guid>
-<pubDate>Thu, 01 Oct 2026 17:03:00 +0200</pubDate>
-<description>Heute kein Merch-Drop: Auch um 17:03 Uhr steht im Rockstar Store zu GTA 6 nur die Sammlerbox. Nach vier Donnerstagen in Folge kam diese Woche nichts Neues. Die Pakete an Creator deuten trotzdem darauf hin, dass weitere Artikel kommen.</description>
-</item>
-<item>
-<title>Noch kein neues Merch</title>
-<link>https://leonida-news.de/#m-261001-1620</link>
-<guid isPermaLink="false">lnn-51e7d473399d7425</guid>
-<pubDate>Thu, 01 Oct 2026 16:20:00 +0200</pubDate>
-<description>Noch kein neues Merch: Wir haben im Rockstar Store nachgesehen. Stand 16:20 Uhr gibt es dort zu GTA 6 weiterhin nur die Sammlerbox. Bisher kamen neue Artikel bis etwa 17 Uhr, wir schauen danach noch einmal.</description>
 </item>
 </channel>
 </rss>
