@@ -24,7 +24,15 @@ for folder in ("shots", "official", "press"):
                 continue
             im = im or Image.open(src)
             img = im
-            if folder == "press" and im.width / im.height < 16 / 9:
+            if folder == "official" and im.width / im.height < 1.5:
+                # quadratische Bilder (z. B. Senderlogos): ganz zeigen, Rand aus unscharfer Vergrößerung
+                from PIL import ImageFilter
+                W, H = im.width * 16 // 9, im.height
+                bg = im.resize((W, W * im.height // im.width)).crop((0, (W * im.height // im.width - H) // 2, W, (W * im.height // im.width - H) // 2 + H))
+                bg = bg.filter(ImageFilter.GaussianBlur(40)).point(lambda v: v * 0.55)
+                bg.paste(im, ((W - im.width) // 2, 0))
+                img = bg
+            elif folder == "press" and im.width / im.height < 16 / 9:
                 ch = round(im.width * 9 / 16)
                 top = max(0, min(im.height - ch, round(im.height * 0.22 - ch * 0.3)))
                 img = im.crop((0, top, im.width, top + ch))
