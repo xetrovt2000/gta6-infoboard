@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 10 Oct 2026 09:09:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 10 Oct 2026 21:29:00 +0200</lastBuildDate>
+<item>
+<title>[Leak] CyberLeek droht mit dem kompletten Spiel</title>
+<link>https://leonida-news.de/#m-261010-2129</link>
+<guid isPermaLink="false">lnn-6911fc25baf9945e</guid>
+<pubDate>Sat, 10 Oct 2026 21:29:00 +0200</pubDate>
+<description>CyberLeek droht mit dem kompletten Spiel. Auf seiner Website stellt der Leaker Bedingungen: Steigt der Börsenwert seiner Meme-Kryptowährung auf 30 Millionen Dollar, will er einen vollständigen Entwicklungsstand samt Story bis zum Abspann veröffentlichen, bei niedrigeren Schwellen (ab 2 Millionen) Nacktvideos der Spielfigur Lucia. Abwenden könne Take-Two das nur mit Disc-Versionen für PS5 und Xbox und einer öffentlichen Entschuldigung. Ob er überhaupt ein spielbares Build hat, ist nicht belegt. Kotaku hält auch einen erneuten Abzock-Trick mit der Währung für möglich (im August zog er rund 250.000 Dollar ab). Rockstar hat sich nicht geäußert. Wir verlinken weder Material noch die Währung. Zu den Leaks</description>
+</item>
 <item>
 <title>[Berichtet] Prozess gegen den Hacker von 2022 beginnt am 9. November</title>
 <link>https://leonida-news.de/#m-261010-0909</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-028c7b591f323768</guid>
 <pubDate>Fri, 02 Oct 2026 09:30:00 +0200</pubDate>
 <description>Australien: R 18+, ausdrücklich mit Sexszenen. Im australischen PlayStation Store steht GTA VI jetzt mit R 18+ (Drogen, heftige Gewalt, Sexszenen). Damit ist das kursierende „X 18+“ aus einer Werbung vom Tisch: Diese Stufe gibt es in Australien nur für Filme. Neu ist, dass „Sexszenen“ dort so deutlich als eigener Grund genannt werden.</description>
-</item>
-<item>
-<title>[Offiziell] Europa: PEGI 18, Deutschland: USK steht noch aus</title>
-<link>https://leonida-news.de/#m-261002-0915</link>
-<guid isPermaLink="false">lnn-b3dc46033bbadb2e</guid>
-<pubDate>Fri, 02 Oct 2026 09:15:00 +0200</pubDate>
-<description>Europa: PEGI 18, Deutschland: USK steht noch aus. Im europäischen PlayStation Store trägt GTA VI jetzt das Siegel PEGI 18 (Drogen, Sex, extreme Gewalt, Nacktheit, Käufe im Spiel). In Deutschland gilt aber die USK, und dort gibt es noch keine Einstufung: Der deutsche Store zeigt „USK Rating Pending“, die Datenbank der USK hat keinen Eintrag. Erwartet wird wie bei allen GTA-Teilen „keine Jugendfreigabe“ (ab 18). Seiten, die „USK 18 bestätigt“ melden, haben dafür keine Quelle.</description>
 </item>
 </channel>
 </rss>
