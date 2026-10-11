@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 10 Oct 2026 21:29:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 11 Oct 2026 21:19:00 +0200</lastBuildDate>
+<item>
+<title>[Leak] CyberLeek legt mit Lucia-Video nach</title>
+<link>https://leonida-news.de/#m-261011-2119</link>
+<guid isPermaLink="false">lnn-bf76713d269bb799</guid>
+<pubDate>Sun, 11 Oct 2026 21:19:00 +0200</pubDate>
+<description>CyberLeek legt mit Lucia-Video nach. Einen Tag nach seiner Drohung hat der Leaker ein weiteres Video veröffentlicht: Lucia läuft darin unbekleidet durch Vice City, dazu eine Fallschirm-Szene. Laut GameRant stammt die Szene vermutlich aus einem älteren Debug-Stand und wurde wohl per Konsolenbefehl ausgelöst. Passanten reagieren gar nicht darauf, im fertigen Spiel ist so etwas also kaum zu erwarten. Echtheit und Alter des Materials sind nicht bestätigt, Rockstar schweigt weiter. Die Drohung mit dem kompletten Spiel steht weiter im Raum. Wir zeigen und verlinken das Material nicht. Zu den Leaks</description>
+</item>
+<item>
+<title>Noch 39 Tage</title>
+<link>https://leonida-news.de/#m-261011-0700</link>
+<guid isPermaLink="false">lnn-0b25aac176609072</guid>
+<pubDate>Sun, 11 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 39 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Leak] CyberLeek droht mit dem kompletten Spiel</title>
 <link>https://leonida-news.de/#m-261010-2129</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-b8ae1c690352a7f5</guid>
 <pubDate>Fri, 02 Oct 2026 18:20:00 +0200</pubDate>
 <description>Miami Heat spielen als „Vice City“. Am 18. November, dem Abend vor dem Release, tritt das NBA-Team gegen die Milwaukee Bucks als Vice City an: mit einem eigens gebauten „Vice City Court“, einem neuen Trikot, das noch nicht gezeigt wurde, und Aktionen in der Halle. Eine Vice-City-Kollektion gibt es schon im Fanshop der Heat.</description>
-</item>
-<item>
-<title>[Berichtet] Riesiges GTA-VI-Wandbild in New York</title>
-<link>https://leonida-news.de/#m-261002-1820-3</link>
-<guid isPermaLink="false">lnn-2f81a7841fa1834c</guid>
-<pubDate>Fri, 02 Oct 2026 18:20:00 +0200</pubDate>
-<description>Riesiges GTA-VI-Wandbild in New York. In Brooklyn (Ecke Wythe Ave und N 11th St) malt die Firma Colossal Media seit dem 1. Oktober ein Wandbild mit Jason, Lucia und dem Logo. An derselben Stelle hingen schon die Wandbilder zu GTA IV und GTA V. Rockstar hat sich dazu nicht geäußert (via RockstarINTEL).</description>
-</item>
-<item>
-<title>[Offiziell] Australien: R 18+, ausdrücklich mit Sexszenen</title>
-<link>https://leonida-news.de/#m-261002-0930</link>
-<guid isPermaLink="false">lnn-028c7b591f323768</guid>
-<pubDate>Fri, 02 Oct 2026 09:30:00 +0200</pubDate>
-<description>Australien: R 18+, ausdrücklich mit Sexszenen. Im australischen PlayStation Store steht GTA VI jetzt mit R 18+ (Drogen, heftige Gewalt, Sexszenen). Damit ist das kursierende „X 18+“ aus einer Werbung vom Tisch: Diese Stufe gibt es in Australien nur für Filme. Neu ist, dass „Sexszenen“ dort so deutlich als eigener Grund genannt werden.</description>
 </item>
 </channel>
 </rss>
