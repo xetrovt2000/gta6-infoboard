@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 12 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 18:58:00 +0200</lastBuildDate>
+<item>
+<title>[Leak] CyberLeek: „Spielbarer Stand“ angeblich über 200 GB groß</title>
+<link>https://leonida-news.de/#m-261012-1858</link>
+<guid isPermaLink="false">lnn-9da983c26fa8b2f4</guid>
+<pubDate>Mon, 12 Oct 2026 18:58:00 +0200</pubDate>
+<description>CyberLeek: „Spielbarer Stand“ angeblich über 200 GB groß. Der Leaker legt nach: Sein Build sei rund 200 GB groß, und jede erreichte Kurs-Marke seiner Kryptowährung bringe am nächsten Tag einen neuen Leak, mehrere Marken auf einmal nacheinander im Tagestakt. Angekündigt sind unter anderem Szenen mit Mini-Panzer, Jumbo-Jet, Kampfjet, Polizei-Schießerei und Zug gegen Zug. Für das komplette Spiel bleibt es bei 30 Millionen Dollar Börsenwert. Belege für den Build gibt es weiter nicht, Rockstar schweigt. Vorsicht vor angeblichen Downloads: Gefälschte „Builds“ enthalten oft Schadsoftware. Zu den Leaks</description>
+</item>
+<item>
+<title>[Gerücht] GTA VI bei Amazon ausverkauft?</title>
+<link>https://leonida-news.de/#m-261012-1858-2</link>
+<guid isPermaLink="false">lnn-a348e4994f93c95e</guid>
+<pubDate>Mon, 12 Oct 2026 18:58:00 +0200</pubDate>
+<description>GTA VI bei Amazon ausverkauft? Ein Reddit-Screenshot zeigt die Box-Version (Hülle mit Download-Code) bei Amazon als „derzeit nicht verfügbar“, ScreenRant hat das aufgegriffen. Welches Land betroffen ist, bleibt offen, eine Bestätigung von Amazon oder Rockstar gibt es nicht. Digital lässt sich das Spiel weiter vorbestellen.</description>
+</item>
 <item>
 <title>Noch 38 Tage</title>
 <link>https://leonida-news.de/#m-261012-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-df0f5869a0219037</guid>
 <pubDate>Sat, 03 Oct 2026 14:16:00 +0200</pubDate>
 <description>Dan Houser schaut weg. Der Rockstar-Mitgründer und frühere GTA-Autor hat das Extended Look bis heute nicht angesehen. Er meide GTA VI bewusst, damit es seine eigenen Spiele bei Absurd Ventures nicht beeinflusst. Houser hat Rockstar 2020 verlassen.</description>
-</item>
-<item>
-<title>Noch 47 Tage</title>
-<link>https://leonida-news.de/#m-261003-0700</link>
-<guid isPermaLink="false">lnn-787259a6d780ac5d</guid>
-<pubDate>Sat, 03 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 47 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] GTA VI auf dem Titel von LOVE</title>
-<link>https://leonida-news.de/#m-261002-1820</link>
-<guid isPermaLink="false">lnn-18af2f2ce306c488</guid>
-<pubDate>Fri, 02 Oct 2026 18:20:00 +0200</pubDate>
-<description>GTA VI auf dem Titel von LOVE. Das Modemagazin LOVE zeigt in Ausgabe 27 ein neues Artwork von Jason und Lucia unter dem Titel „America’s Most Wanted“, dazu ein Gespräch mit Rob Nelson (Rockstar North), Rupert Humphries und den Autorinnen Elizabeth Gauvey-Kern und Alexa D’Agostino. Neu: Lucia treibt die Geschichte an und will sich ein besseres Leben aufbauen, Jason reagiert eher auf das, was passiert. Beide sollen bewusst Fehler haben und voneinander lernen. Es gibt auch vier neue Screenshots. Das Heft erscheint am 5. Oktober (via LOVE auf Instagram, RockstarINTEL). Bilder ansehen</description>
 </item>
 </channel>
 </rss>
