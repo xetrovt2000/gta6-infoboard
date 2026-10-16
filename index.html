@@ -272,7 +272,7 @@ blockquote cite{display:block;margin-top:6px;font:500 13px var(--mono);color:var
 .log time{font:500 13px var(--mono);color:var(--gold);padding-top:3px}
 .about{display:grid;gap:10px;font-size:16px}.about h3{font:800 20px var(--cond);letter-spacing:.06em;text-transform:uppercase;margin-top:8px;color:var(--gold)}
 .about p{margin:0}
-footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(24px + env(safe-area-inset-bottom,0px));font-size:14px;color:var(--muted)}
+footer .xc{margin-top:16px}footer{margin-top:56px;border-top:1px solid var(--line);padding-block:24px calc(24px + env(safe-area-inset-bottom,0px));font-size:14px;color:var(--muted)}
 
 /* Lightbox */
 #lb{position:fixed;inset:0;background:rgba(5,4,8,.94);display:grid;place-items:center;padding:16px;z-index:10}
@@ -311,6 +311,7 @@ html.lite .pw > i{will-change:auto}
   .band{padding-top:36px}#live{padding-top:22px}.tv{height:440px;min-height:0}.headline{font-size:clamp(34px,10.5vw,48px)}.sub{font-size:14px;padding:6px 10px}.flag{font-size:14px;padding:5px 10px}
   .lower{bottom:66px}.clock{font-size:16px}.dossier{padding:22px 16px}.dossier .big-stamp{display:none}.log li{grid-template-columns:1fr;gap:2px}}
 @media (max-width:420px){.cast{grid-template-columns:1fr}}
+.xc{display:flex;width:max-content;margin:14px auto 0;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:.04em;opacity:.8;transition:opacity .2s}.xc:hover{opacity:1}.xc img{display:block;height:22px;width:auto}
 </style>
 </head>
 <body>
@@ -838,7 +839,7 @@ html.lite .pw > i{will-change:auto}
 </div></section>
 </main>
 
-<footer><div class="wrap">Inoffizielle Fan-Seite, nicht verbunden mit Rockstar Games oder Game Informer. Alle Bildrechte liegen bei Rockstar Games. „Leonida News Network" ist ein erfundener Sender dieser Seite.<br><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a> · Ein Projekt von <a href="https://xetcraft.de">Xetcraft</a></div></footer>
+<footer><div class="wrap">Inoffizielle Fan-Seite, nicht verbunden mit Rockstar Games oder Game Informer. Alle Bildrechte liegen bei Rockstar Games. „Leonida News Network" ist ein erfundener Sender dieser Seite.<br><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></div><a class="xc" href="https://xetcraft.de" title="Xetcraft – die Werkstatt von XetrovT2000"><span>Ein Projekt von</span><img src="xetcraft-logo.png" width="95" height="22" alt="Xetcraft"></a></footer>
 
 <div id="lb" hidden role="dialog" aria-modal="true" aria-label="Bild groß"><button type="button" id="lb-close">Schließen</button><button type="button" class="nx prev" id="lb-prev" aria-label="Vorheriges Bild">‹</button><button type="button" class="nx next" id="lb-next" aria-label="Nächstes Bild">›</button><div><img id="lb-img" alt=""><p id="lb-cap"></p></div></div>
 

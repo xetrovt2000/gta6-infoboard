@@ -93,6 +93,7 @@ color:#111;background:var(--gold);padding:13px 16px;border-radius:4px;text-decor
 .more a{color:var(--fg);text-decoration:none}.more a:hover{color:var(--gold)}.more time{color:var(--muted);font-size:13px;margin-right:8px}
 .nav{display:flex;justify-content:space-between;gap:12px;margin-top:22px;font-size:14px}
 footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px;border-top:1px solid var(--line)}
+.xc{display:flex;width:max-content;margin:14px auto 0;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:.04em;opacity:.8;transition:opacity .2s}.xc:hover{opacity:1}.xc img{display:block;height:22px;width:auto}
 """
 
 
@@ -160,7 +161,7 @@ def page(it, prev, nxt, latest):
 {nav}
 <section class="more"><h2>Neueste Meldungen</h2><ul>{more}</ul></section>
 </main>
-<footer>Leonida News Network · GTA 6 News auf Deutsch, jede Meldung mit Quellenstempel · Inoffizielle Fanseite, nicht verbunden mit Rockstar Games oder Take-Two<br><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></footer>
+<footer>Leonida News Network · GTA 6 News auf Deutsch, jede Meldung mit Quellenstempel · Inoffizielle Fanseite, nicht verbunden mit Rockstar Games oder Take-Two<br><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a><a class="xc" href="https://xetcraft.de" title="Xetcraft – die Werkstatt von XetrovT2000"><span>Ein Projekt von</span><img src="../xetcraft-logo.png" width="95" height="22" alt="Xetcraft"></a></footer>
 <script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
