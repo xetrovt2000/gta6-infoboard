@@ -47,6 +47,12 @@ if live != src[a:b]:
     src = src[:a] + live + src[b:]
     (ROOT / "index.html").write_text(src, encoding="utf-8", newline="")
 
+# Eigene Seite pro Meldung (n/<id>.html) und Sitemap mit allen Seiten
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from build_pages import build as build_pages
+pages = build_pages()
+
 def text(s):
     s = re.sub(r"<s>.*?</s>", "", s, flags=re.S)  # gestrichene Meldungen nicht in den Feed-Text
     s = re.sub(r"<[^>]+>", " ", s)
@@ -93,7 +99,7 @@ for when, title, full, guid, lid in items:
     out += [
         "<item>",
         f"<title>{esc(title)}</title>",
-        f"<link>{SITE}#{lid}</link>",
+        f"<link>{SITE}n/{lid}.html</link>" if (ROOT / "n" / f"{lid}.html").exists() else f"<link>{SITE}#{lid}</link>",
         f'<guid isPermaLink="false">lnn-{guid}</guid>',
         f"<pubDate>{format_datetime(when)}</pubDate>",
         f"<description>{esc(full)}</description>",
@@ -102,10 +108,4 @@ for when, title, full, guid, lid in items:
 out += ["</channel>", "</rss>", ""]
 (ROOT / "feed.xml").write_text("\n".join(out), encoding="utf-8", newline="\n")
 
-# Sitemap mitziehen, damit Google das Änderungsdatum kennt
-(ROOT / "sitemap.xml").write_text(
-    '<?xml version="1.0" encoding="UTF-8"?>\n'
-    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    f"  <url><loc>{SITE}</loc><lastmod>{items[0][0]:%Y-%m-%d}</lastmod><changefreq>hourly</changefreq></url>\n"
-    "</urlset>\n", encoding="utf-8", newline="\n")
-print(f"feed.xml: {len(items)} Meldungen, neueste {items[0][0]:%d.%m. %H:%M}")
+print(f"feed.xml: {len(items)} Meldungen, neueste {items[0][0]:%d.%m. %H:%M} · {len(pages)} Meldungsseiten")
