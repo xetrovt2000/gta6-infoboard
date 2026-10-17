@@ -85,6 +85,7 @@ h1{font:900 clamp(32px,6vw,52px)/1.02 var(--display);letter-spacing:.01em;margin
 .body{font-size:17px}.body p{margin:0 0 1em}
 figure{margin:22px 0}figure img{width:100%;height:auto;border-radius:6px;display:block}
 .src{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+.dc{display:block;width:max-content;max-width:100%;margin:6px 0 0;padding:10px 14px;border:1px solid var(--line);border-radius:6px;color:var(--muted);text-decoration:none;font-size:14px}.dc b{color:var(--fg)}.dc:hover{border-color:var(--gold);color:var(--fg)}
 .cta{display:inline-block;margin:26px 0 8px;font:800 16px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;
 color:#111;background:var(--gold);padding:13px 16px;border-radius:4px;text-decoration:none}
 .more{margin-top:34px;border-top:1px solid var(--line);padding-top:18px}
@@ -158,6 +159,7 @@ def page(it, prev, nxt, latest):
 {f'<p class="src">{it["srcs"]}</p>' if it['srcs'] else ''}
 </article>
 <a class="cta" href="../#{it['id']}">Alle GTA-6-News im Liveticker</a>
+<a class="dc" href="https://discord.gg/5anXePGCPg" rel="noopener">💬 Diskutier mit: <b>#leonida-news</b> auf dem Xetcraft-Discord</a>
 {nav}
 <section class="more"><h2>Neueste Meldungen</h2><ul>{more}</ul></section>
 </main>
