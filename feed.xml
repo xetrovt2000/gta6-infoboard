@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 17 Oct 2026 18:24:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 18 Oct 2026 09:52:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] NOOSE ist zurück</title>
+<link>https://leonida-news.de/n/m-261018-0952.html</link>
+<guid isPermaLink="false">lnn-d660b6d9e44de306</guid>
+<pubDate>Sun, 18 Oct 2026 09:52:00 +0200</pubDate>
+<description>NOOSE ist zurück. Im Launch-Trailer taucht eine Einsatztruppe der NOOSE auf, der Parodie auf das US-Heimatschutzministerium. In GTA IV rückte sie bei hohen Fahndungsstufen an, in GTA V gab es sie auch. Wann sie in GTA VI kommt, ist nicht bekannt.</description>
+</item>
+<item>
+<title>Noch 32 Tage</title>
+<link>https://leonida-news.de/#m-261018-0700</link>
+<guid isPermaLink="false">lnn-df89dc8b40121d69</guid>
+<pubDate>Sun, 18 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 32 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Gerücht] Nein, GTA VI ist nicht „unfertig“</title>
 <link>https://leonida-news.de/n/m-261017-1824.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-8054f539df1dfbd9</guid>
 <pubDate>Fri, 09 Oct 2026 00:45:00 +0200</pubDate>
 <description>Australiens Arbeitsbehörde erklärt Urlaub für GTA VI. Die australische Fair Work Ombudsman nimmt den Release mit Humor: In einem Instagram-Beitrag geht sie durch, ob es für den Launch Sonderurlaub gibt. Ergebnis: nein, am besten früh regulären Urlaub beantragen.</description>
-</item>
-<item>
-<title>Noch 41 Tage</title>
-<link>https://leonida-news.de/#m-261009-0700</link>
-<guid isPermaLink="false">lnn-717a9a059f8c3cbb</guid>
-<pubDate>Fri, 09 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 41 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] Die ersten sechs Radiosender und erstmals Podcasts</title>
-<link>https://leonida-news.de/n/m-261008-1722.html</link>
-<guid isPermaLink="false">lnn-d378d3cae1adf0e7</guid>
-<pubDate>Thu, 08 Oct 2026 17:22:00 +0200</pubDate>
-<description>Die ersten sechs Radiosender und erstmals Podcasts. Rockstar stellt sechs Sender vor: Cocoteo FM (moderner Latin-Sound), Back Country Radio (Country), AfroBank FM (afrikanische Musik bis Amapiano), The Chamber 106.6 (Metal ab den 80ern), Flash FM (Pop, zurück aus Vice City) und Dirty South Classics (Südstaaten-Rap). Neu in der Reihe: Podcasts auf Abruf, und Radio wie Podcasts laufen auch zu Fuß über Kopfhörer am Handy. Es soll die größte Radioauswahl der Reihe werden, weitere Sender, die Filmmusik und neue Album-Singles folgen. Hörproben gibt es auf Rockstars Musikseite. Zur Musik · Logos in der Galerie</description>
 </item>
 </channel>
 </rss>
