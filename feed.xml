@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 19 Oct 2026 10:27:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 19 Oct 2026 18:53:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Launch-Trailer schlägt GTA V nach vier Tagen</title>
+<link>https://leonida-news.de/n/m-261019-1853.html</link>
+<guid isPermaLink="false">lnn-66dcd28ebb2ab74c</guid>
+<pubDate>Mon, 19 Oct 2026 18:53:00 +0200</pubDate>
+<description>Launch-Trailer schlägt GTA V nach vier Tagen. Der GTA-VI-Launch-Trailer steht auf Rockstars YouTube-Kanal bei rund 47,5 Millionen Aufrufen (Stand heute Abend). Der Launch-Trailer von GTA V kommt laut TheGamer nach 13 Jahren auf etwa 34 Millionen. Zu den Trailern</description>
+</item>
 <item>
 <title>[Berichtet] Vice City am Flughafen? Miami-Dade stimmt morgen ab</title>
 <link>https://leonida-news.de/n/m-261019-1027.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-dac0197dcd56c86a</guid>
 <pubDate>Fri, 09 Oct 2026 23:52:00 +0200</pubDate>
 <description>GTA VI für Switch 2? „Fragt Rockstar“. Nintendo-of-America-Chefin Devon Pritchard sagte Variety, ob GTA VI auf die Switch 2 kommt, entscheiden Rockstar und Take-Two. Nintendo habe nichts anzukündigen. Zum Start erscheint das Spiel nur für PS5 und Xbox Series X|S.</description>
-</item>
-<item>
-<title>[Berichtet] Arbeitsgericht in Glasgow: Spitzel im Gewerkschafts-Discord?</title>
-<link>https://leonida-news.de/n/m-261009-2352-3.html</link>
-<guid isPermaLink="false">lnn-e04586635e50d63b</guid>
-<pubDate>Fri, 09 Oct 2026 23:52:00 +0200</pubDate>
-<description>Arbeitsgericht in Glasgow: Spitzel im Gewerkschafts-Discord? Im Verfahren um die über 30 Entwickler, die Rockstar North 2025 entlassen hat, wurde HR-Direktor Charlie Kinloch befragt. Laut den Klägern soll ihm ein junger Mitarbeiter über zwei Jahre Screenshots aus dem Discord-Server der Gewerkschaft IWGB geliefert haben. Rockstar sagt, die Entlassenen hätten vertrauliche Infos zum Spiel weitergegeben, die Gewerkschaft spricht von Union-Busting. Die Verhandlung läuft bis zum 16. Oktober.</description>
 </item>
 </channel>
 </rss>
