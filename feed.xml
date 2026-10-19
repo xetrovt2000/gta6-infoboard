@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 18 Oct 2026 18:32:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 19 Oct 2026 10:27:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Vice City am Flughafen? Miami-Dade stimmt morgen ab</title>
+<link>https://leonida-news.de/n/m-261019-1027.html</link>
+<guid isPermaLink="false">lnn-03e39457342e487d</guid>
+<pubDate>Mon, 19 Oct 2026 10:27:00 +0200</pubDate>
+<description>Vice City am Flughafen? Miami-Dade stimmt morgen ab. Laut Unterlagen, die The Miamian per Auskunftsanfrage bekam, hat der Landkreis Miami-Dade Rockstar im Juni eine ganze Liste angeboten: eine „Vice City Airport“-Ankunft am Flughafen Miami, Metromover-Bahnen im Vice-City-Look, ein Wandbild am Hafen, eigene Gullydeckel in Downtown und Brickell und ein Autofestival. Zugesagt ist davon nichts. Die Sheriffin und mehrere Kommissare sind dagegen („Miami-Dade County is not Vice City“). Am 20. Oktober stimmt die Kreiskommission ab, Verträge über 1 Million Dollar muss sie ohnehin absegnen. Die Stadt Miami hat Banner für bis zu 1,2 Millionen Dollar genehmigt.</description>
+</item>
+<item>
+<title>Noch 31 Tage</title>
+<link>https://leonida-news.de/#m-261019-0700</link>
+<guid isPermaLink="false">lnn-bb4f7989de7defe1</guid>
+<pubDate>Mon, 19 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 31 Tage bis zum Release am 19. November. Heute in einem Monat ist es so weit.</description>
+</item>
 <item>
 <title>[Berichtet] Glasgow: Freizeit als Lohn für den Spitzel?</title>
 <link>https://leonida-news.de/n/m-261018-1832.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-e04586635e50d63b</guid>
 <pubDate>Fri, 09 Oct 2026 23:52:00 +0200</pubDate>
 <description>Arbeitsgericht in Glasgow: Spitzel im Gewerkschafts-Discord? Im Verfahren um die über 30 Entwickler, die Rockstar North 2025 entlassen hat, wurde HR-Direktor Charlie Kinloch befragt. Laut den Klägern soll ihm ein junger Mitarbeiter über zwei Jahre Screenshots aus dem Discord-Server der Gewerkschaft IWGB geliefert haben. Rockstar sagt, die Entlassenen hätten vertrauliche Infos zum Spiel weitergegeben, die Gewerkschaft spricht von Union-Busting. Die Verhandlung läuft bis zum 16. Oktober.</description>
-</item>
-<item>
-<title>[Leak] Kommt eine GTA-VI-Aktion bei Discord?</title>
-<link>https://leonida-news.de/n/m-261009-2352-4.html</link>
-<guid isPermaLink="false">lnn-c0ed841e444f198d</guid>
-<pubDate>Fri, 09 Oct 2026 23:52:00 +0200</pubDate>
-<description>Kommt eine GTA-VI-Aktion bei Discord? Laut dem Discord-Datensammler „Wumpus Central“ arbeitet Rockstar mit Discord an einer Aktion mit GTA-VI-App-Symbol, Design und Schriftart für den Namen, dazu eine Aufgabe mit unbekannter Belohnung. Weder Rockstar noch Discord haben das bestätigt.</description>
-</item>
-<item>
-<title>[Korrektur] Doch neues Merch: die GTA-VI-Kollektion ist da</title>
-<link>https://leonida-news.de/n/m-261009-0045.html</link>
-<guid isPermaLink="false">lnn-9db67ba7f173773a</guid>
-<pubDate>Fri, 09 Oct 2026 00:45:00 +0200</pubDate>
-<description>Doch neues Merch: die GTA-VI-Kollektion ist da. Unser Eintrag von 17:22 Uhr stimmte nicht: Rockstar hat am Donnerstagabend eine eigene Kollektion veröffentlicht. Dazu gehören T-Shirts mit VI-Logo, Rockstar-Logo, „Goodtime State“ und Macca the Gator in Schwarz, Blau und Pink (je 29,99 € im deutschen Store), Damen-Shirts, Flexfit-Caps zum Vorbestellen, ein Schlüsselring, eine Vice-City-Geldklammer, ein Zippo-Feuerzeug, Stofftaschen und Sticker. Mehrere Shirts sind bereits ausverkauft, weitere Artikel sollen folgen.</description>
 </item>
 </channel>
 </rss>
