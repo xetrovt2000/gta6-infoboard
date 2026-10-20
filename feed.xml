@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 20 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 20 Oct 2026 20:55:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] GTA-Bier bald im echten Laden?</title>
+<link>https://leonida-news.de/n/m-261020-2055.html</link>
+<guid isPermaLink="false">lnn-de025b2fb894a095</guid>
+<pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
+<description>GTA-Bier bald im echten Laden? Die US-Behörde für Alkoholsteuer (TTB) hat drei Bieretiketten genehmigt, die nach GTA klingen: Pißwasser und Patriot, beide aus der Spielreihe bekannt, und ein neues Lager namens „No Mames Vice City“ mit 6 %. Eingereicht hat sie die Brauerei Tripping Animals aus Doral bei Miami, genehmigt wurden sie zwischen dem 29. September und dem 15. Oktober. Rockstar und die Brauerei haben noch nichts angekündigt, Preis und Verkaufsstart sind offen.</description>
+</item>
+<item>
+<title>[Berichtet] Über 6,4 Millionen digitale Vorbestellungen</title>
+<link>https://leonida-news.de/n/m-261020-2055-2.html</link>
+<guid isPermaLink="false">lnn-22b7d90a0952e8d9</guid>
+<pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
+<description>Über 6,4 Millionen digitale Vorbestellungen. Laut einer Schätzung von Sensor Tower wurde GTA VI bis zum 18. Oktober rund 6,45 Millionen Mal digital vorbestellt, das wären etwa 630 Millionen Dollar Umsatz. 74 % entfallen auf PlayStation, 26 % auf Xbox. In den USA liegt das Spiel 148 % vor Call of Duty: Modern Warfare II zum gleichen Zeitpunkt. Ladenversionen sind nicht mitgezählt, Rockstar und Take-Two nennen keine Zahlen.</description>
+</item>
 <item>
 <title>Noch 30 Tage</title>
 <link>https://leonida-news.de/#m-261020-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-0b25aac176609072</guid>
 <pubDate>Sun, 11 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 39 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Leak] CyberLeek droht mit dem kompletten Spiel</title>
-<link>https://leonida-news.de/n/m-261010-2129.html</link>
-<guid isPermaLink="false">lnn-6911fc25baf9945e</guid>
-<pubDate>Sat, 10 Oct 2026 21:29:00 +0200</pubDate>
-<description>CyberLeek droht mit dem kompletten Spiel. Auf seiner Website stellt der Leaker Bedingungen: Steigt der Börsenwert seiner Meme-Kryptowährung auf 30 Millionen Dollar, will er einen vollständigen Entwicklungsstand samt Story bis zum Abspann veröffentlichen, bei niedrigeren Schwellen (ab 2 Millionen) Nacktvideos der Spielfigur Lucia. Abwenden könne Take-Two das nur mit Disc-Versionen für PS5 und Xbox und einer öffentlichen Entschuldigung. Ob er überhaupt ein spielbares Build hat, ist nicht belegt. Kotaku hält auch einen erneuten Abzock-Trick mit der Währung für möglich (im August zog er rund 250.000 Dollar ab). Rockstar hat sich nicht geäußert. Wir verlinken weder Material noch die Währung. Zu den Leaks</description>
-</item>
-<item>
-<title>[Berichtet] Prozess gegen den Hacker von 2022 beginnt am 9. November</title>
-<link>https://leonida-news.de/n/m-261010-0909.html</link>
-<guid isPermaLink="false">lnn-deaf32205d0a4ca2</guid>
-<pubDate>Sat, 10 Oct 2026 09:09:00 +0200</pubDate>
-<description>Prozess gegen den Hacker von 2022 beginnt am 9. November. Arion Kurtaj, der 2022 in Rockstars Netz eindrang und frühe GTA-VI-Videos veröffentlichte, steht laut seinen Anwälten (Red Lion Chambers) ab dem 9. November in London vor Gericht, zehn Tage vor dem Release. 2023 galt er noch als nicht verhandlungsfähig und kam in eine Klinik. Inzwischen sitzt er in einem normalen Gefängnis. Gericht und Rockstar haben sich nicht geäußert. Mit den aktuellen CyberLeek-Videos hat der Fall nichts zu tun. Zu den Leaks</description>
 </item>
 </channel>
 </rss>
