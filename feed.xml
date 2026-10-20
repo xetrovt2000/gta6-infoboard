@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 19 Oct 2026 21:55:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 20 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 30 Tage</title>
+<link>https://leonida-news.de/#m-261020-0700</link>
+<guid isPermaLink="false">lnn-87b174b42a29cd80</guid>
+<pubDate>Tue, 20 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 30 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Jahrelang am Waffenrad getüftelt</title>
 <link>https://leonida-news.de/n/m-261019-2155.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-deaf32205d0a4ca2</guid>
 <pubDate>Sat, 10 Oct 2026 09:09:00 +0200</pubDate>
 <description>Prozess gegen den Hacker von 2022 beginnt am 9. November. Arion Kurtaj, der 2022 in Rockstars Netz eindrang und frühe GTA-VI-Videos veröffentlichte, steht laut seinen Anwälten (Red Lion Chambers) ab dem 9. November in London vor Gericht, zehn Tage vor dem Release. 2023 galt er noch als nicht verhandlungsfähig und kam in eine Klinik. Inzwischen sitzt er in einem normalen Gefängnis. Gericht und Rockstar haben sich nicht geäußert. Mit den aktuellen CyberLeek-Videos hat der Fall nichts zu tun. Zu den Leaks</description>
-</item>
-<item>
-<title>Noch 40 Tage</title>
-<link>https://leonida-news.de/#m-261010-0700</link>
-<guid isPermaLink="false">lnn-2016ce657e4ae2bf</guid>
-<pubDate>Sat, 10 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 40 Tage bis zum Release am 19. November.</description>
 </item>
 </channel>
 </rss>
