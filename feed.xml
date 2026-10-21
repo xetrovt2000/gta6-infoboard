@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 20 Oct 2026 20:55:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 11:05:00 +0200</lastBuildDate>
+<item>
+<title>[Gerücht] Erst Daft Punk, dann Justice?</title>
+<link>https://leonida-news.de/n/m-261021-1105.html</link>
+<guid isPermaLink="false">lnn-71feb97984ca89fc</guid>
+<pubDate>Wed, 21 Oct 2026 11:05:00 +0200</pubDate>
+<description>Erst Daft Punk, dann Justice? Laut dem X-Konto „Has it Leaked“, das schon öfter Musik-News vorab hatte, wollte Rockstar zuerst Daft Punk für den Soundtrack: Deren Management sei ein letztes Comeback des 2021 aufgelösten Duos angeboten worden, mit praktisch unbegrenztem Budget. Justice seien nur die zweite Wahl gewesen. Belege gibt es keine, Rockstar und Justice haben sich nicht geäußert.</description>
+</item>
+<item>
+<title>Noch 29 Tage</title>
+<link>https://leonida-news.de/#m-261021-0700</link>
+<guid isPermaLink="false">lnn-9d83b21bb5b848c2</guid>
+<pubDate>Wed, 21 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 29 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] GTA-Bier bald im echten Laden?</title>
 <link>https://leonida-news.de/n/m-261020-2055.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-3ad10a0b56a0c7c2</guid>
 <pubDate>Mon, 12 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 38 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Leak] CyberLeek legt mit Lucia-Video nach</title>
-<link>https://leonida-news.de/n/m-261011-2119.html</link>
-<guid isPermaLink="false">lnn-bf76713d269bb799</guid>
-<pubDate>Sun, 11 Oct 2026 21:19:00 +0200</pubDate>
-<description>CyberLeek legt mit Lucia-Video nach. Einen Tag nach seiner Drohung hat der Leaker ein weiteres Video veröffentlicht: Lucia läuft darin unbekleidet durch Vice City, dazu eine Fallschirm-Szene. Laut GameRant stammt die Szene vermutlich aus einem älteren Debug-Stand und wurde wohl per Konsolenbefehl ausgelöst. Passanten reagieren gar nicht darauf, im fertigen Spiel ist so etwas also kaum zu erwarten. Echtheit und Alter des Materials sind nicht bestätigt, Rockstar schweigt weiter. Die Drohung mit dem kompletten Spiel steht weiter im Raum. Wir zeigen und verlinken das Material nicht. Zu den Leaks</description>
-</item>
-<item>
-<title>Noch 39 Tage</title>
-<link>https://leonida-news.de/#m-261011-0700</link>
-<guid isPermaLink="false">lnn-0b25aac176609072</guid>
-<pubDate>Sun, 11 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 39 Tage bis zum Release am 19. November.</description>
 </item>
 </channel>
 </rss>
