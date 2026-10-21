@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Wed, 21 Oct 2026 14:55:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 22:45:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Erster TV-Spot, nur mit PlayStation</title>
+<link>https://leonida-news.de/n/m-261021-2245.html</link>
+<guid isPermaLink="false">lnn-5e45a5cf36c4163b</guid>
+<pubDate>Wed, 21 Oct 2026 22:45:00 +0200</pubDate>
+<description>Erster TV-Spot, nur mit PlayStation. In den USA lief auf NBC Sports der erste Fernsehspot zu GTA VI, eine gekürzte Fassung des Launch-Trailers ohne die Duschszene und einige harte Gewaltmomente. Am Ende steht nur das PlayStation-Logo, Xbox wird nicht einmal im Kleingedruckten erwähnt. Das passt zur Marketing-Partnerschaft mit Sony, erscheinen wird das Spiel trotzdem auch für Xbox Series X|S.</description>
+</item>
 <item>
 <title>[Berichtet] Aus Miami Beach wird „Vice Beach“, vielleicht</title>
 <link>https://leonida-news.de/n/m-261021-1455.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-69591d3b2c0478d2</guid>
 <pubDate>Tue, 13 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 37 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Leak] CyberLeek: „Spielbarer Stand“ angeblich über 200 GB groß</title>
-<link>https://leonida-news.de/n/m-261012-1858.html</link>
-<guid isPermaLink="false">lnn-9da983c26fa8b2f4</guid>
-<pubDate>Mon, 12 Oct 2026 18:58:00 +0200</pubDate>
-<description>CyberLeek: „Spielbarer Stand“ angeblich über 200 GB groß. Der Leaker legt nach: Sein Build sei rund 200 GB groß, und jede erreichte Kurs-Marke seiner Kryptowährung bringe am nächsten Tag einen neuen Leak, mehrere Marken auf einmal nacheinander im Tagestakt. Angekündigt sind unter anderem Szenen mit Mini-Panzer, Jumbo-Jet, Kampfjet, Polizei-Schießerei und Zug gegen Zug. Für das komplette Spiel bleibt es bei 30 Millionen Dollar Börsenwert. Belege für den Build gibt es weiter nicht, Rockstar schweigt. Vorsicht vor angeblichen Downloads: Gefälschte „Builds“ enthalten oft Schadsoftware. Zu den Leaks</description>
 </item>
 </channel>
 </rss>
