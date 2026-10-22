@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Wed, 21 Oct 2026 22:45:00 +0200</lastBuildDate>
+<lastBuildDate>Thu, 22 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 28 Tage</title>
+<link>https://leonida-news.de/#m-261022-0700</link>
+<guid isPermaLink="false">lnn-2ac314f60139f0ef</guid>
+<pubDate>Thu, 22 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 28 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Erster TV-Spot, nur mit PlayStation</title>
 <link>https://leonida-news.de/n/m-261021-2245.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-32d5363aa2202f11</guid>
 <pubDate>Tue, 13 Oct 2026 19:09:00 +0200</pubDate>
 <description>Schwarze PS5 erscheint am Release-Tag, aber nur in Japan. Sony Japan bringt am 19. November eine PS5 Digital Edition in Midnight Black heraus (55.000 Yen, Laufwerk extra), Vorbestellung ab 20. Oktober. Eine offizielle GTA-Verbindung gibt es nicht, nur das gleiche Datum.</description>
-</item>
-<item>
-<title>Noch 37 Tage</title>
-<link>https://leonida-news.de/#m-261013-0700</link>
-<guid isPermaLink="false">lnn-69591d3b2c0478d2</guid>
-<pubDate>Tue, 13 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 37 Tage bis zum Release am 19. November.</description>
 </item>
 </channel>
 </rss>
