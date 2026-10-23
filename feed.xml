@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Thu, 22 Oct 2026 18:25:00 +0200</lastBuildDate>
+<lastBuildDate>Fri, 23 Oct 2026 11:30:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] GTA VI kurbelt die PS5 an</title>
+<link>https://leonida-news.de/n/m-261023-1130.html</link>
+<guid isPermaLink="false">lnn-4b42b448297539d5</guid>
+<pubDate>Fri, 23 Oct 2026 11:30:00 +0200</pubDate>
+<description>GTA VI kurbelt die PS5 an. In den USA wurden im September 22 % mehr PS5-Konsolen verkauft als ein Jahr zuvor, der Umsatz mit PS5-Hardware stieg sogar um 43 %. Das meldet Bloomberg mit Zahlen des Marktforschers Circana und nennt die Vorfreude auf GTA VI als Treiber. Die PS5 Pro ist bei vielen Händlern knapp, während die Switch 2 im selben Monat 14 % weniger Geräte absetzte.</description>
+</item>
+<item>
+<title>Noch 27 Tage</title>
+<link>https://leonida-news.de/#m-261023-0700</link>
+<guid isPermaLink="false">lnn-5503fb3bcbe0d905</guid>
+<pubDate>Fri, 23 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 27 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Burger Shot gibt es jetzt wirklich</title>
 <link>https://leonida-news.de/n/m-261022-1825.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-fde1815445b7f8e8</guid>
 <pubDate>Wed, 14 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 36 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Berichtet] PC-Version angeblich im ersten Quartal 2027</title>
-<link>https://leonida-news.de/n/m-261013-1909.html</link>
-<guid isPermaLink="false">lnn-45aaca1030d66a8f</guid>
-<pubDate>Tue, 13 Oct 2026 19:09:00 +0200</pubDate>
-<description>PC-Version angeblich im ersten Quartal 2027. Laut GamesBeat plant Rockstar den PC-Start für Januar bis März 2027, also wenige Monate nach den Konsolen. Die Seite beruft sich auf vier anonyme Quellen aus der Branche, die PC-Fassung müsse vorher dieselbe Qualitätsprüfung bestehen wie die Konsolenversion. Rockstar hat auf die Anfrage nicht geantwortet, offiziell angekündigt ist weiter keine PC-Version. Zum Überblick</description>
-</item>
-<item>
-<title>[Leak] CyberLeeks Währung stürzt ab, er legt einen „Fahrplan“ vor</title>
-<link>https://leonida-news.de/n/m-261013-1909-2.html</link>
-<guid isPermaLink="false">lnn-f9c3b5a50cfab396</guid>
-<pubDate>Tue, 13 Oct 2026 19:09:00 +0200</pubDate>
-<description>CyberLeeks Währung stürzt ab, er legt einen „Fahrplan“ vor. Der Coin hat laut Kotaku binnen 24 Stunden rund die Hälfte verloren und liegt bei etwa 2,2 Millionen Dollar Börsenwert (am Wochenende über 4,7 Mio.). Der Leaker nennt jetzt feste Marken: ab 5 Mio. Mini-Panzer, 9 Mio. Panzer, 13 Mio. Polizei-Schießerei, 21 Mio. Kampfjet, 25 Mio. Zug gegen Zug, 30 Mio. das ganze Spiel. Neues Material gab es seitdem nicht, Rockstar schweigt. Zu den Leaks</description>
 </item>
 </channel>
 </rss>
