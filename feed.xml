@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 24 Oct 2026 10:45:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 24 Oct 2026 16:55:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Engere Straßen, mehr Verkehr</title>
+<link>https://leonida-news.de/n/m-261024-1655.html</link>
+<guid isPermaLink="false">lnn-d65ce23aed4663ab</guid>
+<pubDate>Sat, 24 Oct 2026 16:55:00 +0200</pubDate>
+<description>Engere Straßen, mehr Verkehr. Bei Jason Schreiers Besuch bei Rockstar North sagte Art Director Aaron Garbut, die Straßen in GTA VI seien „deutlich schmaler“ als in GTA V. Das war von Anfang an so geplant, die breiten Straßen von GTA V hätten das Spiel eher wie ein Rennspiel wirken lassen. Dazu kommt dichterer Verkehr. Weil die Straßen schmaler sind, musste Rockstar mehr Gebäude bauen. Solche Entscheidungen „kommen später zurück und beißen dich“, so Garbut. Gespielt hat Schreier selbst nicht, er sah eine Vorführung.</description>
+</item>
 <item>
 <title>[Berichtet] „Peekhole“: Leonidas Version von OnlyFans</title>
 <link>https://leonida-news.de/n/m-261024-1045.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-658e80f29500bbca</guid>
 <pubDate>Wed, 14 Oct 2026 17:50:00 +0200</pubDate>
 <description>CyberLeek zieht sich offenbar zurück. Nach dem Absturz seiner Kryptowährung verkündet der Leaker laut GamesRadar „the leeks stop here“, also das Ende der Leaks. PCMag spricht von einem Flop seiner letzten Aktion. Ob das wirklich das Ende ist, bleibt abzuwarten, angekündigt hat er schon vieles. Zu den Leaks</description>
-</item>
-<item>
-<title>[Berichtet] Nach Miami und Brooklyn jetzt Paris: GTA VI am Hochhaus</title>
-<link>https://leonida-news.de/n/m-261014-1108.html</link>
-<guid isPermaLink="false">lnn-a7c36832002fb658</guid>
-<pubDate>Wed, 14 Oct 2026 11:08:00 +0200</pubDate>
-<description>Nach Miami und Brooklyn jetzt Paris: GTA VI am Hochhaus. An einem der beiden Mercuriales-Türme an der Porte de Bagnolet hängt seit Anfang Oktober eine riesige GTA-VI-Werbung mit Jason, Lucia und dem Datum 19. November, gut sichtbar vom Pariser Autobahnring. Entdeckt hat sie das Fanportal Rockstar Mag, eine Mitteilung von Rockstar gibt es dazu nicht. Am Release-Abend zeigt außerdem das Pariser Kino Grand Rex eine Launch-Party auf großer Leinwand.</description>
 </item>
 </channel>
 </rss>
