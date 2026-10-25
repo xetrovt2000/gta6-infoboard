@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 24 Oct 2026 16:55:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 25 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 25 Tage</title>
+<link>https://leonida-news.de/#m-261025-0700</link>
+<guid isPermaLink="false">lnn-073d0829bfb1d660</guid>
+<pubDate>Sun, 25 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 25 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Engere Straßen, mehr Verkehr</title>
 <link>https://leonida-news.de/n/m-261024-1655.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-0a4d6b8d5127134e</guid>
 <pubDate>Wed, 14 Oct 2026 17:50:00 +0200</pubDate>
 <description>Glasgower Arbeitsgericht verlängert bis kurz vor Release. Das Verfahren um die entlassenen Rockstar-North-Entwickler sollte am Freitag enden, geht aber in den November: Die Schlussplädoyers sind jetzt für den 17. und 18. November angesetzt, ein Urteil kommt erst danach. Die Gewerkschaft IWGB befragt diese Woche noch Rockstar-Führungskräfte, danach bekommt Rockstars Seite mehr Zeit für die Befragung der Entlassenen. Zuerst gemeldet hat das der Journalist Chris Bratt.</description>
-</item>
-<item>
-<title>[Leak] CyberLeek zieht sich offenbar zurück</title>
-<link>https://leonida-news.de/n/m-261014-1750-3.html</link>
-<guid isPermaLink="false">lnn-658e80f29500bbca</guid>
-<pubDate>Wed, 14 Oct 2026 17:50:00 +0200</pubDate>
-<description>CyberLeek zieht sich offenbar zurück. Nach dem Absturz seiner Kryptowährung verkündet der Leaker laut GamesRadar „the leeks stop here“, also das Ende der Leaks. PCMag spricht von einem Flop seiner letzten Aktion. Ob das wirklich das Ende ist, bleibt abzuwarten, angekündigt hat er schon vieles. Zu den Leaks</description>
 </item>
 </channel>
 </rss>
