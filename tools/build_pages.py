@@ -190,6 +190,7 @@ def build():
             f.unlink()
     urls = [f"  <url><loc>{SITE}</loc><lastmod>{items[0]['when']:%Y-%m-%d}</lastmod><changefreq>hourly</changefreq></url>"]
     urls += [f"  <url><loc>{SITE}n/{it['id']}.html</loc><lastmod>{it['when']:%Y-%m-%d}</lastmod></url>" for it in items]
+    urls.append(f"  <url><loc>{SITE}countdown.html</loc></url>")
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "\n".join(urls) + "\n</urlset>\n", encoding="utf-8", newline="\n")
