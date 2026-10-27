@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 27 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 27 Oct 2026 20:55:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Rund 210 GB auf der PS5</title>
+<link>https://leonida-news.de/n/m-261027-2055.html</link>
+<guid isPermaLink="false">lnn-8f15a0d364ba6537</guid>
+<pubDate>Tue, 27 Oct 2026 20:55:00 +0200</pubDate>
+<description>Rund 210 GB auf der PS5. Laut dem Konto PlayStationSize, das Daten aus dem PlayStation Store ausliest, braucht GTA VI auf der PS5 etwa 210 Gigabyte. Das wäre eines der größten Spiele dieser Generation, viele Konsolen bräuchten dafür mehr Speicher. Im Store selbst steht noch keine Angabe, Rockstar hat keine Größe genannt, eine Zahl für Xbox fehlt. Vorab laden lässt sich das Spiel ab dem 12. November.</description>
+</item>
+<item>
+<title>[Berichtet] Gewerkschaftsabstimmung zum Release</title>
+<link>https://leonida-news.de/n/m-261027-2055-2.html</link>
+<guid isPermaLink="false">lnn-9c07c8adafd55d9a</guid>
+<pubDate>Tue, 27 Oct 2026 20:55:00 +0200</pubDate>
+<description>Gewerkschaftsabstimmung zum Release. Die Beschäftigten von Rockstar in Großbritannien stimmen vom 12. bis 26. November darüber ab, ob die IWGB-Gewerkschaft „Rockstar Game Workers Union“ anerkannt wird. Es geht um Bezahlung, Überstunden, Entlassungen, flexibles Arbeiten und den Einsatz von KI. Die Abstimmung fällt genau in die Woche des Releases und in die Schlussplädoyers zum Arbeitsgerichtsverfahren am 17. und 18. November.</description>
+</item>
 <item>
 <title>Noch 23 Tage</title>
 <link>https://leonida-news.de/#m-261027-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-72fbff60c0cf68af</guid>
 <pubDate>Fri, 16 Oct 2026 08:03:00 +0200</pubDate>
 <description>Paris-Werbung fertig, aber ohne Waffen. Die riesige GTA-VI-Werbung am Mercuriales-Turm ist fertig, und Fans fällt auf: Die Motive wurden entschärft. Lucias Pistole ist samt Hand verschwunden, auf dem Cover-Motiv fehlt ein Sturmgewehr, die Hand bleibt leer erhoben. Warum, ist unklar, vermutet werden Vorgaben der Gebäudeeigentümer.</description>
-</item>
-<item>
-<title>Noch 34 Tage</title>
-<link>https://leonida-news.de/#m-261016-0700</link>
-<guid isPermaLink="false">lnn-2216104a66645dd5</guid>
-<pubDate>Fri, 16 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 34 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] Der Launch-Trailer ist da</title>
-<link>https://leonida-news.de/n/m-261015-2044.html</link>
-<guid isPermaLink="false">lnn-73ab8a7500f88f84</guid>
-<pubDate>Thu, 15 Oct 2026 20:44:00 +0200</pubDate>
-<description>Der Launch-Trailer ist da. Rockstar hat um 15 Uhr den „Grand Theft Auto VI Launch Trailer“ veröffentlicht, 1:31 Minuten, komplett im Spiel auf der PS5 aufgenommen. Jason erzählt, er habe beim Militär Ärger bekommen und sei nicht im Guten gegangen, dann ruft Lucia an. Zu sehen sind Banküberfälle, ein Konzert, eine Schlägerei auf einem Propellerboot, Hubschrauber-Action und Schießereien. Die Story laut Rockstar: Ein leichter Coup geht schief, und die beiden geraten mitten in eine kriminelle Verschwörung quer durch Leonida. Am Ende steht wieder der 19. November. Zu den Trailern</description>
 </item>
 </channel>
 </rss>
