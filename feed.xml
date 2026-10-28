@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Wed, 28 Oct 2026 16:15:00 +0200</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 21 Tage</title>
+<link>https://leonida-news.de/#m-261029-0700</link>
+<guid isPermaLink="false">lnn-fcd5e6d1c7699026</guid>
+<pubDate>Thu, 29 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 21 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Neuer Score-Track von Justice und Gesaffelstein</title>
 <link>https://leonida-news.de/n/m-261028-1615.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-df48621298632114</guid>
 <pubDate>Sat, 17 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 33 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] PlayStation nennt die PS5-Extras</title>
-<link>https://leonida-news.de/n/m-261016-2009.html</link>
-<guid isPermaLink="false">lnn-82adfcc718cda4a9</guid>
-<pubDate>Fri, 16 Oct 2026 20:09:00 +0200</pubDate>
-<description>PlayStation nennt die PS5-Extras. Laut der offiziellen PlayStation-Seite und dem PS Store nutzt GTA VI auf der PS5 3D-Audio (Tempest), schnelles Laden über die SSD, die Vibration und die adaptiven Trigger des DualSense sowie dessen Lautsprecher. Außerdem trägt das Spiel das Siegel „PS5 Pro Enhanced“. Was die Pro-Fassung genau besser macht, etwa 60 Bilder pro Sekunde, ist nicht bekannt.</description>
 </item>
 </channel>
 </rss>
