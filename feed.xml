@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 27 Oct 2026 20:55:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 28 Oct 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 22 Tage</title>
+<link>https://leonida-news.de/#m-261028-0700</link>
+<guid isPermaLink="false">lnn-e77edbfee73ae3e1</guid>
+<pubDate>Wed, 28 Oct 2026 07:00:00 +0200</pubDate>
+<description>Noch 22 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Rund 210 GB auf der PS5</title>
 <link>https://leonida-news.de/n/m-261027-2055.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-63805be6b80cc861</guid>
 <pubDate>Fri, 16 Oct 2026 20:09:00 +0200</pubDate>
 <description>Tests sollen vor dem Release erscheinen. Laut Insider Gaming fällt die Sperrfrist für Testberichte noch vor dem 19. November, ein genaues Datum ist nicht bekannt und kann sich laut Bericht noch ändern.</description>
-</item>
-<item>
-<title>[Berichtet] Paris-Werbung fertig, aber ohne Waffen</title>
-<link>https://leonida-news.de/n/m-261016-0803.html</link>
-<guid isPermaLink="false">lnn-72fbff60c0cf68af</guid>
-<pubDate>Fri, 16 Oct 2026 08:03:00 +0200</pubDate>
-<description>Paris-Werbung fertig, aber ohne Waffen. Die riesige GTA-VI-Werbung am Mercuriales-Turm ist fertig, und Fans fällt auf: Die Motive wurden entschärft. Lucias Pistole ist samt Hand verschwunden, auf dem Cover-Motiv fehlt ein Sturmgewehr, die Hand bleibt leer erhoben. Warum, ist unklar, vermutet werden Vorgaben der Gebäudeeigentümer.</description>
 </item>
 </channel>
 </rss>
