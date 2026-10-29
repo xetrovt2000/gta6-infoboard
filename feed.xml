@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Thu, 29 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 08:40:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Edge-Sonderheft mit Rockstar-Interview</title>
+<link>https://leonida-news.de/n/m-261029-0840.html</link>
+<guid isPermaLink="false">lnn-a1b4b362f2555175</guid>
+<pubDate>Thu, 29 Oct 2026 08:40:00 +0200</pubDate>
+<description>Edge-Sonderheft mit Rockstar-Interview. Die Edge-Ausgabe 430 erscheint heute mit 16 Seiten zu GTA VI, einem Besuch bei Rockstar North in Edinburgh und über zehn neuen Bildern. Laut Zusammenfassung von VICE: Leonida sei fast so groß wie die Karten von GTA IV, GTA V und Red Dead Redemption 2 zusammen, Busse und Züge sind nutzbar, die Polizei setzt Hundestaffeln ein und merkt sich Kleidung und Komplizen. Dazu ein Ruf von „Profi“ bis „Unverbesserlich“, ein Lieferdienst „Scooter Bros“ für eigene Fahrzeuge, Kaffee für Ausdauer, Proteinshakes für Gesundheit und vier Stufen für die Nähe zwischen Jason und Lucia.</description>
+</item>
+<item>
+<title>[Berichtet] Neue GTA-Szene bei South Park</title>
+<link>https://leonida-news.de/n/m-261029-0840-2.html</link>
+<guid isPermaLink="false">lnn-8ebc7ee185c9454f</guid>
+<pubDate>Thu, 29 Oct 2026 08:40:00 +0200</pubDate>
+<description>Neue GTA-Szene bei South Park. In der Folge „Guinea Pig on a Stick“ zeigt South Park einen bisher unbekannten Ausschnitt: Jason wirft am vollen Strand einem Hundebesitzer dessen Hinterlassenschaft ins Gesicht. Die Folge macht sich über Leute lustig, die GTA für alle Probleme verantwortlich machen. Ob Rockstar die Szene geliefert hat, ist nicht bestätigt.</description>
+</item>
 <item>
 <title>Noch 21 Tage</title>
 <link>https://leonida-news.de/#m-261029-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-5cebbd2ca544a52d</guid>
 <pubDate>Sat, 17 Oct 2026 18:24:00 +0200</pubDate>
 <description>Kein Disney World in Leonida. Ein Freizeitpark nach Vorbild von Walt Disney World ist nicht im Spiel. Paul MacPherson, bei Rockstar für die Umgebungsgrafik zuständig, sagte Game Informer, man wolle zwar das „volle Florida-Erlebnis“ bieten, könne aber nicht jeden Ort einbauen und wähle die Orte gezielt aus.</description>
-</item>
-<item>
-<title>[Berichtet] Ein „Vice City“-Zeppelin über Miami</title>
-<link>https://leonida-news.de/n/m-261017-0910.html</link>
-<guid isPermaLink="false">lnn-0c08de4dd75e8fa9</guid>
-<pubDate>Sat, 17 Oct 2026 09:10:00 +0200</pubDate>
-<description>Ein „Vice City“-Zeppelin über Miami. Einer der nur drei Goodyear-Zeppeline in den USA fliegt jetzt mit „Vice City“-Aufschrift über Südflorida. In den nächsten Wochen soll er über dem Hard Rock Stadium auftauchen und vom 7. bis 9. November beim NASCAR-Finale in Homestead-Miami schweben. Dazu kommen die Sportwagen, Strandschirme und Leonida-Kennzeichen in der Stadt. Im Stadtrat von Miami Beach bleibt die Kampagne umstritten: Kritiker fanden schon im September, die Stadt werde wie eine „Mordhauptstadt“ dargestellt.</description>
-</item>
-<item>
-<title>Noch 33 Tage</title>
-<link>https://leonida-news.de/#m-261017-0700</link>
-<guid isPermaLink="false">lnn-df48621298632114</guid>
-<pubDate>Sat, 17 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 33 Tage bis zum Release am 19. November.</description>
 </item>
 </channel>
 </rss>
