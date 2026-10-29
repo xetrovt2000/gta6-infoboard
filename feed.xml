@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Thu, 29 Oct 2026 08:40:00 +0200</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 19:10:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Score-Album kommt am 11. Dezember, „Pusher“ ist draußen</title>
+<link>https://leonida-news.de/n/m-261029-1910.html</link>
+<guid isPermaLink="false">lnn-061c36f5be860cad</guid>
+<pubDate>Thu, 29 Oct 2026 19:10:00 +0200</pubDate>
+<description>Score-Album kommt am 11. Dezember, „Pusher“ ist draußen. Rockstar Games und Justice haben „Grand Theft Auto VI: Original Score“ angekündigt: 30 Stücke plus digitale Bonus-Tracks, rund drei Stunden Musik aus dem Spiel, als 2CD und 3LP (auch auf klarem Vinyl), vorbestellbar. Der erste Track „Pusher (feat. Gesaffelstein)“ ist seit heute zu hören.</description>
+</item>
+<item>
+<title>[Berichtet] Mehr aus dem Edge-Heft: 600.000 Animationen</title>
+<link>https://leonida-news.de/n/m-261029-1910-2.html</link>
+<guid isPermaLink="false">lnn-fc4b6c10f4f467b3</guid>
+<pubDate>Thu, 29 Oct 2026 19:10:00 +0200</pubDate>
+<description>Mehr aus dem Edge-Heft: 600.000 Animationen. Laut Rob Nelson von Rockstar North haben die Passanten zusammen über 600.000 Animationen und eigene Charakterzüge, die bestimmen, wie aggressiv sie reagieren. Die Welt läuft bewusst langsamer als in GTA V („Alles fühlte sich zu schnell an“): längere Nächte und Sonnenuntergänge, das Herbeirufen eines Autos dauert ein paar Sekunden. Missionen lassen sich auf mehreren Wegen lösen, das Waffenrad bleibt.</description>
+</item>
 <item>
 <title>[Berichtet] Edge-Sonderheft mit Rockstar-Interview</title>
 <link>https://leonida-news.de/n/m-261029-0840.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-df89dc8b40121d69</guid>
 <pubDate>Sun, 18 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 32 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Gerücht] Nein, GTA VI ist nicht „unfertig“</title>
-<link>https://leonida-news.de/n/m-261017-1824.html</link>
-<guid isPermaLink="false">lnn-6efaf23fb4941751</guid>
-<pubDate>Sat, 17 Oct 2026 18:24:00 +0200</pubDate>
-<description>Nein, GTA VI ist nicht „unfertig“. Auf Reddit kursiert, Rockstar habe zugegeben, das Spiel sei Wochen vor dem Release nicht fertig. Das stimmt so nicht: Phil Hooker sagte Bloomberg bei einem Besuch im September, man habe „auch in den letzten Monaten noch Dinge geändert“. Gemeint ist der übliche Feinschliff bei einem so großen Spiel, nicht fehlende Inhalte. Zum Faktencheck</description>
-</item>
-<item>
-<title>[Offiziell] Kein Disney World in Leonida</title>
-<link>https://leonida-news.de/n/m-261017-1824-2.html</link>
-<guid isPermaLink="false">lnn-5cebbd2ca544a52d</guid>
-<pubDate>Sat, 17 Oct 2026 18:24:00 +0200</pubDate>
-<description>Kein Disney World in Leonida. Ein Freizeitpark nach Vorbild von Walt Disney World ist nicht im Spiel. Paul MacPherson, bei Rockstar für die Umgebungsgrafik zuständig, sagte Game Informer, man wolle zwar das „volle Florida-Erlebnis“ bieten, könne aber nicht jeden Ort einbauen und wähle die Orte gezielt aus.</description>
 </item>
 </channel>
 </rss>
