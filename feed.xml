@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 31 Oct 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 13:15:00 +0200</lastBuildDate>
+<item>
+<title>Hintergrund: die Farben von GTA VI</title>
+<link>https://leonida-news.de/n/m-261031-1315.html</link>
+<guid isPermaLink="false">lnn-0253b9459783aa97</guid>
+<pubDate>Sat, 31 Oct 2026 13:15:00 +0200</pubDate>
+<description>Hintergrund: die Farben von GTA VI. Abendgold, Neonpink, Magenta und Türkis prägen Logo, Cover, Trailer und sogar die Controller. Wir haben die Palette aus Rockstars offiziellen Bildern gemessen und mit Vice City von 2002 verglichen. Ergebnis: Das grelle Pink lebt vor allem im Marketing, das Spielbild ist ruhiger.</description>
+</item>
 <item>
 <title>Noch 19 Tage</title>
 <link>https://leonida-news.de/#m-261031-0700</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-66dcd28ebb2ab74c</guid>
 <pubDate>Mon, 19 Oct 2026 18:53:00 +0200</pubDate>
 <description>Launch-Trailer schlägt GTA V nach vier Tagen. Der GTA-VI-Launch-Trailer steht auf Rockstars YouTube-Kanal bei rund 47,5 Millionen Aufrufen (Stand heute Abend). Der Launch-Trailer von GTA V kommt laut TheGamer nach 13 Jahren auf etwa 34 Millionen. Zu den Trailern</description>
-</item>
-<item>
-<title>[Berichtet] Vice City am Flughafen? Miami-Dade stimmt morgen ab</title>
-<link>https://leonida-news.de/n/m-261019-1027.html</link>
-<guid isPermaLink="false">lnn-03e39457342e487d</guid>
-<pubDate>Mon, 19 Oct 2026 10:27:00 +0200</pubDate>
-<description>Vice City am Flughafen? Miami-Dade stimmt morgen ab. Laut Unterlagen, die The Miamian per Auskunftsanfrage bekam, hat der Landkreis Miami-Dade Rockstar im Juni eine ganze Liste angeboten: eine „Vice City Airport“-Ankunft am Flughafen Miami, Metromover-Bahnen im Vice-City-Look, ein Wandbild am Hafen, eigene Gullydeckel in Downtown und Brickell und ein Autofestival. Zugesagt ist davon nichts. Die Sheriffin und mehrere Kommissare sind dagegen („Miami-Dade County is not Vice City“). Am 20. Oktober stimmt die Kreiskommission ab, Verträge über 1 Million Dollar muss sie ohnehin absegnen. Die Stadt Miami hat Banner für bis zu 1,2 Millionen Dollar genehmigt.</description>
 </item>
 </channel>
 </rss>
