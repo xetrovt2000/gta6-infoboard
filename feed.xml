@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 02 Nov 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 20:00:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] PS5 braucht Systemsoftware 14.22</title>
+<link>https://leonida-news.de/n/m-261102-2000.html</link>
+<guid isPermaLink="false">lnn-d7731c9862a84e00</guid>
+<pubDate>Mon, 02 Nov 2026 20:00:00 +0200</pubDate>
+<description>PS5 braucht Systemsoftware 14.22. Laut dem Konto PlayStation Game Size, das Daten aus dem PlayStation Store ausliest, setzt GTA VI jetzt mindestens die PS5-Version 14.22 voraus statt bisher 14.10. Vermutet wird ein Riegel gegen Konsolen mit Jailbreak, bestätigt haben das weder Sony noch Rockstar. Wer die PS5 aktuell hält, muss nichts tun.</description>
+</item>
 <item>
 <title>Noch 17 Tage</title>
 <link>https://leonida-news.de/#m-261102-0700</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-22b7d90a0952e8d9</guid>
 <pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
 <description>Über 6,4 Millionen digitale Vorbestellungen. Laut einer Schätzung von Sensor Tower wurde GTA VI bis zum 18. Oktober rund 6,45 Millionen Mal digital vorbestellt, das wären etwa 630 Millionen Dollar Umsatz. 74 % entfallen auf PlayStation, 26 % auf Xbox. In den USA liegt das Spiel 148 % vor Call of Duty: Modern Warfare II zum gleichen Zeitpunkt. Ladenversionen sind nicht mitgezählt, Rockstar und Take-Two nennen keine Zahlen.</description>
-</item>
-<item>
-<title>Noch 30 Tage</title>
-<link>https://leonida-news.de/#m-261020-0700</link>
-<guid isPermaLink="false">lnn-87b174b42a29cd80</guid>
-<pubDate>Tue, 20 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 30 Tage bis zum Release am 19. November.</description>
 </item>
 </channel>
 </rss>
