@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 01 Nov 2026 03:05:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 17 Tage</title>
+<link>https://leonida-news.de/#m-261102-0700</link>
+<guid isPermaLink="false">lnn-ac578a95f1eddb5c</guid>
+<pubDate>Mon, 02 Nov 2026 07:00:00 +0200</pubDate>
+<description>Noch 17 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Gerücht] GTA-Sneaker von Nike?</title>
 <link>https://leonida-news.de/n/m-261101-0305.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-87b174b42a29cd80</guid>
 <pubDate>Tue, 20 Oct 2026 07:00:00 +0200</pubDate>
 <description>Noch 30 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Berichtet] Jahrelang am Waffenrad getüftelt</title>
-<link>https://leonida-news.de/n/m-261019-2155.html</link>
-<guid isPermaLink="false">lnn-af8a3211f3114626</guid>
-<pubDate>Mon, 19 Oct 2026 21:55:00 +0200</pubDate>
-<description>Jahrelang am Waffenrad getüftelt. In einem neuen YouTube-Video erzählt Bloomberg-Reporter Jason Schreier, was nicht in seiner Reportage stand: Rockstar probierte „Monate, wenn nicht Jahre“ Alternativen zum Waffenrad aus, weil man wie in Red Dead Redemption 2 nur wenige Waffen tragen sollte. Am Ende blieb es beim klassischen Rad. Von 2019 bis 2022 sei es schwer vorangegangen, einige frustrierte Designer hätten Rockstar verlassen. Erst Ende 2022 und mit Trailer 1 kam laut Schreier eine klare Richtung. Aaron Garbut sagte ihm: „Es gibt niemanden, der das ganze Spiel im Kopf hat.“</description>
 </item>
 </channel>
 </rss>
