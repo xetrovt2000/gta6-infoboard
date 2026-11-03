@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 03 Nov 2026 07:00:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 19:20:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Vorab-Download ab 10. November</title>
+<link>https://leonida-news.de/n/m-261103-1920.html</link>
+<guid isPermaLink="false">lnn-2b048a81515da6ba</guid>
+<pubDate>Tue, 03 Nov 2026 19:20:00 +0200</pubDate>
+<description>Vorab-Download ab 10. November. Wer digital vorbestellt hat, kann GTA VI neun Tage vor dem Release laden: auf der PS5 ab Mitternacht Ortszeit am 10. November, auf Xbox Series X|S ab 0 Uhr britischer Zeit (1 Uhr bei uns). Rockstar nennt bis zu 212 GB, je nach Gerät; Sony rät, mindestens 212 GB frei zu machen. Kopien mit Code in der Hülle gibt es ab 12. November im Handel.</description>
+</item>
+<item>
+<title>[Offiziell] Gratis-Karte von Leonida zum Release</title>
+<link>https://leonida-news.de/n/m-261103-1920-2.html</link>
+<guid isPermaLink="false">lnn-cbd5914ba8769d75</guid>
+<pubDate>Tue, 03 Nov 2026 19:20:00 +0200</pubDate>
+<description>Gratis-Karte von Leonida zum Release. Am 19. November stellt Rockstar eine Karte von Leonida und das Cover als Poster zum Ausdrucken auf seine Website. Kurz danach gibt es ein doppelseitiges Poster im Rockstar Store: 0,99 Dollar einzeln oder gratis zu jeder Bestellung.</description>
+</item>
 <item>
 <title>Noch 16 Tage</title>
 <link>https://leonida-news.de/#m-261103-0700</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-71feb97984ca89fc</guid>
 <pubDate>Wed, 21 Oct 2026 11:05:00 +0200</pubDate>
 <description>Erst Daft Punk, dann Justice? Laut dem X-Konto „Has it Leaked“, das schon öfter Musik-News vorab hatte, wollte Rockstar zuerst Daft Punk für den Soundtrack: Deren Management sei ein letztes Comeback des 2021 aufgelösten Duos angeboten worden, mit praktisch unbegrenztem Budget. Justice seien nur die zweite Wahl gewesen. Belege gibt es keine, Rockstar und Justice haben sich nicht geäußert.</description>
-</item>
-<item>
-<title>Noch 29 Tage</title>
-<link>https://leonida-news.de/#m-261021-0700</link>
-<guid isPermaLink="false">lnn-9d83b21bb5b848c2</guid>
-<pubDate>Wed, 21 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 29 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Berichtet] GTA-Bier bald im echten Laden?</title>
-<link>https://leonida-news.de/n/m-261020-2055.html</link>
-<guid isPermaLink="false">lnn-de025b2fb894a095</guid>
-<pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
-<description>GTA-Bier bald im echten Laden? Die US-Behörde für Alkoholsteuer (TTB) hat drei Bieretiketten genehmigt, die nach GTA klingen: Pißwasser und Patriot, beide aus der Spielreihe bekannt, und ein neues Lager namens „No Mames Vice City“ mit 6 %. Eingereicht hat sie die Brauerei Tripping Animals aus Doral bei Miami, genehmigt wurden sie zwischen dem 29. September und dem 15. Oktober. Rockstar und die Brauerei haben noch nichts angekündigt, Preis und Verkaufsstart sind offen.</description>
 </item>
 </channel>
 </rss>
