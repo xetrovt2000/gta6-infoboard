@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 02 Nov 2026 20:00:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 16 Tage</title>
+<link>https://leonida-news.de/#m-261103-0700</link>
+<guid isPermaLink="false">lnn-472159d4ad4e0ebf</guid>
+<pubDate>Tue, 03 Nov 2026 07:00:00 +0200</pubDate>
+<description>Noch 16 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] PS5 braucht Systemsoftware 14.22</title>
 <link>https://leonida-news.de/n/m-261102-2000.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-de025b2fb894a095</guid>
 <pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
 <description>GTA-Bier bald im echten Laden? Die US-Behörde für Alkoholsteuer (TTB) hat drei Bieretiketten genehmigt, die nach GTA klingen: Pißwasser und Patriot, beide aus der Spielreihe bekannt, und ein neues Lager namens „No Mames Vice City“ mit 6 %. Eingereicht hat sie die Brauerei Tripping Animals aus Doral bei Miami, genehmigt wurden sie zwischen dem 29. September und dem 15. Oktober. Rockstar und die Brauerei haben noch nichts angekündigt, Preis und Verkaufsstart sind offen.</description>
-</item>
-<item>
-<title>[Berichtet] Über 6,4 Millionen digitale Vorbestellungen</title>
-<link>https://leonida-news.de/n/m-261020-2055-2.html</link>
-<guid isPermaLink="false">lnn-22b7d90a0952e8d9</guid>
-<pubDate>Tue, 20 Oct 2026 20:55:00 +0200</pubDate>
-<description>Über 6,4 Millionen digitale Vorbestellungen. Laut einer Schätzung von Sensor Tower wurde GTA VI bis zum 18. Oktober rund 6,45 Millionen Mal digital vorbestellt, das wären etwa 630 Millionen Dollar Umsatz. 74 % entfallen auf PlayStation, 26 % auf Xbox. In den USA liegt das Spiel 148 % vor Call of Duty: Modern Warfare II zum gleichen Zeitpunkt. Ladenversionen sind nicht mitgezählt, Rockstar und Take-Two nennen keine Zahlen.</description>
 </item>
 </channel>
 </rss>
