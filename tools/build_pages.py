@@ -102,6 +102,20 @@ def fmt(d):
     return f"{WD[d.weekday()]}, {d.day}. {MN[d.month-1]} {d.year}, {d:%H:%M} Uhr"
 
 
+def short(t, n=60):
+    t = t.rstrip(".")
+    if len(t) <= n:
+        return t
+    return t[:n].rsplit(" ", 1)[0].rstrip(",:;") + "…"
+
+
+GUIDE_LINKS = ('<section class="more"><h2>Ratgeber</h2><ul>'
+               '<li><a href="../ratgeber/gta-6-release-deutschland.html">GTA 6 Release in Deutschland: Uhrzeit, Preis, Editionen</a></li>'
+               '<li><a href="../ratgeber/gta-6-vorab-download.html">GTA 6 vorab laden: wann, wie groß, wie</a></li>'
+               '<li><a href="../ratgeber/gta-6-usk-ab-18.html">GTA 6 und die USK: ab 18</a></li>'
+               '<li><a href="../ratgeber/gta-6-pc-version.html">Kommt GTA 6 für den PC?</a></li></ul></section>')
+
+
 def page(it, prev, nxt, latest):
     e = lambda s: html.escape(s, quote=True)
     url = f"{SITE}n/{it['id']}.html"
@@ -127,7 +141,7 @@ def page(it, prev, nxt, latest):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>{e(it['title'])} | GTA 6 News | LNN</title>
+<title>{e(short(it['title']))} | GTA 6 News | LNN</title>
 <meta name="description" content="{e(desc)}">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="article">
@@ -162,6 +176,7 @@ def page(it, prev, nxt, latest):
 <a class="dc" href="https://discord.gg/5anXePGCPg" rel="noopener">💬 Diskutier mit: <b>#leonida-news</b> auf dem Xetcraft-Discord</a>
 {nav}
 <section class="more"><h2>Neueste Meldungen</h2><ul>{more}</ul></section>
+{GUIDE_LINKS}
 </main>
 <footer>Leonida News Network · GTA 6 News auf Deutsch, jede Meldung mit Quellenstempel · Inoffizielle Fanseite, nicht verbunden mit Rockstar Games oder Take-Two<br><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a><a class="xc" href="https://xetcraft.de" title="Xetcraft: die Werkstatt von XetrovT2000"><span>Ein Projekt von</span><img src="../xetcraft-logo.png" width="95" height="22" alt="Xetcraft"></a></footer>
 <script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -188,9 +203,11 @@ def build():
     for f in out.glob("m-*.html"):
         if f.name not in keep:
             f.unlink()
-    urls = [f"  <url><loc>{SITE}</loc><lastmod>{items[0]['when']:%Y-%m-%d}</lastmod><changefreq>hourly</changefreq></url>"]
+    urls = [f"  <url><loc>{SITE}</loc><lastmod>{items[0]['when']:%Y-%m-%d}</lastmod></url>"]
     urls += [f"  <url><loc>{SITE}n/{it['id']}.html</loc><lastmod>{it['when']:%Y-%m-%d}</lastmod></url>" for it in items]
     urls.append(f"  <url><loc>{SITE}countdown.html</loc></url>")
+    import build_guides
+    urls += [f"  <url><loc>{SITE}{p}</loc><lastmod>{build_guides.STAND[0]}</lastmod></url>" for p in build_guides.build()]
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         + "\n".join(urls) + "\n</urlset>\n", encoding="utf-8", newline="\n")

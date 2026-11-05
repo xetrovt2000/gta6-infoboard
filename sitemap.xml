@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://leonida-news.de/</loc><lastmod>2026-11-05</lastmod><changefreq>hourly</changefreq></url>
+  <url><loc>https://leonida-news.de/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://leonida-news.de/n/m-261105-1830.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://leonida-news.de/n/m-261105-0840.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://leonida-news.de/n/m-261105-0840-2.html</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://leonida-news.de/n/m-261105-0840-3.html</loc><lastmod>2026-11-05</lastmod></url>
@@ -130,4 +131,8 @@
   <url><loc>https://leonida-news.de/n/m-260929-1832.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://leonida-news.de/n/m-260929-1550.html</loc><lastmod>2026-09-29</lastmod></url>
   <url><loc>https://leonida-news.de/countdown.html</loc></url>
+  <url><loc>https://leonida-news.de/ratgeber/gta-6-release-deutschland.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://leonida-news.de/ratgeber/gta-6-vorab-download.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://leonida-news.de/ratgeber/gta-6-usk-ab-18.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://leonida-news.de/ratgeber/gta-6-pc-version.html</loc><lastmod>2026-11-05</lastmod></url>
 </urlset>
