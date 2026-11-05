@@ -177,6 +177,55 @@ SCORE = "https://www.musicweek.com/labels/read/rockstar-games-and-justice-unveil
 EDGE = "https://www.vice.com/en/article/gta-6-edge-magazine-new-screenshots-features/"
 WELT = "../#welt"
 GAL = "../#galerie"
+CHAR = "../#charaktere"
+IGN = "../#ign"
+R_MEDIA = "https://www.rockstargames.com/VI/media/screenshots"
+
+GUIDES += [
+    {
+        "slug": "gta-6-charaktere",
+        "title": "GTA 6 Charaktere: Jason, Lucia und alle Nebenfiguren",
+        "h1": "GTA 6 Charaktere: wer ist wer?",
+        "desc": "Alle bekannten GTA 6 Charaktere: Jason Duval, Lucia Caminos und sechs Nebenfiguren mit Steckbrief, dazu was über Beziehung und Story bekannt ist. Mit Quellen.",
+        "lead": "In GTA VI spielt man zum ersten Mal ein Paar: <b>Jason Duval</b> und <b>Lucia Caminos</b>. Rockstar hat dazu bisher <b>sechs Nebenfiguren</b> vorgestellt. Hier stehen alle mit kurzem Steckbrief.",
+        "facts": [
+            ("Hauptfiguren", f"{T_OK} Jason Duval und Lucia Caminos, man wechselt zwischen beiden {q(R_SITE, 'Rockstar')}"),
+            ("Nebenfiguren", f"{T_OK} Cal Hampton, Brian Heder, Raul Bautista, Boobie Ike, Dre’Quan Priest, Real Dimez {q(R_MEDIA, 'Rockstar')}"),
+            ("Bilder", f"{T_OK} 19 offizielle Bilder von Jason, 14 von Lucia, 20 vom Paar, je 4 pro Nebenfigur <a class=\"q\" href=\"{GAL}\">Galerie</a>"),
+            ("Sprecher", f"{T_O} Rockstar hat die Besetzung nicht veröffentlicht"),
+        ],
+        "sections": [
+            ("Jason Duval",
+             "<p>Armeeveteran, der sein Leben lang von Kriminellen umgeben war. Zu Beginn arbeitet er für Drogenschmuggler in den Leonida Keys.</p>"),
+            ("Lucia Caminos",
+             "<p>Stammt aus Liberty City und wurde von ihrem Vater im Kampfsport trainiert. Sie saß im Leonida Penitentiary und will nach der Entlassung endlich das gute Leben. Ihre <b>Fußfessel</b> spielt laut Rockstar in der Geschichte eine wichtige Rolle.</p>"),
+            ("Die Nebenfiguren",
+             "<ul class=\"pts\">"
+             "<li><b>Cal Hampton:</b> Jasons verpeilter, etwas paranoider Kumpel mit Hang zu Verschwörungstheorien.</li>"
+             "<li><b>Brian Heder:</b> alter Drogenschmuggler und einer der wichtigsten Auftraggeber. Jason wohnt mietfrei in einem seiner Häuser.</li>"
+             "<li><b>Raul Bautista:</b> charmanter, erfahrener Bankräuber, der Jason und Lucia als Fluchtfahrer anheuert.</li>"
+             "<li><b>Boobie Ike:</b> Unternehmer aus Vice City mit Immobilien, Musik und krummen Geschäften.</li>"
+             "<li><b>Dre’Quan Priest:</b> ehrgeiziger Macher beim Musiklabel Only Raw Records.</li>"
+             "<li><b>Real Dimez:</b> Bae-Luxe und Roxy, ein Rap-Duo mit einem einzigen Hit, das seinen Ruhm zurückwill. Unter Vertrag bei Only Raw Records.</li>"
+             f"</ul><p>Brian Heder wird laut Game Informer von Schauspieler <b>Stephen Root</b> gesprochen, das hat er dort selbst gesagt. Rockstar bestätigt die Besetzung nicht. Ausführlich mit allen Bildern in unserem Bereich <a href=\"{CHAR}\">Charaktere</a>.</p>"),
+            ("Was über das Paar bekannt ist",
+             f"<p>Aus einem Interview mit IGN {q(IGN, 'IGN')}:</p><ul class=\"pts\">"
+             "<li>Der Partner kann das Steuer übernehmen, man fährt dann mit oder schießt vom Beifahrersitz.</li>"
+             "<li>Die beiden schreiben und telefonieren miteinander, auch über Alltägliches. Ignorierte Nachrichten schaden der Beziehung ein wenig.</li>"
+             "<li>Wer die Figur wechselt, platzt mitten in den Alltag des anderen.</li>"
+             "<li>Die Beziehung hat ein eigenes System, getrennt davon, was für ein Verbrecher man ist.</li>"
+             "<li>Wird ein Partner verhaftet, während der andere flieht, ist er festgenommen.</li>"
+             "<li>Kleine Entscheidungen in der Story wirken lange nach.</li></ul>"
+             "<p>Wie groß die Welt ist, in der die beiden unterwegs sind, steht im <a href=\"gta-6-karte-leonida.html\">Ratgeber zur Karte</a>.</p>"),
+        ],
+        "faq": [
+            ("Wer sind die Hauptfiguren in GTA 6?", "Jason Duval und Lucia Caminos. Man spielt beide und kann zwischen ihnen wechseln."),
+            ("Wer ist Lucia in GTA 6?", "Lucia Caminos stammt aus Liberty City, wurde von ihrem Vater im Kampfsport trainiert und saß im Leonida Penitentiary. Ihre Fußfessel spielt in der Story eine wichtige Rolle."),
+            ("Wer ist Jason in GTA 6?", "Jason Duval ist ein Armeeveteran, der zu Beginn für Drogenschmuggler in den Leonida Keys arbeitet."),
+            ("Welche Nebenfiguren gibt es in GTA 6?", "Bisher vorgestellt: Cal Hampton, Brian Heder, Raul Bautista, Boobie Ike, Dre’Quan Priest und das Rap-Duo Real Dimez."),
+        ],
+    },
+]
 
 GUIDES += [
     {
