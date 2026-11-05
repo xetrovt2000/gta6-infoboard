@@ -418,7 +418,8 @@ def render(g):
             {"@type": "Question", "name": a, "acceptedAnswer": {"@type": "Answer", "text": b}} for a, b in g["faq"]]},
         {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
-            {"@type": "ListItem", "position": 2, "name": g["h1"], "item": url}]},
+            {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": SITE + "ratgeber/"},
+            {"@type": "ListItem", "position": 3, "name": g["h1"], "item": url}]},
     ]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
     return f"""<!doctype html>
@@ -450,7 +451,7 @@ def render(g):
 <body>
 <header class="top"><a class="logo" href="../"><i>LNN</i> Leonida News Network</a><a class="live" href="../#live">Zum Liveticker</a></header>
 <main>
-<nav class="crumb" aria-label="Brotkrümel"><a href="../">GTA 6 News</a> › Ratgeber</nav>
+<nav class="crumb" aria-label="Brotkrümel"><a href="../">GTA 6 News</a> › <a href="./">Ratgeber</a></nav>
 <h1>{e(g['h1'])}</h1>
 <p class="meta">Stand: {STAND[1]} · wird bei neuen Infos aktualisiert</p>
 <p>{g['lead']}</p>
@@ -459,7 +460,79 @@ def render(g):
 <h2>Häufige Fragen</h2>
 {faq}
 <a class="cta" href="../">Alle GTA 6 News mit Quelle</a>
-<section class="more"><h2>Mehr Ratgeber</h2><ul>{more}<li><a href="../countdown.html">GTA 6 Countdown für deine Seite</a></li></ul></section>
+<section class="more"><h2>Mehr Ratgeber</h2><ul>{more}<li><a href="./">Alle Ratgeber auf einen Blick</a></li><li><a href="../countdown.html">GTA 6 Countdown für deine Seite</a></li></ul></section>
+</main>
+<footer>Leonida News Network · GTA 6 News auf Deutsch, jede Meldung mit Quellenstempel · Inoffizielle Fanseite, nicht verbunden mit Rockstar Games oder Take-Two<br><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a><a class="xc" href="https://xetcraft.de" title="Xetcraft: die Werkstatt von XetrovT2000"><span>Ein Projekt von</span><img src="../xetcraft-logo.png" width="95" height="22" alt="Xetcraft"></a></footer>
+<script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
+"""
+
+
+ORDER = ["gta-6-release-deutschland", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+         "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
+THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
+         "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35"}
+GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
+
+HUB_CSS = """main{max-width:1040px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:24px 0}
+.card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;color:var(--fg);text-decoration:none;transition:border-color .2s,transform .2s}
+.card:hover,.card:focus-visible{border-color:var(--gold);transform:translateY(-2px)}
+.card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.card div{padding:12px 14px 14px}.card h2{font:900 21px/1.1 var(--display);letter-spacing:.02em;margin:0 0 6px}
+.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){.card:hover{transform:none}}"""
+
+
+def render_index():
+    e = html.escape
+    url = SITE + "ratgeber/"
+    cards = "".join(
+        f'<a class="card" href="{g["slug"]}.html"><img src="../thumbs/official/{THUMB.get(g["slug"], "launch_01")}.webp" alt="" loading="lazy" decoding="async" width="800" height="450">'
+        f'<div><h2>{e(g["h1"])}</h2><p>{e(g["desc"])}</p></div></a>' for g in GUIDES)
+    ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": "GTA 6 Ratgeber", "url": url, "inLanguage": "de-DE",
+           "hasPart": [{"@type": "Article", "headline": g["title"], "url": f"{url}{g['slug']}.html"} for g in GUIDES]},
+          {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
+              {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
+    lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Vorab-Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    return f"""<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GTA 6 Ratgeber: alles zum Release | LNN</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Leonida News Network">
+<meta property="og:title" content="GTA 6 Ratgeber: alles zum Release">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{SITE}og.jpg?v=2">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#07070c">
+<link rel="icon" href="../favicon.ico?v=2" sizes="48x48">
+<link rel="icon" href="../favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2">
+<link rel="stylesheet" href="../fonts/fonts.css?v=2">
+{lds}<style>
+{CSS}
+{HUB_CSS}
+</style>
+</head>
+<body>
+<header class="top"><a class="logo" href="../"><i>LNN</i> Leonida News Network</a><a class="live" href="../#live">Zum Liveticker</a></header>
+<main>
+<nav class="crumb" aria-label="Brotkrümel"><a href="../">GTA 6 News</a> › Ratgeber</nav>
+<h1>GTA 6 Ratgeber</h1>
+<p class="meta">Stand: {STAND[1]} · {len(GUIDES)} Ratgeber · wird bei neuen Infos aktualisiert</p>
+<p>Alles, was du zum Start von GTA VI wissen musst, kompakt auf je einer Seite. Wie im Liveticker trägt jede Angabe einen Stempel: Offiziell, Berichtet oder Offen, mit Link zur Quelle.</p>
+<div class="grid">{cards}</div>
+<a class="cta" href="../">Alle GTA 6 News im Liveticker</a>
 </main>
 <footer>Leonida News Network · GTA 6 News auf Deutsch, jede Meldung mit Quellenstempel · Inoffizielle Fanseite, nicht verbunden mit Rockstar Games oder Take-Two<br><a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a><a class="xc" href="https://xetcraft.de" title="Xetcraft: die Werkstatt von XetrovT2000"><span>Ein Projekt von</span><img src="../xetcraft-logo.png" width="95" height="22" alt="Xetcraft"></a></footer>
 <script data-goatcounter="https://gta6-infoboard.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
@@ -473,7 +546,8 @@ def build():
     out.mkdir(exist_ok=True)
     for g in GUIDES:
         (out / f"{g['slug']}.html").write_text(render(g), encoding="utf-8", newline="\n")
-    return [f"ratgeber/{g['slug']}.html" for g in GUIDES]
+    (out / "index.html").write_text(render_index(), encoding="utf-8", newline="\n")
+    return ["ratgeber/"] + [f"ratgeber/{g['slug']}.html" for g in GUIDES]
 
 
 if __name__ == "__main__":
