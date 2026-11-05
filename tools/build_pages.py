@@ -109,11 +109,9 @@ def short(t, n=60):
     return t[:n].rsplit(" ", 1)[0].rstrip(",:;") + "…"
 
 
-GUIDE_LINKS = ('<section class="more"><h2>Ratgeber</h2><ul>'
-               '<li><a href="../ratgeber/gta-6-release-deutschland.html">GTA 6 Release in Deutschland: Uhrzeit, Preis, Editionen</a></li>'
-               '<li><a href="../ratgeber/gta-6-vorab-download.html">GTA 6 vorab laden: wann, wie groß, wie</a></li>'
-               '<li><a href="../ratgeber/gta-6-usk-ab-18.html">GTA 6 und die USK: ab 18</a></li>'
-               '<li><a href="../ratgeber/gta-6-pc-version.html">Kommt GTA 6 für den PC?</a></li></ul></section>')
+import build_guides
+GUIDE_LINKS = ('<section class="more"><h2>Ratgeber</h2><ul>' + "".join(
+    f'<li><a href="../ratgeber/{g["slug"]}.html">{html.escape(g["h1"])}</a></li>' for g in build_guides.GUIDES) + '</ul></section>')
 
 
 def page(it, prev, nxt, latest):

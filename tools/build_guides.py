@@ -100,13 +100,13 @@ GUIDES = [
              "<li>PS4-Spiele und ältere Xbox-Spiele auf eine externe USB-Festplatte verschieben.</li>"
              "<li>Eine M.2-SSD in der PS5 oder eine Speichererweiterungskarte für die Xbox schafft dauerhaft Platz.</li></ul>"),
             ("Was ist mit der Box-Version?",
-             f"<p>Die Box im Handel enthält <b>keine Disc</b>, nur einen Code. Sie kommt am 12. November in die Läden {q(VGC_LOAD, 'VGC')}. Nach dem Einlösen lädst du das Spiel ganz normal herunter. Wer vorab laden will, ist mit der digitalen Vorbestellung auf der sicheren Seite.</p>"
+             f"<p>Die Box im Handel enthält <b>keine Disc</b>, nur einen Code. Sie kommt am 12. November in die Läden {q(VGC_LOAD, 'VGC')}. Laut Rockstar erscheint sie so früh, damit auch Box-Käufer vorab laden können: Code einlösen, dann startet der Download wie bei der digitalen Fassung {q(R_PRE, 'Rockstar')}. Vorladen geht damit ab dem 12. November, digital schon ab dem 10.</p>"
              "<p>Alles andere zum Start, also Preis, Editionen und Uhrzeit, steht im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
         ],
         "faq": [
             ("Wann kann man GTA 6 vorladen?", "Ab dem 10. November 2026. Auf der PS5 ab Mitternacht Ortszeit, auf der Xbox ab 1 Uhr deutscher Zeit."),
             ("Wie groß ist GTA 6?", "Rockstar nennt bis zu 212 GB, je nach Gerät. Sony rät, mindestens 212 GB freizumachen."),
-            ("Kann man mit der Box-Version vorladen?", "Die Box enthält nur einen Download-Code und kommt am 12. November in den Handel. Sicher vorladen lässt sich mit der digitalen Vorbestellung."),
+            ("Kann man mit der Box-Version vorladen?", "Ja. Die Box enthält einen Download-Code und kommt am 12. November in den Handel, laut Rockstar extra so früh, damit man vorladen kann. Digital geht es schon ab dem 10. November."),
             ("Kann man GTA 6 nach dem Vorab-Download schon spielen?", "Nein. Spielbar ist es erst ab dem Release am 19. November, auf der PS5 ab 0 Uhr."),
         ],
     },
@@ -165,6 +165,153 @@ GUIDES = [
             ("Kommt GTA 6 für den PC?", "Rockstar hat noch keine PC-Version angekündigt. GamesBeat berichtet von einem PC-Start im ersten Quartal 2027."),
             ("Kann man GTA 6 am PC streamen?", "Zum Start nicht. Xbox hat am 7. Oktober dementiert, dass GTA 6 zum Release über Xbox Cloud Gaming am PC spielbar ist."),
             ("Kann man GTA 6 für den PC schon kaufen?", "Nein. Es gibt keine offizielle PC-Version, Angebote für PC-Keys sind unseriös."),
+        ],
+    },
+]
+
+R_SITE = "https://www.rockstargames.com/VI"
+R_MUSIC = "https://www.rockstargames.com/VI/music"
+R_RADIO = "https://www.rockstargames.com/newswire/article/o3982oa93a23k4/the-music-of-grand-theft-auto-vi-in-game-radio-stations"
+R_ALBUM = "https://www.rockstargames.com/newswire/article/7599a881942544/announcing-grand-theft-auto-vi-the-album-coming-november-19"
+SCORE = "https://www.musicweek.com/labels/read/rockstar-games-and-justice-unveil-grand-theft-auto-vi-original-score/095363"
+EDGE = "https://www.vice.com/en/article/gta-6-edge-magazine-new-screenshots-features/"
+WELT = "../#welt"
+GAL = "../#galerie"
+
+GUIDES += [
+    {
+        "slug": "gta-6-editionen",
+        "title": "GTA 6 Editionen: Standard oder Ultimate Edition?",
+        "h1": "GTA 6 Editionen im Vergleich",
+        "desc": "GTA 6 Standard für 79,99 € oder Ultimate Edition für 99,99 €? Alle Inhalte der Ultimate Edition, das Vintage Vice City Pack und GTA+, mit Quellen.",
+        "lead": "GTA VI gibt es in zwei Editionen: <b>Standard für 79,99 €</b> und <b>Ultimate für 99,99 €</b>. Dazu bekommen alle, die vor dem 20. November kaufen, das <b>Vintage Vice City Pack</b>. Hier steht, was genau drin ist.",
+        "facts": [
+            ("Standard Edition", f"{T_OK} 79,99 €, das komplette Spiel {q(PSD, 'PS Store')}"),
+            ("Ultimate Edition", f"{T_OK} 99,99 €, Spiel plus Zusatzinhalte, Upgrade auch später möglich {q(PSD, 'PS Store')}"),
+            ("Vorbesteller-Bonus", f"{T_OK} Vintage Vice City Pack für alle Käufe vor dem 20. November {q(R_PRE, 'Rockstar')}"),
+            ("GTA+", f"{T_OK} Ein Monat gratis bei digitaler Vorbestellung {q(R_PRE, 'Rockstar')}"),
+            ("Box-Version", f"{T_OK} Download-Code statt Disc, ab 12. November im Handel {q(R_PRE, 'Rockstar')}"),
+            ("Sammlerbox", f"{T_OK} 399,99 €, ohne Spiel"),
+        ],
+        "sections": [
+            ("Was steckt in der Ultimate Edition?",
+             f"<p>Laut Rockstar sind die Inhalte über die ganze Geschichte von Jason und Lucia verteilt, mit jedem Kapitel kommt etwas Neues dazu {q(R_SITE, 'Rockstar')}. Einige Läden öffnen <b>nur</b> mit der Ultimate Edition.</p>"
+             "<ul class=\"pts\">"
+             "<li><b>’95 Grotti Cheetah:</b> Sportwagen im Retro-Look der 90er.</li>"
+             "<li><b>Revolver Hawk und Little Morgan:</b> je einer für Jason und Lucia, im Vice-City-Stil mit Palmengriff und Zielfernrohr.</li>"
+             "<li><b>Persönliche Pistolen:</b> gravierte Fassungen von Jasons Girardi ES9 und Lucias Klose K17.</li>"
+             "<li><b>Vice City Style:</b> eigene Outfits, Tattoos und mehr für beide.</li>"
+             "<li><b>Fahrzeuge fürs Versteck:</b> Motorrad Dinka Enduro in Tarnfarben und ein Crest-Kajak.</li>"
+             "<li><b>Ganado Retro Build:</b> Umbauten für Jasons Pick-up Vapid Ganado.</li>"
+             "<li><b>Rideout Customs:</b> Tuning-Werkstatt mit Felgen und Innenausstattung, nur mit Ultimate.</li>"
+             "<li><b>Sara’s Unisex Salon:</b> Frisuren, Bärte, Make-up und Nägel, nur mit Ultimate.</li>"
+             "<li><b>Shitzu Squalo:</b> Boot in Pink und Blau mit einer Kiste Sprengstoff an Bord.</li>"
+             "<li><b>Stock 305:</b> Streetwear-Laden in Stockyard, nur mit Ultimate.</li>"
+             "<li><b>’67 Vapid Dominator Buggy</b> samt Paradise Garage in Watson Bay mit Waffenschrank und Hehlerlager.</li>"
+             "<li><b>Electric Fang Tattoo:</b> über 50 Motive des Künstlerkollektivs FAILE, nur mit Ultimate.</li>"
+             "<li><b>One-Eyed Willie’s:</b> Offroad-Werkstatt am Lake Leonida, nur mit Ultimate.</li>"
+             "<li><b>Goodtime Gear:</b> Kleidung rund um das TV-Maskottchen Macca the Gator.</li>"
+             "<li><b>PTT Youngin$:</b> ein Gang-Gelände in Southside Vice City zum Ausrauben.</li>"
+             "<li><b>Classic Car Collection:</b> Auftrag vom Sammler Wyman, verlassene Oldtimer aufspüren und herrichten.</li>"
+             f"</ul><p>Alle 47 offiziellen Bilder dazu stehen in unserer <a href=\"{GAL}\">Galerie</a> unter „Ultimate Edition“.</p>"),
+            ("Was ist im Vintage Vice City Pack?",
+             f"<p>Das Paket bekommt jeder, der <b>vor dem 20. November</b> kauft, egal welche Edition {q(R_PRE, 'Rockstar')}:</p>"
+             "<ul class=\"pts\"><li><b>’55 Vapid Stanier:</b> Oldtimer-Limousine samt Garage Shore Court an Ocean Beach, mit Waffenschrank und Hehlerlager.</li>"
+             "<li><b>Outfits und Frisuren:</b> Jason im Leinenanzug in Pastell, Lucia im roten Paillettenkleid.</li>"
+             "<li><b>Waffenmuster:</b> Palmen-Muster nach Tommy Vercettis Hemd aus GTA Vice City.</li></ul>"),
+            ("Lohnt sich die Ultimate Edition?",
+             "<p>Für 20 € mehr gibt es kein zusätzliches Story-Kapitel, aber spürbar mehr Spielwelt: ein Salon, ein Klamottenladen, ein Tattoo-Studio und zwei Werkstätten öffnen nur damit, dazu Fahrzeuge, ein Bandengelände und ein Sammelauftrag. Wer viel Zeit in Leonida verbringen will, bekommt also mehr zu tun. Wer nur die Geschichte spielen will, verpasst nichts Wesentliches.</p>"
+             "<p>Gut zu wissen: Das Upgrade lässt sich auch später kaufen. Man kann also mit der Standard Edition starten und erst danach entscheiden.</p>"
+             "<p>Uhrzeit, Vorab-Download und Altersfreigabe stehen im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
+        ],
+        "faq": [
+            ("Was kostet die GTA 6 Ultimate Edition?", "99,99 Euro. Die Standard Edition kostet 79,99 Euro."),
+            ("Was ist in der GTA 6 Ultimate Edition enthalten?", "Unter anderem ein Grotti Cheetah, zwei Revolver, ein Boot, ein Buggy mit Garage, eigene Outfits und Tattoos sowie mehrere Läden und Werkstätten, die nur mit der Ultimate Edition öffnen."),
+            ("Kann man später auf die Ultimate Edition upgraden?", "Ja, laut PlayStation Store ist ein Upgrade auch später möglich."),
+            ("Wer bekommt das Vintage Vice City Pack?", "Alle, die GTA 6 vor dem 20. November 2026 kaufen oder vorbestellen, egal welche Edition."),
+        ],
+    },
+    {
+        "slug": "gta-6-karte-leonida",
+        "title": "GTA 6 Karte: Leonida, Vice City und alle Regionen",
+        "h1": "GTA 6 Karte: Leonida und seine Regionen",
+        "desc": "Wie groß ist die GTA 6 Karte? Leonida, Vice City und alle sechs Regionen, Tiere, Wetter und Hurrikane. Nur Bestätigtes, mit Quellen.",
+        "lead": "GTA VI spielt im Bundesstaat <b>Leonida</b>, Rockstars Version von Florida, mit der Großstadt <b>Vice City</b>. Laut Rockstar ist es die <b>größte Karte, die das Studio je gebaut hat</b>.",
+        "facts": [
+            ("Schauplatz", f"{T_OK} Bundesstaat Leonida nach dem Vorbild Floridas {q(R_SITE, 'Rockstar')}"),
+            ("Größe", f"{T_OK} Doppelt so groß wie GTA V (Aaron Garbut) <a class=\"q\" href=\"{WELT}\">Game Informer</a>"),
+            ("Vergleich", f"{T_W} Fast so groß wie die Karten von GTA IV, GTA V und Red Dead Redemption 2 zusammen {q(EDGE, 'Edge via VICE')}"),
+            ("Regionen", f"{T_OK} Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga <a class=\"q\" href=\"{WELT}\">Game Informer</a>"),
+            ("Tiere", f"{T_OK} Über 170 Arten <a class=\"q\" href=\"../#tiere\">Game Informer</a>"),
+            ("Wetter", f"{T_OK} Örtlich begrenzt, mit Tropenstürmen und Hurrikanen <a class=\"q\" href=\"../#wetter\">Game Informer</a>"),
+        ],
+        "sections": [
+            ("Die sechs Regionen",
+             "<ul class=\"pts\">"
+             "<li><b>Vice City:</b> Art déco, Strände, Kreuzfahrthafen und Staus, die Verfolgungsjagden schwerer machen.</li>"
+             "<li><b>Leonida Keys:</b> die Inselkette im Süden, Vorbild sind die Florida Keys.</li>"
+             "<li><b>Grassrivers:</b> Sumpfland nach Art der Everglades, voller Raubtiere und bewaffneter Einheimischer.</li>"
+             "<li><b>Port Gellhorn:</b> verlassene Attraktionen, billige Motels und Einkaufszeilen.</li>"
+             "<li><b>Ambrosia:</b> das Industrieherz mit Fabriken und Raffinerien, eine Rockergang hat das Sagen.</li>"
+             "<li><b>Mount Kalaga National Park:</b> im Norden an der Grenze zum Nachbarstaat Leonida-Gloriana.</li>"
+             f"</ul><p>Quelle sind die Rockstar-Interviews im Game Informer, ausführlich in unserem <a href=\"{WELT}\">Magazin-Teil</a>. Zu jeder Region gibt es offizielle Bilder in der <a href=\"{GAL}\">Galerie</a>.</p>"),
+            ("Was gibt es auf dem Land zu tun?",
+             "<p>Rockstar nennt Quad-Strecken, Schlammpartys, Demolition Derbys bei Flutlicht, Mountainbike-Trails, Farmen und Ranches, einen Golfplatz, Motocross in den Dünen und Barschangeln. Vorbilder für die Gegenden waren unter anderem Panama City, Jacksonville und Ocala.</p>"
+             "<p>Laut Rockstar gibt es außerdem deutlich mehr begehbare Innenräume als in früheren Teilen.</p>"),
+            ("Tiere und Wetter",
+             "<p>Leonida hat <b>über 170 Tierarten</b>, darunter Alligatoren, Seekühe, Flamingos, Haie, Wale und eingeschleppte Arten wie Leguane und Rhesusaffen. Wie in Red Dead Redemption lassen sich Tiere aufspüren, eingeteilt in selten, entdeckbar und legendär.</p>"
+             "<p>Das Wetter ist <b>örtlich begrenzt</b>: Man kann in der Sonne stehen, während nebenan ein Schauer niedergeht. Es gibt Tropenstürme und <b>Hurrikane</b>, Pfützen bleiben nach dem Regen liegen.</p>"
+             f"<p>Eine offizielle Gesamtkarte hat Rockstar noch nicht veröffentlicht. Zum Release gibt es laut Rockstar eine Karte von Leonida als kostenlosen Download {q(VGC_LOAD, 'VGC')}. Wir verlinken sie hier, sobald sie da ist.</p>"),
+        ],
+        "faq": [
+            ("Wie groß ist die GTA 6 Karte?", "Laut Rockstar ist Leonida die größte Karte des Studios, doppelt so groß wie die von GTA V. Das Magazin Edge schreibt, sie sei fast so groß wie die Karten von GTA IV, GTA V und Red Dead Redemption 2 zusammen."),
+            ("Wo spielt GTA 6?", "Im fiktiven Bundesstaat Leonida nach dem Vorbild Floridas, mit der Großstadt Vice City nach dem Vorbild Miamis."),
+            ("Welche Regionen gibt es in GTA 6?", "Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia und den Mount Kalaga National Park."),
+            ("Gibt es in GTA 6 Hurrikane?", "Ja. Rockstar bestätigt Tropenstürme und Hurrikane mit Sturm, Starkregen, Donner und Blitz."),
+        ],
+    },
+    {
+        "slug": "gta-6-soundtrack-radio",
+        "title": "GTA 6 Soundtrack: Album, Radiosender und Score",
+        "h1": "GTA 6 Musik: Album, Radio und Filmmusik",
+        "desc": "GTA 6 Soundtrack: The Album mit 34 Songs am 19. November, Filmmusik von Justice am 11. Dezember, alle bekannten Singles und Radiosender. Mit Quellen.",
+        "lead": "Zu GTA VI gibt es zwei Alben: <b>„Grand Theft Auto VI: The Album“</b> mit 34 neuen Songs am 19. November und die <b>Filmmusik von Justice</b> am 11. Dezember. Im Spiel kommt die größte Radioauswahl der Reihe dazu.",
+        "facts": [
+            ("The Album", f"{T_OK} 34 neue Songs, erscheint am 19. November {q(R_ALBUM, 'Rockstar')}"),
+            ("Original Score", f"{T_OK} Justice, 30 Stücke plus Bonus-Tracks, erscheint am 11. Dezember {q(R_MUSIC, 'Rockstar')}"),
+            ("Radio", f"{T_OK} Größte Radioauswahl der Reihe, erstmals mit Podcasts {q(R_RADIO, 'Rockstar')}"),
+            ("Vinyl und CD", f"{T_OK} Beide Alben vorbestellbar {q(R_MUSIC, 'Rockstar')}"),
+        ],
+        "sections": [
+            ("Die Singles von „The Album“",
+             f"<p>Diese Songs sind schon draußen {q(R_MUSIC, 'Rockstar')}:</p><ul class=\"pts\">"
+             "<li>Yung Lean: „That’s It“ (feat. Future und Metro Boomin)</li>"
+             "<li>Travis Scott: „RHYNO“</li>"
+             "<li>CA7RIEL und Paco Amoroso, PinkPantheress, Fred again.. und Etienne de Crécy: „Sexy Magic“</li>"
+             "<li>Justice: „Flower in a Hurricane“ (feat. Tame Impala, SZA, King Gizzard und The Lizard Wizard), der Song aus dem Launch-Trailer</li>"
+             "<li>Morgan Wallen: „Last Thing You Need“</li>"
+             "<li>Fuerza Regida: „Suzuki“</li>"
+             "<li>Rauw Alejandro: „Macacoa 2000“</li>"
+             "<li>Cardi B: „Don’t Chart“</li>"
+             "<li>Keith Richards: „Bright Lights, Big City“</li></ul>"),
+            ("Die Filmmusik von Justice",
+             f"<p>Das französische Duo Justice hat die Musik zum Spiel komponiert. Sie passt sich im Spiel dynamisch an das an, was man gerade tut. Das Album „Grand Theft Auto VI: Original Score“ erscheint am <b>11. Dezember</b> mit 30 Stücken, als Download, auf CD und Vinyl {q(R_MUSIC, 'Rockstar')} {q(SCORE, 'Music Week')}. Schon zu hören: „Flower in a Hurricane“ und „Pusher“ mit Gesaffelstein.</p>"),
+            ("Die Radiosender",
+             f"<p>Rockstar hat bisher sechs Sender vorgestellt {q(R_RADIO, 'Rockstar')}:</p><ul class=\"pts\">"
+             "<li><b>Cocoteo FM:</b> moderner Latin-Sound mit El Martillo und La Gata.</li>"
+             "<li><b>Back Country Radio:</b> Country mit MW und Delta Dawne.</li>"
+             "<li><b>AfroBank FM:</b> Amapiano, afrikanische Klassiker und mehr mit Burna und Palmsy.</li>"
+             "<li><b>The Chamber 106.6:</b> Metal mit DJ Kerry und DJ Tom.</li>"
+             "<li><b>Flash FM:</b> Pop mit Robyn und Alex.</li>"
+             "<li><b>Dirty South Classics:</b> Südstaaten-Rap mit Trick und Trina.</li></ul>"
+             "<p>Neu sind Podcasts, und Radio lässt sich auch zu Fuß über Kopfhörer hören. Hörproben gibt es auf Rockstars Musikseite.</p>"
+             "<p>Alles zum Start steht im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
+        ],
+        "faq": [
+            ("Wann erscheint der GTA 6 Soundtrack?", "„Grand Theft Auto VI: The Album“ erscheint am 19. November 2026 zusammen mit dem Spiel. Die Filmmusik von Justice folgt am 11. Dezember."),
+            ("Wer macht die Musik zu GTA 6?", "Die Filmmusik stammt vom französischen Duo Justice. Auf dem Album sind unter anderem Travis Scott, Cardi B, Morgan Wallen, Rauw Alejandro, Yung Lean und Keith Richards."),
+            ("Welcher Song läuft im GTA 6 Launch-Trailer?", "„Flower in a Hurricane“ von Justice mit Tame Impala, SZA und King Gizzard and The Lizard Wizard."),
+            ("Welche Radiosender gibt es in GTA 6?", "Bisher vorgestellt: Cocoteo FM, Back Country Radio, AfroBank FM, The Chamber 106.6, Flash FM und Dirty South Classics."),
         ],
     },
 ]
