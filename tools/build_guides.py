@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://leonida-news.de/"
-STAND = ("2026-11-07", "7. November 2026")
+STAND = ("2026-11-08", "8. November 2026")
 
 PSD = "https://store.playstation.com/de-de/product/EP1004-PPSA01547_00-GTAVIULTIMATE001"
 R_PRE = "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
