@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://leonida-news.de/"
-STAND = ("2026-11-06", "6. November 2026")
+STAND = ("2026-11-07", "7. November 2026")
 
 PSD = "https://store.playstation.com/de-de/product/EP1004-PPSA01547_00-GTAVIULTIMATE001"
 R_PRE = "https://www.rockstargames.com/newswire/article/5171972o3ak5oa/pre-order-grand-theft-auto-vi-on-june-25"
@@ -128,7 +128,7 @@ GUIDES = [
              f"<p>Das ist das höchste Alterskennzeichen der USK. Händler dürfen das Spiel nur an Volljährige verkaufen, im Laden wird nach dem Ausweis gefragt. Bei Online-Händlern und im Store der Konsole greift die Altersprüfung des Kontos.</p>"
              f"<p>Warum GTA VI keine Jugendfreigabe hat, erklärt die USK bei einem digitalen Elternabend am 2. Dezember {q(USK, 'USK')}. Weltweit liegt das Spiel überall in der höchsten Stufe: PEGI 18 in Europa, Mature 17+ in den USA, R 18+ in Australien.</p>"),
             ("Ist GTA 6 in Deutschland geschnitten?",
-             "<p>Dazu gibt es keine Aussage von Rockstar oder der USK. GTA V erschien in Deutschland ungeschnitten. Sobald es belastbare Angaben gibt, tragen wir sie hier ein.</p>"),
+             "<p>Dazu gibt es keine Aussage von Rockstar oder der USK. GTA V erschien in Deutschland ungeschnitten. Nutzer haben aus Store-Daten gelesen, dass die Xbox-Fassung für die EU dieselbe wie für die USA sein soll. Das ist nicht bestätigt, sobald es belastbare Angaben gibt, tragen wir sie hier ein.</p>"),
             ("Gibt es GTA 6 auf Deutsch?",
              f"<p>Deutsch steht im PlayStation Store bei den unterstützten Sprachen {q(PSD, 'PS Store')}. Ob das auch eine deutsche Sprachausgabe meint oder wie bei früheren Teilen nur Texte und Untertitel, hat Rockstar nicht gesagt.</p>"
              "<p>Release, Uhrzeit und Preise stehen im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
@@ -270,7 +270,7 @@ GUIDES += [
              "<li><b>Waffenmuster:</b> Palmen-Muster nach Tommy Vercettis Hemd aus GTA Vice City.</li></ul>"),
             ("Lohnt sich die Ultimate Edition?",
              "<p>Für 20 € mehr gibt es kein zusätzliches Story-Kapitel, aber spürbar mehr Spielwelt: ein Salon, ein Klamottenladen, ein Tattoo-Studio und zwei Werkstätten öffnen nur damit, dazu Fahrzeuge, ein Bandengelände und ein Sammelauftrag. Wer viel Zeit in Leonida verbringen will, bekommt also mehr zu tun. Wer nur die Geschichte spielen will, verpasst nichts Wesentliches.</p>"
-             "<p>Gut zu wissen: Das Upgrade lässt sich auch später kaufen. Man kann also mit der Standard Edition starten und erst danach entscheiden.</p>"
+             "<p>Gut zu wissen: Das Upgrade lässt sich auch später kaufen. Man kann also mit der Standard Edition starten und erst danach entscheiden. Das gilt laut Rockstar auch für die Box: Die Ultimate Edition gibt es nicht als Box, das Upgrade lässt sich aber nach dem Einlösen des Codes im PlayStation Store oder bei Xbox nachkaufen.</p>"
              "<p>Uhrzeit, Vorab-Download und Altersfreigabe stehen im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
         ],
         "faq": [
