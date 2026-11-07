@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 07 Nov 2026 09:40:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 17:50:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Sony hebt die PlayStation-Prognose an</title>
+<link>https://leonida-news.de/n/m-261107-1750.html</link>
+<guid isPermaLink="false">lnn-b343d4de03d5f0d9</guid>
+<pubDate>Sat, 07 Nov 2026 17:50:00 +0200</pubDate>
+<description>Sony hebt die PlayStation-Prognose an. Sony erwartet im laufenden Geschäftsjahr jetzt 4,83 Billionen Yen Umsatz mit PlayStation, 6 Prozent mehr als im Juli geplant. Als Grund nennt Sony vor allem stärkere Verkäufe von Spielen anderer Hersteller. GTA VI nennt Sony nicht ausdrücklich, Analyst Serkan Toto sieht darin aber einen Hinweis auf sehr viele Vorbestellungen. Im Sommerquartal hat Sony 2,6 Millionen PS5 ausgeliefert, nach 4 Millionen ein Jahr zuvor.</description>
+</item>
+<item>
+<title>[Berichtet] Erste Boxen im deutschen Handel</title>
+<link>https://leonida-news.de/n/m-261107-1750-2.html</link>
+<guid isPermaLink="false">lnn-4c549bd1f08834cc</guid>
+<pubDate>Sat, 07 Nov 2026 17:50:00 +0200</pubDate>
+<description>Erste Boxen im deutschen Handel. Ein Händler aus Deutschland hat auf Reddit Fotos einer eingeschweißten PS5-Box gezeigt, laut Berichten mit USK-18-Hinweis und dem Aufdruck, dass nur ein Code und keine Disc drinsteckt. Ob eine Karte beiliegt, konnte er nicht sagen, er durfte die Box nicht öffnen. Rockstar hat die Fotos nicht kommentiert, offiziell wird ab dem 12. November ausgeliefert.</description>
+</item>
 <item>
 <title>[Offiziell] Miami Heat spielen in Vice-City-Trikots</title>
 <link>https://leonida-news.de/n/m-261107-0940.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-215a74960ac7e172</guid>
 <pubDate>Fri, 30 Oct 2026 11:35:00 +0200</pubDate>
 <description>Sprinten ohne Dauerdrücken. Statt wie in GTA V ständig X bzw. A zu tippen, sprintet man in GTA VI per Druck auf den linken Stick. Ob die alte Variante als Option bleibt, ist offen, die komplette Tastenbelegung hat Rockstar noch nicht gezeigt.</description>
-</item>
-<item>
-<title>Noch 20 Tage</title>
-<link>https://leonida-news.de/#m-261030-0700</link>
-<guid isPermaLink="false">lnn-5584107f069c6437</guid>
-<pubDate>Fri, 30 Oct 2026 07:00:00 +0200</pubDate>
-<description>Noch 20 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] Score-Album kommt am 11. Dezember, „Pusher“ ist draußen</title>
-<link>https://leonida-news.de/n/m-261029-1910.html</link>
-<guid isPermaLink="false">lnn-061c36f5be860cad</guid>
-<pubDate>Thu, 29 Oct 2026 19:10:00 +0200</pubDate>
-<description>Score-Album kommt am 11. Dezember, „Pusher“ ist draußen. Rockstar Games und Justice haben „Grand Theft Auto VI: Original Score“ angekündigt: 30 Stücke plus digitale Bonus-Tracks, rund drei Stunden Musik aus dem Spiel, als 2CD und 3LP (auch auf klarem Vinyl), vorbestellbar. Der erste Track „Pusher (feat. Gesaffelstein)“ ist seit heute zu hören.</description>
 </item>
 </channel>
 </rss>
