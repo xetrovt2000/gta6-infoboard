@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 08 Nov 2026 00:30:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 12:10:00 +0200</lastBuildDate>
+<item>
+<title>[Gerücht] 55 Trophäen zum Start?</title>
+<link>https://leonida-news.de/n/m-261108-1210.html</link>
+<guid isPermaLink="false">lnn-19f6fee77e95560e</guid>
+<pubDate>Sun, 08 Nov 2026 12:10:00 +0200</pubDate>
+<description>55 Trophäen zum Start? Laut Datensammlern auf X hat GTA VI auf PS5 und Xbox 55 Trophäen bzw. Erfolge, alle für den Einzelspieler-Teil. Namen sind nicht bekannt. Zum Vergleich: GTA V hatte zum Start 49 Erfolge auf der Xbox 360 und 50 Trophäen auf der PS3. Rockstar, Sony und Microsoft haben noch keine Liste veröffentlicht, das passiert meist erst kurz vor dem Release.</description>
+</item>
 <item>
 <title>[Berichtet] Sechs GTA-Autos als echte Wagen gebaut</title>
 <link>https://leonida-news.de/n/m-261108-0030-2.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-716a6b475b39ed88</guid>
 <pubDate>Sun, 01 Nov 2026 07:00:00 +0200</pubDate>
 <description>Noch 18 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>Hintergrund: die Farben von GTA VI</title>
-<link>https://leonida-news.de/n/m-261031-1315.html</link>
-<guid isPermaLink="false">lnn-0253b9459783aa97</guid>
-<pubDate>Sat, 31 Oct 2026 13:15:00 +0200</pubDate>
-<description>Hintergrund: die Farben von GTA VI. Abendgold, Neonpink, Magenta und Türkis prägen Logo, Cover, Trailer und sogar die Controller. Wir haben die Palette aus Rockstars offiziellen Bildern gemessen und mit Vice City von 2002 verglichen. Ergebnis: Das grelle Pink lebt vor allem im Marketing, das Spielbild ist ruhiger.</description>
 </item>
 </channel>
 </rss>
