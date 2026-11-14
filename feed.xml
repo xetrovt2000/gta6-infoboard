@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sat, 14 Nov 2026 12:00:00 +0200</lastBuildDate>
+<lastBuildDate>Sat, 14 Nov 2026 17:45:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Rockstar verrät neue Details: Überfälle vorbereiten, Dates, Händchenhalten</title>
+<link>https://leonida-news.de/n/m-261114-1745.html</link>
+<guid isPermaLink="false">lnn-c833c2000bdb8b0e</guid>
+<pubDate>Sat, 14 Nov 2026 17:45:00 +0200</pubDate>
+<description>Rockstar verrät neue Details: Überfälle vorbereiten, Dates, Händchenhalten. In einem Interview mit dem Guardian erzählt Rockstar mehr zum Spielablauf. Jason und Lucia fangen klein an, mit billigen Autos und einfachen Schlössern, größere Coups kommen später in der Story. Manche geparkten Autos lassen sich erst mit Werkzeug knacken, das man später bekommt. Vor einem Überfall kann man den Ort auskundschaften, einen Hintereingang oder den Tresorcode suchen und Kameras ausschalten oder die Aufnahmen mitnehmen. Getrennt schreiben und telefonieren die beiden, zusammen gehen sie aus, ins Fitnessstudio oder etwas trinken, und auch ein Überfall auf einen Schnapsladen zählt als Date. Fürs Händchenhalten gibt es eine eigene Taste. Wer die Beziehung vernachlässigt, muss mit Folgen rechnen. Meistens lässt sich frei zwischen den beiden wechseln, an manchen Stellen der Story ist man aber an eine Figur gebunden.</description>
+</item>
 <item>
 <title>[Berichtet] Code durch die Hülle lesbar? Vorsicht beim Kauf im Laden</title>
 <link>https://leonida-news.de/n/m-261114-1200.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-4c549bd1f08834cc</guid>
 <pubDate>Sat, 07 Nov 2026 17:50:00 +0200</pubDate>
 <description>Erste Boxen im deutschen Handel. Ein Händler aus Deutschland hat auf Reddit Fotos einer eingeschweißten PS5-Box gezeigt, laut Berichten mit USK-18-Hinweis und dem Aufdruck, dass nur ein Code und keine Disc drinsteckt. Ob eine Karte beiliegt, konnte er nicht sagen, er durfte die Box nicht öffnen. Rockstar hat die Fotos nicht kommentiert, offiziell wird ab dem 12. November ausgeliefert.</description>
-</item>
-<item>
-<title>[Offiziell] Miami Heat spielen in Vice-City-Trikots</title>
-<link>https://leonida-news.de/n/m-261107-0940.html</link>
-<guid isPermaLink="false">lnn-3d5ecf634057dba7</guid>
-<pubDate>Sat, 07 Nov 2026 09:40:00 +0200</pubDate>
-<description>Miami Heat spielen in Vice-City-Trikots. Die Heat haben mit Rockstar, Nike und Travis Scott Trikots für „A Night in Vice City“ vorgestellt, das Heimspiel gegen die Milwaukee Bucks am 18. November, die Nacht vor dem Release. Die Fan-Version ist schwarz mit Pink, trägt „Vice City“ auf der Brust und sechs pinke Sterne am Saum. Die Spielertrikots bleiben wegen der NBA-Regeln zurückhaltender, im Heat-Logo steckt aber die Karte. Verkauft wird in kleiner Zahl ab dem 18. November, laut Sole Retriever nur in der Halle in Miami.</description>
 </item>
 </channel>
 </rss>
