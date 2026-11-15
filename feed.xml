@@ -6,7 +6,14 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 15 Nov 2026 10:30:00 +0200</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 21:20:00 +0200</lastBuildDate>
+<item>
+<title>[Berichtet] Madden bettelt: „Nicht löschen!“</title>
+<link>https://leonida-news.de/n/m-261115-2120.html</link>
+<guid isPermaLink="false">lnn-549179d59c28114b</guid>
+<pubDate>Sun, 15 Nov 2026 21:20:00 +0200</pubDate>
+<description>Madden bettelt: „Nicht löschen!“ EA zeigt in Madden NFL 27 eine neue Meldung, die Spieler davon abhalten soll, das Spiel zu deinstallieren. GTA VI wird nicht genannt, aber Palmen und Pink-Lila-Farben sprechen für sich. Versprochen wird ein Update am Dienstag, 17. November, zwei Tage vor dem Release. Kein Wunder: GTA VI braucht bis zu 212 GB, da müssen bei vielen andere Spiele weichen.</description>
+</item>
 <item>
 <title>[Offiziell] Erstmals in GTA: Das Spiel will Mitgefühl belohnen</title>
 <link>https://leonida-news.de/n/m-261115-1030.html</link>
@@ -279,13 +286,6 @@
 <guid isPermaLink="false">lnn-19f6fee77e95560e</guid>
 <pubDate>Sun, 08 Nov 2026 12:10:00 +0200</pubDate>
 <description>55 Trophäen zum Start? Laut Datensammlern auf X hat GTA VI auf PS5 und Xbox 55 Trophäen bzw. Erfolge, alle für den Einzelspieler-Teil. Namen sind nicht bekannt. Zum Vergleich: GTA V hatte zum Start 49 Erfolge auf der Xbox 360 und 50 Trophäen auf der PS3. Rockstar, Sony und Microsoft haben noch keine Liste veröffentlicht, das passiert meist erst kurz vor dem Release.</description>
-</item>
-<item>
-<title>[Berichtet] Sechs GTA-Autos als echte Wagen gebaut</title>
-<link>https://leonida-news.de/n/m-261108-0030-2.html</link>
-<guid isPermaLink="false">lnn-fc0968a8a721697a</guid>
-<pubDate>Sun, 08 Nov 2026 00:30:00 +0200</pubDate>
-<description>Sechs GTA-Autos als echte Wagen gebaut. Die Tuning-Werkstatt West Coast Customs, bekannt aus „Pimp My Ride“, hat sechs Autos aus GTA VI nachgebaut: Grotti Cheetah, Pegassi Tempesta als Polizeiwagen, Progen Emerus, Invetero Coquette, Albany Buccaneer und Albany Manana. Das Automagazin Hypedrive zeigt sie auf Instagram jeweils neben dem Bild aus dem Spiel. Die Spielbilder stammen laut mehreren Fanseiten von Rockstar, auf Rockstars eigenen Kanälen sind sie bisher nicht erschienen.</description>
 </item>
 </channel>
 </rss>
