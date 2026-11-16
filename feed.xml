@@ -6,7 +6,28 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Mon, 16 Nov 2026 08:15:00 +0200</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 07:00:00 +0200</lastBuildDate>
+<item>
+<title>Noch 2 Tage</title>
+<link>https://leonida-news.de/#m-261117-0700</link>
+<guid isPermaLink="false">lnn-aa47b013cabab02d</guid>
+<pubDate>Tue, 17 Nov 2026 07:00:00 +0200</pubDate>
+<description>Noch 2 Tage bis zum Release am 19. November.</description>
+</item>
+<item>
+<title>[Offiziell] Neue Screenshots zeigen Leonidas Wetter</title>
+<link>https://leonida-news.de/n/m-261116-2229.html</link>
+<guid isPermaLink="false">lnn-6f38f28db7a09c64</guid>
+<pubDate>Mon, 16 Nov 2026 22:29:00 +0200</pubDate>
+<description>Neue Screenshots zeigen Leonidas Wetter. Rockstar hat sechs neue Bilder veröffentlicht, verbreitet über The Weather Channel samt passender „Vorhersage“: Starkregen auf den Keys, Nebel über dem Meer, Gewitterwolken. Laut Owen Shepherd, Rockstars Vizechef für Licht und Rendering, wurde das Wettersystem komplett neu gebaut, damit es örtlich, dauerhaft und dynamisch wirkt. Von klarem Himmel bis zu hohen Gewitterwolken ist alles dabei. Tropenstürme und Hurrikans hatte Rockstar schon im September bestätigt.</description>
+</item>
+<item>
+<title>[Berichtet] Hacker von 2022 bekennt sich schuldig</title>
+<link>https://leonida-news.de/n/m-261116-2116.html</link>
+<guid isPermaLink="false">lnn-b06e754b28469427</guid>
+<pubDate>Mon, 16 Nov 2026 21:16:00 +0200</pubDate>
+<description>Hacker von 2022 bekennt sich schuldig. Arion Kurtaj, der 2022 in Rockstars Netz eindrang, hat sich laut BBC in London in allen Punkten schuldig bekannt, darunter der Rockstar-Hack und Angriffe auf Personal in der Haft. Er war damals 16 und 17 Jahre alt. 2023 war er noch als nicht verhandlungsfähig in eine Klinik gekommen. Das Strafmaß folgt später. Mit dem aktuellen Leaker „Cyberleek“ hat der Fall nichts zu tun.</description>
+</item>
 <item>
 <title>[Offiziell] Xbox: GTA VI ist der Startschuss für zehn Jahre Partnerschaft</title>
 <link>https://leonida-news.de/n/m-261116-0815.html</link>
@@ -265,27 +286,6 @@
 <guid isPermaLink="false">lnn-e1b52d4c522fea52</guid>
 <pubDate>Tue, 10 Nov 2026 01:00:00 +0200</pubDate>
 <description>Echter Grotti Cheetah für 1 Million Pfund. Das Londoner Kaufhaus Selfridges zeigt bis 28. November einen Vice-City-Laden mit über 60 offiziellen GTA-VI-Artikeln. Das teuerste Stück ist der echte Grotti Cheetah, den West Coast Customs mit Rockstar gebaut hat: Er kostet 1 Million Pfund und ist nur über die persönliche Einkaufsberatung zu haben. Online war die Warteschlange zum Start über 100.000 Leute lang, eine College-Jacke für 2.500 Pfund war sofort ausverkauft.</description>
-</item>
-<item>
-<title>[Berichtet] Take-Two zu KI-Kopien und Raubkopien</title>
-<link>https://leonida-news.de/n/m-261110-0100-4.html</link>
-<guid isPermaLink="false">lnn-a3f86a43a3582fcb</guid>
-<pubDate>Tue, 10 Nov 2026 01:00:00 +0200</pubDate>
-<description>Take-Two zu KI-Kopien und Raubkopien. Im Gespräch mit IGN sagt Strauss Zelnick, KI-Werkzeuge, die Spiele nachbauen oder auf andere Plattformen bringen, seien für Take-Two keine finanzielle, aber eine kreative Gefahr. Man schütze das geistige Eigentum „wachsam“ und nehme das Thema ernst. Hintergrund ist die Sorge, dass kurz nach dem Release eine inoffizielle PC-Fassung auftauchen könnte. Eine offizielle PC-Version hat Rockstar weiterhin nicht angekündigt.</description>
-</item>
-<item>
-<title>Noch 9 Tage</title>
-<link>https://leonida-news.de/#m-261110-0700</link>
-<guid isPermaLink="false">lnn-0921a9f47c0cbd5a</guid>
-<pubDate>Tue, 10 Nov 2026 01:00:00 +0200</pubDate>
-<description>Noch 9 Tage bis zum Release am 19. November. Der Vorab-Download läuft: auf der PS5 seit Mitternacht, auf der Xbox ab 1 Uhr.</description>
-</item>
-<item>
-<title>[Berichtet] Auch Smyths nennt ein Poster in der Box</title>
-<link>https://leonida-news.de/n/m-261109-1000.html</link>
-<guid isPermaLink="false">lnn-f9f2108d90c6eddc</guid>
-<pubDate>Mon, 09 Nov 2026 10:00:00 +0200</pubDate>
-<description>Auch Smyths nennt ein Poster in der Box. Nach MediaMarkt schreibt jetzt auch der britische Händler Smyths Toys auf seiner Produktseite, dass in der Box ein doppelseitiges A3-Poster liegt. Damit wird wahrscheinlicher, dass das Poster in allen Boxen steckt und nicht nur bei einem Händler. Rockstar hat das weiterhin nicht bestätigt. Unabhängig davon gibt es zum Release die Karte von Leonida gratis zum Ausdrucken auf Rockstars Website.</description>
 </item>
 </channel>
 </rss>
