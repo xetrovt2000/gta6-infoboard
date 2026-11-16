@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Sun, 15 Nov 2026 21:20:00 +0200</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 08:15:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Xbox: GTA VI ist der Startschuss für zehn Jahre Partnerschaft</title>
+<link>https://leonida-news.de/n/m-261116-0815.html</link>
+<guid isPermaLink="false">lnn-dc071b15c0c5f26d</guid>
+<pubDate>Mon, 16 Nov 2026 08:15:00 +0200</pubDate>
+<description>Xbox: GTA VI ist der Startschuss für zehn Jahre Partnerschaft. Xbox-Chefin Asha Sharma schreibt, GTA VI in Xbox Cloud Gaming sei „der erste Schritt“ einer neuen, zehn Jahre langen strategischen Partnerschaft mit Take-Two. Auf dem Microsoft Store sei GTA VI schon jetzt das meistvorbestellte Spiel aller Zeiten. Was genau zu dem Deal gehört, sagt Microsoft nicht. Laut Tom Warren von The Verge geht er über die Cloud hinaus. Eine PC-Fassung ist damit nicht angekündigt.</description>
+</item>
+<item>
+<title>Noch 3 Tage</title>
+<link>https://leonida-news.de/#m-261116-0700</link>
+<guid isPermaLink="false">lnn-abf28a1f42ddd4ff</guid>
+<pubDate>Mon, 16 Nov 2026 07:00:00 +0200</pubDate>
+<description>Noch 3 Tage bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Berichtet] Madden bettelt: „Nicht löschen!“</title>
 <link>https://leonida-news.de/n/m-261115-2120.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-f9f2108d90c6eddc</guid>
 <pubDate>Mon, 09 Nov 2026 10:00:00 +0200</pubDate>
 <description>Auch Smyths nennt ein Poster in der Box. Nach MediaMarkt schreibt jetzt auch der britische Händler Smyths Toys auf seiner Produktseite, dass in der Box ein doppelseitiges A3-Poster liegt. Damit wird wahrscheinlicher, dass das Poster in allen Boxen steckt und nicht nur bei einem Händler. Rockstar hat das weiterhin nicht bestätigt. Unabhängig davon gibt es zum Release die Karte von Leonida gratis zum Ausdrucken auf Rockstars Website.</description>
-</item>
-<item>
-<title>Noch 10 Tage</title>
-<link>https://leonida-news.de/#m-261109-0700</link>
-<guid isPermaLink="false">lnn-9e36fb92c4f57097</guid>
-<pubDate>Mon, 09 Nov 2026 07:00:00 +0200</pubDate>
-<description>Noch 10 Tage bis zum Release am 19. November. Heute um Mitternacht startet auf der PS5 der Vorab-Download, auf der Xbox um 1 Uhr deutscher Zeit.</description>
-</item>
-<item>
-<title>[Gerücht] 55 Trophäen zum Start?</title>
-<link>https://leonida-news.de/n/m-261108-1210.html</link>
-<guid isPermaLink="false">lnn-19f6fee77e95560e</guid>
-<pubDate>Sun, 08 Nov 2026 12:10:00 +0200</pubDate>
-<description>55 Trophäen zum Start? Laut Datensammlern auf X hat GTA VI auf PS5 und Xbox 55 Trophäen bzw. Erfolge, alle für den Einzelspieler-Teil. Namen sind nicht bekannt. Zum Vergleich: GTA V hatte zum Start 49 Erfolge auf der Xbox 360 und 50 Trophäen auf der PS3. Rockstar, Sony und Microsoft haben noch keine Liste veröffentlicht, das passiert meist erst kurz vor dem Release.</description>
 </item>
 </channel>
 </rss>
