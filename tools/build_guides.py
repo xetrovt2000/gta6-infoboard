@@ -180,6 +180,7 @@ GAL = "../#galerie"
 CHAR = "../#charaktere"
 IGN = "../#ign"
 R_MEDIA = "https://www.rockstargames.com/VI/media/screenshots"
+TGA = "https://www.cbc.ca/news/entertainment/game-of-the-year-9.7425430"
 
 GUIDES += [
     {
@@ -192,13 +193,14 @@ GUIDES += [
             ("Hauptfiguren", f"{T_OK} Jason Duval und Lucia Caminos, man wechselt zwischen beiden {q(R_SITE, 'Rockstar')}"),
             ("Nebenfiguren", f"{T_OK} Cal Hampton, Brian Heder, Raul Bautista, Boobie Ike, Dre’Quan Priest, Real Dimez {q(R_MEDIA, 'Rockstar')}"),
             ("Bilder", f"{T_OK} 19 offizielle Bilder von Jason, 14 von Lucia, 20 vom Paar, je 4 pro Nebenfigur <a class=\"q\" href=\"{GAL}\">Galerie</a>"),
-            ("Sprecher", f"{T_O} Rockstar hat die Besetzung nicht veröffentlicht"),
+            ("Sprecher", f"{T_OK} Lucia: Manni L. Perez, bestätigt durch ihre Nominierung bei den Game Awards {q(TGA, 'CBC')}. Weitere Besetzung hat Rockstar nicht veröffentlicht"),
         ],
         "sections": [
             ("Jason Duval",
              "<p>Armeeveteran, der sein Leben lang von Kriminellen umgeben war. Zu Beginn arbeitet er für Drogenschmuggler in den Leonida Keys.</p>"),
             ("Lucia Caminos",
-             "<p>Stammt aus Liberty City und wurde von ihrem Vater im Kampfsport trainiert. Sie saß im Leonida Penitentiary und will nach der Entlassung endlich das gute Leben. Ihre <b>Fußfessel</b> spielt laut Rockstar in der Geschichte eine wichtige Rolle.</p>"),
+             "<p>Stammt aus Liberty City und wurde von ihrem Vater im Kampfsport trainiert. Sie saß im Leonida Penitentiary und will nach der Entlassung endlich das gute Leben. Ihre <b>Fußfessel</b> spielt laut Rockstar in der Geschichte eine wichtige Rolle.</p>"
+             f"<p>Gespielt wird Lucia von <b>Manni L. Perez</b>. Das ist seit dem 17. November offiziell: Die Game Awards haben sie für GTA VI in der Kategorie beste Darstellung nominiert {q(TGA, 'CBC')}. Fans hatten das lange vermutet.</p>"),
             ("Die Nebenfiguren",
              "<ul class=\"pts\">"
              "<li><b>Cal Hampton:</b> Jasons verpeilter, etwas paranoider Kumpel mit Hang zu Verschwörungstheorien.</li>"
@@ -221,6 +223,7 @@ GUIDES += [
         "faq": [
             ("Wer sind die Hauptfiguren in GTA 6?", "Jason Duval und Lucia Caminos. Man spielt beide und kann zwischen ihnen wechseln."),
             ("Wer ist Lucia in GTA 6?", "Lucia Caminos stammt aus Liberty City, wurde von ihrem Vater im Kampfsport trainiert und saß im Leonida Penitentiary. Ihre Fußfessel spielt in der Story eine wichtige Rolle."),
+            ("Wer spielt Lucia in GTA 6?", "Manni L. Perez. Bestätigt ist das seit ihrer Nominierung für die beste Darstellung bei den Game Awards 2026 am 17. November."),
             ("Wer ist Jason in GTA 6?", "Jason Duval ist ein Armeeveteran, der zu Beginn für Drogenschmuggler in den Leonida Keys arbeitet."),
             ("Welche Nebenfiguren gibt es in GTA 6?", "Bisher vorgestellt: Cal Hampton, Brian Heder, Raul Bautista, Boobie Ike, Dre’Quan Priest und das Rap-Duo Real Dimez."),
         ],
