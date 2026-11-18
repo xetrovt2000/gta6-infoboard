@@ -6,7 +6,21 @@
 <atom:link href="https://leonida-news.de/feed.xml" rel="self" type="application/rss+xml"/>
 <description>Liveticker zu GTA 6, jede Meldung mit Quellenstempel: offiziell, berichtet, Gerücht oder Leak.</description>
 <language>de-de</language>
-<lastBuildDate>Tue, 17 Nov 2026 21:35:00 +0200</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 05:23:00 +0200</lastBuildDate>
+<item>
+<title>[Offiziell] Pflicht-Update für die PS5 kurz vor dem Release</title>
+<link>https://leonida-news.de/n/m-261118-0523.html</link>
+<guid isPermaLink="false">lnn-b2193f1b8f1c9a0e</guid>
+<pubDate>Wed, 18 Nov 2026 05:23:00 +0200</pubDate>
+<description>Pflicht-Update für die PS5 kurz vor dem Release. Sony hat am 17. November die Systemsoftware 26.07-14.23.00 veröffentlicht, rund 1,3 GB groß. Ohne sie gehen die Online-Funktionen nicht mehr. Laut Sony enthält sie nur Sicherheitskorrekturen. Wer automatische Updates abgeschaltet hat oder die Konsole offline nutzt, sollte das Update vor Donnerstag von Hand installieren. Ob GTA VI eine bestimmte Systemversion zum Start braucht, haben weder Sony noch Rockstar bestätigt.</description>
+</item>
+<item>
+<title>Noch 1 Tag</title>
+<link>https://leonida-news.de/#m-261118-0700</link>
+<guid isPermaLink="false">lnn-68e74320d65e753a</guid>
+<pubDate>Wed, 18 Nov 2026 07:00:00 +0200</pubDate>
+<description>Noch 1 Tag bis zum Release am 19. November.</description>
+</item>
 <item>
 <title>[Offiziell] Acht Nominierungen bei den Game Awards, Lucia ist Manni L. Perez</title>
 <link>https://leonida-news.de/n/m-261117-2135.html</link>
@@ -272,20 +286,6 @@
 <guid isPermaLink="false">lnn-5325f1e0fb3a3cd0</guid>
 <pubDate>Wed, 11 Nov 2026 07:00:00 +0200</pubDate>
 <description>Noch 8 Tage bis zum Release am 19. November.</description>
-</item>
-<item>
-<title>[Offiziell] Rockstar ist mit GTA VI fertig</title>
-<link>https://leonida-news.de/n/m-261110-1250.html</link>
-<guid isPermaLink="false">lnn-96f741d6af57852a</guid>
-<pubDate>Tue, 10 Nov 2026 12:50:00 +0200</pubDate>
-<description>Rockstar ist mit GTA VI fertig. In der Telefonkonferenz zu den Quartalszahlen sagte Take-Two-Chef Strauss Zelnick: „Rockstar hat die Entwicklung von GTA VI abgeschlossen.“ Jetzt gehe es darum, das Spiel technisch sauber auszuliefern, danach kümmere sich Rockstar um das, „was als Nächstes kommt“. Angekündigt wird das zu gegebener Zeit. Im Gespräch mit IGN sagte Zelnick außerdem, Art und Tempo neuer Inhalte für die großen Marken, auch GTA, würden in den nächsten zehn Jahren „dramatisch anders“ aussehen. Zu einer PC-Fassung gab es wieder nichts Neues: Informationen kämen immer von Rockstar selbst.</description>
-</item>
-<item>
-<title>[Offiziell] Take-Two: Vorbestellungen weit über den Erwartungen</title>
-<link>https://leonida-news.de/n/m-261110-0100.html</link>
-<guid isPermaLink="false">lnn-ccb9c018e9bf6d4a</guid>
-<pubDate>Tue, 10 Nov 2026 01:00:00 +0200</pubDate>
-<description>Take-Two: Vorbestellungen weit über den Erwartungen. In den Quartalszahlen schreibt Take-Two, die Vorbestellungen für GTA VI liegen „weit über unseren ursprünglichen Erwartungen“. Chef Strauss Zelnick spricht von einem „historischen Jahr“. Für das laufende Quartal mit dem Release erwartet Take-Two 3,35 bis 3,5 Mrd. Dollar Umsatz (Net Bookings), fürs ganze Geschäftsjahr bleibt es bei 8 bis 8,2 Mrd. Dollar. Die Marketingkosten steigen deshalb deutlich. Das abgelaufene Quartal lag mit 1,6 Mrd. Dollar 18 Prozent unter dem Vorjahr, auch weil viele Spieler laut Take-Two ihr Geld für GTA VI aufheben. GTA V steht bei fast 235 Millionen verkauften Exemplaren.</description>
 </item>
 </channel>
 </rss>
