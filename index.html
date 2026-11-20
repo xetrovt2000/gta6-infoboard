@@ -92,7 +92,6 @@ h1,h2,h3,h4{margin:0;text-wrap:balance}
 /* ---------- Grundgerüst ---------- */
 .wrap{max-width:1240px;margin:0 auto;padding-inline:20px}
 .band{padding-block:56px 8px}
-.xs{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:0 0 26px;padding:14px 16px;border:2px solid #9146ff;border-radius:10px;background:linear-gradient(120deg,rgba(145,70,255,.18),rgba(225,29,72,.10));color:var(--fg)}.xs .xs-dot{width:12px;height:12px;border-radius:50%;background:var(--red);box-shadow:0 0 0 4px rgba(225,29,72,.25);flex:none}.xs .xs-t{flex:1 1 260px;min-width:0}.xs .xs-k{display:block;font:800 13px var(--cond);letter-spacing:.14em;text-transform:uppercase;color:#c9a7ff}.xs b{font:800 22px/1.15 var(--display);display:block;margin:2px 0}.xs .xs-s{color:var(--muted);font-size:14px}.xs a.xs-b{flex:none;font:800 15px var(--cond);letter-spacing:.1em;text-transform:uppercase;background:#9146ff;color:#fff;text-decoration:none;padding:10px 14px;border-radius:6px}.xs a.xs-b:hover,.xs a.xs-b:focus-visible{background:#a970ff}
 .sec-head{display:flex;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:20px}
 .sec-head h2{font:900 clamp(30px,4vw,44px)/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
 .kicker{font:800 14px var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
@@ -330,10 +329,9 @@ html.lite .pw > i{will-change:auto}
   <img id="hero-img" style="object-position:22% 18%" src="shots/gta6-gi-05.webp" srcset="mid/shots/gta6-gi-05.webp 1280w, shots/gta6-gi-05.webp 1920w" sizes="100vw" alt="Wasserflugzeug über den Leonida Keys, dahinter ein Gewitter" fetchpriority="high">
   <div class="bar"><a class="logo" href="#top" aria-label="Leonida News Network, zum Anfang">LNN</a><span class="live"><i aria-hidden="true"></i>LIVE</span><span class="clock" id="clock">MESZ</span></div>
   <div class="lower">
-    <span class="flag" id="hero-flag">Countdown</span>
-    <h1 class="headline" id="hero-h">Noch <span id="hdays">1</span> <span id="hdays-w">Tag</span> bis Leonida</h1>
-    <span class="sub" id="hero-sub">Release am 19. November · Noch 1 Tag</span>
-<script>(()=>{if(Date.now()<Date.parse('2026-11-19T00:00:00+01:00'))return;const h=document.getElementById('hero-h'),s=document.getElementById('hero-sub'),f=document.getElementById('hero-flag');if(h)h.innerHTML='GTA VI ist da';if(s)s.textContent='Erschienen am 19. November 2026 · für PS5 und Xbox Series X|S';if(f)f.textContent='Release';document.addEventListener('DOMContentLoaded',()=>{const b=document.getElementById('days');if(b){b.textContent='Heute';const l=b.nextElementSibling;if(l)l.textContent='ist GTA VI erschienen'}})})()</script>
+    <span class="flag" id="hero-flag">Release</span>
+    <h1 class="headline" id="hero-h">GTA VI ist da</h1>
+    <span class="sub" id="hero-sub">Erschienen am 19. November 2026 · für PS5 und Xbox Series X|S</span>
     <a class="cdl" id="cdl" href="countdown.html" title="Diesen Countdown auf deiner Seite einbauen" aria-live="off">Release am 19. November 2026</a>
   </div>
   <div class="crawl" id="crawl"><a class="lab" href="#live" tabindex="-1" aria-hidden="true">TICKER</a><div class="track" id="track" aria-hidden="true"></div><button type="button" class="cbtn" id="cbtn" aria-label="Laufband anhalten" title="Laufband anhalten">❚❚</button></div>
@@ -345,8 +343,6 @@ html.lite .pw > i{will-change:auto}
 <main>
 <section class="band" id="live" data-ch="live"><div class="wrap split">
   <div>
-<aside class="xs" id="xstream" data-until="2026-11-19T12:00:00+01:00" aria-label="In eigener Sache: Release-Stream"><span class="xs-dot" aria-hidden="true"></span><div class="xs-t"><span class="xs-k">In eigener Sache · Release-Stream</span><b>GTA VI live: Mittwoch, 18. November, ab 22 Uhr</b><span class="xs-s">Xetcraft, das Team hinter dieser Seite, streamt den Start auf Twitch: Vorlauf mit allen News, um 0 Uhr geht es los in Leonida.</span></div><a class="xs-b" href="https://www.twitch.tv/xetcraft" target="_blank" rel="noopener">Auf Twitch folgen</a></aside>
-<script>(()=>{const e=document.getElementById("xstream");if(e&&Date.now()>Date.parse(e.dataset.until))e.remove()})()</script>
     <div class="sec-head"><h2>Sendeplan</h2><span class="kicker">Liveticker · neueste zuerst · MESZ</span></div>
     <div class="tfilter" id="tfilter" role="search" hidden>
       <input type="search" id="tq" placeholder="Ticker durchsuchen, z. B. Karte" aria-label="Meldungen durchsuchen" autocomplete="off">
@@ -648,7 +644,7 @@ html.lite .pw > i{will-change:auto}
 </ol></details>
   </div>
   <aside class="side">
-    <div class="box count"><h3>Countdown</h3><b id="days">–</b><span>Tage bis 19. November 2026</span></div>
+    <div class="box count"><h3>Countdown</h3><b id="days">Heute</b><span>ist GTA VI erschienen</span></div>
     <div class="box"><h3>Stand</h3><ul class="facts-mini">
       <li><span>Ticker abonnieren</span><b><a href="feed.xml">RSS-Feed</a></b></li>
       <li><span>Zuletzt aktualisiert</span><b id="updated">20.10.2026, 07:00</b></li>
@@ -1301,7 +1297,7 @@ cb.addEventListener('click',()=>{const p=crawl.classList.toggle('paused');cb.tex
 const clock=document.getElementById('clock');const fmt=new Intl.DateTimeFormat('de-DE',{hour:'2-digit',minute:'2-digit',timeZone:'Europe/Berlin'});
 const tick=()=>{clock.textContent=fmt.format(new Date())+' · VICE CITY'};tick();setInterval(tick,15000);
 const d=Math.ceil((Date.parse('2026-11-19T00:00:00+01:00')-Date.now())/864e5);
-(()=>{const el=document.getElementById('cdl'),R=Date.parse('2026-11-19T00:00:00+01:00'),p=n=>String(n).padStart(2,'0');let t;const f=()=>{const x=Math.floor((R-Date.now())/1000);if(x<=0){el.innerHTML='<b>Jetzt erhältlich</b>';clearInterval(t);return}el.innerHTML=`<b>${Math.floor(x/86400)}</b> T · <b>${p(Math.floor(x%86400/3600))}</b> Std · <b>${p(Math.floor(x%3600/60))}</b> Min · <b>${p(x%60)}</b> Sek`};f();t=setInterval(f,1000)})();document.getElementById('days').textContent=Math.max(0,d);document.getElementById('hdays').textContent=Math.max(0,d);{const w=document.getElementById('hdays-w');if(w)w.textContent=Math.max(0,d)===1?'Tag':'Tage'}
+(()=>{const el=document.getElementById('cdl'),R=Date.parse('2026-11-19T00:00:00+01:00'),p=n=>String(n).padStart(2,'0');let t;const f=()=>{const x=Math.floor((R-Date.now())/1000);if(x<=0){el.innerHTML='<b>Jetzt erhältlich</b>';clearInterval(t);return}el.innerHTML=`<b>${Math.floor(x/86400)}</b> T · <b>${p(Math.floor(x%86400/3600))}</b> Std · <b>${p(Math.floor(x%3600/60))}</b> Min · <b>${p(x%60)}</b> Sek`};f();t=setInterval(f,1000)})();{const b=document.getElementById('days');if(b)b.textContent=d>0?d:'Heute';if(d<=0&&b&&b.nextElementSibling)b.nextElementSibling.textContent='ist GTA VI erschienen'}{const n=document.getElementById('hdays');if(n){n.textContent=Math.max(0,d);const w=document.getElementById('hdays-w');if(w)w.textContent=Math.max(0,d)===1?'Tag':'Tage'}}
 // Ticker: Link pro Meldung (Kopieren, am Handy Teilen)
 (()=>{const entries=[...document.querySelectorAll('#live .ticker-list li:not(.day)')];
 const toast=Object.assign(document.createElement('div'),{className:'toast'});toast.setAttribute('role','status');document.body.append(toast);let tt;
