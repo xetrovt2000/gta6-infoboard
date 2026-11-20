@@ -313,7 +313,7 @@ GUIDES += [
             ("Tiere und Wetter",
              "<p>Leonida hat <b>über 170 Tierarten</b>, darunter Alligatoren, Seekühe, Flamingos, Haie, Wale und eingeschleppte Arten wie Leguane und Rhesusaffen. Wie in Red Dead Redemption lassen sich Tiere aufspüren, eingeteilt in selten, entdeckbar und legendär.</p>"
              "<p>Das Wetter ist <b>örtlich begrenzt</b>: Man kann in der Sonne stehen, während nebenan ein Schauer niedergeht. Es gibt Tropenstürme und <b>Hurrikane</b>, Pfützen bleiben nach dem Regen liegen.</p>"
-             f"<p>Eine offizielle Gesamtkarte hat Rockstar noch nicht veröffentlicht. Zum Release gibt es laut Rockstar eine Karte von Leonida als kostenlosen Download {q(VGC_LOAD, 'VGC')}. Wir verlinken sie hier, sobald sie da ist.</p>"),
+             f"<p>Seit dem Release am 19. November gibt es die offizielle Karte: Rockstar bietet auf der offiziellen Seite ein druckfertiges Poster mit der Karte von Leonida und dem Cover zum kostenlosen Download an <a class=\"q\" href=\"https://www.rockstargames.com/VI/media\" target=\"_blank\" rel=\"noopener\">Rockstar</a>. Eine gedruckte Fassung soll bald im Rockstar Store folgen.</p>"),
         ],
         "faq": [
             ("Wie groß ist die GTA 6 Karte?", "Laut Rockstar ist Leonida die größte Karte des Studios, doppelt so groß wie die von GTA V. Das Magazin Edge schreibt, sie sei fast so groß wie die Karten von GTA IV, GTA V und Red Dead Redemption 2 zusammen."),
