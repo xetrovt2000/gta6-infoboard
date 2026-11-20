@@ -22,6 +22,9 @@ SUP = "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-t
 GB = "https://gamesbeat.com/grand-theft-auto-vis-pc-release-is-slated-for-q1-2027/"
 XCLOUD = "https://www.gosugamers.net/entertainment/news/79311-xbox-denies-claims-that-gta-vi-will-stream-exclusively-through-xbox-cloud-gaming"
 POLY = "https://www.polygon.com/gta-6-preorders-sales-8-million-copies-before-release-date/"
+R_NOW = "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available"
+XBOX_CLOUD = "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/"
+PS_STD = "https://store.playstation.com/de-de/product/EP1004-PPSA01547_00-GTAVISTANDARD001"
 
 
 def q(url, name):
@@ -37,77 +40,79 @@ GUIDES = [
         "slug": "gta-6-release-deutschland",
         "title": "GTA 6 Release in Deutschland: Datum, Uhrzeit, Preis",
         "h1": "GTA 6 Release in Deutschland: alles Wichtige",
-        "desc": "GTA 6 erscheint am 19. November 2026. Uhrzeit in Deutschland, Preise, Editionen, Vorab-Download, USK und PC-Version, jede Angabe mit Quelle.",
-        "lead": "GTA VI erscheint am <b>Donnerstag, 19. November 2026</b> für PlayStation 5 und Xbox Series X|S. Hier steht kompakt, was für Spieler in Deutschland wichtig ist. Jede Zeile trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar, Sony, Microsoft oder der USK bestätigt, <b>Berichtet</b> heißt von seriösen Medien gemeldet, <b>Offen</b> heißt noch nicht bekannt.",
+        "desc": "GTA 6 ist am 19. November 2026 erschienen. Uhrzeit in Deutschland, Preise, Editionen, Download, USK und PC-Version, jede Angabe mit Quelle.",
+        "lead": "GTA VI ist am <b>Donnerstag, 19. November 2026</b> um 0:00 Uhr Ortszeit für PlayStation 5 und Xbox Series X|S erschienen. Hier steht kompakt, was für Spieler in Deutschland wichtig ist. Jede Zeile trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar, Sony, Microsoft oder der USK bestätigt, <b>Berichtet</b> heißt von seriösen Medien gemeldet, <b>Offen</b> heißt noch nicht bekannt.",
         "facts": [
-            ("Release", f"{T_OK} Donnerstag, 19. November 2026 {q(R_PRE, 'Rockstar')}"),
-            ("Plattformen", f"{T_OK} PlayStation 5 und Xbox Series X|S, PS5 Pro Enhanced {q(PSD, 'PS Store')}"),
-            ("Uhrzeit", f"{T_OK} 19. November, Mitternacht Ortszeit auf PS5 und Xbox, in Deutschland also 0:00 Uhr {q(SUP, 'Rockstar')}"),
-            ("Vorab-Download", f"{T_OK} Ab 10. November für digitale Vorbestellungen, bis zu 212 GB {q(R_LOAD, 'Rockstar')} {q(PS_LOAD, 'PlayStation')}"),
+            ("Release", f"{T_OK} Erschienen am Donnerstag, 19. November 2026 {q(R_NOW, 'Rockstar')}"),
+            ("Plattformen", f"{T_OK} PlayStation 5 und Xbox Series X|S, PS5 Pro Enhanced {q(PSD, 'PS Store')}. Xbox One nur per Xbox Cloud Gaming {q(XBOX_CLOUD, 'Xbox')}"),
+            ("Uhrzeit", f"{T_OK} 19. November, Mitternacht Ortszeit auf PS5 und Xbox, in Deutschland also 0:00 Uhr {q(SUP, 'Rockstar')}. Xbox Cloud Gaming ab 7:00 Uhr MEZ {q(XBOX_CLOUD, 'Xbox')}"),
+            ("Download", f"{T_OK} Bis zu 212 GB. Der Vorab-Download für digitale Vorbestellungen lief ab 10. November {q(R_LOAD, 'Rockstar')} {q(PS_LOAD, 'PlayStation')}"),
             ("Preis", f"{T_OK} Standard 79,99 €, Ultimate Edition 99,99 € {q(PSD, 'PS Store')}"),
             ("Altersfreigabe", f"{T_OK} USK: keine Jugendfreigabe (ab 18) {q(USK, 'USK')}"),
+            ("Wertungen", f"{T_W} Metacritic 99 (PS5, 151 Tests, alle positiv), OpenCritic 99 (90 Tests, 99 % Empfehlung), Stand 20. November {q('https://www.metacritic.com/game/grand-theft-auto-vi/', 'Metacritic')} {q('https://opencritic.com/game/15398/grand-theft-auto-vi', 'OpenCritic')}"),
             ("PC-Version", f"{T_O} Nicht angekündigt, Bericht über Anfang 2027 {q(GB, 'GamesBeat')}"),
         ],
         "sections": [
-            ("Um wie viel Uhr geht es los?",
-             f"<p>Rockstar nennt <b>Mitternacht Ortszeit am 19. November</b>, in allen Regionen und auf PS5 und Xbox gleichermaßen {q(SUP, 'Rockstar')}. In Deutschland geht es also in der Nacht von Mittwoch auf Donnerstag um <b>0:00 Uhr</b> los, wenn das Spiel vorher geladen wurde.</p>"
-             "<p>Neuseeland ist zuerst dran, dort ist es bei uns am 18. November gegen Mittag so weit. Im Netz kursieren deshalb Tricks mit umgestelltem Konto oder Standort. Das ist nichts Offizielles, und ob es bis zum Start klappt, ist offen.</p>"),
+            ("Wann ging es los?",
+             f"<p>Rockstar hat GTA VI am <b>19. November um Mitternacht Ortszeit</b> freigeschaltet, in allen Regionen und auf PS5 und Xbox gleichermaßen {q(SUP, 'Rockstar')} {q(R_NOW, 'Rockstar')}. In Deutschland war das in der Nacht von Mittwoch auf Donnerstag um <b>0:00 Uhr</b>.</p>"
+             f"<p>Über Xbox Cloud Gaming läuft das Spiel seit dem 19. November, 7:00 Uhr MEZ. Das ist auch der einzige Weg für Xbox One {q(XBOX_CLOUD, 'Xbox')}.</p>"),
             ("Was kostet GTA 6?",
              f"<p>Die <b>Standard Edition kostet 79,99 €</b>, die <b>Ultimate Edition 99,99 €</b> {q(PSD, 'PS Store')} {q('https://store.rockstargames.com/de/game/buy-gta-vi', 'Rockstar Store')}. Die Ultimate Edition bringt zusätzliche Autos, Waffen, Kleidung und Läden. Ein Upgrade ist auch später möglich.</p>"
-             f"<p>Die Box-Version im Handel enthält <b>keine Disc</b>, nur einen Download-Code. Sie liegt ab dem 12. November in den Läden {q(VGC_LOAD, 'VGC')}. Wer vor dem 20. November kauft, bekommt das Vintage Vice City Pack, digitale Vorbesteller zusätzlich einen Monat GTA+ {q(R_PRE, 'Rockstar')}.</p>"
+             f"<p>Die Box-Version im Handel enthält <b>keine Disc</b>, nur einen Download-Code. Sie kam am 12. November in die Läden {q(VGC_LOAD, 'VGC')}.</p>"
+             f"<p>Die Vorbesteller-Aktion (Vintage Vice City Pack, bei digitalem Kauf zusätzlich ein Monat GTA+) ist <b>vorbei</b>: Sie lief nur bis zum 19. November {q(R_NOW, 'Rockstar')}. Das Vintage Vice City Pack wird jetzt einzeln für 4,99 € verkauft {q(PS_STD, 'PS Store')}.</p>"
              f"<p>Die Sammlerbox „The Goodtime State: Vice City Collection“ für 399,99 € enthält Figur, Brille, Cap und mehr, aber <b>nicht das Spiel</b>.</p>"),
-            ("Ab wann kann ich vorladen?",
-             f"<p>Ab <b>10. November</b>: auf der PS5 ab Mitternacht Ortszeit, auf der Xbox ab 1 Uhr deutscher Zeit. Das Spiel braucht <b>bis zu 212 GB</b> {q(PS_LOAD, 'PlayStation')} {q(VGC_LOAD, 'VGC')}. Alle Details stehen im <a href=\"gta-6-vorab-download.html\">Ratgeber zum Vorab-Download</a>.</p>"),
+            ("Wie groß ist der Download?",
+             f"<p>Das Spiel braucht <b>bis zu 212 GB</b> {q(PS_LOAD, 'PlayStation')} {q(VGC_LOAD, 'VGC')}. Der Vorab-Download lief seit dem 10. November: auf der PS5 ab Mitternacht Ortszeit, auf der Xbox ab 1 Uhr deutscher Zeit. Alle Details stehen im <a href=\"gta-6-vorab-download.html\">Ratgeber zum Download</a>.</p>"),
             ("Ab welchem Alter ist GTA 6?",
              f"<p>Die USK hat GTA VI mit <b>keine Jugendfreigabe</b> gekennzeichnet, das Spiel ist also ab 18 {q(USK, 'USK')}. In Europa gilt PEGI 18, in den USA „Mature 17+“. Mehr dazu im <a href=\"gta-6-usk-ab-18.html\">Ratgeber zur Altersfreigabe</a>.</p>"),
             ("Kommt GTA 6 für den PC?",
              f"<p>Bisher <b>nicht angekündigt</b>. GamesBeat berichtet mit Berufung auf anonyme Quellen von einem PC-Start im ersten Quartal 2027 {q(GB, 'GamesBeat')}. Den <a href=\"gta-6-pc-version.html\">Stand zur PC-Version</a> halten wir aktuell.</p>"),
             ("Wie lang ist die Story, gibt es Online?",
-             "<p>Rob Nelson von Rockstar North brauchte nach eigener Aussage rund <b>80 Stunden</b> für einen Story-Durchgang mit Nebenzielen. GTA VI ist ein Einzelspieler-Spiel und offline spielbar. Ein neues GTA Online hat Rockstar noch nicht angekündigt, berichtet wird ein Start 2027.</p>"
-             f"<p>Wie groß der Andrang ist: Sensor Tower schätzt rund 7,7 Millionen digitale Vorbestellungen {q(POLY, 'Polygon')}. Rockstar selbst nennt keine Zahlen.</p>"),
+             "<p>Rob Nelson von Rockstar North brauchte nach eigener Aussage rund <b>80 Stunden</b> für einen Story-Durchgang mit Nebenzielen. GTA VI ist ein Einzelspieler-Spiel und offline spielbar. Einen Online-Modus für GTA VI hat Rockstar nicht angekündigt, der PS Store nennt es ein Single-Player-Erlebnis {q(PSD, 'PS Store')}.</p>"
+             f"<p>Vor dem Start schätzte Sensor Tower rund 7,7 Millionen digitale Vorbestellungen {q(POLY, 'Polygon')}. Rockstar selbst nennt keine Zahlen. Die Wertungen sind bisher sehr gut: Metacritic 99 (PS5, 151 Tests), OpenCritic 99 (90 Tests, 99 % Empfehlung).</p>"),
         ],
         "faq": [
-            ("Wann erscheint GTA 6 in Deutschland?", "Am Donnerstag, 19. November 2026, für PlayStation 5 und Xbox Series X|S."),
-            ("Um wie viel Uhr kann man GTA 6 spielen?", "Am 19. November um Mitternacht Ortszeit, auf PS5 und Xbox. In Deutschland also um 0:00 Uhr."),
+            ("Wann ist GTA 6 erschienen?", "Am Donnerstag, 19. November 2026, für PlayStation 5 und Xbox Series X|S. Seit 7:00 Uhr MEZ läuft es auch über Xbox Cloud Gaming."),
+            ("Um wie viel Uhr konnte man GTA 6 spielen?", "Ab dem 19. November um Mitternacht Ortszeit, auf PS5 und Xbox. In Deutschland also ab 0:00 Uhr."),
             ("Was kostet GTA 6?", "Die Standard Edition kostet 79,99 Euro, die Ultimate Edition 99,99 Euro."),
-            ("Hat die GTA 6 Box-Version eine Disc?", "Nein. Die Box-Version enthält nur einen Download-Code und liegt ab dem 12. November im Handel."),
+            ("Hat die GTA 6 Box-Version eine Disc?", "Nein. Die Box-Version enthält nur einen Download-Code und kam am 12. November in den Handel."),
             ("Kommt GTA 6 für den PC?", "Eine PC-Version ist nicht angekündigt. Berichte nennen das erste Quartal 2027, bestätigt ist das nicht."),
         ],
     },
     {
         "slug": "gta-6-vorab-download",
-        "title": "GTA 6 Vorab-Download: Uhrzeit und Größe (212 GB)",
-        "h1": "GTA 6 vorab laden: wann, wie groß, wie",
-        "desc": "GTA 6 Vorab-Download ab 10. November: PS5 ab Mitternacht, Xbox ab 1 Uhr deutscher Zeit. Bis zu 212 GB, so machst du Platz. Mit Quellen.",
-        "lead": "Wer GTA VI digital vorbestellt hat, muss am Release-Tag nicht stundenlang warten: Das Spiel lässt sich <b>ab dem 10. November</b> vorab laden, neun Tage vor dem Start.",
+        "title": "GTA 6 Download: Größe (212 GB) und Speicherplatz",
+        "h1": "GTA 6 laden: wie groß, wie viel Platz",
+        "desc": "GTA 6 Download: bis zu 212 GB, so machst du Platz. Der Vorab-Download lief seit 10. November, PS5 ab Mitternacht, Xbox ab 1 Uhr deutscher Zeit. Mit Quellen.",
+        "lead": "GTA VI ist seit dem 19. November erschienen und braucht <b>bis zu 212 GB</b> Speicher. Wer digital vorbestellt hatte, konnte schon <b>ab dem 10. November</b> vorab laden, neun Tage vor dem Start.",
         "facts": [
-            ("Start PS5", f"{T_OK} 10. November, 0:00 Uhr Ortszeit {q(PS_LOAD, 'PlayStation')}"),
-            ("Start Xbox", f"{T_OK} 10. November, 0:00 Uhr britische Zeit, also 1:00 Uhr in Deutschland {q(VGC_LOAD, 'VGC')}"),
+            ("Vorab-Download PS5", f"{T_OK} Lief ab 10. November, 0:00 Uhr Ortszeit {q(PS_LOAD, 'PlayStation')}"),
+            ("Vorab-Download Xbox", f"{T_OK} Lief ab 10. November, 0:00 Uhr britische Zeit, also 1:00 Uhr in Deutschland {q(VGC_LOAD, 'VGC')}"),
             ("Größe", f"{T_OK} Bis zu 212 GB, je nach Gerät {q(R_LOAD, 'Rockstar')}"),
             ("Freier Speicher", f"{T_OK} Sony rät zu mindestens 212 GB freiem Platz {q(PS_LOAD, 'PlayStation')}"),
-            ("Wer darf vorladen", f"{T_OK} Digitale Vorbestellungen {q(PS_LOAD, 'PlayStation')}"),
-            ("Box-Version", f"{T_OK} Nur Download-Code, im Handel ab 12. November {q(VGC_LOAD, 'VGC')}"),
-            ("Spielen ab", f"{T_OK} 19. November, 0:00 Uhr auf PS5 und Xbox {q(SUP, 'Rockstar')}"),
+            ("Wer durfte vorladen", f"{T_OK} Digitale Vorbestellungen {q(PS_LOAD, 'PlayStation')}"),
+            ("Box-Version", f"{T_OK} Nur Download-Code, im Handel seit 12. November {q(VGC_LOAD, 'VGC')}"),
+            ("Spielbar seit", f"{T_OK} 19. November, 0:00 Uhr auf PS5 und Xbox {q(SUP, 'Rockstar')}"),
         ],
         "sections": [
-            ("So funktioniert der Vorab-Download",
-             "<p>Auf der <b>PS5</b> startet der Download nach der Vorbestellung im PlayStation Store automatisch, wenn die Konsole im Ruhemodus mit dem Internet verbunden ist und automatische Downloads eingeschaltet sind. Sonst findest du GTA VI in der Spielebibliothek unter „Gekauft“ und startest den Download dort.</p>"
-             "<p>Auf der <b>Xbox Series X|S</b> erscheint das Spiel nach der Vorbestellung unter „Meine Spiele und Apps“ in der Warteschlange. Läuft der Download nicht von selbst an, dort auf Installieren gehen.</p>"
-             "<p>Spielen lässt sich GTA VI erst, wenn es am 19. November freigeschaltet wird. Am Release-Tag kann trotzdem noch ein Update nötig sein, plane dafür etwas Zeit ein.</p>"),
+            ("So funktioniert der Download",
+             "<p>Auf der <b>PS5</b> startet der Download nach dem Kauf im PlayStation Store automatisch, wenn die Konsole im Ruhemodus mit dem Internet verbunden ist und automatische Downloads eingeschaltet sind. Sonst findest du GTA VI in der Spielebibliothek unter „Gekauft“ und startest den Download dort.</p>"
+             "<p>Auf der <b>Xbox Series X|S</b> erscheint das Spiel nach dem Kauf unter „Meine Spiele und Apps“ in der Warteschlange. Läuft der Download nicht von selbst an, dort auf Installieren gehen.</p>"
+             "<p>Spielen lässt sich GTA VI seit dem 19. November. Auch wer vorgeladen hat, kann noch ein Update brauchen, plane dafür etwas Zeit ein.</p>"),
             ("Reicht mein Speicher?",
-             "<p>212 GB sind viel. Auf einer PS5 mit 825 GB bleiben nach dem System nur gut 660 GB frei, auf der Xbox Series S mit 512 GB rund 360 GB. Mach also rechtzeitig Platz:</p>"
+             "<p>212 GB sind viel. Auf einer PS5 mit 825 GB bleiben nach dem System nur gut 660 GB frei, auf der Xbox Series S mit 512 GB rund 360 GB. Mach also vorher Platz:</p>"
              "<ul class=\"pts\"><li>Große Spiele, die du gerade nicht spielst, löschen. Spielstände liegen in der Cloud oder bleiben auf der Konsole.</li>"
              "<li>PS4-Spiele und ältere Xbox-Spiele auf eine externe USB-Festplatte verschieben.</li>"
              "<li>Eine M.2-SSD in der PS5 oder eine Speichererweiterungskarte für die Xbox schafft dauerhaft Platz.</li></ul>"),
             ("Was ist mit der Box-Version?",
-             f"<p>Die Box im Handel enthält <b>keine Disc</b>, nur einen Code. Sie kommt am 12. November in die Läden {q(VGC_LOAD, 'VGC')}. Laut Rockstar erscheint sie so früh, damit auch Box-Käufer vorab laden können: Code einlösen, dann startet der Download wie bei der digitalen Fassung {q(R_PRE, 'Rockstar')}. Vorladen geht damit ab dem 12. November, digital schon ab dem 10.</p>"
+             f"<p>Die Box im Handel enthält <b>keine Disc</b>, nur einen Code. Sie kam am 12. November in die Läden {q(VGC_LOAD, 'VGC')}. Laut Rockstar erschien sie so früh, damit auch Box-Käufer vorab laden konnten: Code einlösen, dann startete der Download wie bei der digitalen Fassung {q(R_PRE, 'Rockstar')}. Vorladen ging damit ab dem 12. November, digital schon ab dem 10.</p>"
              "<p>Alles andere zum Start, also Preis, Editionen und Uhrzeit, steht im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
         ],
         "faq": [
-            ("Wann kann man GTA 6 vorladen?", "Ab dem 10. November 2026. Auf der PS5 ab Mitternacht Ortszeit, auf der Xbox ab 1 Uhr deutscher Zeit."),
+            ("Wann konnte man GTA 6 vorladen?", "Ab dem 10. November 2026. Auf der PS5 ab Mitternacht Ortszeit, auf der Xbox ab 1 Uhr deutscher Zeit. Seit dem Release am 19. November lädst du es ganz normal."),
             ("Wie groß ist GTA 6?", "Rockstar nennt bis zu 212 GB, je nach Gerät. Sony rät, mindestens 212 GB freizumachen."),
-            ("Kann man mit der Box-Version vorladen?", "Ja. Die Box enthält einen Download-Code und kommt am 12. November in den Handel, laut Rockstar extra so früh, damit man vorladen kann. Digital geht es schon ab dem 10. November."),
-            ("Kann man GTA 6 nach dem Vorab-Download schon spielen?", "Nein. Spielbar ist es erst ab dem Release am 19. November, in Deutschland ab 0 Uhr."),
+            ("Kann man mit der Box-Version vorladen?", "Ja. Die Box enthält einen Download-Code und kam am 12. November in den Handel, laut Rockstar extra so früh, damit man vorladen konnte. Digital ging es schon ab dem 10. November."),
+            ("Kann man GTA 6 nach dem Download spielen?", "Ja. Seit dem Release am 19. November um 0 Uhr Ortszeit ist es spielbar. Nach dem Vorab-Download kann noch ein Update nötig sein."),
         ],
     },
     {
@@ -143,27 +148,27 @@ GUIDES = [
         "slug": "gta-6-pc-version",
         "title": "GTA 6 PC-Version: Release und aktueller Stand",
         "h1": "Kommt GTA 6 für den PC?",
-        "desc": "GTA 6 PC: Rockstar hat noch keine PC-Version angekündigt. Was Berichte sagen (Anfang 2027), was Xbox dementiert hat und was du jetzt tun kannst.",
-        "lead": "Zum Release am 19. November erscheint GTA VI <b>nur für PlayStation 5 und Xbox Series X|S</b>. Eine PC-Version hat Rockstar bisher nicht angekündigt.",
+        "desc": "GTA 6 PC: Rockstar hat noch keine PC-Version angekündigt. Was Berichte sagen (Anfang 2027), was es mit Xbox Cloud Gaming auf sich hat und was du jetzt tun kannst.",
+        "lead": "GTA VI ist am 19. November <b>nur für PlayStation 5 und Xbox Series X|S</b> erschienen, dazu per Xbox Cloud Gaming. Eine PC-Version hat Rockstar bisher nicht angekündigt.",
         "facts": [
             ("PC-Version", f"{T_O} Von Rockstar nicht angekündigt"),
             ("Bericht", f"{T_W} PC-Start im ersten Quartal 2027, laut vier anonymen Quellen {q(GB, 'GamesBeat')}"),
-            ("Streaming am PC", f"{T_OK} Xbox hat am 7. Oktober dementiert, dass GTA VI zum Start per Xbox Cloud am PC läuft {q(XCLOUD, 'GosuGamers')}"),
-            ("Konsolen", f"{T_OK} PS5 und Xbox Series X|S ab 19. November {q(R_PRE, 'Rockstar')}"),
+            ("Xbox Cloud Gaming", f"{T_OK} Seit 19. November, 7:00 Uhr MEZ, auch für Xbox One. Eine PC-Version ist das nicht {q(XBOX_CLOUD, 'Xbox')}"),
+            ("Konsolen", f"{T_OK} PS5 und Xbox Series X|S seit 19. November {q(R_NOW, 'Rockstar')}"),
         ],
         "sections": [
             ("Was ist bekannt?",
              f"<p>Rockstar spricht offiziell nur von PS5 und Xbox Series X|S. GamesBeat berichtete am 13. Oktober, der PC-Start sei für Januar bis März 2027 geplant, die PC-Fassung müsse vorher dieselbe Qualitätsprüfung bestehen wie die Konsolenversion {q(GB, 'GamesBeat')}. Bestätigt hat Rockstar das nicht.</p>"
              "<p>Bei früheren Teilen kam der PC deutlich später: GTA V erschien gut anderthalb Jahre nach der Konsolenfassung, Red Dead Redemption 2 rund ein Jahr danach.</p>"),
-            ("Kann ich GTA 6 per Cloud am PC spielen?",
-             f"<p>Zum Start nicht. Ein Bericht über exklusive Streaming-Rechte für Xbox Cloud Gaming wurde am 7. Oktober von Xbox-Strategiechef Matthew Ball zurückgewiesen {q(XCLOUD, 'GosuGamers')}.</p>"),
+            ("Gibt es GTA 6 per Cloud?",
+             f"<p>Ja, aber nicht als PC-Version: Xbox Cloud Gaming bietet GTA VI seit dem 19. November, 7:00 Uhr MEZ, an. Xbox One kann es nur so spielen {q(XBOX_CLOUD, 'Xbox')}. Welche Geräte unterstützt werden, nennt Microsoft in der Ankündigung. Ein Bericht über exklusive Streaming-Rechte war am 7. Oktober von Xbox zurückgewiesen worden {q(XCLOUD, 'GosuGamers')}.</p>"),
             ("Was heißt das für PC-Spieler?",
-             "<p>Wer zum Start spielen will, braucht eine PS5 oder Xbox Series X|S. Wer warten kann, sollte nichts für den PC vorbestellen, solange es keine offizielle Ankündigung gibt: Angebote für „GTA 6 PC Keys“ sind derzeit unseriös.</p>"
+             "<p>Wer jetzt spielen will, braucht eine PS5, eine Xbox Series X|S oder Xbox Cloud Gaming. Wer warten kann, sollte nichts für den PC vorbestellen, solange es keine offizielle Ankündigung gibt: Angebote für „GTA 6 PC Keys“ sind derzeit unseriös.</p>"
              "<p>Alles zum Konsolen-Release steht im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>. Neue Infos zur PC-Version landen zuerst in unserem <a href=\"../\">Liveticker</a>.</p>"),
         ],
         "faq": [
             ("Kommt GTA 6 für den PC?", "Rockstar hat noch keine PC-Version angekündigt. GamesBeat berichtet von einem PC-Start im ersten Quartal 2027."),
-            ("Kann man GTA 6 am PC streamen?", "Zum Start nicht. Xbox hat am 7. Oktober dementiert, dass GTA 6 zum Release über Xbox Cloud Gaming am PC spielbar ist."),
+            ("Kann man GTA 6 am PC streamen?", "Seit dem 19. November gibt es GTA 6 bei Xbox Cloud Gaming. Welche Geräte das unterstützt, nennt Microsoft in der Ankündigung. Eine PC-Version ist es nicht."),
             ("Kann man GTA 6 für den PC schon kaufen?", "Nein. Es gibt keine offizielle PC-Version, Angebote für PC-Keys sind unseriös."),
         ],
     },
@@ -236,13 +241,13 @@ GUIDES += [
         "title": "GTA 6 Editionen: Standard oder Ultimate Edition?",
         "h1": "GTA 6 Editionen im Vergleich",
         "desc": "GTA 6 Standard für 79,99 € oder Ultimate Edition für 99,99 €? Alle Inhalte der Ultimate Edition, das Vintage Vice City Pack und GTA+, mit Quellen.",
-        "lead": "GTA VI gibt es in zwei Editionen: <b>Standard für 79,99 €</b> und <b>Ultimate für 99,99 €</b>. Dazu bekommen alle, die vor dem 20. November kaufen, das <b>Vintage Vice City Pack</b>. Hier steht, was genau drin ist.",
+        "lead": "GTA VI gibt es in zwei Editionen: <b>Standard für 79,99 €</b> und <b>Ultimate für 99,99 €</b>. Das <b>Vintage Vice City Pack</b> gab es nur als Vorbesteller-Bonus bis 19. November und es kostet jetzt einzeln 4,99 €. Hier steht, was genau drin ist.",
         "facts": [
             ("Standard Edition", f"{T_OK} 79,99 €, das komplette Spiel {q(PSD, 'PS Store')}"),
             ("Ultimate Edition", f"{T_OK} 99,99 €, Spiel plus Zusatzinhalte, Upgrade auch später möglich {q(PSD, 'PS Store')}"),
-            ("Vorbesteller-Bonus", f"{T_OK} Vintage Vice City Pack für alle Käufe vor dem 20. November {q(R_PRE, 'Rockstar')}"),
-            ("GTA+", f"{T_OK} Ein Monat gratis bei digitaler Vorbestellung {q(R_PRE, 'Rockstar')}"),
-            ("Box-Version", f"{T_OK} Download-Code statt Disc, ab 12. November im Handel {q(R_PRE, 'Rockstar')}"),
+            ("Vorbesteller-Bonus", f"{T_OK} Vorbei: Das Vintage Vice City Pack gab es bis 19. November, jetzt einzeln für 4,99 € {q(R_NOW, 'Rockstar')} {q(PS_STD, 'PS Store')}"),
+            ("GTA+", f"{T_OK} Der Gratismonat bei digitaler Vorbestellung ist mit dem 19. November ausgelaufen {q(R_NOW, 'Rockstar')}"),
+            ("Box-Version", f"{T_OK} Download-Code statt Disc, seit 12. November im Handel {q(R_PRE, 'Rockstar')}"),
             ("Sammlerbox", f"{T_OK} 399,99 €, ohne Spiel"),
         ],
         "sections": [
@@ -267,20 +272,20 @@ GUIDES += [
              "<li><b>Classic Car Collection:</b> Auftrag vom Sammler Wyman, verlassene Oldtimer aufspüren und herrichten.</li>"
              f"</ul><p>Alle 47 offiziellen Bilder dazu stehen in unserer <a href=\"{GAL}\">Galerie</a> unter „Ultimate Edition“.</p>"),
             ("Was ist im Vintage Vice City Pack?",
-             f"<p>Das Paket bekommt jeder, der <b>vor dem 20. November</b> kauft, egal welche Edition {q(R_PRE, 'Rockstar')}:</p>"
+             f"<p>Das Paket war bis 19. November bei allen Käufen und Vorbestellungen dabei, egal welche Edition {q(R_PRE, 'Rockstar')}. Jetzt wird es einzeln für <b>4,99 €</b> verkauft {q(PS_STD, 'PS Store')}. Der Inhalt:</p>"
              "<ul class=\"pts\"><li><b>’55 Vapid Stanier:</b> Oldtimer-Limousine samt Garage Shore Court an Ocean Beach, mit Waffenschrank und Hehlerlager.</li>"
              "<li><b>Outfits und Frisuren:</b> Jason im Leinenanzug in Pastell, Lucia im roten Paillettenkleid.</li>"
              "<li><b>Waffenmuster:</b> Palmen-Muster nach Tommy Vercettis Hemd aus GTA Vice City.</li></ul>"),
             ("Lohnt sich die Ultimate Edition?",
              "<p>Für 20 € mehr gibt es kein zusätzliches Story-Kapitel, aber spürbar mehr Spielwelt: ein Salon, ein Klamottenladen, ein Tattoo-Studio und zwei Werkstätten öffnen nur damit, dazu Fahrzeuge, ein Bandengelände und ein Sammelauftrag. Wer viel Zeit in Leonida verbringen will, bekommt also mehr zu tun. Wer nur die Geschichte spielen will, verpasst nichts Wesentliches.</p>"
              "<p>Gut zu wissen: Das Upgrade lässt sich auch später kaufen. Man kann also mit der Standard Edition starten und erst danach entscheiden. Das gilt laut Rockstar auch für die Box: Die Ultimate Edition gibt es nicht als Box, das Upgrade lässt sich aber nach dem Einlösen des Codes im PlayStation Store oder bei Xbox nachkaufen.</p>"
-             "<p>Uhrzeit, Vorab-Download und Altersfreigabe stehen im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
+             "<p>Uhrzeit, Download und Altersfreigabe stehen im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
         ],
         "faq": [
             ("Was kostet die GTA 6 Ultimate Edition?", "99,99 Euro. Die Standard Edition kostet 79,99 Euro."),
             ("Was ist in der GTA 6 Ultimate Edition enthalten?", "Unter anderem ein Grotti Cheetah, zwei Revolver, ein Boot, ein Buggy mit Garage, eigene Outfits und Tattoos sowie mehrere Läden und Werkstätten, die nur mit der Ultimate Edition öffnen."),
             ("Kann man später auf die Ultimate Edition upgraden?", "Ja, laut PlayStation Store ist ein Upgrade auch später möglich."),
-            ("Wer bekommt das Vintage Vice City Pack?", "Alle, die GTA 6 vor dem 20. November 2026 kaufen oder vorbestellen, egal welche Edition."),
+            ("Wie bekomme ich das Vintage Vice City Pack?", "Die Vorbesteller-Aktion lief bis 19. November 2026 und ist vorbei. Seitdem wird das Pack einzeln für 4,99 Euro verkauft."),
         ],
     },
     {
@@ -326,17 +331,17 @@ GUIDES += [
         "slug": "gta-6-soundtrack-radio",
         "title": "GTA 6 Soundtrack: Album, Radiosender und Score",
         "h1": "GTA 6 Musik: Album, Radio und Filmmusik",
-        "desc": "GTA 6 Soundtrack: The Album mit 34 Songs am 19. November, Filmmusik von Justice am 11. Dezember, alle bekannten Singles und Radiosender. Mit Quellen.",
-        "lead": "Zu GTA VI gibt es zwei Alben: <b>„Grand Theft Auto VI: The Album“</b> mit 34 neuen Songs am 19. November und die <b>Filmmusik von Justice</b> am 11. Dezember. Im Spiel kommt die größte Radioauswahl der Reihe dazu.",
+        "desc": "GTA 6 Soundtrack: The Album mit 34 Songs seit 19. November, Filmmusik von Justice am 11. Dezember, alle bekannten Singles und Radiosender. Mit Quellen.",
+        "lead": "Zu GTA VI gibt es zwei Alben: <b>„Grand Theft Auto VI: The Album“</b> mit 34 neuen Songs, erschienen am 19. November, und die <b>Filmmusik von Justice</b>, die am 11. Dezember folgt. Im Spiel kommt die größte Radioauswahl der Reihe dazu.",
         "facts": [
-            ("The Album", f"{T_OK} 34 neue Songs, erscheint am 19. November {q(R_ALBUM, 'Rockstar')}"),
+            ("The Album", f"{T_OK} 34 neue Songs, erschienen am 19. November {q(R_ALBUM, 'Rockstar')}"),
             ("Original Score", f"{T_OK} Justice, 30 Stücke plus Bonus-Tracks, erscheint am 11. Dezember {q(R_MUSIC, 'Rockstar')}"),
             ("Radio", f"{T_OK} Größte Radioauswahl der Reihe, erstmals mit Podcasts {q(R_RADIO, 'Rockstar')}"),
-            ("Vinyl und CD", f"{T_OK} Beide Alben vorbestellbar {q(R_MUSIC, 'Rockstar')}"),
+            ("Vinyl und CD", f"{T_OK} Beide Alben gibt es laut Rockstars Musikseite auch auf Vinyl und CD {q(R_MUSIC, 'Rockstar')}"),
         ],
         "sections": [
             ("Die Singles von „The Album“",
-             f"<p>Diese Songs sind schon draußen {q(R_MUSIC, 'Rockstar')}:</p><ul class=\"pts\">"
+             f"<p>Diese Songs gab es schon vorab {q(R_MUSIC, 'Rockstar')}:</p><ul class=\"pts\">"
              "<li>Yung Lean: „That’s It“ (feat. Future und Metro Boomin)</li>"
              "<li>Travis Scott: „RHYNO“</li>"
              "<li>CA7RIEL und Paco Amoroso, PinkPantheress, Fred again.. und Etienne de Crécy: „Sexy Magic“</li>"
@@ -360,7 +365,7 @@ GUIDES += [
              "<p>Alles zum Start steht im <a href=\"gta-6-release-deutschland.html\">Ratgeber zum Release in Deutschland</a>.</p>"),
         ],
         "faq": [
-            ("Wann erscheint der GTA 6 Soundtrack?", "„Grand Theft Auto VI: The Album“ erscheint am 19. November 2026 zusammen mit dem Spiel. Die Filmmusik von Justice folgt am 11. Dezember."),
+            ("Wann ist der GTA 6 Soundtrack erschienen?", "„Grand Theft Auto VI: The Album“ ist am 19. November 2026 zusammen mit dem Spiel erschienen. Die Filmmusik von Justice folgt am 11. Dezember."),
             ("Wer macht die Musik zu GTA 6?", "Die Filmmusik stammt vom französischen Duo Justice. Auf dem Album sind unter anderem Travis Scott, Cardi B, Morgan Wallen, Rauw Alejandro, Yung Lean und Keith Richards."),
             ("Welcher Song läuft im GTA 6 Launch-Trailer?", "„Flower in a Hurricane“ von Justice mit Tame Impala, SZA und King Gizzard and The Lizard Wizard."),
             ("Welche Radiosender gibt es in GTA 6?", "Bisher vorgestellt: Cocoteo FM, Back Country Radio, AfroBank FM, The Chamber 106.6, Flash FM und Dirty South Classics."),
@@ -501,7 +506,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Vorab-Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
