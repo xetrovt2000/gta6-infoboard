@@ -401,6 +401,7 @@ details{border-bottom:1px solid var(--line);padding:10px 0}summary{cursor:pointe
 .more{margin-top:34px;border-top:1px solid var(--line);padding-top:6px}.more ul{list-style:none;margin:0;padding:0}
 .more li{padding:9px 0;border-bottom:1px solid var(--line)}.more li a{color:var(--fg);text-decoration:none}.more li a:hover{color:var(--gold)}
 footer{color:var(--muted);font-size:13px;text-align:center;padding:24px 16px;border-top:1px solid var(--line)}
+.keys{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}.keys th,.keys td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}.keys th{font:800 13px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
 .xc{display:flex;width:max-content;margin:14px auto 0;align-items:center;gap:8px;color:var(--muted);text-decoration:none;font-size:12px;letter-spacing:.04em;opacity:.8}.xc:hover{opacity:1}.xc img{display:block;height:22px;width:auto}"""
 
 
@@ -419,7 +420,7 @@ def render(g):
     ld = [
         {"@context": "https://schema.org", "@type": "Article", "headline": g["title"], "description": g["desc"],
          "inLanguage": "de-DE", "mainEntityOfPage": url, "image": [SITE + "og.jpg"],
-         "datePublished": "2026-11-05", "dateModified": STAND[0],
+         "datePublished": g.get("published", "2026-11-05"), "dateModified": STAND[0],
          "author": {"@type": "Organization", "name": "Leonida News Network", "url": SITE},
          "publisher": {"@type": "Organization", "name": "Leonida News Network", "url": SITE}},
         {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
@@ -477,11 +478,96 @@ def render(g):
 """
 
 
-ORDER = ["gta-6-release-deutschland", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+T_G = '<span class="tag t-bad">Gerücht</span>'
+EG = "https://www.eurogamer.de/gta-6-steuerung-tastenbelegung-aenderungen"
+EG_IMG = "https://assetsio.gnwcdn.com/GTA6---Steuerung008.jpg?width=1600&quality=90&format=jpg"
+R_SET = "https://support.rockstargames.com/articles/4jUHNdP22SmaKSF8DWqhXC/how-to-change-grand-theft-auto-vi-settings"
+GS_MELEE = "https://www.gamestar.de/artikel/gta-6-fortgeschrittene-nahkampf-moves-guide,3463745.html"
+IG_CTRL = "https://insider-gaming.com/gta-6-control-settings/"
+GTAB = "https://www.gtabase.com/gta-6/articles/gta-6-combat-stealth-guide"
+IG_STYLE = "https://insider-gaming.com/gta-6-has-different-fighting-styles-for-both-the-characters/"
+
+GUIDES += [
+    {
+        "slug": "gta-6-nahkampf-steuerung",
+        "published": "2026-11-24",
+        "title": "GTA 6 Nahkampf: Steuerung, Blocken, Kontern (PS5, Xbox)",
+        "h1": "GTA 6 Nahkampf: so funktioniert die Steuerung",
+        "desc": "GTA 6 Nahkampf erklärt: welche Taste schlägt, blockt, pariert und packt, auf PS5 und Xbox. Dazu versteckte Moves, Fokus, Jason und Lucia. Mit Quellen.",
+        "lead": "Der Nahkampf in GTA VI kann mehr, als das Spiel erklärt. Hämmern auf eine Taste reicht nicht mehr: Wer blind drauflos schlägt, wird gekontert und steht ohne Ausdauer da. Hier steht, welche Taste was macht und was hinter den versteckten Moves steckt. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. Jede Angabe trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien oder Guide-Seiten, <b>Gerücht</b> heißt nicht belegt.",
+        "facts": [
+            ("Einstellen", f"{T_OK} Pause, Einstellungen, Steuerungsschema, Ansicht „Nahkampf“ {q(R_SET, 'Rockstar')}"),
+            ("Schlagen/Treten", f"{T_W} Quadrat (PS5), X (Xbox) {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
+            ("Blocken/Ausweichen", f"{T_W} Kreuz (PS5), A (Xbox), zum Blocken halten {q(EG, 'Eurogamer')}"),
+            ("Parieren", f"{T_W} Wird Kreuz eingeblendet, genau im richtigen Moment drücken {q(EG, 'Eurogamer')}"),
+            ("Anvisieren", f"{T_W} L2 (PS5), LT (Xbox) halten {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
+            ("Packen", f"{T_W} R2 (PS5), RT (Xbox) {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
+            ("Fokus", f"{T_W} L3 und R3 zusammen drücken {q(EG, 'Eurogamer')}"),
+            ("Schemata", f"{T_W} Standard, Klassisch und Linkshänder {q(IG_CTRL, 'Insider Gaming')}"),
+        ],
+        "sections": [
+            ("Die Tasten auf einen Blick",
+             f"<p>So zeigt das Spiel selbst die Nahkampf-Belegung im Schema Standard. Grundlage ist ein Screenshot des deutschen Einstellungsmenüs, den Eurogamer veröffentlicht hat {q(EG_IMG, 'Screenshot')} {q(EG, 'Eurogamer')}. Die Begriffe in der linken Spalte stehen genau so im Spiel.</p>"
+             "<table class=\"keys\"><thead><tr><th>Im Spiel</th><th>PS5</th><th>Xbox</th></tr></thead><tbody>"
+             "<tr><td>Anvisieren (halten)</td><td>L2</td><td>LT</td></tr>"
+             "<tr><td>Packen</td><td>R2</td><td>RT</td></tr>"
+             "<tr><td>Schlagen/Treten</td><td>Quadrat</td><td>X</td></tr>"
+             "<tr><td>Blocken/Ausweichen</td><td>Kreuz</td><td>A</td></tr>"
+             "<tr><td>Bewegen</td><td>linker Stick</td><td>linker Stick</td></tr>"
+             "<tr><td>Umschauen</td><td>rechter Stick</td><td>rechter Stick</td></tr>"
+             "</tbody></table>"
+             f"<p>Der Screenshot zeigt den PS5-Controller. Die Xbox-Tasten liegen an derselben Stelle, so führt sie auch die Guide-Seite GTABase {q(GTAB, 'GTABase')}.</p>"),
+            ("So findest du deine Belegung",
+             f"<p>Laut Rockstar erreichst du alle Einstellungen über das <b>Pausenmenü</b> und dann <b>Einstellungen</b>. Unter <b>Steuerungsschema</b> gibt es eine eigene Ansicht für jede Lage: zu Fuß, Zielen, Nahkampf, Land- und Wasserfahrzeuge, Luftfahrzeuge, Fahrrad, Schwimmen und Fallschirm {q(R_SET, 'Rockstar')}. Unten auf dem Bildschirm setzt „Standard wiederherstellen“ alles zurück.</p>"
+             f"<p>Es gibt drei Schemata {q(IG_CTRL, 'Insider Gaming')}:</p><ul class=\"pts\">"
+             "<li><b>Standard:</b> wie in der Tabelle oben. Rennen liegt hier auf dem gedrückten linken Stick.</li>"
+             "<li><b>Klassisch:</b> wie in früheren Rockstar-Spielen. Schlagen liegt auf Kreis (Xbox: B), Blocken und Ausweichen auf Quadrat (Xbox: X). Anvisieren und Packen bleiben auf L2 und R2.</li>"
+             "<li><b>Linkshänder:</b> Anvisieren und Packen sind getauscht (Packen auf L2, Anvisieren auf R2), ebenso die beiden Sticks.</li></ul>"
+             "<p>Wenn dir ein Guide eine andere Taste nennt, liegt das oft am Schema. Im Zweifel zeigt dir das Spiel unter Steuerungsschema, Nahkampf, was bei dir gilt.</p>"),
+            ("Der Grundablauf",
+             f"<ul class=\"pts\"><li><b>Anvisieren:</b> L2 halten. So bleibst du auf einen Gegner ausgerichtet und kannst um ihn herum laufen.</li>"
+             "<li><b>Schlagen:</b> Quadrat. Ob Jason oder Lucia schlagen oder treten, entscheidet das Spiel je nach Lage.</li>"
+             f"<li><b>Blocken:</b> Kreuz <b>gedrückt halten</b>, dann nehmen die beiden die Hände hoch {q(EG, 'Eurogamer')}.</li>"
+             f"<li><b>Parieren:</b> Wird während eines Angriffs Kreuz eingeblendet, im richtigen Moment drücken {q(EG, 'Eurogamer')}.</li></ul>"
+             f"<p>{T_W} Wildes Hämmern auf die Angriffstaste bestraft das Spiel: Der Gegner kontert und die Ausdauer ist leer {q(GS_MELEE, 'GameStar')}. Besser ist es, auf Lücken zu warten.</p>"
+             f"<p>{T_W} Die Guide-Seite GTABase nennt noch zwei Dinge, die wir in keiner zweiten Quelle gefunden haben: Quadrat <b>halten</b> gibt einen schweren Angriff, und nach einem Konter (Kreuz kurz vor dem Treffer) folgt mit Quadrat der Gegenangriff {q(GTAB, 'GTABase')}.</p>"),
+            ("Packen und versteckte Moves",
+             f"<p>Mit R2 packst du einen Gegner. Laut GameStar stecken dahinter mehrere Moves, die das Spiel nirgends erklärt. Sie laufen alle über dieselben Tasten: R2, Quadrat, Rennen (linker Stick gedrückt) und eine Richtung am linken Stick {q(GS_MELEE, 'GameStar')}. {T_W}</p><ul class=\"pts\">"
+             "<li><b>Suplex:</b> von hinten mit R2 packen, Quadrat halten, bis der Griff wechselt. Dann loslassen, linken Stick nach hinten und Quadrat erneut drücken.</li>"
+             "<li><b>Würgegriff oder Body Slam:</b> aus kurzer Distanz packen und Quadrat halten. Weiter halten würgt den Gegner bis zur Ohnmacht. Stattdessen loslassen, Stick nach hinten und Quadrat antippen gibt einen Body Slam.</li>"
+             "<li><b>Seiten- und Stoßtritt:</b> einen zu nahen Gegner packen, wegschubsen, dann Quadrat halten und den Stick zur Seite neigen. Das schafft Abstand.</li>"
+             "<li><b>Tackle:</b> mit Anlauf frontal auf den Gegner zu rennen und beim Aufprall Quadrat drücken. Am Boden kannst du nachschlagen.</li>"
+             "<li><b>Dropkick:</b> genauso anrennen, aber Quadrat schon während des Anlaufs drücken.</li>"
+             "<li><b>Clothesline:</b> einem heranstürmenden Gegner frontal entgegen rennen und im richtigen Moment Quadrat drücken.</li></ul>"
+             f"<p>Zähe Gegner reißen sich laut GameStar oft sofort wieder los. Erst ein paar normale Schläge, dann packen {q(GS_MELEE, 'GameStar')}. Für lautlose Takedowns nennt GTABase: von hinten anschleichen, R2 halten, dann mehrmals Quadrat {q(GTAB, 'GTABase')}.</p>"),
+            ("Fokus und Ausdauer",
+             f"<p>{T_W} L3 und R3 zusammen starten den <b>Fokus</b>, eine Art Zeitlupe. Im Kampf hebt er die Schwachstellen von Gegnern hervor {q(EG, 'Eurogamer')}. Laut GTABase zeigt er auch, welche Treffer tödlich sind und welche nicht {q(GTAB, 'GTABase')}.</p>"
+             f"<p>{T_W} Nahkampf kostet <b>Ausdauer</b> {q(GTAB, 'GTABase')} {q(GS_MELEE, 'GameStar')}. Ausdauer trainierst du zum Beispiel beim Schwimmen und Radfahren {q(EG, 'Eurogamer')}.</p>"
+             f"<p>{T_G} Spieler vermuten, dass Jasons Kraft beeinflusst, wie gut schwere Moves wie der Suplex gelingen, und dass sich Kraft an Gewichten trainieren lässt. GameStar gibt das nur als Vermutung aus Reddit wieder {q(GS_MELEE, 'GameStar')}.</p>"),
+            ("Kämpfen Jason und Lucia unterschiedlich?",
+             f"<p>{T_OK} Lucia wurde laut Rockstar von ihrem Vater im <b>Kampfsport</b> trainiert {q(R_SITE, 'Rockstar')}. Jason ist Armeeveteran.</p>"
+             f"<p>{T_W} Laut GameStar hat Lucia eigene Moves, eher MMA-Manöver statt Haltegriffe. Sie liegen auf denselben Tasten wie bei Jason {q(GS_MELEE, 'GameStar')}. Die Steuerung musst du also nur einmal lernen.</p>"
+             f"<p>{T_G} Schon im September hieß es, Lucia kämpfe technisch mit Kickboxen und MMA und Jason als Straßenschläger mit roher Kraft. Das stammt von einem italienischen YouTuber, der eine Vorführung bei Rockstar gesehen, aber nicht selbst gespielt hat {q(IG_STYLE, 'Insider Gaming')}. Rockstar hat das so nie gesagt.</p>"
+             "<p>Mehr zu den beiden steht im <a href=\"gta-6-charaktere.html\">Ratgeber zu den Charakteren</a>.</p>"),
+            ("Muss jeder Kampf tödlich enden?",
+             "<p>Nein. Laut Rob Nelson von Rockstar North kommt man an vielen Stellen voran, ohne jemanden zu töten. Einfach sei das aber nicht immer. Details stehen in unserem Magazin unter <a href=\"../#vs-gewalt\">Weiterkommen ohne zu töten</a>.</p>"),
+        ],
+        "faq": [
+            ("Wie schlägt man in GTA 6?", "Im Steuerungsschema Standard mit Quadrat auf der PS5 und X auf der Xbox. Im Schema Klassisch liegt Schlagen auf Kreis beziehungsweise B."),
+            ("Wie blockt man in GTA 6?", "Kreuz auf der PS5 oder A auf der Xbox gedrückt halten. Dieselbe Taste dient auch zum Ausweichen."),
+            ("Wie pariert oder kontert man in GTA 6?", "Wenn während eines gegnerischen Angriffs Kreuz (Xbox: A) eingeblendet wird, genau im richtigen Moment drücken. Danach mit Quadrat (Xbox: X) angreifen."),
+            ("Wie packt man Gegner in GTA 6?", "Mit R2 auf der PS5 oder RT auf der Xbox. Aus dem Griff heraus gibt es weitere Moves wie Würgegriff, Body Slam oder Suplex."),
+            ("Wo ändert man die Steuerung in GTA 6?", "Im Pausenmenü unter Einstellungen und Steuerungsschema. Dort gibt es die Schemata Standard, Klassisch und Linkshänder und eine eigene Ansicht für den Nahkampf."),
+            ("Kämpft Lucia anders als Jason?", "Lucia wurde im Kampfsport trainiert und hat laut GameStar eigene MMA-Moves. Die Tasten sind bei beiden gleich."),
+        ],
+    },
+]
+
+ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
          "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
 THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
          "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
-         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35"}
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01"}
 GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
 
 HUB_CSS = """main{max-width:1040px}
@@ -506,7 +592,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
