@@ -497,17 +497,18 @@ GUIDES += [
         "lead": "Der Nahkampf in GTA VI kann mehr, als das Spiel erklärt. Hämmern auf eine Taste reicht nicht mehr: Wer blind drauflos schlägt, wird gekontert und steht ohne Ausdauer da. Hier steht, welche Taste was macht und was hinter den versteckten Moves steckt. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. Jede Angabe trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien oder Guide-Seiten, <b>Gerücht</b> heißt nicht belegt.",
         "facts": [
             ("Einstellen", f"{T_OK} Pause, Einstellungen, Steuerungsschema, Ansicht „Nahkampf“ {q(R_SET, 'Rockstar')}"),
-            ("Schlagen/Treten", f"{T_W} Quadrat (PS5), X (Xbox) {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
-            ("Blocken/Ausweichen", f"{T_W} Kreuz (PS5), A (Xbox), zum Blocken halten {q(EG, 'Eurogamer')}"),
+            ("Schlagen/Treten", f"{T_OK} Quadrat (PS5), X (Xbox), im Spielmenü geprüft {q(EG_IMG, 'Spielmenü')}"),
+            ("Blocken/Ausweichen", f"{T_OK} Kreuz (PS5), A (Xbox), im Spielmenü geprüft. Zum Blocken halten {q(EG, 'Eurogamer')}"),
             ("Parieren", f"{T_W} Wird Kreuz eingeblendet, genau im richtigen Moment drücken {q(EG, 'Eurogamer')}"),
-            ("Anvisieren", f"{T_W} L2 (PS5), LT (Xbox) halten {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
-            ("Packen", f"{T_W} R2 (PS5), RT (Xbox) {q(EG_IMG, 'Spielmenü via Eurogamer')}"),
+            ("Anvisieren", f"{T_OK} L2 (PS5), LT (Xbox) halten, im Spielmenü geprüft {q(EG_IMG, 'Spielmenü')}"),
+            ("Packen", f"{T_OK} R2 (PS5), RT (Xbox), im Spielmenü geprüft {q(EG_IMG, 'Spielmenü')}"),
+            ("Ducken", f"{T_OK} Kreis (PS5), B (Xbox), zu Fuß und beim Zielen, im Spielmenü geprüft"),
             ("Fokus", f"{T_W} L3 und R3 zusammen drücken {q(EG, 'Eurogamer')}"),
             ("Schemata", f"{T_W} Standard, Klassisch und Linkshänder {q(IG_CTRL, 'Insider Gaming')}"),
         ],
         "sections": [
             ("Die Tasten auf einen Blick",
-             f"<p>So zeigt das Spiel selbst die Nahkampf-Belegung im Schema Standard. Grundlage ist ein Screenshot des deutschen Einstellungsmenüs, den Eurogamer veröffentlicht hat {q(EG_IMG, 'Screenshot')} {q(EG, 'Eurogamer')}. Die Begriffe in der linken Spalte stehen genau so im Spiel.</p>"
+             f"<p>So zeigt das Spiel selbst die Nahkampf-Belegung im Schema Standard. Wir haben sie am 24. November im deutschen Einstellungsmenü auf der PS5 selbst geprüft. Dasselbe Menü zeigt auch ein Screenshot bei Eurogamer {q(EG_IMG, 'Screenshot')} {q(EG, 'Eurogamer')}. Die Begriffe in der linken Spalte stehen genau so im Spiel.</p>"
              "<table class=\"keys\"><thead><tr><th>Im Spiel</th><th>PS5</th><th>Xbox</th></tr></thead><tbody>"
              "<tr><td>Anvisieren (halten)</td><td>L2</td><td>LT</td></tr>"
              "<tr><td>Packen</td><td>R2</td><td>RT</td></tr>"
@@ -516,7 +517,8 @@ GUIDES += [
              "<tr><td>Bewegen</td><td>linker Stick</td><td>linker Stick</td></tr>"
              "<tr><td>Umschauen</td><td>rechter Stick</td><td>rechter Stick</td></tr>"
              "</tbody></table>"
-             f"<p>Der Screenshot zeigt den PS5-Controller. Die Xbox-Tasten liegen an derselben Stelle, so führt sie auch die Guide-Seite GTABase {q(GTAB, 'GTABase')}.</p>"),
+             f"<p>Geprüft haben wir auf der PS5. Die Xbox-Tasten liegen an derselben Stelle, so führt sie auch die Guide-Seite GTABase {q(GTAB, 'GTABase')}.</p>"
+             "<p>Wichtig: Auch in den Ansichten <b>Zu Fuß</b> und <b>Zielen</b> liegt „Nahkampf“ auf Quadrat (Xbox: X). Du kannst also jederzeit zuschlagen, auch mit gezogener Waffe. Kreis (Xbox: B) ist dort <b>Ducken</b>, so schleichst du dich an.</p>"),
             ("So findest du deine Belegung",
              f"<p>Laut Rockstar erreichst du alle Einstellungen über das <b>Pausenmenü</b> und dann <b>Einstellungen</b>. Unter <b>Steuerungsschema</b> gibt es eine eigene Ansicht für jede Lage: zu Fuß, Zielen, Nahkampf, Land- und Wasserfahrzeuge, Luftfahrzeuge, Fahrrad, Schwimmen und Fallschirm {q(R_SET, 'Rockstar')}. Unten auf dem Bildschirm setzt „Standard wiederherstellen“ alles zurück.</p>"
              f"<p>Es gibt drei Schemata {q(IG_CTRL, 'Insider Gaming')}:</p><ul class=\"pts\">"
