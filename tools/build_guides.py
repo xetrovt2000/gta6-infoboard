@@ -498,7 +498,7 @@ GUIDES += [
         "published": "2026-11-24",
         "title": "GTA 6 Steuerung: Nahkampf und versteckte Tricks (PS5, Xbox)",
         "h1": "GTA 6 Steuerung: Nahkampf und versteckte Tricks",
-        "desc": "GTA 6 Nahkampf und versteckte Tricks: blocken, kontern, packen, Granate schnell werfen, Auto selbst fahren lassen. PS5 und Xbox, mit Quellen.",
+        "desc": "GTA 6 Nahkampf und versteckte Tricks: blocken, kontern, packen, Granate schnell werfen, Steuerkreuz richtig nutzen. PS5 und Xbox, mit Quellen.",
         "lead": "Der Nahkampf in GTA VI kann mehr, als das Spiel erklärt. Hämmern auf eine Taste reicht nicht mehr: Wer blind drauflos schlägt, wird gekontert und steht ohne Ausdauer da. Hier steht, welche Taste was macht, was hinter den versteckten Moves steckt und welche kleinen Kniffe dir das Spiel nirgends beibringt, etwa die schnelle Granate. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. Jede Angabe trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar oder aus dem Spielmenü, <b>Getestet</b> heißt von uns im Spiel ausprobiert, <b>Berichtet</b> heißt von Medien oder Guide-Seiten, <b>Gerücht</b> heißt nicht belegt.",
         "facts": [
             ("Einstellen", f"{T_OK} Pause, Einstellungen, Steuerungsschema, Ansicht „Nahkampf“ {q(R_SET, 'Rockstar')}"),
@@ -567,16 +567,12 @@ GUIDES += [
              "<p>Mehr zu den beiden steht im <a href=\"gta-6-charaktere.html\">Ratgeber zu den Charakteren</a>.</p>"),
             ("Muss jeder Kampf tödlich enden?",
              "<p>Nein. Laut Rob Nelson von Rockstar North kommt man an vielen Stellen voran, ohne jemanden zu töten. Einfach sei das aber nicht immer. Details stehen in unserem Magazin unter <a href=\"../#vs-gewalt\">Weiterkommen ohne zu töten</a>.</p>"),
-            ("Weitere versteckte Tricks: Steuerkreuz, Auto, Alltag",
+            ("Weitere versteckte Tricks: Steuerkreuz und Alltag",
              f"<p>{T_OK} Das <b>Steuerkreuz</b> hat zu Fuß zwei Ebenen. Kurz drücken: oben Handy, links Radiosteuerung, unten Missionsziel und Minikarte, rechts Sprengstoff zünden. Halten: oben die WAiNK-App, links das Radiomenü, unten Schnellnavigation, rechts das Partnermenü. Das zeigt das Spielmenü in der Ansicht Zu Fuß. Auf der Xbox liegt alles an derselben Stelle.</p>"
              f"<ul class=\"pts\"><li>{T_OK} <b>Ausruhen:</b> Kreis (Xbox: B) zu Fuß <b>halten</b>. Je nach Ort setzt sich die Figur hin oder lehnt sich an eine Wand (Spielmenü; Details laut {q(MP1_TR, 'MP1st')}).</li>"
-             f"<li>{T_W} <b>Auto fährt selbst:</b> Wegpunkt auf der Karte setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken, dann Kreis (Xbox: B) halten. Die Figur fährt dich zum Ziel {q(MP1_TR, 'MP1st')} {q(PSI_TR, 'PlayStationInfo')}.</li>"
              f"<li>{T_W} <b>Schnell einen Wegpunkt setzen:</b> Steuerkreuz unten halten setzt einen Zielpunkt in der Nähe, ohne die Karte zu öffnen {q(MP1_TR, 'MP1st')}.</li>"
-             f"<li>{T_W} <b>Motor laufen lassen:</b> Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken. Halten stoppt das Auto erst und lässt dich dann aussteigen {q(KOTAKU_TR, 'Kotaku')} {q(GTAB_DRV, 'GTABase')}. Auf Booten kannst du so das Ruder verlassen und an Deck herumlaufen, während das Boot weiterfährt {q(EG, 'Eurogamer')}.</li>"
-             f"<li>{T_W} <b>Radio aus und Licht:</b> Steuerkreuz links zweimal drücken schaltet das Radio aus und an. Kreis (Xbox: B) zweimal im Auto wechselt das Licht zwischen aus, Fernlicht und Abblendlicht {q(KOTAKU_TR, 'Kotaku')}. Steuerkreuz links halten öffnet ein Menü für Fenster, Licht und Radio {q(MP1_TR, 'MP1st')}.</li>"
-             f"<li>{T_W} <b>Auto wieder aufrichten:</b> Neben ein umgekipptes Auto stellen und Quadrat (Xbox: X) halten, die Figur schiebt es zurück auf die Räder. Bei sehr schweren Autos oder leerer Ausdauer klappt das nicht {q(MP1_TR, 'MP1st')} {q(GTAB_DRV, 'GTABase')}.</li>"
              f"<li>{T_W} <b>Auto prüfen, bevor du es klaust:</b> Steuerkreuz oben halten (WAiNK-App), dann R1 (Xbox: RB) halten scannt das Fahrzeug {q(MP1_TR, 'MP1st')}.</li>"
-             f"<li>{T_W} <b>Andere Fahrer anschreien:</b> R3 beim Fahren. Das steht laut Kotaku sogar in der Hilfe im Spiel {q(KOTAKU_TR, 'Kotaku')}.</li></ul>"
+             "</ul><p>Alle Tricks rund ums Auto, Boot und Flugzeug, etwa Autopilot, Motor laufen lassen und Blinker, stehen jetzt im <a href=\"gta-6-fahren-steuerung.html\">Ratgeber zum Fahren</a>.</p>"
              "<p>Du hast selbst einen Kniff entdeckt? Schreib uns im Discord-Kanal #leonida-news, wir probieren ihn aus und nehmen ihn auf.</p>"),
         ],
         "faq": [
@@ -586,18 +582,102 @@ GUIDES += [
             ("Wie packt man Gegner in GTA 6?", "Mit R2 auf der PS5 oder RT auf der Xbox. Aus dem Griff heraus gibt es weitere Moves wie Würgegriff, Body Slam oder Suplex."),
             ("Wo ändert man die Steuerung in GTA 6?", "Im Pausenmenü unter Einstellungen und Steuerungsschema. Dort gibt es die Schemata Standard, Klassisch und Linkshänder und eine eigene Ansicht für den Nahkampf."),
             ("Wie wirft man in GTA 6 schnell eine Granate?", "Beim Zielen mit L2 die Taste R1 halten (Xbox: LT und RB). Die Figur wirft dann sofort den zuletzt gewählten Sprengkörper."),
-            ("Wie lässt man in GTA 6 das Auto selbst fahren?", "Wegpunkt setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken und dann Kreis (Xbox: B) halten. Die Figur fährt dann zum Ziel."),
-            ("Wie lässt man in GTA 6 beim Aussteigen den Motor laufen?", "Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken."),
             ("Kämpft Lucia anders als Jason?", "Lucia wurde im Kampfsport trainiert und hat laut GameStar eigene MMA-Moves. Die Tasten sind bei beiden gleich."),
         ],
     },
 ]
 
-ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+EG_CAR = "https://assetsio.gnwcdn.com/GTA6---Steuerung009.jpg?width=1600&quality=90&format=jpg"
+EG_CAR_H = "https://assetsio.gnwcdn.com/GTA6---Steuerung010.jpg?width=1600&quality=90&format=jpg"
+EG_AIR = "https://assetsio.gnwcdn.com/GTA6---Steuerung012.jpg?width=1600&quality=90&format=jpg"
+PC_TR = "https://www.playcentral.de/gta-6-steuerung-tricks-die-jeder-kennen-sollte/"
+BEE_TR = "https://beebom.com/gta-6-secret-controls/"
+
+GUIDES += [
+    {
+        "slug": "gta-6-fahren-steuerung",
+        "published": "2026-11-25",
+        "title": "GTA 6 Fahren: Steuerung, Autopilot, Blinker (PS5, Xbox)",
+        "h1": "GTA 6 Fahren: Steuerung und versteckte Tricks",
+        "desc": "GTA 6 Fahrzeug-Steuerung für PS5 und Xbox: Blinker, Nitro, Handbremse, Autopilot, Motor laufen lassen, Boot und Fliegen. Jede Angabe mit Quelle.",
+        "lead": "Im Auto legt GTA VI viele Funktionen auf doppelt gedrückte oder gehaltene Tasten, und kaum etwas davon erklärt das Spiel. Hier steht die Belegung aus dem Spielmenü und dazu die Kniffe, die Spieler und Medien seit dem Start gefunden haben. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. <b>Offiziell</b> heißt von Rockstar oder aus dem Spielmenü, <b>Berichtet</b> heißt von Medien oder Guide-Seiten.",
+        "facts": [
+            ("Einstellen", f"{T_OK} Pause, Einstellungen, Steuerungsschema, Ansicht „Land-/Wasserfahrzeug“ {q(R_SET, 'Rockstar')}"),
+            ("Gas und Bremse", f"{T_OK} R2 beschleunigen, L2 bremsen und rückwärts (Xbox: RT, LT) {q(EG_CAR, 'Spielmenü')}"),
+            ("Handbremse", f"{T_OK} Kreuz (Xbox: A) {q(EG_CAR, 'Spielmenü')}"),
+            ("Hupe und Nitro", f"{T_OK} L3, also linken Stick drücken (Xbox: LS) {q(EG_CAR, 'Spielmenü')}"),
+            ("Blinker", f"{T_OK} Steuerkreuz links oder rechts {q(EG_CAR, 'Spielmenü')}"),
+            ("Licht und Ducken", f"{T_OK} Kreis (Xbox: B) drücken für Scheinwerfer, halten zum Ducken {q(EG_CAR_H, 'Spielmenü')}"),
+            ("Autopilot", f"{T_W} Wegpunkt setzen, Steuerkreuz unten halten, Options, dann Kreis halten {q(MP1_TR, 'MP1st')}"),
+            ("Motor anlassen", f"{T_W} Beim Aussteigen Dreieck (Xbox: Y) zweimal drücken {q(KOTAKU_TR, 'Kotaku')}"),
+        ],
+        "sections": [
+            ("Die Tasten im Auto auf einen Blick",
+             f"<p>So zeigt das Spiel die Belegung für Land- und Wasserfahrzeuge im Schema Standard. Grundlage sind zwei Screenshots des deutschen Einstellungsmenüs, die Eurogamer veröffentlicht hat: einer für kurz gedrückte Tasten {q(EG_CAR, 'Screenshot 1')}, einer für gehaltene {q(EG_CAR_H, 'Screenshot 2')} {q(EG, 'Eurogamer')}. Die Begriffe stehen genau so im Spiel.</p>"
+             "<table class=\"keys\"><thead><tr><th>Im Spiel</th><th>PS5</th><th>Xbox</th></tr></thead><tbody>"
+             "<tr><td>Beschleunigen</td><td>R2</td><td>RT</td></tr>"
+             "<tr><td>Bremsen/Rückwärtsgang</td><td>L2</td><td>LT</td></tr>"
+             "<tr><td>Lenken</td><td>linker Stick</td><td>linker Stick</td></tr>"
+             "<tr><td>Handbremse</td><td>Kreuz</td><td>A</td></tr>"
+             "<tr><td>Hupe/Nitro</td><td>L3</td><td>LS</td></tr>"
+             "<tr><td>Scheinwerfer (halten: Ducken)</td><td>Kreis</td><td>B</td></tr>"
+             "<tr><td>Fahrzeug verlassen</td><td>Dreieck</td><td>Y</td></tr>"
+             "<tr><td>Nahkampf</td><td>Quadrat</td><td>X</td></tr>"
+             "<tr><td>Schießen</td><td>R1</td><td>RB</td></tr>"
+             "<tr><td>Waffe wegstecken (halten: Ausrüstung)</td><td>L1</td><td>LB</td></tr>"
+             "<tr><td>Links blinken / Rechts blinken</td><td>Steuerkreuz links / rechts</td><td>Steuerkreuz links / rechts</td></tr>"
+             "<tr><td>Handy</td><td>Steuerkreuz oben</td><td>Steuerkreuz oben</td></tr>"
+             "<tr><td>Missionsziel/Minimap</td><td>Steuerkreuz unten</td><td>Steuerkreuz unten</td></tr>"
+             "<tr><td>Nach hinten schauen</td><td>R3</td><td>RS</td></tr>"
+             "<tr><td>Umschauen</td><td>rechter Stick</td><td>rechter Stick</td></tr>"
+             "</tbody></table>"
+             f"<p>Hältst du das <b>Steuerkreuz</b> gedrückt, kommt eine zweite Ebene: oben Interagieren, links Fahrzeugmenü, unten Schnellnavigation, rechts Partnermenü. Weil L2 im Auto bremst, liegt das Interagieren hier auf dem Steuerkreuz {q(EG, 'Eurogamer')}. Die Screenshots zeigen den PS5-Controller, die Xbox-Tasten liegen an derselben Stelle.</p>"),
+            ("Versteckte Tricks beim Fahren",
+             f"<ul class=\"pts\"><li>{T_W} <b>Autopilot:</b> Wegpunkt auf der Karte setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken für die Kinokamera, dann Kreis (Xbox: B) halten. Jason oder Lucia fahren dich zum Ziel und halten sich dabei an die Verkehrsregeln {q(MP1_TR, 'MP1st')} {q(PC_TR, 'PlayCentral')} {q(BEE_TR, 'Beebom')}.</li>"
+             f"<li>{T_W} <b>Motor laufen lassen:</b> Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken. Motor, Radio und Licht laufen weiter. Wer Dreieck dagegen hält, bremst erst und steigt dann aus {q(KOTAKU_TR, 'Kotaku')} {q(PC_TR, 'PlayCentral')} {q(GTAB_DRV, 'GTABase')}.</li>"
+             f"<li>{T_OK} <b>Blinken:</b> Steuerkreuz links oder rechts kurz drücken (Spielmenü). {T_W} Zweimal links schaltet laut Kotaku das Radio aus und wieder an {q(KOTAKU_TR, 'Kotaku')}.</li>"
+             f"<li>{T_OK} <b>Licht:</b> Kreis (Xbox: B) schaltet die Scheinwerfer (Spielmenü). {T_W} Zweimal drücken wechselt zwischen aus, Fernlicht und Abblendlicht {q(KOTAKU_TR, 'Kotaku')}.</li>"
+             f"<li>{T_OK} <b>Fahrzeugmenü:</b> Steuerkreuz links halten (Spielmenü). {T_W} Mit dem rechten Stick wählst du dort Fenster, Warnblinker, Lichtstärke und beim Cabrio das Verdeck {q(PC_TR, 'PlayCentral')} {q(BEE_TR, 'Beebom')}.</li>"
+             f"<li>{T_OK} <b>Wegducken:</b> Kreis (Xbox: B) halten (Spielmenü). {T_W} So wirst du schlechter gesehen, das hilft gegen die Polizei {q(MP1_TR, 'MP1st')}.</li>"
+             f"<li>{T_OK} <b>Partner ans Steuer:</b> Rockstar hat bestätigt, dass der Partner das Steuer übernehmen kann und du dann mitfährst oder vom Beifahrersitz schießt (<a href=\"../#ign\">IGN-Interview</a>). {T_W} Dafür Steuerkreuz rechts halten (Partnermenü) und Kreuz (Xbox: A) drücken {q(BEE_TR, 'Beebom')}.</li>"
+             f"<li>{T_OK} <b>Aus dem Auto kämpfen:</b> R1 (Xbox: RB) schießt, Quadrat (Xbox: X) ist Nahkampf (Spielmenü). {T_W} Im Auto schlägst du damit Leute mit der Tür, auf Motorrad oder Roller gibt es einen Tritt {q(MP1_TR, 'MP1st')} {q(GTAB_DRV, 'GTABase')}.</li>"
+             f"<li>{T_W} <b>Andere Fahrer anschreien:</b> R3 antippen. Halten heißt nach hinten schauen {q(PC_TR, 'PlayCentral')} {q(KOTAKU_TR, 'Kotaku')}.</li>"
+             f"<li>{T_W} <b>Auto wieder aufrichten:</b> Aussteigen, neben das umgekippte Auto stellen, L3 drücken und Quadrat (Xbox: X) halten. Bei sehr schweren Autos oder leerer Ausdauer klappt das nicht {q(MP1_TR, 'MP1st')} {q(GTAB_DRV, 'GTABase')}.</li>"
+             f"<li>{T_W} <b>Wheelie:</b> Auf dem Motorrad beim Gasgeben den linken Stick nach hinten ziehen. Nach vorn gibt es einen Stoppie {q(BEE_TR, 'Beebom')}.</li>"
+             f"<li>{T_W} <b>Auto prüfen, bevor du es klaust:</b> Zu Fuß Steuerkreuz oben halten (WAiNK-App), dann R1 (Xbox: RB) halten scannt das Fahrzeug {q(MP1_TR, 'MP1st')}.</li></ul>"),
+            ("Boote und Jetskis",
+             f"<p>{T_W} Auf größeren Booten kannst du das Ruder verlassen und an Deck herumlaufen, während das Boot weiter Kurs hält: Dreieck (Xbox: Y) zweimal drücken {q(EG, 'Eurogamer')} {q(KOTAKU_TR, 'Kotaku')}. Einen gestrandeten Jetski schiebst du zurück ins Wasser, indem du dich dahinter stellst und R1 (Xbox: RB) hältst {q(BEE_TR, 'Beebom')}. Sonst gilt im Boot dieselbe Belegung wie im Auto.</p>"),
+            ("Fliegen: Hubschrauber und Flugzeuge",
+             f"<p>{T_OK} Für Luftfahrzeuge hat das Spiel eine eigene Belegung {q(EG_AIR, 'Spielmenü')}:</p>"
+             "<table class=\"keys\"><thead><tr><th>Im Spiel</th><th>PS5</th><th>Xbox</th></tr></thead><tbody>"
+             "<tr><td>Schub geben</td><td>R2</td><td>RT</td></tr>"
+             "<tr><td>Schub drosseln</td><td>L2</td><td>LT</td></tr>"
+             "<tr><td>Nicken/Rollen</td><td>linker Stick</td><td>linker Stick</td></tr>"
+             "<tr><td>Nach links drehen</td><td>Quadrat</td><td>X</td></tr>"
+             "<tr><td>Nach rechts drehen</td><td>Kreis</td><td>B</td></tr>"
+             "<tr><td>Fahrwerk</td><td>L3</td><td>LS</td></tr>"
+             "<tr><td>Schießen</td><td>R1</td><td>RB</td></tr>"
+             "<tr><td>Fahrzeug verlassen</td><td>Dreieck</td><td>Y</td></tr>"
+             "</tbody></table>"
+             f"<p>Hubschrauber und Flugzeuge brauchen etwas Übung, bringen dich danach aber schnell über die Karte {q(EG, 'Eurogamer')}. Wohin es geht, zeigt der <a href=\"gta-6-karte-leonida.html\">Ratgeber zur Karte</a>.</p>"
+             "<p>Tricks fürs Kämpfen und das Steuerkreuz zu Fuß stehen im <a href=\"gta-6-nahkampf-steuerung.html\">Ratgeber zu Nahkampf und versteckten Tricks</a>. Du hast selbst einen Kniff gefunden? Schreib uns im Discord-Kanal #leonida-news.</p>"),
+        ],
+        "faq": [
+            ("Wie lässt man in GTA 6 das Auto selbst fahren?", "Wegpunkt setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken und dann Kreis (Xbox: B) halten. Jason oder Lucia fahren dann zum Ziel."),
+            ("Wie blinkt man in GTA 6?", "Steuerkreuz links oder rechts kurz drücken, auf PS5 und Xbox."),
+            ("Wie lässt man in GTA 6 beim Aussteigen den Motor laufen?", "Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken. Motor, Radio und Licht laufen weiter."),
+            ("Wo ist Nitro und Hupe in GTA 6?", "Beides liegt auf L3, also dem gedrückten linken Stick (Xbox: LS)."),
+            ("Wie duckt man sich in GTA 6 im Auto?", "Kreis (Xbox: B) gedrückt halten. Kurz drücken schaltet stattdessen die Scheinwerfer."),
+            ("Wie dreht man ein umgekipptes Auto in GTA 6 um?", "Aussteigen, neben das Auto stellen, L3 drücken und Quadrat (Xbox: X) halten. Bei sehr schweren Autos klappt das nicht."),
+        ],
+    },
+]
+
+ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
          "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
 THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
          "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
-         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01"}
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27"}
 GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
 
 HUB_CSS = """main{max-width:1040px}
@@ -622,7 +702,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
