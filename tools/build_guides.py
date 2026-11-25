@@ -673,11 +673,86 @@ GUIDES += [
     },
 ]
 
-ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+EG_MONEY = "https://www.eurogamer.de/gta-6-schnell-geld-verdienen"
+GP_MONEY = "https://www.gamepro.de/artikel/gta-6-schnell-geld-verdienen,3463617.html"
+GIGA_MONEY = "https://www.giga.de/games/gta-6-schnell-geld-verdienen-mit-diesen-methoden-verdient-ihr-bis-zu-205-000-dollar--01M86MKSWHGDCT40NXSQ3122D9"
+
+GUIDES += [
+    {
+        "slug": "gta-6-geld-verdienen",
+        "published": "2026-11-25",
+        "title": "GTA 6 Geld verdienen: die besten Methoden je Kapitel",
+        "h1": "GTA 6 Geld verdienen: so kommt ihr an Kohle",
+        "desc": "GTA 6 schnell Geld verdienen: Läden ausrauben, Tauchen, Autos an Moses verkaufen, Juweliere, Banken und Tresore bis 205.000 Dollar. Mit Quellen.",
+        "lead": "Jason und Lucia starten pleite, und die Story-Missionen allein füllen die Kasse kaum. Hier steht, womit ihr in welcher Phase des Spiels am besten Geld verdient und wie ihr dabei möglichst wenig Ärger mit der Polizei bekommt. Missionsnamen und Story-Wendungen lassen wir weg, die Namen der Auftraggeber und Hehler nennen wir, damit ihr sie im Spiel findet. Die Beträge stammen aus Tests der Medien und schwanken im Spiel. <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien oder Guide-Seiten.",
+        "facts": [
+            ("Läden", f"{T_OK} Fast jeden Laden könnt ihr überfallen, auch wenn er nicht auf der Karte steht (Rob Nelson, Rockstar North, <a class=\"q\" href=\"../#vs-raub\">Magazin</a>)"),
+            ("Große Ziele", f"{T_OK} Juweliere, Banken, Pfandleiher und Geldtransporter zeigt die Karte mit geschätzter Beute (<a class=\"q\" href=\"../#vs-raub\">Magazin</a>)"),
+            ("Anfang", f"{T_W} Läden ausrauben und Tauchen bringen ein paar Tausend Dollar pro Stunde {q(EG_MONEY, 'Eurogamer')}"),
+            ("Autos", f"{T_W} Moses kauft Autos ohne Peilsender für 800 bis 1.200 Dollar {q(GP_MONEY, 'GamePro')}"),
+            ("Juweliere", f"{T_W} Etwa 10.000 bis 25.000 Dollar pro Überfall {q(GIGA_MONEY, 'GIGA')}"),
+            ("Kleine Banken", f"{T_W} Etwa 5.000 bis 45.000 Dollar {q(GIGA_MONEY, 'GIGA')}"),
+            ("Große Tresore", f"{T_W} Bis zu 205.000 Dollar, gegen Ende des vierten Kapitels {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')}"),
+        ],
+        "sections": [
+            ("Die Methoden auf einen Blick",
+             f"<p>{T_W} Die Übersicht fasst zusammen, was GIGA, GamePro und Eurogamer berichten {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')} {q(EG_MONEY, 'Eurogamer')}. Kapitel heißen die Story-Abschnitte des Spiels.</p>"
+             "<table class=\"keys\"><thead><tr><th>Methode</th><th>Ab wann</th><th>Ertrag</th></tr></thead><tbody>"
+             "<tr><td>Läden ausrauben</td><td>sofort</td><td>ein paar Hundert pro Laden</td></tr>"
+             "<tr><td>Tauchen nach Schätzen für Kenton</td><td>1. Kapitel</td><td>lohnend, je nach Fund</td></tr>"
+             "<tr><td>Andere Verbrecher ausrauben</td><td>jederzeit</td><td>1.000 bis 15.000 $</td></tr>"
+             "<tr><td>Autos an Moses verkaufen</td><td>2. Kapitel</td><td>800 bis 1.200 $</td></tr>"
+             "<tr><td>Tiere jagen für Bret</td><td>2. Kapitel</td><td>Hunderte bis einige Tausend $</td></tr>"
+             "<tr><td>Gang-Verstecke ausrauben</td><td>Ende 2. Kapitel</td><td>Geld, Waffen, Sprengstoff</td></tr>"
+             "<tr><td>Juweliere</td><td>3. Kapitel</td><td>10.000 bis 25.000 $</td></tr>"
+             "<tr><td>Kleine Banken</td><td>3. Kapitel</td><td>5.000 bis 45.000 $</td></tr>"
+             "<tr><td>Autos mit Peilsender, Wunschliste von Randy</td><td>3. Kapitel</td><td>ca. 4.000 $, Sportwagen über 30.000 $</td></tr>"
+             "<tr><td>Demolition Derby</td><td>wiederholbar</td><td>3.800 bis 6.300 $ pro Sieg</td></tr>"
+             "<tr><td>Lieferflüge für Pilot Pete (nur Jason)</td><td>4. Kapitel</td><td>10.000 bis 20.000 $</td></tr>"
+             "<tr><td>Große Banktresore</td><td>Ende 4. Kapitel</td><td>bis 205.000 $</td></tr>"
+             "</tbody></table>"),
+            ("Am Anfang: Läden, Tauchen, kleine Dinger",
+             f"<p>{T_W} In den ersten beiden Kapiteln lohnen sich Banken noch nicht. Viele Scheine sind markiert und bringen bei frühen Hehlern wenig, andere Geldpakete haben Farbbomben, gegen die ihr erst später ein Störgerät bekommt. Die Karte zeigt Banken anfangs nicht einmal an {q(EG_MONEY, 'Eurogamer')}.</p>"
+             f"<ul class=\"pts\"><li>{T_W} <b>Läden ausrauben:</b> Am besten spät abends. Parkt ein Fluchtauto mit Wechsel-Outfit im Kofferraum hinter dem Laden, setzt eine Maske auf und geht mit gezogener Waffe hinein. Zielt auf die Angestellten und bedroht sie, dann legen sie das Geld meist von selbst hin. Danach Waffe wegstecken, ums Gebäude zum Auto, Outfit wechseln, Maske ab. Ein Laden bringt nur ein paar Hundert Dollar, nach einer Stunde summiert sich das {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Shirleys Schnapsladen:</b> Eure Nachbarin Shirley schickt euch früh zum Laden Three Sheets Liquor. Im Hinterzimmer läuft illegaler Tierhandel. Nachts durch den Garten anschleichen, Wachen mit Pfeifen (L2 auf eine Wache, dann pfeifen) oder geworfenen Flaschen weglocken und von hinten ausschalten. Geld steckt hinter einem Lüftungsgitter, das ihr mit dem Fokus findet, dazu ein Safe. Eurogamer holte so über 6.000 Dollar, der Überfall lässt sich nach einer Weile wiederholen {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Tauchen für Kenton:</b> Ein Freund von Brian. Ab dem ersten Treffen fahrt ihr zu den Tauch-Spots auf der Karte und sucht an Wracks nach Gold-Dublonen. Die Funde verkauft ihr bei Kenton. Lohnt sich früh und ganz ohne Polizei {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Augen offen halten:</b> Hört ihr Unruhe, zeigt der Fokus (L3 und R3) die Quelle. Oft ist es ein Überfall anderer Gangster, bei dem ihr dazwischengehen könnt {q(EG_MONEY, 'Eurogamer')}. Andere Verbrecher auszurauben bringt laut GIGA 1.000 bis 15.000 Dollar {q(GIGA_MONEY, 'GIGA')}.</li></ul>"),
+            ("Mittelteil: Autos, Gangs, Juweliere, kleine Banken",
+             f"<ul class=\"pts\"><li>{T_W} <b>Autos an Moses:</b> Im zweiten Kapitel bekommt ihr von Moses Watkins in Port Gellhorn einen Slim Jim, damit knackt ihr Autos mit Alarmanlage leise. Moses kauft unauffällige Autos ohne Peilsender, aber nicht direkt bei ihm um die Ecke geklaut, zwei, drei Blocks weiter reicht. Sitzt ihr im Auto, markiert seine Werkstatt auf der Karte: Dort steht, ob er den Wagen nimmt und was er zahlt {q(EG_MONEY, 'Eurogamer')}. Mit der WAiNK-App seht ihr vorher, ob ein Auto einen Peilsender hat {q(GIGA_MONEY, 'GIGA')}.</li>"
+             f"<li>{T_W} <b>Autos mit Peilsender:</b> Ab dem dritten Kapitel werdet ihr auch die los, über Pay 'N' Spray, für etwa 4.000 Dollar. Randy hat eine Wunschliste mit 22 Fahrzeugen, für bestimmte Sportwagen zahlt er über 30.000 Dollar {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')}.</li>"
+             f"<li>{T_W} <b>Gang-Verstecke:</b> Gelb auf der Karte markiert, zum Beispiel die der Bande Kolt &amp; Associates. Eine verlassene Bowlingbahn südlich von Moses eignet sich zum Üben. Ihr findet Geld, Waffen und Sprengstoff, die Beute geht an Hehler wie Tyrone. Fast immer gibt es eine Schießerei und Polizei, mit Schalldämpfer geht es auch leise. Die Verstecke füllen sich mit der Zeit wieder {q(EG_MONEY, 'Eurogamer')} {q(GP_MONEY, 'GamePro')} {q(GIGA_MONEY, 'GIGA')}.</li>"
+             f"<li>{T_W} <b>Tiere jagen für Bret:</b> Ab dem zweiten Kapitel, bringt einige Hundert bis einige Tausend Dollar {q(GIGA_MONEY, 'GIGA')}.</li>"
+             f"<li>{T_W} <b>Juweliere:</b> Ab dem dritten Kapitel, etwa 10.000 bis 25.000 Dollar {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')}.</li>"
+             f"<li>{T_W} <b>Kleine Banken:</b> Später im dritten Kapitel, etwa 5.000 bis 45.000 Dollar. Wachleute sind das größte Risiko {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')}.</li></ul>"),
+            ("Später: große Tresore, Flüge, Derby",
+             f"<ul class=\"pts\"><li>{T_W} <b>Große Banktresore:</b> Gegen Ende des vierten Kapitels schaltet ein optionaler Auftrag von Yasmani acht große Tresore frei, bis zu 205.000 Dollar pro Überfall. Sobald ein Tresor offen ist, habt ihr vier Fahndungssterne, beim fünften rückt das SWAT an. Plant Fluchtauto und Route vorher {q(GIGA_MONEY, 'GIGA')} {q(GP_MONEY, 'GamePro')}.</li>"
+             f"<li>{T_W} <b>Lieferflüge für Pilot Pete:</b> Ab dem vierten Kapitel, nur mit Jason, etwa 10.000 bis 20.000 Dollar {q(GIGA_MONEY, 'GIGA')}.</li>"
+             f"<li>{T_W} <b>Demolition Derby:</b> Strecke in Ambrosia, wiederholbar, etwa 3.800 bis 6.300 Dollar pro Sieg {q(GIGA_MONEY, 'GIGA')}.</li></ul>"
+             f"<p>GamePro rät, zwischendurch auch mal Rennen zu fahren statt nur zu farmen, sonst wird es schnell eintönig {q(GP_MONEY, 'GamePro')}.</p>"),
+            ("Weniger Ärger bei Überfällen",
+             f"<ul class=\"pts\"><li>{T_W} <b>Nicht schießen, drohen:</b> Je brutaler ihr vorgeht, desto aggressiver reagiert die Polizei. Wenn doch, auf Knie oder Ellbogen zielen {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Kameras:</b> Wer maskiert ist und danach das Outfit wechselt, muss sich um Kameras kaum sorgen. Manchmal steht im Hinterzimmer ein Videorekorder, dessen Aufnahme ihr zerstören könnt {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Wachleute:</b> Von hinten bedrohen, dann ergeben sie sich eher. Sind sie in der Überzahl, erst einen von hinten niederschlagen {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Hinterzimmer:</b> Wer es noch durchsuchen will, schlägt die Angestellten vorher nieder, sonst rufen sie die Polizei {q(EG_MONEY, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Später leiser:</b> Mit der Pickpistole, die ihr im Spielverlauf bekommt, öffnet ihr verschlossene Hintertüren lautlos {q(EG_MONEY, 'Eurogamer')}.</li></ul>"
+             "<p>Laut Rockstar kommt man an vielen Stellen auch weiter, ohne jemanden zu töten, mehr dazu im Magazin unter <a href=\"../#vs-gewalt\">Weiterkommen ohne zu töten</a>. Wie ihr nach dem Überfall mit dem Auto entkommt und euch wegduckt, steht im <a href=\"gta-6-fahren-steuerung.html\">Ratgeber zum Fahren</a>, Schleichen und Ausschalten im <a href=\"gta-6-nahkampf-steuerung.html\">Ratgeber zum Nahkampf</a>.</p>"
+             "<p>Einen Geld-Glitch, den manche Seiten beschreiben, nehmen wir bewusst nicht auf: Solche Fehler werden meist schnell gepatcht.</p>"),
+        ],
+        "faq": [
+            ("Wie verdient man am Anfang von GTA 6 schnell Geld?", "Läden nachts maskiert ausrauben, nach Schätzen tauchen und bei Shirleys Schnapsladen den illegalen Tierhandel ausnehmen. Banken lohnen sich in den ersten Kapiteln noch nicht."),
+            ("Wo verkauft man in GTA 6 gestohlene Autos?", "Ab dem zweiten Kapitel bei Moses Watkins in Port Gellhorn, solange das Auto keinen Peilsender hat. Autos mit Peilsender werdet ihr ab dem dritten Kapitel über Pay 'N' Spray los."),
+            ("Was bringt in GTA 6 am meisten Geld?", "Die großen Banktresore gegen Ende des vierten Kapitels, bis zu 205.000 Dollar pro Überfall. Danach gibt es sofort vier Fahndungssterne."),
+            ("Wie viel bringt ein Juwelier in GTA 6?", "Laut Medienberichten etwa 10.000 bis 25.000 Dollar pro Überfall, freigeschaltet im dritten Kapitel."),
+            ("Kann man in GTA 6 jeden Laden ausrauben?", "Fast jeden. Rockstar hat bestätigt, dass ihr fast jeden Laden überfallen könnt, auch wenn er nicht auf der Karte markiert ist."),
+        ],
+    },
+]
+
+ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-geld-verdienen", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
          "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
 THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
          "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
-         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27"}
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27", "gta-6-geld-verdienen": "jason_and_lucia_02"}
 GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
 
 HUB_CSS = """main{max-width:1040px}
@@ -702,7 +777,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Geld verdienen, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
