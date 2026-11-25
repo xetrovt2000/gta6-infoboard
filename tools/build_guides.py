@@ -486,15 +486,20 @@ GS_MELEE = "https://www.gamestar.de/artikel/gta-6-fortgeschrittene-nahkampf-move
 IG_CTRL = "https://insider-gaming.com/gta-6-control-settings/"
 GTAB = "https://www.gtabase.com/gta-6/articles/gta-6-combat-stealth-guide"
 IG_STYLE = "https://insider-gaming.com/gta-6-has-different-fighting-styles-for-both-the-characters/"
+KOTAKU_TR = "https://kotaku.com/here-are-some-super-useful-control-shortcuts-gta-6-doesnt-tell-you-about-2000759100"
+MP1_TR = "https://mp1st.com/news/gta-6-hidden-controls-you-might-not-know-about"
+PSI_TR = "https://www.playstationinfo.de/2026/11/23/gta-6-versteckte-steuerungs-tricks-die-ihr-unbedingt-kennen-solltet/"
+GTAB_DRV = "https://www.gtabase.com/gta-6/articles/gta-6-driving-tips"
+T_T = '<span class="tag t-ok">Getestet</span>'
 
 GUIDES += [
     {
         "slug": "gta-6-nahkampf-steuerung",
         "published": "2026-11-24",
-        "title": "GTA 6 Nahkampf: Steuerung, Blocken, Kontern (PS5, Xbox)",
-        "h1": "GTA 6 Nahkampf: so funktioniert die Steuerung",
-        "desc": "GTA 6 Nahkampf erklärt: welche Taste schlägt, blockt, pariert und packt, auf PS5 und Xbox. Dazu versteckte Moves, Fokus, Jason und Lucia. Mit Quellen.",
-        "lead": "Der Nahkampf in GTA VI kann mehr, als das Spiel erklärt. Hämmern auf eine Taste reicht nicht mehr: Wer blind drauflos schlägt, wird gekontert und steht ohne Ausdauer da. Hier steht, welche Taste was macht und was hinter den versteckten Moves steckt. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. Jede Angabe trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien oder Guide-Seiten, <b>Gerücht</b> heißt nicht belegt.",
+        "title": "GTA 6 Steuerung: Nahkampf und versteckte Tricks (PS5, Xbox)",
+        "h1": "GTA 6 Steuerung: Nahkampf und versteckte Tricks",
+        "desc": "GTA 6 Nahkampf und versteckte Tricks: blocken, kontern, packen, Granate schnell werfen, Auto selbst fahren lassen. PS5 und Xbox, mit Quellen.",
+        "lead": "Der Nahkampf in GTA VI kann mehr, als das Spiel erklärt. Hämmern auf eine Taste reicht nicht mehr: Wer blind drauflos schlägt, wird gekontert und steht ohne Ausdauer da. Hier steht, welche Taste was macht, was hinter den versteckten Moves steckt und welche kleinen Kniffe dir das Spiel nirgends beibringt, etwa die schnelle Granate. Alle Tasten gelten für das Steuerungsschema <b>Standard</b>. Jede Angabe trägt einen Stempel: <b>Offiziell</b> heißt von Rockstar oder aus dem Spielmenü, <b>Getestet</b> heißt von uns im Spiel ausprobiert, <b>Berichtet</b> heißt von Medien oder Guide-Seiten, <b>Gerücht</b> heißt nicht belegt.",
         "facts": [
             ("Einstellen", f"{T_OK} Pause, Einstellungen, Steuerungsschema, Ansicht „Nahkampf“ {q(R_SET, 'Rockstar')}"),
             ("Schlagen/Treten", f"{T_OK} Quadrat (PS5), X (Xbox), im Spielmenü geprüft {q(EG_IMG, 'Spielmenü')}"),
@@ -504,6 +509,7 @@ GUIDES += [
             ("Packen", f"{T_OK} R2 (PS5), RT (Xbox), im Spielmenü geprüft {q(EG_IMG, 'Spielmenü')}"),
             ("Ducken", f"{T_OK} Kreis (PS5), B (Xbox), zu Fuß und beim Zielen, im Spielmenü geprüft"),
             ("Fokus", f"{T_W} L3 und R3 zusammen drücken {q(EG, 'Eurogamer')}"),
+            ("Granate schnell", f"{T_T} Beim Zielen R1 (Xbox: RB) halten wirft den zuletzt gewählten Sprengkörper"),
             ("Schemata", f"{T_W} Standard, Klassisch und Linkshänder {q(IG_CTRL, 'Insider Gaming')}"),
         ],
         "sections": [
@@ -546,6 +552,14 @@ GUIDES += [
              f"<p>{T_W} L3 und R3 zusammen starten den <b>Fokus</b>, eine Art Zeitlupe. Im Kampf hebt er die Schwachstellen von Gegnern hervor {q(EG, 'Eurogamer')}. Laut GTABase zeigt er auch, welche Treffer tödlich sind und welche nicht {q(GTAB, 'GTABase')}.</p>"
              f"<p>{T_W} Nahkampf kostet <b>Ausdauer</b> {q(GTAB, 'GTABase')} {q(GS_MELEE, 'GameStar')}. Ausdauer trainierst du zum Beispiel beim Schwimmen und Radfahren {q(EG, 'Eurogamer')}.</p>"
              f"<p>{T_G} Spieler vermuten, dass Jasons Kraft beeinflusst, wie gut schwere Moves wie der Suplex gelingen, und dass sich Kraft an Gewichten trainieren lässt. GameStar gibt das nur als Vermutung aus Reddit wieder {q(GS_MELEE, 'GameStar')}.</p>"),
+            ("Kniffe im Kampf, die das Spiel nicht erklärt",
+             f"<ul class=\"pts\"><li>{T_T} <b>Granate schnell werfen:</b> Während du mit L2 zielst, R1 (Xbox: RB) <b>halten</b>. Die Figur wirft sofort den Sprengkörper, den du zuletzt im Waffenrad gewählt hast, ohne dass du die Waffe wechseln musst. Das haben wir selbst im Spiel ausprobiert. So beschreiben es auch Guide-Seiten {q(GTAB, 'GTABase')}.</li>"
+             f"<li>{T_OK} <b>Wurfbahn anzeigen:</b> Beim Zielen liegt auf R3 „Zoomen/Wurfbahn“ (Spielmenü, Ansicht Zielen). Mit einem Wurfgegenstand in der Hand siehst du so vorher, wo er landet.</li>"
+             f"<li>{T_OK} <b>Sprengstoff zünden:</b> Steuerkreuz rechts (Spielmenü, Ansicht Zu Fuß).</li>"
+             f"<li>{T_OK} <b>Schneller Waffenwechsel:</b> Beim Zielen auf Dreieck (Xbox: Y), ohne das Waffenrad zu öffnen (Spielmenü, Ansicht Zielen).</li>"
+             f"<li>{T_OK} <b>Zuschlagen mit Waffe in der Hand:</b> Quadrat (Xbox: X) ist auch beim Zielen Nahkampf (Spielmenü).</li>"
+             f"<li>{T_W} <b>Aus dem Auto heraus:</b> Quadrat (Xbox: X) beim Fahren schlägt Leute mit der Autotür, auf Motorrad oder Roller gibt es einen Tritt {q(MP1_TR, 'MP1st')} {q(GTAB_DRV, 'GTABase')}. Kreis (Xbox: B) halten duckt dich im Auto weg, das hilft gegen die Polizei {q(MP1_TR, 'MP1st')}.</li>"
+             f"<li>{T_W} <b>Untersuchen:</b> L2 halten und R3 antippen schaltet eine Ansicht aus der Ich-Perspektive ein, in der du dich umsehen, aber nicht bewegen kannst {q(MP1_TR, 'MP1st')} {q(PSI_TR, 'PlayStationInfo')}.</li></ul>"),
             ("Kämpfen Jason und Lucia unterschiedlich?",
              f"<p>{T_OK} Lucia wurde laut Rockstar von ihrem Vater im <b>Kampfsport</b> trainiert {q(R_SITE, 'Rockstar')}. Jason ist Armeeveteran.</p>"
              f"<p>{T_W} Laut GameStar hat Lucia eigene Moves, eher MMA-Manöver statt Haltegriffe. Sie liegen auf denselben Tasten wie bei Jason {q(GS_MELEE, 'GameStar')}. Die Steuerung musst du also nur einmal lernen.</p>"
@@ -553,6 +567,17 @@ GUIDES += [
              "<p>Mehr zu den beiden steht im <a href=\"gta-6-charaktere.html\">Ratgeber zu den Charakteren</a>.</p>"),
             ("Muss jeder Kampf tödlich enden?",
              "<p>Nein. Laut Rob Nelson von Rockstar North kommt man an vielen Stellen voran, ohne jemanden zu töten. Einfach sei das aber nicht immer. Details stehen in unserem Magazin unter <a href=\"../#vs-gewalt\">Weiterkommen ohne zu töten</a>.</p>"),
+            ("Weitere versteckte Tricks: Steuerkreuz, Auto, Alltag",
+             f"<p>{T_OK} Das <b>Steuerkreuz</b> hat zu Fuß zwei Ebenen. Kurz drücken: oben Handy, links Radiosteuerung, unten Missionsziel und Minikarte, rechts Sprengstoff zünden. Halten: oben die WAiNK-App, links das Radiomenü, unten Schnellnavigation, rechts das Partnermenü. Das zeigt das Spielmenü in der Ansicht Zu Fuß. Auf der Xbox liegt alles an derselben Stelle.</p>"
+             f"<ul class=\"pts\"><li>{T_OK} <b>Ausruhen:</b> Kreis (Xbox: B) zu Fuß <b>halten</b>. Je nach Ort setzt sich die Figur hin oder lehnt sich an eine Wand (Spielmenü; Details laut {q(MP1_TR, 'MP1st')}).</li>"
+             f"<li>{T_W} <b>Auto fährt selbst:</b> Wegpunkt auf der Karte setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken, dann Kreis (Xbox: B) halten. Die Figur fährt dich zum Ziel {q(MP1_TR, 'MP1st')} {q(PSI_TR, 'PlayStationInfo')}.</li>"
+             f"<li>{T_W} <b>Schnell einen Wegpunkt setzen:</b> Steuerkreuz unten halten setzt einen Zielpunkt in der Nähe, ohne die Karte zu öffnen {q(MP1_TR, 'MP1st')}.</li>"
+             f"<li>{T_W} <b>Motor laufen lassen:</b> Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken. Halten stoppt das Auto erst und lässt dich dann aussteigen {q(KOTAKU_TR, 'Kotaku')} {q(GTAB_DRV, 'GTABase')}. Auf Booten kannst du so das Ruder verlassen und an Deck herumlaufen, während das Boot weiterfährt {q(EG, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Radio aus und Licht:</b> Steuerkreuz links zweimal drücken schaltet das Radio aus und an. Kreis (Xbox: B) zweimal im Auto wechselt das Licht zwischen aus, Fernlicht und Abblendlicht {q(KOTAKU_TR, 'Kotaku')}. Steuerkreuz links halten öffnet ein Menü für Fenster, Licht und Radio {q(MP1_TR, 'MP1st')}.</li>"
+             f"<li>{T_W} <b>Auto wieder aufrichten:</b> Neben ein umgekipptes Auto stellen und Quadrat (Xbox: X) halten, die Figur schiebt es zurück auf die Räder. Bei sehr schweren Autos oder leerer Ausdauer klappt das nicht {q(MP1_TR, 'MP1st')} {q(GTAB_DRV, 'GTABase')}.</li>"
+             f"<li>{T_W} <b>Auto prüfen, bevor du es klaust:</b> Steuerkreuz oben halten (WAiNK-App), dann R1 (Xbox: RB) halten scannt das Fahrzeug {q(MP1_TR, 'MP1st')}.</li>"
+             f"<li>{T_W} <b>Andere Fahrer anschreien:</b> R3 beim Fahren. Das steht laut Kotaku sogar in der Hilfe im Spiel {q(KOTAKU_TR, 'Kotaku')}.</li></ul>"
+             "<p>Du hast selbst einen Kniff entdeckt? Schreib uns im Discord-Kanal #leonida-news, wir probieren ihn aus und nehmen ihn auf.</p>"),
         ],
         "faq": [
             ("Wie schlägt man in GTA 6?", "Im Steuerungsschema Standard mit Quadrat auf der PS5 und X auf der Xbox. Im Schema Klassisch liegt Schlagen auf Kreis beziehungsweise B."),
@@ -560,6 +585,9 @@ GUIDES += [
             ("Wie pariert oder kontert man in GTA 6?", "Wenn während eines gegnerischen Angriffs Kreuz (Xbox: A) eingeblendet wird, genau im richtigen Moment drücken. Danach mit Quadrat (Xbox: X) angreifen."),
             ("Wie packt man Gegner in GTA 6?", "Mit R2 auf der PS5 oder RT auf der Xbox. Aus dem Griff heraus gibt es weitere Moves wie Würgegriff, Body Slam oder Suplex."),
             ("Wo ändert man die Steuerung in GTA 6?", "Im Pausenmenü unter Einstellungen und Steuerungsschema. Dort gibt es die Schemata Standard, Klassisch und Linkshänder und eine eigene Ansicht für den Nahkampf."),
+            ("Wie wirft man in GTA 6 schnell eine Granate?", "Beim Zielen mit L2 die Taste R1 halten (Xbox: LT und RB). Die Figur wirft dann sofort den zuletzt gewählten Sprengkörper."),
+            ("Wie lässt man in GTA 6 das Auto selbst fahren?", "Wegpunkt setzen, Steuerkreuz unten halten, Options (Xbox: Menü) drücken und dann Kreis (Xbox: B) halten. Die Figur fährt dann zum Ziel."),
+            ("Wie lässt man in GTA 6 beim Aussteigen den Motor laufen?", "Beim Aussteigen Dreieck (Xbox: Y) zweimal schnell drücken."),
             ("Kämpft Lucia anders als Jason?", "Lucia wurde im Kampfsport trainiert und hat laut GameStar eigene MMA-Moves. Die Tasten sind bei beiden gleich."),
         ],
     },
