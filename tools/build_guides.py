@@ -748,11 +748,85 @@ GUIDES += [
     },
 ]
 
-ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-geld-verdienen", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+EG_POL = "https://www.eurogamer.de/gta-6-fahndungslevel-aufmerksamkeit-flucht"
+PCG_POL = "https://www.pcgames.de/GTA-6-Spiel-55239/Tipps/polizei-entkommen-reden-1560560/"
+
+GUIDES += [
+    {
+        "slug": "gta-6-polizei-fahndung",
+        "published": "2026-11-25",
+        "title": "GTA 6 Polizei abhängen: Sterne, Symbole, Fahndung erklärt",
+        "h1": "GTA 6 Fahndung: so werdet ihr die Polizei los",
+        "desc": "GTA 6 Fahndungssterne und Aufmerksamkeits-Symbole erklärt: was die Farben bedeuten, wie ihr die Polizei abhängt und Sterne loswerdet. Mit Quellen.",
+        "lead": "Einfach Vollgas geben reicht in GTA VI nicht mehr. Die Polizei merkt sich, wie ihr ausseht, was ihr tragt und welches Auto ihr fahrt, und das zeigt das Spiel mit kleinen Symbolen unter den Sternen. Hier steht, was die Sterne und Symbole bedeuten und wie ihr sie wieder loswerdet. <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien, die das Spiel gespielt haben.",
+        "facts": [
+            ("Sterne", f"{T_W} 1 bis 5, in Ausnahmefällen 6. Ab 3 Sternen kommt ein Hubschrauber {q(EG_POL, 'Eurogamer')}"),
+            ("Beschreibung", f"{T_OK} Die Sterne zeigen auch, ob die Polizei weiß, wie ihr ausseht (Rob Nelson, <a class=\"q\" href=\"../#ign-polizei\">IGN-Interview</a>)"),
+            ("Symbole", f"{T_W} Gesicht, Fahrzeug, Outfit, sichtbare Waffe, Partner, Kamera {q(EG_POL, 'Eurogamer')}"),
+            ("Entkommen", f"{T_W} Sichtkontakt brechen, Suchgebiet verlassen, Symbole loswerden {q(EG_POL, 'Eurogamer')}"),
+            ("Reden", f"{T_W} Bei 1 Stern lässt sich ein Polizist manchmal beruhigen {q(PCG_POL, 'PC Games')}"),
+            ("Verhaftung", f"{T_OK} Wird einer geschnappt, während der andere entkommt, ist er verhaftet (<a class=\"q\" href=\"../#ign-polizei\">IGN-Interview</a>)"),
+        ],
+        "sections": [
+            ("Kurz und knapp: in drei Schritten weg",
+             f"<ol class=\"pts\"><li><b>Sichtkontakt brechen:</b> Raus aus dem Blickfeld der Polizei, durch Gassen, Hinterhöfe, unter Brücken oder in ein Parkhaus.</li>"
+             "<li><b>Suchgebiet verlassen:</b> Das Gebiet auf der Karte, in dem die Polizei sucht. Sobald die Sterne blinken, seid ihr auf dem richtigen Weg.</li>"
+             "<li><b>Symbole loswerden:</b> Outfit wechseln, Maske ab, Auto tauschen. Die Polizei kann euch nur finden, wenn sie weiß, wonach sie sucht.</li></ol>"
+             f"<p>{T_W} So beschreibt es Eurogamer nach dem Spielen {q(EG_POL, 'Eurogamer')}.</p>"),
+            ("Was die Sterne bedeuten",
+             f"<p>{T_W} Je schwerer das Vergehen, desto mehr Sterne und desto härter die Polizei. Neu ist, dass auch die Farbe der Sterne etwas aussagt {q(EG_POL, 'Eurogamer')}:</p>"
+             "<table class=\"keys\"><thead><tr><th>Sterne</th><th>Bedeutung</th></tr></thead><tbody>"
+             "<tr><td>Grau</td><td>Die Polizei ist auf dem Weg zum Tatort.</td></tr>"
+             "<tr><td>Hohl (innen dunkel, Rand weiß)</td><td>Das Verbrechen ist bemerkt, aber die Polizei hat keine Beschreibung von euch.</td></tr>"
+             "<tr><td>Weiß</td><td>Die Polizei ist euch direkt auf den Fersen und kennt euer Aussehen.</td></tr>"
+             "<tr><td>Wieder grau</td><td>Ihr habt den Sichtkontakt gebrochen. Jetzt das Suchgebiet verlassen.</td></tr>"
+             "<tr><td>Blinkend</td><td>Ihr hängt die Verfolger gerade ab.</td></tr>"
+             "<tr><td>Rot</td><td>Die Polizei sucht weiter dort, wo ihr zuletzt gesehen wurdet. Kommt ihr zurück und fallt auf, geht die Fahndung neu los.</td></tr>"
+             "<tr><td>Rot, innen schwarz</td><td>Wie rot, aber ohne Beschreibung von euch.</td></tr>"
+             "</tbody></table>"
+             f"<p>{T_W} Ab drei Sternen verfolgt euch ein Hubschrauber, einen sechsten Stern gibt es nur in Ausnahmefällen {q(EG_POL, 'Eurogamer')}. Bei den großen Banktresoren habt ihr sofort vier Sterne, mehr dazu im <a href=\"gta-6-geld-verdienen.html\">Ratgeber zum Geldverdienen</a>.</p>"),
+            ("Die sechs Symbole und wie ihr sie loswerdet",
+             f"<p>{T_W} Unter den Sternen zeigt das Spiel, was die Polizei über euch weiß. Jedes Symbol lässt sich gezielt löschen {q(EG_POL, 'Eurogamer')}:</p>"
+             "<table class=\"keys\"><thead><tr><th>Symbol</th><th>So werdet ihr es los</th></tr></thead><tbody>"
+             "<tr><td>Aussehen</td><td>Maske, Brille oder Hut abnehmen, die ihr bei der Tat getragen habt: L1 halten, mit R1 zu den Gegenständen wechseln, Teil auswählen (Xbox: LB, RB).</td></tr>"
+             "<tr><td>Fahrzeug</td><td>Ungesehen in ein anderes Auto wechseln.</td></tr>"
+             "<tr><td>Outfit</td><td>Am Kofferraum eures eigenen Autos ungesehen umziehen. In Kleidungsläden, die ihr überfallt, könnt ihr auch Outfits mitnehmen.</td></tr>"
+             "<tr><td>Sichtbare Waffe</td><td>Langwaffen tragen Jason und Lucia sichtbar auf dem Rücken. In den Kofferraum legen oder fallen lassen. Eigene Waffen holt ihr euch später am Waffenschrank oder Kofferraum zurück.</td></tr>"
+             "<tr><td>Partner</td><td>Jason und Lucia zusammen fallen auf. Den Partner über das Partnermenü (Steuerkreuz) mit „Aufteilen“ wegschicken.</td></tr>"
+             "<tr><td>Kamera</td><td>Bei Kameras ohne Wolke steht oft im Hinterzimmer ein Rekorder, dort die Aufnahme zerstören. Kameras mit Wolke speichern in der Cloud, dagegen hilft nichts, das gibt es vor allem in Banken.</td></tr>"
+             "</tbody></table>"),
+            ("Fliehen: Auto, Parkhaus, Hubschrauber, Hunde",
+             f"<ul class=\"pts\"><li>{T_W} <b>Beim Einsteigen nicht gesehen werden:</b> Das Fluchtauto hinter einer Mauer parken, die zwischen euch und dem Tatort liegt. Eigene Autos sind am besten, weil im Kofferraum Kleidung liegt. Ein fremdes Auto vorher leise mit dem Slim Jim knacken {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Haken schlagen:</b> Durch Hecken, Hinterhöfe und unter hoch gelegenen Autobahnen fahren, Sprünge nutzen, Frontalcrashs meiden, damit der Motor heil bleibt {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Parkhaus:</b> Der beste Ort. Der Hubschrauber sieht euch nicht, die Polizei verfährt sich oft und belagert lieber das Gebäude, und drinnen stehen Autos zum Wechseln. Oben gibt es fast immer eine Rampe, über die ihr vom Gebäude springen könnt {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Hubschrauber:</b> Unter Brücken seht ihr ihn nicht. Werdet ihr ihn nicht los, auf den Heckrotor schießen {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Spürhunde:</b> Zu Fuß setzt die Polizei manchmal Hunde ein. Dann ins Wasser springen und an eine schwer einsehbare Stelle tauchen, oder schnell in ein Auto. Im Gebüsch ducken (Kreis, Xbox: B) bricht die Sicht menschlicher Verfolger {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Pay 'n' Spray:</b> Umlackieren geht weiterhin, aber nur, wenn keine Polizei direkt hinter euch ist {q(EG_POL, 'Eurogamer')}.</li></ul>"
+             "<p>Ducken im Auto, Motor laufen lassen und weitere Fahr-Tricks stehen im <a href=\"gta-6-fahren-steuerung.html\">Ratgeber zum Fahren</a>.</p>"),
+            ("Gar nicht erst gesucht werden",
+             f"<ul class=\"pts\"><li>{T_W} <b>Vorbereiten:</b> Maske vor der Tat aufsetzen, Wechsel-Outfit im Kofferraum, Fluchtauto versteckt parken {q(EG_POL, 'Eurogamer')}.</li>"
+             f"<li>{T_W} <b>Nicht töten:</b> Wer niemanden umbringt, kommt glimpflicher davon {q(EG_POL, 'Eurogamer')}. {T_OK} Rockstar bestätigt, dass ihr eine Konfrontation mit gezogener Waffe auch ohne Schuss beenden könnt (<a href=\"../#ign-polizei\">IGN-Interview</a>).</li>"
+             f"<li>{T_W} <b>Reden statt rennen:</b> Bei <b>einem</b> Stern Waffe wegstecken, mit L2 (Xbox: LT) auf den Polizisten zielen und im Interaktionsmenü „Entschärfen“ wählen. Klappt es, ist der Stern weg. Garantiert ist das nicht, manche greifen trotzdem an. Bei mehreren Sternen hilft es kaum {q(PCG_POL, 'PC Games')}.</li></ul>"
+             "<p>Wie ihr bei Überfällen leise bleibt, steht im <a href=\"gta-6-geld-verdienen.html\">Ratgeber zum Geldverdienen</a>, Schleichen und Ausschalten im <a href=\"gta-6-nahkampf-steuerung.html\">Ratgeber zum Nahkampf</a>.</p>"),
+            ("Verhaftung und Partner",
+             f"<p>{T_OK} Seid ihr getrennt unterwegs und einer von beiden wird geschnappt, während der andere entkommt, gilt er als verhaftet. Das hat Rob Nelson von Rockstar North im IGN-Interview erklärt (<a href=\"../#ign-polizei\">IGN-Interview</a>). Zusammen unterwegs zu sein ist umgekehrt ein Erkennungsmerkmal, deshalb gibt es das Partner-Symbol {q(EG_POL, 'Eurogamer')}.</p>"),
+        ],
+        "faq": [
+            ("Wie wird man in GTA 6 die Polizei los?", "Sichtkontakt brechen, das Suchgebiet auf der Karte verlassen und die Symbole unter den Sternen loswerden, also Outfit wechseln, Maske abnehmen und das Auto tauschen."),
+            ("Was bedeuten die Farben der Sterne in GTA 6?", "Grau heißt, die Polizei ist unterwegs. Hohle Sterne heißen, sie hat keine Beschreibung. Weiß heißt, sie ist euch auf den Fersen. Blinkend heißt, ihr hängt sie ab. Rot heißt, im alten Gebiet wird noch gesucht."),
+            ("Was bedeuten die Symbole unter den Sternen in GTA 6?", "Sie zeigen, was die Polizei über euch weiß: Aussehen, Fahrzeug, Outfit, sichtbare Waffe, Partner oder Kameraaufnahmen. Jedes lässt sich gezielt loswerden."),
+            ("Wie viele Fahndungssterne gibt es in GTA 6?", "Normalerweise bis zu fünf, in Ausnahmefällen sechs. Ab drei Sternen kommt ein Hubschrauber."),
+            ("Kann man in GTA 6 mit der Polizei reden?", "Bei einem Stern manchmal ja: Waffe wegstecken, mit L2 auf den Polizisten zielen und im Menü Entschärfen wählen. Erfolg ist nicht garantiert."),
+            ("Wie wird man in GTA 6 den Hubschrauber los?", "Unter Brücken oder in ein Parkhaus fahren, dort sieht er euch nicht. Notfalls auf den Heckrotor schießen."),
+        ],
+    },
+]
+
+ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-geld-verdienen", "gta-6-polizei-fahndung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
          "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
 THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
          "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
-         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27", "gta-6-geld-verdienen": "jason_and_lucia_02"}
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27", "gta-6-geld-verdienen": "jason_and_lucia_02", "gta-6-polizei-fahndung": "jason_and_lucia_09"}
 GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
 
 HUB_CSS = """main{max-width:1040px}
@@ -777,7 +851,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Geld verdienen, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Geld verdienen, Polizei, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
