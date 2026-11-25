@@ -822,11 +822,86 @@ GUIDES += [
     },
 ]
 
-ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-geld-verdienen", "gta-6-polizei-fahndung", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
+EG_EASY = "https://www.eurogamer.de/gta-6-spiel-einfacher-machen-versteckter-schwierigkeitsgrad"
+PSQ_EASY = "https://www.pushsquare.com/news/2026/11/gta-6-has-an-easy-mode-buried-in-an-impressive-range-of-accessibility-options"
+TG_SET = "https://www.thegamer.com/grand-theft-auto-6-best-settings-to-change-streaming-god-mode-guide/"
+
+GUIDES += [
+    {
+        "slug": "gta-6-einstellungen-schwierigkeit",
+        "published": "2026-11-25",
+        "title": "GTA 6 Einstellungen: leichter Modus und beste Optionen",
+        "h1": "GTA 6 Einstellungen: leichter spielen und besser zielen",
+        "desc": "GTA 6 hat keinen Schwierigkeitsgrad, aber zwei versteckte Schalter für leichtere Kämpfe. Dazu die besten Einstellungen für Zielen, Bewegung, Streamer. Mit Quellen.",
+        "lead": "GTA VI hat keinen Schwierigkeitsgrad zum Auswählen. In den Einstellungen stecken aber zwei Schalter, die das Spiel spürbar leichter machen, und viele Optionen, die das Spielgefühl verbessern. Hier steht, wo ihr was findet und was sich lohnt. <b>Offiziell</b> heißt von Rockstar, <b>Berichtet</b> heißt von Medien, die das Spiel gespielt haben. Wo wir den deutschen Namen im Menü nicht kennen, steht der englische dabei.",
+        "facts": [
+            ("Einstellungen", f"{T_OK} Pausenmenü, dann Einstellungen {q(R_SET, 'Rockstar')}"),
+            ("Schwierigkeitsgrad", f"{T_W} Gibt es nicht, nur eine Standard-Einstellung {q(EG_EASY, 'Eurogamer')}"),
+            ("Leichter Modus", f"{T_W} Reiter Gameplay ganz unten: „Erleichterter Kampf“ und „Reduzierter Fahrzeugschaden“ {q(EG_EASY, 'Eurogamer')}"),
+            ("Trophäen", f"{T_W} Bleiben trotz der beiden Schalter erhalten {q(EG_EASY, 'Eurogamer')} {q(PSQ_EASY, 'Push Square')}"),
+            ("Streamer", f"{T_W} Unter Audio lässt sich lizenzierte Musik stummschalten {q(TG_SET, 'TheGamer')}"),
+        ],
+        "sections": [
+            ("So findet ihr die Einstellungen",
+             f"<p>{T_OK} Pausenmenü öffnen und <b>Einstellungen</b> wählen. Laut Rockstar gibt es diese Reiter {q(R_SET, 'Rockstar')}:</p>"
+             "<ul class=\"pts\"><li><b>Steuerungsschema:</b> Belegung für zu Fuß, Zielen, Nahkampf, Fahrzeuge, Fliegen, Fahrrad, Schwimmen, Fallschirm.</li>"
+             "<li><b>Controller:</b> Empfindlichkeit beim Zielen und Umschauen, Invertieren, Funktionen des DualSense auf der PS5.</li>"
+             "<li><b>Gameplay:</b> Kampf, Bewegung und Barrierefreiheit.</li>"
+             "<li><b>Anzeige:</b> Bild, visuelle Effekte und Hochkontrast-Shader.</li>"
+             "<li><b>UI:</b> Größe und Lesbarkeit, Untertitel, Navigation, Fadenkreuz, Kampf- und Fortschrittsanzeigen, Maßeinheiten.</li>"
+             "<li><b>Kamera:</b> zu Fuß, Fahrzeuge, Komfort, Flugzeuge, unter Wasser, Kino.</li>"
+             "<li><b>Audio:</b> Setup, Lautstärke, Sprachausgabe.</li></ul>"
+             "<p>Unten auf dem Bildschirm setzt „Standard wiederherstellen“ alles zurück. Welche Taste was macht, steht im <a href=\"gta-6-nahkampf-steuerung.html\">Ratgeber zu Nahkampf und Tricks</a> und im <a href=\"gta-6-fahren-steuerung.html\">Ratgeber zum Fahren</a>.</p>"),
+            ("Der versteckte leichte Modus",
+             f"<p>{T_W} Ganz unten im Reiter <b>Gameplay</b> stehen zwei Schalter {q(EG_EASY, 'Eurogamer')}:</p>"
+             "<ul class=\"pts\"><li><b>Erleichterter Kampf</b> (englisch: Accessible Combat): Gegner halten weniger Treffer aus, Jason und Lucia dafür mehr. Hilft vor allem gegen schwer gepanzerte Einheiten und große Gruppen.</li>"
+             "<li><b>Reduzierter Fahrzeugschaden</b> (Reduced Vehicle Damage): Euer Auto geht bei Unfällen und Beschuss nicht so schnell kaputt. Ganz robust wird es trotzdem nicht, aber ihr kommt durch eine oder zwei Straßensperren mehr.</li></ul>"
+             f"<p>{T_W} Das Spiel warnt beim Einschalten, dass sich Balance und Spielerlebnis deutlich ändern {q(PSQ_EASY, 'Push Square')}. Trophäen und Erfolge bleiben aber erhalten, euer Profil wird nicht markiert {q(EG_EASY, 'Eurogamer')} {q(PSQ_EASY, 'Push Square')}. Eurogamer hat die Schalter zum Üben schwerer Banküberfälle genutzt, mehr dazu im <a href=\"gta-6-geld-verdienen.html\">Ratgeber zum Geldverdienen</a>.</p>"),
+            ("Die besten Einstellungen zum Start",
+             f"<p>{T_W} Empfehlungen von TheGamer {q(TG_SET, 'TheGamer')} und Eurogamer {q(EG, 'Eurogamer')}:</p>"
+             "<ul class=\"pts\"><li><b>Zielmodus</b> (Gameplay, Kampf): „Teilweise“ (Partial) ist voreingestellt und mit Controller am besten. Wer es leichter will, nimmt die volle Zielerfassung (Lock-On), freies Zielen ist mit Controller mühsam. Die <b>Zielhilfe</b> könnt ihr ruhig hoch stellen.</li>"
+             "<li><b>Bewegungstempo</b> (Gameplay, Bewegung): legt fest, wie schnell Jason und Lucia gehen, wenn ihr den Stick ganz nach vorn drückt. Eurogamer empfiehlt „Joggen“, dann ist der Stickdruck nur noch für den Sprint da. Das Tempo im Kampf am besten auf „Rennen“.</li>"
+             "<li><b>Stehen und Sprinten</b> (Stand and Sprint): ausschalten, sonst steht ihr beim Schleichen ungewollt auf.</li>"
+             "<li><b>Totzone der Sticks</b> (Controller): so einstellen, wie es sich für euch am besten anfühlt.</li>"
+             "<li><b>Zielbeschleunigung</b> (Controller, Empfindlichkeit): etwas höher macht das Zielen direkter.</li>"
+             "<li><b>Steuerungsschema „Klassisch“:</b> nur, wenn ihr wie früher per Tastenhämmern rennen wollt. Für alle anderen ist „Standard“ besser.</li></ul>"),
+            ("Anzeige, Untertitel und Komfort",
+             f"<p>{T_W} Ebenfalls nach TheGamer {q(TG_SET, 'TheGamer')}:</p>"
+             "<ul class=\"pts\"><li><b>Untertitel und Sprechernamen an:</b> Über Gespräche, die ihr nebenbei hört, entdeckt ihr Nebenaufgaben.</li>"
+             "<li><b>Bewegungsunschärfe</b> (Anzeige, visuelle Effekte): senken statt ganz ausschalten. Das Spiel läuft mit 30 Bildern pro Sekunde, ganz ohne Unschärfe wirkt es ruckeliger.</li>"
+             "<li><b>Wurfbahn immer anzeigen</b> (Projectile Arc) und <b>Straßennamen</b> an.</li>"
+             "<li><b>Minikarte</b> dauerhaft an statt „dynamisch“, dazu der Kompass.</li>"
+             "<li><b>Kamerawackeln aus und Kamerawippen niedriger</b> (Kamera, Komfort), wenn euch schnell schwindelig wird.</li>"
+             "<li><b>Unfall-Kamera seltener</b> (Kamera, Kino): Dann unterbrechen Zeitlupen-Crashs die Fahrt nicht so oft.</li>"
+             "<li><b>Tinnitus-Reduzierung</b> (Audio, Setup) beim Spielen mit Kopfhörern.</li>"
+             "<li><b>Musik etwas leiser</b>, damit Dialoge nicht untergehen.</li></ul>"),
+            ("Für Streamer und YouTube",
+             f"<ul class=\"pts\"><li>{T_W} <b>Lizenzierte Musik stummschalten</b> (Audio, Setup, englisch: Mute Licensed Music): Dann laufen keine Radio-Songs, die zu Urheberrechts-Sperren auf Twitch oder YouTube führen können {q(TG_SET, 'TheGamer')}.</li>"
+             f"<li>{T_W} <b>Blut und Gewalt</b> (Anzeige, visuelle Effekte): Intensität senken und abgetrennte Gliedmaßen ausschalten {q(TG_SET, 'TheGamer')}.</li>"
+             f"<li>{T_W} <b>Nacktheit</b> lässt sich nicht abschalten, außer in Fassungen, die ab Werk geschnitten sind, etwa in Japan. Im Zweifel schneiden {q(TG_SET, 'TheGamer')}.</li></ul>"),
+            ("Barrierefreiheit",
+             f"<p>{T_W} Rockstar hat viele Optionen eingebaut, die Medien loben die Auswahl {q(PSQ_EASY, 'Push Square')}:</p>"
+             f"<ul class=\"pts\"><li><b>Tippen statt Hämmern</b> (Gameplay, Barrierefreiheit, englisch: Tap Assist): Statt schnell zu drücken, haltet ihr die Taste, oder ein Druck zählt mehrfach {q(TG_SET, 'TheGamer')}.</li>"
+             f"<li><b>Vereinfachte Minispiele:</b> Weniger komplizierte Eingaben bei Minispielen {q(PSQ_EASY, 'Push Square')}.</li>"
+             f"<li><b>Autopilot ohne Einschränkung</b> (Auto Drive): Dann fährt euch die Figur auf mehr Strecken selbst {q(TG_SET, 'TheGamer')}. Wie der Autopilot geht, steht im <a href=\"gta-6-fahren-steuerung.html\">Ratgeber zum Fahren</a>.</li>"
+             f"<li>{T_OK} <b>Hochkontrast-Shader</b> (Anzeige) und Größe und Lesbarkeit der Anzeigen (UI) {q(R_SET, 'Rockstar')}, dazu Optionen für Spieler mit eingeschränktem Sehvermögen {q(PSQ_EASY, 'Push Square')}.</li>"
+             f"<li><b>Zielhilfe und Zielerfassung</b> lassen sich ebenfalls anpassen {q(PSQ_EASY, 'Push Square')}.</li></ul>"),
+        ],
+        "faq": [
+            ("Hat GTA 6 einen Schwierigkeitsgrad?", "Nein, nur eine Standard-Einstellung. Im Reiter Gameplay gibt es aber die Schalter Erleichterter Kampf und Reduzierter Fahrzeugschaden, die das Spiel leichter machen."),
+            ("Verliert man Trophäen, wenn man den leichten Modus nutzt?", "Nein. Laut Eurogamer und Push Square bleiben Trophäen und Erfolge erhalten, auch mit Erleichtertem Kampf und Reduziertem Fahrzeugschaden."),
+            ("Welcher Zielmodus ist in GTA 6 am besten?", "Mit Controller der voreingestellte Modus Teilweise (Partial) mit hoher Zielhilfe. Wer es leichter will, nimmt die volle Zielerfassung."),
+            ("Wie stellt man in GTA 6 das Gehtempo ein?", "Im Reiter Gameplay unter Bewegung. Eurogamer empfiehlt Joggen, dann ist der gedrückte Stick nur noch für den Sprint da."),
+            ("Kann man in GTA 6 die Radiomusik für Streams abschalten?", "Ja, unter Audio lässt sich lizenzierte Musik stummschalten. Das hilft gegen Urheberrechts-Sperren auf Twitch und YouTube."),
+        ],
+    },
+]
+
+ORDER = ["gta-6-release-deutschland", "gta-6-nahkampf-steuerung", "gta-6-fahren-steuerung", "gta-6-geld-verdienen", "gta-6-polizei-fahndung", "gta-6-einstellungen-schwierigkeit", "gta-6-vorab-download", "gta-6-editionen", "gta-6-usk-ab-18",
          "gta-6-charaktere", "gta-6-karte-leonida", "gta-6-soundtrack-radio", "gta-6-pc-version"]
 THUMB = {"gta-6-release-deutschland": "launch_03", "gta-6-vorab-download": "launch_39", "gta-6-editionen": "ue_01",
          "gta-6-usk-ab-18": "launch_02", "gta-6-charaktere": "jason_and_lucia_02", "gta-6-karte-leonida": "vice_city_01",
-         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27", "gta-6-geld-verdienen": "jason_and_lucia_02", "gta-6-polizei-fahndung": "jason_and_lucia_09"}
+         "gta-6-soundtrack-radio": "radio_01", "gta-6-pc-version": "launch_35", "gta-6-nahkampf-steuerung": "lucia_caminos_01", "gta-6-fahren-steuerung": "launch_27", "gta-6-geld-verdienen": "jason_and_lucia_02", "gta-6-polizei-fahndung": "jason_and_lucia_09", "gta-6-einstellungen-schwierigkeit": "jason_and_lucia_03"}
 GUIDES.sort(key=lambda g: ORDER.index(g["slug"]) if g["slug"] in ORDER else 99)
 
 HUB_CSS = """main{max-width:1040px}
@@ -851,7 +926,7 @@ def render_index():
               {"@type": "ListItem", "position": 1, "name": "GTA 6 News", "item": SITE},
               {"@type": "ListItem", "position": 2, "name": "Ratgeber", "item": url}]}]
     lds = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>\n' for x in ld)
-    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Geld verdienen, Polizei, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
+    desc = "Alle GTA 6 Ratgeber auf Deutsch: Release-Uhrzeit, Nahkampf-Steuerung, Fahren, Geld verdienen, Polizei, Einstellungen, Download, Editionen, USK, Charaktere, Karte, Musik und PC-Version. Jede Angabe mit Quelle."
     return f"""<!doctype html>
 <html lang="de">
 <head>
